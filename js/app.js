@@ -217,7 +217,7 @@ window.testSeries = [
     f: "neet",
     lang: "English",
     objective: "Objective (NEET Pattern)",
-    tests: 8,
+    tests: 13,
     startDate: "2026-05-01",
     endDate: "2027-05-31",
     session: "2026-2027",
@@ -248,6 +248,11 @@ window.testSeries = [
       ["SWT 06 - Biotechnology: Principles & Processes (Assertion-Reason & Statement Drill)", "May 22, 2026"],
       ["SWT 07 - Biotechnology: Principles & Processes (Diagram & High-Yield PYQs)", "May 25, 2026"],
       ["SWT 08 - Biotechnology: Principles & Processes (Rapid Speed Sprint)", "May 28, 2026"],
+      ["SWT 01 - Biotechnology and Its Applications (NCERT Line-by-Line & Core Applications)", "Jun 02, 2026"],
+      ["SWT 02 - Biotechnology and Its Applications (NEET Drill, Statement-Based & PYQs)", "Jun 05, 2026"],
+      ["SWT 01 - Organisms and Populations (Organism & Environment, Abiotic Factors & Adaptations)", "Jun 10, 2026"],
+      ["SWT 02 - Organisms and Populations (Population Attributes, Growth Models & Life History)", "Jun 14, 2026"],
+      ["SWT 03 - Organisms and Populations (Population Interactions, Competition & PYQ Drill)", "Jun 18, 2026"],
     ],
     oldPrice: "₹499",
     price: "FREE",
@@ -1202,6 +1207,22 @@ function openDetail(id, pushHistory = true) {
     }
   }
 
+  // Smart Enroll Bar State
+  const isEnrolledNow = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || id === "neet-ug-practice";
+  const btnEnrollEl = document.querySelector(".btn-enroll");
+  if (btnEnrollEl) {
+    if (isEnrolledNow) {
+      btnEnrollEl.textContent = "Start Practicing";
+      btnEnrollEl.onclick = () => {
+        const sched = document.getElementById("dSchedule");
+        if (sched) sched.scrollIntoView({ behavior: "smooth", block: "start" });
+      };
+    } else {
+      btnEnrollEl.textContent = "Enroll Now";
+      btnEnrollEl.onclick = () => handleEnroll();
+    }
+  }
+
   showView("detail", false);
   if (pushHistory) {
     history.pushState({ view: "detail", param: id }, "", "");
@@ -2068,17 +2089,25 @@ window.NEET_SUBJECTS = [
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/><circle cx="12" cy="12" r="3"/></svg>`,
     iconBg: "#d1fae5",
     iconColor: "#059669",
-    regex: /(biotechnology: principles|principles and processes|biotechnology.*principles|swt\s*0[1-8])/i
+    regex: /(biotechnology: principles|principles and processes|biotechnology.*principles)/i
   },
   {
     id: "neet_bio_apps",
-    name: "Biotechnology and Its Applications",
+    name: "Biotechnology and Its Applications (Chapter Drill & PYQs)",
     iconType: "svg",
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 2 4 4-14 14-4-4L18 2zM15 5l4 4M5 15l-3 5 5-3M14 6l-2-2"/></svg>`,
     iconBg: "#cffafe",
     iconColor: "#0891b2",
-    comingSoon: true,
     regex: /(biotechnology and its applications|applications of biotechnology)/i
+  },
+  {
+    id: "neet_ecology_organisms",
+    name: "Ecology: Organisms and Populations (Chapter Drill & PYQs)",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`,
+    iconBg: "#fef3c7",
+    iconColor: "#d97706",
+    regex: /(organisms and populations|organisms & populations|ecology.*population)/i
   },
   {
     id: "neet_genetics",
@@ -2140,7 +2169,12 @@ window.NEET_TOPIC_MAP = {
   "SWT 05 - Biotechnology: Principles & Processes (NEET PYQ & Match-List Drill)": "Authentic NEET 15-Year PYQs, Match List-I with List-II Column Questions, Enzymes & Vector Mechanisms",
   "SWT 06 - Biotechnology: Principles & Processes (Assertion-Reason & Statement Drill)": "High-Yield Assertion A & Reason R, Statement I & Statement II Critical Reasoning Questions",
   "SWT 07 - Biotechnology: Principles & Processes (Diagram & High-Yield PYQs)": "Figure & Schematic Analysis, Gel Electrophoresis Bands, PCR Cycle Steps, Sparged Stirred Tank Diagrams",
-  "SWT 08 - Biotechnology: Principles & Processes (Rapid Speed Sprint)": "Complete Chapter Rapid Speed Sprint Test, Exam-Readiness Booster"
+  "SWT 08 - Biotechnology: Principles & Processes (Rapid Speed Sprint)": "Complete Chapter Rapid Speed Sprint Test, Exam-Readiness Booster",
+  "SWT 01 - Biotechnology and Its Applications (NCERT Line-by-Line & Core Applications)": "Bt Crops & Cotton, Pest Resistant Plants, Genetically Engineered Insulin, Gene Therapy (ADA), Molecular Diagnostics (PCR, ELISA)",
+  "SWT 02 - Biotechnology and Its Applications (NEET Drill, Statement-Based & PYQs)": "Transgenic Animals, Biopiracy, Basmati Rice Patent, GEAC Guidelines, RNA Interference Mechanism, Critical Statement Analysis",
+  "SWT 01 - Organisms and Populations (Organism & Environment, Abiotic Factors & Adaptations)": "Major Abiotic Factors (Temperature, Water, Light, Soil), Homeostasis, Regulators, Conformers, Migration, Hibernation & Aestivation, Adaptations",
+  "SWT 02 - Organisms and Populations (Population Attributes, Growth Models & Life History)": "Population Attributes, Natality, Mortality, Sex Ratio, Age Pyramids, Exponential (J-shaped) & Logistic (Verhulst-Pearl) Growth Curves, Carrying Capacity",
+  "SWT 03 - Organisms and Populations (Population Interactions, Competition & PYQ Drill)": "Interspecific Interactions: Predation, Gause Competitive Exclusion, Mac Arthur Resource Partitioning, Parasitism, Commensalism, Mutualism, Amensalism"
 };
 
 window.PYQ_EE_DEFAULT_TESTS = [

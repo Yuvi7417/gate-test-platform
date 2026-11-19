@@ -2,7 +2,7 @@
 // APEX NEET UG PRACTICE TEST REGISTRY
 // High-Yield NCERT-Aligned Chapter-Wise Subject Tests (SWT)
 // Standard NEET Pattern: +4 Correct, -1 Incorrect
-// Total 611 Questions across 8 Complete Tests
+// Total 1,062 Questions across 13 Complete Tests
 // =========================================================================
 
 (function() {
@@ -9858,7 +9858,7724 @@
         "solution": "<p>In the illustration, step P is the double-stranded template DNA carrying the target region (hatched), step Q shows the two strands separated with a short primer bound to each, and step R shows both primers lengthened into two new double-stranded copies of the target region.</p> <p>Statement (i) is incorrect: the strands are separated (denatured) by heating to a high temperature (about 94∘ ), not a low one.</p> <p>Statement (ii) is correct: the template is first denatured at high temperature and, on cooling, the two primers anneal to their complementary sequences on the separated strands, as seen in step Q.</p> <p>Statement (iii) is correct: in step R the primers are extended by a thermostable DNA polymerase (Taq polymerase from <em>Thermus aquaticus</em>), which stays active at the high temperatures used in each cycle.</p> <p>Statement (iv) is incorrect: step Q shows annealing of the primers; extension occurs only in step R.</p> <p>Hence, the correct option is (B).</p>"
       }
     ]
-  }
+  },
+{
+  "name": "SWT 01 - Biotechnology and Its Applications (NCERT Line-by-Line & Core Applications)",
+  "label": "SWT 01",
+  "bracket": "NCERT Core - Part 1",
+  "subject": "neet_bio_apps",
+  "topics": "Bt Crops & Cotton, Pest Resistant Plants, Genetically Engineered Insulin, Gene Therapy (ADA), Molecular Diagnostics (PCR, ELISA)",
+  "duration": "60 mins",
+  "questions": [
+    {
+      "text": "<p><strong>Q1.</strong> The inactive form of Bt toxin is converted to the active form in the insect gut ____ </p>",
+      "options": [
+        "<p>by nucleases</p>",
+        "<p>due to alkaline pH</p>",
+        "<p>due to acidic pH</p>",
+        "<p>by proteases</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt toxin protein exists as inactive protoxins, but once an insect ingests the inactive toxin, it is converted into an active form of toxin due to the alkaline pH of the gut which solubilises the crystals.</p>"
+    },
+    {
+      "text": "<p><strong>Q2.</strong> Exploring molecular, genetic and species-level diversity for products of economic importance is called</p>",
+      "options": [
+        "<p>Biofortification</p>",
+        "<p>Bioremediation</p>",
+        "<p>Bioprospecting</p>",
+        "<p>Biomagnification</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Exploring molecular, genetic and species - level diversity for products of economic importance is called as bioprospecting.</p>"
+    },
+    {
+      "text": "<p><strong>Q3.</strong> The human protein named 𝜶 -1-antitrypsin, obtained from transgenic animals, is used for the treatment of ____ .</p>",
+      "options": [
+        "<p>Emphysema</p>",
+        "<p>Alzheimer's disease</p>",
+        "<p>Rheumatoid arthritis</p>",
+        "<p>Cystic fibrosis</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The human protein named &amp;alpha;−1 -antitrypsin, obtained from transgenic animals, is used for the treatment of emphysema.</p> <p>Transgenic models exist for the study of other diseases, such as Alzheimer's disease, rheumatoid arthritis and cystic fibrosis.</p>"
+    },
+    {
+      "text": "<p><strong>Q4.</strong> The toxin proteins isolated from Bacillus thuringiensis, coded by which of the following genes would control cotton bollworms and corn borer, respectively?</p>",
+      "options": [
+        "<p>cryIAc and cryIAb</p>",
+        "<p>cryIAc and cryIIAb</p>",
+        "<p>cryIIAb and cryIAc</p>",
+        "<p>cryIAc and cryIIIAb</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Specific Bt toxin genes were isolated from Bacillus thuringiensis and incorporated into the several crop plants such as cotton. The choice of genes depends upon the crop and the targeted pest, as most Bt toxins are insect-group specific. The toxin is coded by a gene named cry. The proteins encoded by the genes cryIAc and cryIIAb control the cotton bollworms, that of cryIAb controls corn borer. So, the correct answer is cryIAc for cotton bollworms and cryIAb for corn borer that is represented in option (1)</p>"
+    },
+    {
+      "text": "<p><strong>Q5.</strong> Which of the following genetically engineered organisms was used by Eli Lilly to prepare human insulin?</p>",
+      "options": [
+        "<p>Virus</p>",
+        "<p>Phage</p>",
+        "<p>Bacterium</p>",
+        "<p>Yeast</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct answer is bacterium.</p> <p>In 1983, Eli Lilly, an American company, prepared two DNA sequences corresponding to 'A' and 'B' chains of human insulin and introduced them in plasmids of E.coli (a gram negative bacterium) to produce insulin chains.</p>"
+    },
+    {
+      "text": "<p><strong>Q6.</strong> Silencing of specific mRNA is possible via RNAi because of</p>",
+      "options": [
+        "<p>Complementary tRNA</p>",
+        "<p>Non-complementary ssRNA</p>",
+        "<p>Complementary dsRNA</p>",
+        "<p>Inhibitory ssRNA</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNAi (RNA interference) takes place in all eukaryotic organisms as a method of cellular defense. This method involves silencing of a specific mRNA due to a complementary dsRNA molecule that binds to and prevents translation of the mRNA.</p>"
+    },
+    {
+      "text": "<p><strong>Q7.</strong> Given below are two statements:</p> <p>Statement I : The Indian Government has set up GEAC, which will make decisions regarding the validity of GM research.</p> <p>Statement II : Biopiracy is the term used to refer to the use of bio-resources by native people.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p>",
+      "options": [
+        "<p>Statement I is true but Statement II is false</p>",
+        "<p>Statement I is false but Statement II is true</p>",
+        "<p>Both Statement I and Statement II are true</p>",
+        "<p>Both Statement I and Statement II are false</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Let's analyze each statement separately to determine its validity:</p> <p><b>Statement I:</b> The Indian Government has set up GEAC, which will make decisions regarding the validity of GM research.</p> <p>The Genetic Engineering Appraisal Committee (GEAC) is indeed an authority established by the Indian Government under the Ministry of Environment, Forest and Climate Change. Its role is to evaluate and make decisions regarding the research, development, and commercialization of genetically modified (GM) organisms and products. Therefore, Statement I is true.</p> <p><b>Statement II:</b> Biopiracy is the term used to refer to the use of bio-resources by native people.</p> <p>Biopiracy refers to the unethical or unauthorized exploitation of biological resources, typically involving indigenous knowledge, by entities (often corporations or researchers from developed countries) without fair compensation to the native people or countries from which these resources originate. Therefore, this statement is incorrect as it should mention the exploitation by external entities rather than the use by native people themselves. Therefore, Statement II is false.</p> <p>Based on the analysis, the correct answer is:</p> <p><b>Option A:</b> Statement I is true but Statement II is false</p>"
+    },
+    {
+      "text": "<p><strong>Q8.</strong> Match List-I with List - II :</p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 746px\"><colgroup> <col style=\"width: 78px\"/> <col style=\"width: 262px\"/> <col style=\"width: 83px\"/> <col style=\"width: 323px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - I</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - II</th> </tr></thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">Genetically engineered Human Insulin</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">Gene therapy</td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">GM Cotton</td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\">E. coli</td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">ADA Deficiency</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">Antigen-antibody interaction</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">ELISA</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\">Bacillus thuringiensis</td> </tr> </tbody> </table></p> <p>Choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>A-III, B-II, C-IV, D-I</p>",
+        "<p>A-II, B-I, C-IV, D-III</p>",
+        "<p>A-IV, B-III, C-I, D-II</p>",
+        "<p>A-II, B-IV, C-I, D-III</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>To match List-I with List-II, we need to find the correct association for each item provided:</p> <p><b>(A) Genetically engineered Human Insulin - </b>This is produced using recombinant DNA technology and commonly involves the bacterium <i>E. coli</i>.</p> <p><b>(B) GM Cotton - </b>This is genetically modified cotton, which typically involves the incorporation of genes from <i>Bacillus thuringiensis</i> (Bt) to produce pest-resistant cotton.</p> <p><b>(C) ADA Deficiency - </b>Ada deficiency is often treated using gene therapy.</p> <p><b>(D) ELISA - </b>ELISA (Enzyme-Linked Immunosorbent Assay) is a test that uses antigen-antibody interactions to detect the presence of a substance, usually an antigen or antibody, in a liquid sample.</p> <p>Now let's match them with List-II:</p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 746px\"> <colgroup> <col style=\"width: 78px\"/> <col style=\"width: 262px\"/> <col style=\"width: 83px\"/> <col style=\"width: 323px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - I</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - II</th> </tr></thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">Genetically engineered Human Insulin</td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\"><i>E. coli</i></td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">GM Cotton</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\"><i>Bacillus thuringiensis</i></td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">ADA Deficiency</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">Gene therapy</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">ELISA</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">Antigen-antibody interaction</td> </tr> </tbody> </table> <p>So, the correct answer is:</p> <p><b>Option D</b>: A-II, B-IV, C-I, D-III</p>"
+    },
+    {
+      "text": "<p><strong>Q9.</strong> The Bt toxin in genetically engineered Bt cotton kills the pest by: </p>",
+      "options": [
+        "<p>Creating pores in the midgut</p>",
+        "<p>Damaging the respiratory system</p>",
+        "<p>Degenerating the nervous system</p>",
+        "<p>Altering the pH of body fluids</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct answer is <strong>Option A: Creating pores in the midgut.</strong> Here's why:</p> <p>Bt toxin, short for <em>Bacillus thuringiensis</em> toxin, is a naturally occurring insecticide produced by the bacterium <em>Bacillus thuringiensis</em>. When ingested by certain insect pests, it acts specifically on their digestive system.</p> <p>Here's how it works:</p> <ul> <li><strong>Ingestion:</strong> Insect pests consume Bt toxin along with plant material.</li> <li><strong>Activation:</strong> The alkaline environment of the insect's midgut (the middle part of its digestive tract) activates the Bt toxin.</li> <li><strong>Binding:</strong> The activated toxin binds to specific receptor proteins on the epithelial cells lining the insect's midgut.</li> <li><strong>Pore Formation:</strong> This binding causes the toxin to insert itself into the cell membrane of the midgut cells, forming pores or holes.</li> <li><strong>Cell Disruption:</strong> The formation of these pores disrupts the cell's ability to maintain its structure and function. The cell leaks nutrients and fluids, ultimately leading to cell death.</li> <li><strong>Death:</strong> The widespread damage to the midgut cells results in the insect's death due to starvation and/or internal organ failure.</li> </ul> <p>Let's look at why the other options are incorrect:</p> <ul> <li><strong>Option B: Damaging the respiratory system:</strong> Bt toxin primarily targets the digestive system of insects, not their respiratory system.</li> <li><strong>Option C: Degenerating the nervous system:</strong> While some insecticides do affect the nervous system, Bt toxin's primary mode of action is through the digestive system.</li> <li><strong>Option D: Altering the pH of body fluids:</strong> While Bt toxin's activation is influenced by pH, its primary effect is not on altering the overall pH of the insect's body fluids.</li> </ul> <p>In summary, Bt toxin works by creating pores in the midgut of susceptible insect pests, leading to their death.</p> <p></p>"
+    },
+    {
+      "text": "<p><strong>Q10.</strong> Following are the steps involved in action of toxin in Bt. Cotton</p> <p>A. The inactive toxin converted into active form due to alkaline pH of gut of insect.</p> <p>B. Bacillus thuringiensis produces crystals with toxic insecticidal proteins.</p> <p>C. The alkaline pH solubilises the crystals.</p> <p>D. The activated toxin binds to the surface of midgut cells, creates pores and causes death of the insect.</p> <p>E. The toxin proteins exist as inactive protoxins in bacteria.</p> <p>Choose the correct sequence of steps from the options given below: </p>",
+      "options": [
+        "<p>E→C→B→A→D</p>",
+        "<p>B→C→A→E→D</p>",
+        "<p>A→E→B→D→C</p>",
+        "<p>B→E→C→A→D</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Option (D) is the correct answer because the correct sequence of action of toxin in Bt. cotton is</p> <p>B. Bacillus thuringiensis produces crystals with toxic insecticidal proteins.</p> <p>E. The toxin proteins exist as inactive protoxins in bacteria.</p> <p>C. The alkaline pH solubilises the crystals.</p> <p>A. The inactive toxin converted into active form due to alkaline pH of gut of insect.</p> <p>D. The activated toxin binds to the surface of midgut cells, creates pores and causes death of the insect.</p> <p>Hence, B→E→C→A→D is the correct order.</p>"
+    },
+    {
+      "text": "<p><strong>Q11.</strong> Given below are two statements :</p> <p>Statement I : RNA interference takes place in all Eukaryotic organisms as method of cellular defense.</p> <p>Statement II : RNAi involves the silencing of a specific mRNA due to a complementary single-stranded RNA molecule that binds and prevents translation of mRNA</p> <p>In the light of the above statements, choose the correct answer from the options given below.</p>",
+      "options": [
+        "<p>Statement I is true but Statement II is false.</p>",
+        "<p>Statement I is false but Statement II is true.</p>",
+        "<p>Both Statement I and Statement II are true.</p>",
+        "<p>Both Statement I and Statement II are false.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct answer is option (A) because Statement I is correct which states that RNA interference takes place in all eukaryotic organisms as method of cellular defense and Statement II is incorrect which states that RNAi involved the silencing of a specific mRNA due to a complementary ssRNA molecule that binds and prevents translation of mRNA.</p> <p>In statement II, it should be complementary dsRNA molecule that is involved in silencing of a specific mRNA.</p> <p>Options (B), (C) and (D) are incorrect as they represent wrong answer.</p>"
+    },
+    {
+      "text": "<p><strong>Q12.</strong> The capacity to generate a whole plant from any cell of the plant is called:</p>",
+      "options": [
+        "<p>Totipotency</p>",
+        "<p>Micropropagation</p>",
+        "<p>Differentiation</p>",
+        "<p>Somatic hybridization</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Totipotency is defined as the capacity to generate a whole plant from any cell of the plant.</p>"
+    },
+    {
+      "text": "<p><strong>Q13.</strong> Given below are two statements:</p> <p>Statement I : Bt toxins are insect group specific and coded by a gene cry IAc.</p> <p>Statement II : Bt toxin exists as inactive protoxin in B. thuringiensis. However, after ingestion by the insect the inactive protoxin gets converted into active form due to acidic pH of the insect gut.</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>Both Statement I and Statement II are true</p>",
+        "<p>Both Statement I and Statement II are false</p>",
+        "<p>Statement I is true but Statement II is false</p>",
+        "<p>Statement I is false but Statement II is true</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Statement I is true: most Bt toxins are insect-group specific, and the toxin is coded by a gene named cry. There are a number of them, for example, the proteins encoded by the genes cry IAc and cry IIAb control the cotton bollworms, and that of cry IAb controls corn borer.</p> <p>Statement II is false: Bt toxin does exist as an inactive protoxin in B. thuringiensis, but after ingestion it is converted into the active form by the alkaline pH of the insect gut, which solubilises the crystals, not by an acidic pH .</p> <p>Hence the correct answer is option (3).</p>"
+    },
+    {
+      "text": "<p><strong>Q14.</strong> Which of the following are fused in somatic hybridization involving two varieties of plants?</p>",
+      "options": [
+        "<p>Callus</p>",
+        "<p>Somatic embryos</p>",
+        "<p>Protoplasts</p>",
+        "<p>Pollens</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In somatic hybridization, the fusion of protoplasts from different plant varieties or species is a key technique. Protoplasts are plant cells that have had their cell walls enzymatically removed, exposing the cell membrane. This condition allows for the direct fusion of cellular contents including the nucleus and cytoplasm from different cells, facilitating recombination and the formation of a hybrid cell. The process of fusion typically involves techniques such as electrofusion or chemical treatments to encourage the protoplasts to merge.</p> <p>Looking at the options provided:</p> <ul> <li><strong>Option A: Callus</strong> – This is not correct. A callus is a mass of unorganized plant cells that are generally not involved in fusion during somatic hybridization but are rather a product of the culture of somatic cells.</li> <li><strong>Option B: Somatic embryos</strong> – These are not the direct subjects of fusion in somatic hybridization. Somatic embryos can develop from hybrid cells, but they themselves are not fused; they are derived from somatic cells under appropriate conditions.</li> <li><strong>Option C: Protoplasts</strong> – This is correct. Protoplasts are indeed what are fused in somatic hybridization to combine the genetic material from two different plants or varieties.</li> <li><strong>Option D: Pollens</strong> – These do not fuse in somatic hybridization. Pollen fusion is more relevant to sexual reproduction and breeding, not somatic cell procedures.</li> </ul> <p>Therefore, the correct answer is <strong>Option C: Protoplasts</strong>.</p>"
+    },
+    {
+      "text": "<p><strong>Q15.</strong> Match List I with List II</p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 555px\"> <colgroup> <col style=\"width: 71px\"/> <col style=\"width: 195px\"/> <col style=\"width: 74px\"/> <col style=\"width: 215px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - I</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - II</th> </tr> </thead> <tbody> <tr> <td class=\"tg-c3ow\">A.</td> <td class=\"tg-0pky\"> &amp;alpha; -I antitrypsin</td> <td class=\"tg-c3ow\">I.</td> <td class=\"tg-0pky\">Cotton bollworm</td> </tr> <tr> <td class=\"tg-c3ow\">B.</td> <td class=\"tg-0pky\">Cry IAb</td> <td class=\"tg-c3ow\">II.</td> <td class=\"tg-0pky\">ADA deficiency</td> </tr> <tr> <td class=\"tg-c3ow\">C.</td> <td class=\"tg-0pky\">Cry IAc</td> <td class=\"tg-c3ow\">III.</td> <td class=\"tg-0pky\">Emphysema</td> </tr> <tr> <td class=\"tg-c3ow\">D.</td> <td class=\"tg-0pky\">Enzyme replacement therapy</td> <td class=\"tg-c3ow\">IV.</td> <td class=\"tg-0pky\">Corn borer</td> </tr> </tbody> </table></p> <p>Choose the correct answer form the options given below:</p>",
+      "options": [
+        "<p>A-II, B-I, C-IV, D-III</p>",
+        "<p>A-III, B-I, C-II, D-IV</p>",
+        "<p>A-III, B-IV, C-I, D-II</p>",
+        "<p>A-II, B-IV, C-I, D-III</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>To provide the correct answer, let's evaluate each option by matching the items from List I with their corresponding descriptions from List II:</p> <ul> <li><strong> &amp;alpha; -I antitrypsin</strong> - This is a protease inhibitor and its deficiency leads to emphysema due to the degradation of the lung tissue. Therefore, &amp;alpha; -I antitrypsin corresponds to Emphysema (III).</li> <li><strong>Cry IAb</strong> - Part of a family of proteins from Bacillus thuringiensis used as a biological pesticide. Cry IAb is notably effective against certain types of Lepidoptera, including the European Corn Borer (IV).</li> <li><strong>Cry IAc</strong> - This is also a protein from Bacillus thuringiensis and is notably effective against Cotton Bollworm (I).</li> <li><strong>Enzyme replacement therapy</strong> - Typically used for treating deficiencies in certain enzymes; one prevalent example is Adenosine Deaminase (ADA) deficiency, which leads to immune deficiencies (II).</li> </ul> <p>Let's match these back to the original options provided:</p> <ul> <li>A-III ( &amp;alpha; -I antitrypsin matches with Emphysema)</li> <li>B-IV (Cry IAb matches with Corn Borer)</li> <li>C-I (Cry IAc matches with Cotton Bollworm)</li> <li>D-II (Enzyme replacement therapy matches with ADA deficiency)</li> </ul> <p>Based on these matches, the correct option would be:</p> <p><strong>Option C: A-III, B-IV, C-I, D-II</strong></p>"
+    },
+    {
+      "text": "<p><strong>Q16.</strong> Select incorrect statement, regarding chemical structure of insulin.</p>",
+      "options": [
+        "<p>Mature insulin molecule consists of three polypeptide chains-A, B and C.</p>",
+        "<p>Insulin is synthesized as prohormone which contains extra stretch of C-peptide.</p>",
+        "<p>C-peptide is not present in mature insulin molecule.</p>",
+        "<p>Polypeptide chains A and B are linked by disulphide bridges.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The incorrect statement is :</p> <p>Option A : Mature insulin molecule consists of three polypeptide chains-A, B, and C.</p> <p>The mature insulin molecule actually consists of only two polypeptide chains, A and B, which are linked by disulfide bridges. The C-peptide, or chain C, is present in the proinsulin molecule but is removed during the maturation process to produce the active form of insulin. Therefore, statements B, C, and D are correct.</p>"
+    },
+    {
+      "text": "<p><strong>Q17.</strong> Match List-I with List-II.</p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 457px\"> <colgroup> <col style=\"width: 48px\"/> <col style=\"width: 170px\"/> <col style=\"width: 55px\"/> <col style=\"width: 184px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - I</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - II</th> </tr> </thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">Gene therapy</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">Separation of DNA fragments</td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">RNA interference</td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\">Diagnostic test for AIDS</td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">ELISA</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">Cellular defence</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">Gel Electrophoresis</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\">Allows correction of a gene defect.</td> </tr> </tbody> </table></p> <p>Choose the correct answer from the options given below : </p>",
+      "options": [
+        "<p>(A)-(IV), (B)-(I), (C)-(II), (D)-(III)</p>",
+        "<p>(A)-(IV), (B)-(II), (C)-(III), (D)-(I)</p>",
+        "<p>(A)-(IV), (B)-(III), (C)-(II), (D)-(I)</p>",
+        "<p>(A)-(IV), (B)-(III), (C)-(I), (D)-(II)</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct answer is Option C. </p> <p>The correct matching between List - I and List - II is as follows :</p> <p><b>(A) Gene therapy - (IV) Allows correction of a gene defect.</b> <br/><br/>Gene therapy is a technique that uses genes to treat or prevent disease by either replacing damaged genes with healthy ones, turning off harmful genes or introducing new genes to fight disease.</p> <p><b>(B) RNA interference - (III) Cellular defence</b> <br/><br/>RNA interference (RNAi) is a biological process in which RNA molecules inhibit gene expression or translation, by neutralizing targeted mRNA molecules. This is a form of cellular defense.</p> <p><b>(C) ELISA - (II) Diagnostic test for AIDS</b> <br/><br/>ELISA, or enzyme-linked immunosorbent assay, is a commonly used laboratory test that measures the amounts of antibodies in the blood and can be used as a diagnostic test for AIDS.</p> <p><b>(D) Gel Electrophoresis - (I) Separation of DNA fragments</b> <br/><br/>Gel electrophoresis is a laboratory method used to separate mixtures of DNA, RNA, or proteins according to molecular size and charge.</p>"
+    },
+    {
+      "text": "<p><strong>Q18.</strong> Which one of the following techniques does not serve the purpose of early diagnosis of a disease for its early treatment?</p>",
+      "options": [
+        "<p>Serum and Urine analysis</p>",
+        "<p>Polymerase Chain Reaction (PCR) technique</p>",
+        "<p>Enzyme Linked Immuno-Sorbent Assay (ELISA) technique</p>",
+        "<p>Recombinant DNA Technology</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct answer is option (A) because using conventional methods of diagnosis like serum and urine analysis, etc, do not help in early diagnosis. Recombinant DNA technology, Polymerase Chain Reaction [PCR] and Enzyme Linked Immuno-Sorbent Assay (ELISA) are some of the techniques that serve the purpose of early diagnosis.</p>"
+    },
+    {
+      "text": "<p><strong>Q19.</strong> Milk of transgenic ‘Cow Rosie’ was nutritionally more balanced product for human babies than natural cow milk because it contained:</p>",
+      "options": [
+        "<p>Human enzyme Adenosine Deaminase (ADA)</p>",
+        "<p>Human protein &alpha; -1-antitrypsin</p>",
+        "<p>Human alpha-lactalbumin</p>",
+        "<p>Human insulin-like growth factor</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Option (c) is the correct answer because the first transgenic cow Rosie produced human protein-enriched milk. The milk contained the human alpha-lactalbumin and was nutritionally a more balanced product for human babies than natural cow milk.</p> <p>Option (a) is not the correct answer because ADA deficiency in humans can be cured by gene therapy.</p> <p>Option (b) is not the correct answer because transgenic sheep produced human &amp;alpha; -1-antitrypsin that is used to treat emphysema.</p> <p>Option (d) is not the correct answer because insulin-like growth factor was not present in Rosie’s milk.</p>"
+    },
+    {
+      "text": "<p><strong>Q20.</strong> Transposons can be used during which one of the following?</p>",
+      "options": [
+        "<p>Polymerase Chain Reaction</p>",
+        "<p>Gene Silencing</p>",
+        "<p>Autoradiography</p>",
+        "<p>Gene sequencing</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Option (b) is the correct answer as the source of the complementary RNA for RNAi could be mobile genetic elements (transposons) that replicate via an RNA intermediate.</p> <p>Option (c) is incorrect as autoradiography usually follows hybridisation.</p> <p>Option (a) is incorrect because polymerase chain reaction is used to make copies of the DNA sample and does not need transposons.</p> <p>Option (d) is incorrect because transposons are not required during gene sequencing.</p>"
+    },
+    {
+      "text": "<p><strong>Q21.</strong> In gene therapy of Adenosine Deaminase (ADA) deficiency, the patient requires periodic infusion of genetically engineered lymphocytes because:</p>",
+      "options": [
+        "<p>Retroviral vector is introduced into these lymphocytes.</p>",
+        "<p>Gene isolated from marrow cells producing ADA is introduced into cells at embryonic stages</p>",
+        "<p>Lymphocytes from patient's blood are grown in culture, outside the body</p>",
+        "<p>Genetically engineered lymphocytes are not immortal cells.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Option (d) is the correct answer as genetically engineered lymphocytes are not immortal cells and die after some time.</p> <p>Option (c) is not the correct answer as the lymphocytes from patient's blood are grown in culture, outside the body but it is not the correct reason.</p> <p>In option (b), if the gene isolated from bone marrow cells producing ADA is introduced into cells at early embryonic stages, it could be a permanent cure.</p>"
+    },
+    {
+      "text": "<p><strong>Q22.</strong> Statements related to human Insulin are given below.</p> <p>Which statements is/are correct about genetically engineered Insulin?</p> <p>(a) Pro-hormone insulin contain extra stretch of C-peptide</p> <p>(b) A-peptide and B-peptide chains of insulin were produced separately in E.coli, extracted and combined by creating disulphide bond between them.</p> <p>(c) Insulin used for treating Diabetes was extracted from Cattles and Pigs.</p> <p>(d) Pro-hormone Insulin needs to be processed for converting into a mature and functional hormone.</p> <p>(e) Some patients develop allergic reactions to the foreign insulin.</p> <p>Choose the most appropriate answer from the options given below :</p>",
+      "options": [
+        "<p>(a), (b) and (d) only</p>",
+        "<p>(b) only</p>",
+        "<p>(c) and (d) only</p>",
+        "<p>(c), (d) and (e) only</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Option (b) is the correct answer as genetically engineered insulin has A-peptide and B-peptide chains of insulin which are produced separately in E.coli, then they are extracted and combined by creating disulphide bond between them.</p> <p>Statement (a) is incorrect as genetically engineered insulin does not have an extra stretch of C-peptide. Statement (c) is incorrect as insulin obtained from cattles and pigs is not genetically engineered insulin. Statement (d) is incorrect because conversion of pro-insulin to insulin is not required during production of insulin by genetic engineering as A-peptide and B-peptide chains are produced separately. Statement (e) is incorrect as allergic reactions to insulin are mostly seen when the insulin is obtained from animals.</p>"
+    },
+    {
+      "text": "<p><strong>Q23.</strong> When gene targetting involving gene amplification is attempted in an individual's tissue to treat disease, it is known as :</p>",
+      "options": [
+        "<p>Safety testing</p>",
+        "<p>Biopiracy</p>",
+        "<p>Gene therapy</p>",
+        "<p>Molecular diagnosis</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct option is (c)<br/><br/> ∙ Gene therapy is a collection of methods that allows correction of a gene defect that has been diagnosed in a child/embryo.<br/><br/> ∙ Biopiracy is the term used to refer to the use of bio-resources by multinational companies and other organisations without proper authorisation from the countries and people concerned without compensatory payment.<br/><br/> ∙ Molecular diagnosis refers to the act or process of determining the nature and cause of a disease.</p>"
+    },
+    {
+      "text": "<p><strong>Q24.</strong> Now-a-days it is possible to detect the mutated gene causing cancer by allowing radioactive probe to hybridise to its complementary DNA in a clone of cells, followed by its detection using autoradiography because:</p>",
+      "options": [
+        "<p>mutated gene does not appear on photographic film as the probe has complementarity with it</p>",
+        "<p>mutated gene partially appears on a photographic film</p>",
+        "<p>mutated gene completely and clearly appears on a photographic film</p>",
+        "<p>mutated gene does not appear on a photographic film as the probe has no complementarity with it</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Autoradiography allows the detection/localisation of radioactive isotope within a biological sample.<br/><br/>Probe is a radiolabelled ss DNA or ss RNA depending on the technique. To identify the mutated gene probe is allowed to hybridise to its complementary DNA in a clone of cells followed by detection using autoradiography. The mutated gene will not appear on the photographic film, because the probe does not have complementarity with the mutated gene.</p>"
+    },
+    {
+      "text": "<p><strong>Q25.</strong> With regard to insulin choose correct options.<br/><br/>(1) C-peptide is not present in mature insulin.<br/><br/>(2) The insulin produced by rDNA technology has C-peptide.<br/><br/>(3) The pro-insulin has C-peptide<br/><br/>(4) A-peptide and B-peptide of insulin are interconnected by disulphide bridges.<br/><br/>Choose the correct answer from the options given below.</p>",
+      "options": [
+        "<p>(1) and (4) only</p>",
+        "<p>(2) and (4) only</p>",
+        "<p>(2) and (3) only</p>",
+        "<p>(1), (3) and (4) only</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>∙ Insulin is synthesized as a pro-hormone which contains A-chain, B-chain and an extra stretch called the C-peptide.<br/><br/> ∙ C-peptide is not present in mature insulin called humulin.<br/><br/> ∙ Chains A and B are connected by interchain disulphide bridges.</p>"
+    },
+    {
+      "text": "<p><strong>Q26.</strong> For effective treatment of the disease, early diagnosis and understanding its pathophysiology is very important. Which of the following molecular diagnostic techniques is very useful for early detection?</p>",
+      "options": [
+        "<p>Hybridization Technique</p>",
+        "<p>Western Blotting Technique</p>",
+        "<p>Southern Blotting Technique</p>",
+        "<p>ELISA Technique</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct answer is <strong>Option D: ELISA Technique</strong>.</p> <p><strong>Explanation:</strong></p> <p><strong>Option A: Hybridization Technique</strong> - This technique, including Fluorescent In Situ Hybridization (FISH), involves the pairing of single-stranded DNA or RNA molecules with complementary sequences, allowing the detection of specific nucleic acids within a complex mixture. It's widely used for gene mapping, diagnosis of genetic disorders, and identification of infectious agents. However, its application is more towards locating specific sequences rather than early detection of diseases.</p> <p><strong>Option B: Western Blotting Technique</strong> - This is a protein analysis method that involves the separation of proteins via gel electrophoresis, followed by their transfer to a membrane and detection using antibodies. It's used for identifying specific proteins in a sample and understanding protein size or abundance, but it is not primarily used for early disease detection.</p> <p><strong>Option C: Southern Blotting Technique</strong> - This method involves the transfer of DNA fragments from an agarose gel to a membrane followed by hybridization with a labeled DNA probe to detect specific DNA sequences. It's widely used in molecular biology for gene detection and mapping but not necessarily for early disease detection.</p> <p><strong>Option D: ELISA Technique</strong> - The Enzyme-Linked Immunosorbent Assay (ELISA) is a popular technique used for detecting and quantifying substances such as peptides, proteins, antibodies, and hormones. In the context of disease detection, ELISA is exceptionally valuable because it can be used to detect specific antigens or antibodies in blood samples, making it a crucial tool for early diagnosis of diseases. This might include viral infections (like HIV), bacterial infections, and autoimmune diseases. Its sensitivity and specificity make ELISA particularly useful for early detection, when the levels of the target molecule might be very low but detecting it is critical for effective treatment.</p> <p>Therefore, for early detection of diseases, the <strong>ELISA Technique</strong> stands out among the options given for its ability to detect specific biomolecules related to diseases at an early stage, facilitating early diagnosis and treatment.</p>"
+    },
+    {
+      "text": "<p><strong>Q27.</strong> The Adenosine deaminase deficiency results into</p>",
+      "options": [
+        "<p>Addison's disease</p>",
+        "<p>Dysfunction of immune system</p>",
+        "<p>Parkinson's disease</p>",
+        "<p>Digestive disorder</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Adenosine deaminase (ADA) enzyme is crucial for the immune system to function. Hence, its deficiency results in the dysfunction of immune system.<br/><br/> ∙ Hyposecretion of hormones of the adrenal cortex causes Addison's disease.<br/><br/> ∙ Parkinson's disease is a long-term degenerative disorder of the central nervous system.<br/><br/> ∙ Disorders which affect GIT & associated glands are called digestive disorders.</p>"
+    },
+    {
+      "text": "<p><strong>Q28.</strong> The laws and rules to prevent unauthorised exploitation of bio-resources are termed as -</p>",
+      "options": [
+        "<p>Biopiracy</p>",
+        "<p>Biopatenting</p>",
+        "<p>Bioethics</p>",
+        "<p>Bioengineering</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bioethics is the set of moral standards, rules and laws that regulate the use of biological resources and biotechnology; laws made to prevent unauthorised exploitation of bio-resources and traditional knowledge come under bioethics.</p> <p>Biopiracy is itself the unauthorised use of bio-resources without compensatory payment; biopatenting is the grant of patents on biological material; bioengineering is the application of engineering to biology.</p>"
+    },
+    {
+      "text": "<p><strong>Q29.</strong> RNA interference is used for which of the following purposes in the field of biotechnology ?</p>",
+      "options": [
+        "<p>to reduce post harvest losses</p>",
+        "<p>to develop a plant tolerant to abiotic stresses</p>",
+        "<p>to develop a pest resistant plant against infestation by nematode</p>",
+        "<p>to enhance the mineral usage by the plant</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNA interference (RNAi) silences a specific mRNA by a complementary dsRNA that binds it and prevents its translation.</p> <p>Using <em>Agrobacterium</em> vectors, nematode-specific genes were introduced into tobacco; the host produced dsRNA that silenced an mRNA of the nematode <em>Meloidogyne incognita</em>, so the parasite could not survive in the transgenic plant.</p> <p>Thus RNAi is used to develop pest (nematode) resistant plants; lower post-harvest losses, abiotic-stress tolerance and better mineral usage are other aims of GM crops.</p>"
+    },
+    {
+      "text": "<p><strong>Q30.</strong> Bt cotton variety that was developed by the introduction of toxin gene of Bacillus thuringiensis (Bt) is resistant to</p>",
+      "options": [
+        "<p>Insect predators</p>",
+        "<p>Insect pests</p>",
+        "<p>Fungal diseases</p>",
+        "<p>Plant nematodes</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt cotton is resistant to cotton bollworm (Insect pest). cry I Ac and cry II Ab genes have been introduced in cotton to protect it from cotton bollworm. This makes Bt cotton as biopesticide.</p>"
+    },
+    {
+      "text": "<p><strong>Q31.</strong> Which of the following statements is not correct?</p>",
+      "options": [
+        "<p>In man insulin is synthesised as a proinsulin</p>",
+        "<p>The proinsulin has an extra peptide called C-peptide.</p>",
+        "<p>Genetically engineered insulin is produced in E.Coli.</p>",
+        "<p>The functional insulin has A and B chains linked together by hydrogen bonds.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Functional insulin has A and B chains linked together by disulphide bridges.</p>"
+    },
+    {
+      "text": "<p><strong>Q32.</strong> Match the following columns and select the correct option. <table> <thead> <tr> <th>Column-I</th> <th>Column-II</th> </tr> </thead> <tbody> <tr> <td>(a) Bt cotton</td> <td>(i) Gene therapy </td> </tr> <tr> <td>(b) Adenosine deaminase deficiency</td> <td> (ii) Cellular defence</td> </tr> <tr> <td>(c) RNAi</td> <td>(iii) Detection of HIV infection</td> </tr> <tr> <td>(d) PCR</td> <td>(iv) Bacillus thuringiensis </td> </tr> </tbody> </table></p>",
+      "options": [
+        "<p>(A) → (i), (B) → (ii), (C) → (iii), (D) → (iv)</p>",
+        "<p>(A) → (iii), (B) → (ii), (C) → (i), (D) → (iv)</p>",
+        "<p>(A) → (iv), (B) → (i), (C) → (ii), (D) → (iii)</p>",
+        "<p>(A) → (ii), (B) → (iii), (C) → (iv), (D) → (i)</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt cotton the specific Bt toxin gene was isolated from Bacillus thuringiensis. The first clinical gene therapy was given in 1990 to a 4-year old girl with adenosine deaminase (ADA) deficiency. RNAi (RNA interference) takes place in all eukaryotic organisms as a method of cellular defense. PCR is now routinely used to detect HIV in suspected AIDS patients.</p>"
+    },
+    {
+      "text": "<p><strong>Q33.</strong> In RNAi, the genes are silenced using :</p>",
+      "options": [
+        "<p>ds - DNA</p>",
+        "<p>ds - RNA</p>",
+        "<p>ss - DNA</p>",
+        "<p>ss - RNA</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNA interference (RNAi) is a method of cellular defence in eukaryotes: a complementary double-stranded RNA (dsRNA) binds to a specific mRNA and prevents its translation, silencing the gene.</p> <p>The dsRNA may come from infection by RNA viruses or from transposons that replicate via an RNA intermediate.</p> <p>In nematode-resistant tobacco, the introduced nematode-specific genes make both sense and antisense RNA, which pair into dsRNA and silence the parasite's mRNA.</p>"
+    },
+    {
+      "text": "<p><strong>Q34.</strong> Exploitation of bioresources of a nation by multinational companies without authorization from the concerned country is referred to as</p>",
+      "options": [
+        "<p>Biowar</p>",
+        "<p>Bioweapon</p>",
+        "<p>Biopiracy</p>",
+        "<p>Bioethics</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Biopiracy is the use of bio-resources (and related traditional knowledge) of a country by multinational companies and other organisations without proper authorisation from, and compensatory payment to, the country and people concerned.</p> <p>Biowar and bioweapons refer to the use of pathogens or biological toxins to harm humans, animals or crops; bioethics deals with the moral issues raised by advances in biology and biotechnology.</p>"
+    },
+    {
+      "text": "<p><strong>Q35.</strong> What triggers activation of protoxin to active Bt toxin of <i>Bacillus thuringiensis</i> in boll worm?</p>",
+      "options": [
+        "<p>Acidic pH of stomach</p>",
+        "<p>Body temperature</p>",
+        "<p>Alkaline pH of gut</p>",
+        "<p>Moist surface of midgut</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Protoxin are converted into active toxins in the alkaline pH of gut.</p>"
+    },
+    {
+      "text": "<p><strong>Q36.</strong> Which of the following is commonly used as a vector for introducing a DNA fragment in human lymphocytes?</p>",
+      "options": [
+        "<p>Retrovirus</p>",
+        "<p>Ti plasmid</p>",
+        "<p>𝜆 phage</p>",
+        "<p>pBR322</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Retrovirus is commonly used as vector for introducing a DNA fragment in human lymphocyte.</p>"
+    },
+    {
+      "text": "<p><strong>Q37.</strong> In India, the organisation responsible for assessing the safety of introducing genetically modified organisms for public use is</p>",
+      "options": [
+        "<p>Indian Council of Medical Research (ICMR)</p>",
+        "<p>Council for Scientific and Industrial Research (CSIR)</p>",
+        "<p>Research Committee on Genetic Manipulation (RCGM)</p>",
+        "<p>Genetic Engineering Appraisal Committee (GEAC)</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Indian government has set up organisation such as GEAC (Genetic Engineering Appraisal Committee) which makes decisions regarding the validity of GM research and safety of introducing GM organisms for public services.</p>"
+    },
+    {
+      "text": "<p><strong>Q38.</strong> A 'new' variety of rice was patented by a foreign company, though such varieties have been present in India for a long time. This is related to</p>",
+      "options": [
+        "<p>Co-667</p>",
+        "<p>Sharbati Sonora</p>",
+        "<p>Lerma Rojo</p>",
+        "<p>Basmati</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In 1997, an American company got patent rights on Basmati rice through the US Patent and Trademark Office. This allowed the company to sell a ‘new’ variety of Basmati.</p>"
+    },
+    {
+      "text": "<p><strong>Q39.</strong> Use of bioresources by multinational companies and organisations without authorisation from the concerned country and its people is called</p>",
+      "options": [
+        "<p>bio-infringement</p>",
+        "<p>biodegradation</p>",
+        "<p>biopiracy</p>",
+        "<p>bioexploitation</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Biopiracy refers to the use of bio-resources by multinational companies and other organizations without proper authorization from the countries and people concerned.</p>"
+    },
+    {
+      "text": "<p><strong>Q40.</strong> Which kind of therapy was given in 1990 to a four-year-old girl with adenosine deaminase [ADA] deficiency ?</p>",
+      "options": [
+        "<p>Radiation therapy</p>",
+        "<p>Immunotherapy</p>",
+        "<p>Gene therapy</p>",
+        "<p>Chemotherapy</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Gene therapy is a technique of genetic engineering which involves replacement of a faulty/ disease causing gene by a normal healthy functional gene. The first clinical gene therapy was given in 1990 to a 4-year old girl with adenosine deaminase (ADA) deficiency. This enzyme is very important for the immune system to function. The deficiency of this enzyme can lead to severe combined immune deficiency (SCID).</p>"
+    },
+    {
+      "text": "<p><strong>Q41.</strong> The two polypeptides of human insulin are linked together by</p>",
+      "options": [
+        "<p>Hydrogen bonds</p>",
+        "<p>Covalent bond</p>",
+        "<p>Disulphide bridges</p>",
+        "<p>Phosphodiester bond</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Insulin is a hormone consisting of 2 polypeptide chains. Each chain is composed of a specific sequence of amino acid residues connected by peptide bonds. In humans, chain A has 21 amino acids, and chain B has 30. Post translational modifications result in the connection of these two chains by disulfide bridges. Cysteine residues on A7 and B7, as well as A20 to B19 are covalently connected by disulfide bridges.</p>"
+    },
+    {
+      "text": "<p><strong>Q42.</strong> Which part of the tobacco plant is infected by Meloidogyne incognita ?</p>",
+      "options": [
+        "<p>Flower</p>",
+        "<p>Stem</p>",
+        "<p>Leaf</p>",
+        "<p>Root</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Meloidogyne incognita is a nematode (roundworm) in the family Heteroderidae. It is commonly called the “southern rootknot nematode” or the “cotton root-knot nematode”.</p>"
+    },
+    {
+      "text": "<p><strong>Q43.</strong> Golden rice is a genetically modified crop plant where the incorporated gene is meant for biosynthesis of -</p>",
+      "options": [
+        "<p>Vitamin C</p>",
+        "<p>Omega 3</p>",
+        "<p>Vitamin A</p>",
+        "<p>Vitamin B</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Golden rice is a transgenic variety of rice (Oryza sativa) which contains good quantities of &beta; -carotene (provitamin A - inactive state of vitamin A). &beta; -carotene is a principal source of vitamin A. Since the grains of this rice is yellow in colour due to &beta; -carotene and commonly called golden rice.</p>"
+    },
+    {
+      "text": "<p><strong>Q44.</strong> The introduction of t-DNA into plants involves -</p>",
+      "options": [
+        "<p>Altering the pH of the soil, then heat-shocking the plants</p>",
+        "<p>Infection of the plant by Agrobacterium tumefaciens</p>",
+        "<p>Exposing the plants to cold for a brief period</p>",
+        "<p>Allowing the plant roots to stand in water</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Agrobacterium tumefaciens introduces t-DNA into the plant.</p>"
+    },
+    {
+      "text": "<p><strong>Q45.</strong> In Bt cotton, the Bt toxin present in plant tissue as pro - toxin is converted into active toxin due to :</p>",
+      "options": [
+        "<p>action of gut micro-organisms</p>",
+        "<p>presence of conversion factors in insect gut</p>",
+        "<p>alkaline pH of the insect gut</p>",
+        "<p>acidic pH of the insect gut</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt toxin are solubilised in alkaline pH of the insect gut causing death.</p>"
+    },
+    {
+      "text": "<p><strong>Q46.</strong> Which body of the Government of India regulates GM research and safety of introducing GM organisms for public services ?</p>",
+      "options": [
+        "<p>Research Committee on Genetic Manipulation</p>",
+        "<p>Genetic Engineering Approval Committee</p>",
+        "<p>Indian Council of Agricultural Research</p>",
+        "<p>Bio - safety committee</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Genetic modification of organisms can have unpredictable results, when such organisms are introduced into the ecosystem. Therefore, the Indian Government has set up organizations such as GEAC (Genetic Engineering Approval Committee), which makes decisions regarding the validity of GM research and the safety of introducing GM-organisms for public services.</p>"
+    },
+    {
+      "text": "<p><strong>Q47.</strong> The crops engineered for glyphosate are resistant/ tolerant to :</p>",
+      "options": [
+        "<p>Bacteria</p>",
+        "<p>Herbicides</p>",
+        "<p>Fungi</p>",
+        "<p>Insects</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Today plants having the broad leaves are made resistant to a powerful biodegradable herbicide glyphosate. It is an active ingredient of Round Up ready plant. It disturbs the working of EPSP synthetase enzyme. If it is taken up by crop plants they will die. So, the bioengineers have transferred gene for synthesis of EPSP synthetase enzyme to crop plant.</p>"
+    },
+    {
+      "text": "<p><strong>Q48.</strong> To obtain virus−free healthy plants from a diseased one by tissue culture technique, which part/parts of the diseased plant will be taken ?</p>",
+      "options": [
+        "<p>Epidermis only</p>",
+        "<p>Palisade parenchyma</p>",
+        "<p>Both apical and axillary meristems</p>",
+        "<p>Apical meristem only</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>To obtain virus - free healthy plants from a diseased one by tissue culture technique, both apical and axillary meristems of the diseased plant will be taken. Plant tissue culture is used to maintain or grow plant cells, tissues or organs under sterile conditions on a nutrient culture medium of known composition. Plant tissue culture is widely used to produce clones of a plant in a method known as micro propagation.</p>"
+    },
+    {
+      "text": "<p><strong>Q49.</strong> The first human hormone produced by recombinant DNA technology is :</p>",
+      "options": [
+        "<p>Estrogen</p>",
+        "<p>Insulin</p>",
+        "<p>Thyroxin</p>",
+        "<p>Progesterone</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Mammalian hormones were among the first products prepared in bacteria by r-DNA technology. Human insulin and human growth hormone are earliest examples.</p>"
+    },
+    {
+      "text": "<p><strong>Q50.</strong> Tissue culture technique can produce infinite number of new plants from a small parental tissue. The economic importance of the technique is in raising:</p>",
+      "options": [
+        "<p>development of new species</p>",
+        "<p>genetically uniform population identical to the original parent</p>",
+        "<p>variants through picking up somaclonal variations</p>",
+        "<p>homozygous diploid plants</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Plant tissue culture, also called micropropagation, is the growth of plant cells outside the plant body in a suitable culture medium which contains mixture of nutrients in solid or liquid form, under controlled environmental condition. Tissue culture technique is based on totipotent nature of plant cell or phenomenon of totipotency i.e., each and every plant cell has inherent capacity to develop into complete plant. The entirely vegetatively produced descendents of somatic cells are collectively called clone. They are genetically identical to parents.</p>"
+    },
+    {
+      "text": "<p><strong>Q51.</strong> Which of the following statements is not true about somatic embryogenesis ?</p>",
+      "options": [
+        "<p>Somatic embryos can develop from microspores</p>",
+        "<p>Somatic embryo is induced usually by an auxin such as 2, 4–D</p>",
+        "<p>The pattern of development of a somatic embryo is comparable to that of a zygotic embryo</p>",
+        "<p>A somatic embryo develops from a somatic cell</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Somatic embryos develop from somatic cells.Their development is comparable to that of a zygotic embryo. They are just like a normal embryo except that their development is induced from a diploid somatic cell. Somatic embryo culture is induced by a high concentration of an auxin. Microspores are haploid cells which do not give rise to somatic embryo.</p>"
+    },
+    {
+      "text": "<p><strong>Q52.</strong> RNA interference involves :-</p>",
+      "options": [
+        "<p>Interference of RNA in synthesis of DNA</p>",
+        "<p>Synthesis of cDNA from RNA using reverse transcriptase</p>",
+        "<p>Synthesis of mRNA from DNA</p>",
+        "<p>Silencing of specific mRNA due to complementary RNA</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNAi is a method of cellular defense in all eukaryotes. It is a system within living cells that helps to control the activity of specific genes. This method involves silencing of mRNA due to complementary double stranded RNA that prevents translation of target gene or mRNA [silencing]. Source of ds RNA is retrovirus (having RNA genome) or transposons (mobile genetic material).</p>"
+    },
+    {
+      "text": "<p><strong>Q53.</strong> Which one of the following vectors is used to replace the defective gene in gene therapy ?</p>",
+      "options": [
+        "<p>Ti plasmid</p>",
+        "<p>Cosmid</p>",
+        "<p>Ri plasmid</p>",
+        "<p>Adenovirus</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Gene therapy is a corrective therapy that is given to patients of diseases caused by some gene defects. Here, genes are inserted into a person’s cells and tissues to treat disease by replacing the defective gene. The normal gene delivered into the individual or embryo takes over the function and compensate for the normal gene. Viral vectors like adenovirus are generally used to deliver the normal gene.</p>"
+    },
+    {
+      "text": "<p><strong>Q54.</strong> Which of the following Bt crops is being grown in India by the farmers ?</p>",
+      "options": [
+        "<p>Soybean</p>",
+        "<p>Cotton</p>",
+        "<p>Brinjal</p>",
+        "<p>Maize</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt toxin genes were isolated from Bacillus thuringiensis and incorporated into the several crop plants such as cotton. The choice of genes depends upon the crop and targeted pest, as most Bt toxins are insect-group specific. The toxin is coded by a gene named cry. These are numerous genes. Two cry genes cry I Ac and cry II Ab have been incorporated in cotton. The genetically modified crop is called Bt cotton as it contains Bt toxin genes against cotton bollworms.</p>"
+    },
+    {
+      "text": "<p><strong>Q55.</strong> Tobacco plants resistant to a nematode have been developed by the introduction of DNA that produced (in the host cells) :</p>",
+      "options": [
+        "<p>An antifeedant</p>",
+        "<p>A toxic protein</p>",
+        "<p>Both sense and anti-sense RNA</p>",
+        "<p>A particular hormone</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNA interference technique, sense & antisense RNA fused to form dsRNA that silent the expression of m- RNA of nematode. RNA interference is a novel strategy adopted to prevent infestation of nematode, Meloidegyne incognitia in roots of tobacco plants.</p>"
+    },
+    {
+      "text": "<p><strong>Q56.</strong> The first clinical gene therapy was given for treating -</p>",
+      "options": [
+        "<p>Rheumatoid arthritis</p>",
+        "<p>Adenosine deaminase deficiency</p>",
+        "<p>Diabetes mellitus</p>",
+        "<p>Chicken pox</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Gene therapy is an experimental technique that uses genes to treat or prevent disease. The first clinical gene therapy was given for treating adenosine deaminase deficiency. A four-year old girl became the first gene therapy patient on September 14, 1990 at the NIH Clinical Center. Adenosine deaminase deficiency, also called ADA deficiency or ADA-SCID is an autosomal recessive metabolic disorder that causes immunodeficiency. ADA deficiency is due to a lack of the enzyme adenosine deaminase.</p>"
+    },
+    {
+      "text": "<p><strong>Q57.</strong> Which one of the following is a case of wrong matching ?</p>",
+      "options": [
+        "<p>Somatic hybridization - Fusion of two diverse cells</p>",
+        "<p>Callus - Unorganised mass of cells produced in tissue culture</p>",
+        "<p>Vector DNA - site for tRNA synthesis</p>",
+        "<p>Micropropagation - In vitro production of plants in large numbers</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Vectors are DNA molecules that can carry a foreign DNA segment and replicate inside the host cell. They are used in recombinant DNA technology.</p>"
+    },
+    {
+      "text": "<p><strong>Q58.</strong> Which part would be most suitable for raising virus free plants for microporpagation ?</p>",
+      "options": [
+        "<p>Vascular tissue</p>",
+        "<p>Node</p>",
+        "<p>Bark</p>",
+        "<p>Meristem</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Meristem is most suitable for raising virus free plants for micropropagation.</p>"
+    },
+    {
+      "text": "<p><strong>Q59.</strong> A single strand of nucleic acid tagged with a radioactive molecule is called</p>",
+      "options": [
+        "<p>Probe</p>",
+        "<p>Selectable marker</p>",
+        "<p>Vector</p>",
+        "<p>Plasmid</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>A single strand DNA or RNA tagged with radioactive molecule that is used in hybridization of DNA or RNA is called probe.</p>"
+    },
+    {
+      "text": "<p><strong>Q60.</strong> Consumption of which one of the following foods can prevent the kind of blindness associated with vitamin 'A' deficiency</p>",
+      "options": [
+        "<p>Flaver Savr Tomato</p>",
+        "<p>Canolla</p>",
+        "<p>Bt- Brinjal</p>",
+        "<p>Golden rice</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Golden rice is vitamin A rich variety developed by rDNA technology and used in the treatment of vitamin A deficiency.</p>"
+    },
+    {
+      "text": "<p><strong>Q61.</strong> Bacillus thuringiensis forms protein crystals which contain insecticidal protein. This protein :</p>",
+      "options": [
+        "<p>is activated by acid pH of the foregut of the insect pest.</p>",
+        "<p>binds with epithelial cells of midgut of the insect pest ultimately killing it</p>",
+        "<p>is coded by several genes including the gene cry</p>",
+        "<p>does not kill the carrier bacterium which is itself resistant to this toxin</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bacillus thuringiensis produces a large amount of crystalline protein during sporulation. In the cell toxins are formed along with the spore and are referred to as parasporal body. The bacteria are capable of entering the insect’s blood and using the host insect to reproduce. The proteins from ingested spores are activated by gut, high pH and the polypeptide toxins destroy gut epithelial cells and kill the pest.</p>"
+    },
+    {
+      "text": "<p><strong>Q62.</strong> Silencing of mRNA has been used in producing transgenic plants resistant to :</p>",
+      "options": [
+        "<p>White rusts</p>",
+        "<p>Nematodes</p>",
+        "<p>Bacterial blights</p>",
+        "<p>Bollworms</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In this technique nematode specific genes are introduced in the host plant in such a way that it produces both sense and antisense RNA. The two RNA’s being complementary to each other from a double stranded RNA (dsRNA) which is also called interfering RNA responsible for initiating RNA interference (RNA i). This (dsRNA) bind to and prevent translation of specific mRNA of nematode (gene silencing). Thus transgenic plants based on RNAi technology are resistant to nematode.</p>"
+    },
+    {
+      "text": "<p><strong>Q63.</strong> Read the following four statements (A-D) about certain mistakes in two of them :<br/> (A) The first transgenic buffalo, Rosie produced milk which was human alpha-lactalbumin enriched.<br/> (B) Restriction enzymes are used in isolation of DNA from other macro-molecules<br/> (C) Downstream processing is one of the steps of R-DNA technology<br/> (D) Disarmed pathogen vectors are also used in transfer of R-DNA into the host<br/> Which are the two statements having mistakes ?</p>",
+      "options": [
+        "<p>Statements (B) and (C)</p>",
+        "<p>Statements (A) and (C)</p>",
+        "<p>Statements (A) and (B)</p>",
+        "<p>Statements (C) and (D)</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In 1997, the first transgenic cow, Rosie, produced human protein enriched milk. The milk contained the human alpha-lactalbumin and was nutritionally a more balanced product for human babies than natural cow-milk. Isolation of DNA from other macromolecule is achieved by treating the bacterial cells/plant or animal tissue with enzymes such as lysozyme (bacteria), cellulase (plant cells), chitinase (fungus).</p>"
+    },
+    {
+      "text": "<p><strong>Q64.</strong> Maximum number of existing transgenic animals is of :</p>",
+      "options": [
+        "<p>Mice</p>",
+        "<p>Cow</p>",
+        "<p>Pig</p>",
+        "<p>Fish</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In the world maximum number of existing transgenic animals is mice.</p>"
+    },
+    {
+      "text": "<p><strong>Q65.</strong> The process of RNA interference has been used in the development of plants resistant to :</p>",
+      "options": [
+        "<p>Nematodes</p>",
+        "<p>Fungi</p>",
+        "<p>Viruses</p>",
+        "<p>Insects</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNA interference has been used to develop plants resistant to nematodes. RNA interference is a double stranded RNA (dsRNA) induced for gene silencing phenomenon.</p>"
+    },
+    {
+      "text": "<p><strong>Q66.</strong> Which one of the following is now being commercially produced by biotechnological procedures ?</p>",
+      "options": [
+        "<p>Insulin</p>",
+        "<p>Morphine</p>",
+        "<p>Nicotine</p>",
+        "<p>Quinine</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Insulin is now being commercially produced by genetic engineering. Insulin consists of two short polypeptide chains: chain A and chain B, that are linked together by disulphide bonds. Insulin, in mammal is synthesised as a prohormone which contains an extra stretch called the C-peptide. During maturation this<br/> C-peptide is removed. The production of insulin could only have been commercially possible if somehow the maturation process of C-peptide been skipped.<br/> This problem was solved in 1983 by Eli Lilly, an American company which prepared functionable insulin from two DNA sequences corresponding to A and B chains of human insulin and introduced them in plasmids of E.coli to produce insulin chains. In this way, chains A and B were produced separately which was extracted, combined by creating disulfide bonds to get human insulin.</p>"
+    },
+    {
+      "text": "<p><strong>Q67.</strong> Breeding of crops with high levels of minerals, vitamins and proteins is called –</p>",
+      "options": [
+        "<p>Biofortification</p>",
+        "<p>Biomagnification</p>",
+        "<p>Micorpropagation</p>",
+        "<p>Somatic hybridisation</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Breeding of crops with high levels of minerals, vitamin and minerals is called biofortification. This is most practical aspect to improve the health of people.</p>"
+    },
+    {
+      "text": "<p><strong>Q68.</strong> DNA or RNA segment tagged with a radioactive moleculer is called –</p>",
+      "options": [
+        "<p>Clone</p>",
+        "<p>Probe</p>",
+        "<p>Plasmid</p>",
+        "<p>Vector</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>DNA or RNA segment tagged with a radioactive molecule is called Probe. They are used to detect the presence of complementary sequences in nucleic acid samples. Probes are used for identification and isolation of DNA and RNA.</p>"
+    },
+    {
+      "text": "<p><strong>Q69.</strong> The genetically-modified (GM) brinjal in India has been developed for:</p>",
+      "options": [
+        "<p>Enhancing shelf life</p>",
+        "<p>Insect-resistance</p>",
+        "<p>Drought-resistance</p>",
+        "<p>Enhancing mineral content</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The genetically modified brinjal in India has been developed for insect resistance. Bt brinjal is a transgenic brinjal that is developed by inserting a crystal gene from the Bacillus thuringiensis into the brinjal’s genome. This process of insertion is accomplished using Agrobacterium mediated recombination.</p>"
+    },
+    {
+      "text": "<p><strong>Q70.</strong> Genetic engineering has been successfully used for producing –</p>",
+      "options": [
+        "<p>transgenic models for studying new treatments for certain cardiac disease</p>",
+        "<p>Animals like bulls for farm work as they have super power</p>",
+        "<p>transgenic mice for testing safety of polio vaccine before use in humans</p>",
+        "<p>transgenic Cow-Rosie which produces high fat milk for making ghee</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Many transgenic animals are designed to increase our understanding of how genes contribute to the development of diseases. These are specially made to serve as models for human diseases so that investigation of new treatments for diseases is made possible. Today transgenic models exist for many human diseases such as cancer, cystic fibrosis, rheumatoid arthritis and Alzheimer’s. Transgenic mice are being developed for use in testing the safety of vaccines before they are used on humans. Transgenic mice are being used to test the safety of the polio vaccine.</p>"
+    },
+    {
+      "text": "<p><strong>Q71.</strong> Some of the characteristics of Bt cotton are –</p>",
+      "options": [
+        "<p>High yield and production of toxic protein crystals which kill dipteran pests</p>",
+        "<p>High yield and resistance to bollworms</p>",
+        "<p>Long fibre and resistance to aphids</p>",
+        "<p>Medium yield, long fibre and resistance to beetle pests</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt toxin genes were isolated from Bacillus thuringiensis and incorporated into cotton plant. The genetically modified crop is called Bt cotton. Bt cotton has the following useful characteristics: pest resistance, herbicide tolerance, high yield and resistance to bollworm infestation.</p>"
+    },
+    {
+      "text": "<p><strong>Q72.</strong> An improved variety of transgenic basmati rice</p>",
+      "options": [
+        "<p>gives high yield but has no characteristic aroma</p>",
+        "<p>Does not require chemical fertilizers and growth hormones</p>",
+        "<p>is completely resistant to all insect pests and disease of paddy</p>",
+        "<p>gives high yield and is rich in vitamin A</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>An improved variety of transgenic basmati rice gives high yield and is rich in vitamin A.</p>"
+    },
+    {
+      "text": "<p><strong>Q73.</strong> The genetic defect-adenosine deaminase (ADA) deficiency may be cured permanently by</p>",
+      "options": [
+        "<p>Introducing bone marrow cells producing ADA into cells at early embryonic stages</p>",
+        "<p>Periodic infusion of genetically engineered lymphocytes having functional ADA cDNA</p>",
+        "<p>Administering adenosine deaminase activators</p>",
+        "<p>Enzyme replacement therapy</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>ADA deficiency can be permanently cured if the isolated gene from bone marrow cells producing ADA is introduced into cells at early embryonic stages.</p>"
+    },
+    {
+      "text": "<p><strong>Q74.</strong> Polyethylene glycol method is used for :</p>",
+      "options": [
+        "<p>Biodiesel production</p>",
+        "<p>Seedless fruit production</p>",
+        "<p>Energy production from sewage</p>",
+        "<p>Gene transfer without a vector</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Direct gene transfer is the transfer of naked DNA into plant cells, but the presence of rigid plant cell wall acts as a barrier to uptake. Therefore, protoplasts are the favoured target for direct gene transfer. Polyethylene glycol mediated DNA uptake is a direct gene transfer method that utilizes the interaction between PEG, naked DNA, salts and the protoplast membrane to effect transport of the DNA into the cytoplasm.</p>"
+    },
+    {
+      "text": "<p><strong>Q75.</strong> Somaclones are obtained by : -</p>",
+      "options": [
+        "<p>Tissue culture</p>",
+        "<p>Plant breeding</p>",
+        "<p>Genetic engineering</p>",
+        "<p>Irradiation Genetic engineering</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Genetic variation present among plant cells during tissue culture is called somaclonal variation. The term somaclonal variation is also used for the genetic variation present in plants regenerated from a single culture. This variation has been used to develop several useful varieties against resistance to diseases and pests, better yield, better quality etc.</p>"
+    },
+    {
+      "text": "<p><strong>Q76.</strong> What is true about Bt toxin ?</p>",
+      "options": [
+        "<p>The activated toxin enters the ovaries of the pest to sterilise it and thus prevent its multiplication.</p>",
+        "<p>Bt protein exists as active toxin in the Bacillus</p>",
+        "<p>The concerned Bacillus has antitoxins</p>",
+        "<p>The inactive protoxin gets converted into active form in the insect gut</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>About Bt toxin, it is true, that the inactive protoxin gets converted into active form in the insect gut. There are several advantages in expressing Bt toxins in transgenic Bt crops. The level of toxin expression can be very high, thus delivering sufficient dosage to the pest.<br/> The toxin expression is contained within the plant system and hence only those insects that feed on the crop perish. The toxin expression can be modulated by using tissue-specific promoters and replaces the use of synthetic pesticides in the environment.</p>"
+    },
+    {
+      "text": "<p><strong>Q77.</strong> Transgenic plants are the ones -</p>",
+      "options": [
+        "<p>Produced after protoplast fusion in artifical medium</p>",
+        "<p>Produced by a somatic embryo in artificial medium</p>",
+        "<p>Generated by introducing foreign DNA in to a cell and regenerating a plant from that cell</p>",
+        "<p>Grown in artificial medium after hybridization in the field</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Transgenic plants are the ones generated by introducing foreign DNA into a cell and regenerating a plant from that cell.</p>"
+    },
+    {
+      "text": "<p><strong>Q78.</strong> The bacterium Bacillus thuringiensis is widely used in contemporary biology as -</p>",
+      "options": [
+        "<p>Indicator of water pollution</p>",
+        "<p>Agent for production of dairy products</p>",
+        "<p>Source of industrial enzyme</p>",
+        "<p>Insecticide</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The bacterium Bacillus thuringiensis is widely used in contemporary biology as insecticide. Bacillus thuringiensis (also known as Bt) is a Gram-positive, soil dwelling bacterium of the genus Bacillus. Bacillus thuringiensis produces a parasporal insecticidal crystal protein.</p>"
+    },
+    {
+      "text": "<p><strong>Q79.</strong> What is antisense technology?</p>",
+      "options": [
+        "<p>RNA polymerase producing DNA</p>",
+        "<p>Production of somaclonal variants in tissue cultures</p>",
+        "<p>When a piece of RNA that is complementary in sequence is used to stop expression of a specific gene</p>",
+        "<p>A cell displaying a foreign antigen used for synthesis of antigens</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>An RNA molecule whose base sequence is complementary to that of the RNA transcript of a gene, i.e. the sense RNA, such as a messenger RNA (mRNA). Hence, an antisense RNA can undergo base pairing with its complementary mRNA sequence. This blocks gene expression, either by preventing access for ribosome to translate the mRNA or by triggering degradation of the double stranded RNA by ribonuclease enzymes. Antisense RNA and DNA both have therapeutic potential for modifying the activity of disease causing genes.</p>"
+    },
+    {
+      "text": "<p><strong>Q80.</strong> Cry I endotoxins obtained from Bacillus thuringiensis are effective against:</p>",
+      "options": [
+        "<p>Mosquitoes</p>",
+        "<p>Flies</p>",
+        "<p>Nematodes</p>",
+        "<p>Boll worms</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Cry endotoxin obtained from Bacillus thuringiensis are effective against bollworms. A bollworm is a common term for any larva of a moth that attacks the fruiting bodies of certain crops, especially cotton.</p>"
+    },
+    {
+      "text": "<p><strong>Q81.</strong> Main objective of production/use of herbicide resistant GM crops is to:</p>",
+      "options": [
+        "<p>eliminate weeds from the field without the use of manual labour</p>",
+        "<p>eliminate weeds from the field without the use of herbicides</p>",
+        "<p>encourage eco-friendly herbicides</p>",
+        "<p>reduce herbicide accumulation in food articles for health safety</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Genetic engineering has helped to develop such transgenic crop plants which are resistant to herbicides so that they are not damaged when farmers spray herbicides in the fields. Herbicide resistant plants have been developed in such a way that they continue to produce normal crop yield and at the same time remain unaffected by the activity of herbicides. These plants also reduce the use of weeding labour, farmer’s cost and increase yield.</p>"
+    },
+    {
+      "text": "<p><strong>Q82.</strong> Human insulin is being commercially produced from a transgenic species of:</p>",
+      "options": [
+        "<p>Escherichia</p>",
+        "<p>Mycobacterium</p>",
+        "<p>Rhizobium</p>",
+        "<p>Saccharomyces</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Human insulin is being commercially produced from a transgenic species of Escherichia coli. E. coli is a bacterium that is commonly found in the lower intestine of warm blooded animals. The bacteria can also be grown easily and its genetics are comparatively simple and easily manipulated, making it one of the best studied prokaryotic model organisms, and an important species in biotechnology.</p>"
+    },
+    {
+      "text": "<p><strong>Q83.</strong> A transgenic food crop which may help in solving the problem of night blindness in developing countries is</p>",
+      "options": [
+        "<p>Flavr Savr tomatoes</p>",
+        "<p>Bt soybean</p>",
+        "<p>Starlink maize.</p>",
+        "<p>Golden rice</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Golden rice is a transgenic food crop which may help in solving the problem of night blindness in developing countries. Golden rice or miracle rice is rich in vitamin A or β-carotene and iron. Decaffeinated coffee are also valuable achievements of gene transfer technology.</p>"
+    },
+    {
+      "text": "<p><strong>Q84.</strong> A genetically engineered micro-organism used successfully in bioremediation of oil spills is a species of-</p>",
+      "options": [
+        "<p>Trichoderma</p>",
+        "<p>Xanthomonas</p>",
+        "<p>Bacillus</p>",
+        "<p>Pseudomonas</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bioremediation is the process of using living micro-organisms to clean up a contaminated site. Micro-organisms do this by removing toxins from materials. They decompose these compounds by using enzymes, specific proteins that control reactions in living cells. Organisms that produce enzymes capable of degrading petroleum are useful in cleaning up oil spills. Some common ones that break down oil are genetically engineered species of Pseudomonas and Azotobacter. Bioremediation accounts for 5 to 10 percent of all pollution treatment and has been used successfully in cleaning up leaking underground gasoline storage tanks. <br/><br/>Bioremediation has many applications, from the ordinary garden compost to the removal of selenium and other toxic metals from waste. The best agents for bioremediation are the ones that can break down contaminants without becoming contaminated or harmful themselves.</p>"
+    },
+    {
+      "text": "<p><strong>Q85.</strong> Golden rice is a promising transgenic crop. When released for cultivation, it will help in</p>",
+      "options": [
+        "<p>Herbicide tolerance</p>",
+        "<p>Alleviation of vitamin A deficiency</p>",
+        "<p>Producing a petrol-like fuel from rice</p>",
+        "<p>Pest resistance</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Golden rice is a transgenic variety of rice (Oryza sativa) which contains good quantities of &beta; -carotene (provitamin A - inactive state of vitamin A). &beta; -carotene is a principal source of vitamin A. Since the grains of this rice is yellow in colour due to &beta; -carotene and commonly called golden rice.</p>"
+    },
+    {
+      "text": "<p><strong>Q86.</strong> Bacillus thuringiensis (Bt) strains have been used for designing novel -</p>",
+      "options": [
+        "<p>Bio-metallurgical techniques</p>",
+        "<p>Biofertilizers</p>",
+        "<p>Bioinsecticidal plants</p>",
+        "<p>Bio-mineralization processes</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt cotton, a transgenic crop variety has been introduced in India. The Bt cotton variety contains a foreign gene obtained from Bacillus thuringiensis. This bacterial gene protects cotton from the ball worm, a major pest of cotton.</p>"
+    },
+    {
+      "text": "<p><strong>Q87.</strong> Production of a human protein in bacteria by genetic engineering is possible because</p>",
+      "options": [
+        "<p>The human chromosome can replicate in bacterial cell</p>",
+        "<p>The genetic code is universal</p>",
+        "<p>Bacterial cell can carry out the RNA splicing reactions</p>",
+        "<p>The mechanism of gene regulation is identical in humans and bacteria</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Genetic code may be defined as the sequence of nucleotides in polynucleotide chain which determines the sequence of amino acids in a polypeptide chain. Thus the genetic code is universal. These is no ambiguity regarding genetic code. It means that each codon codes for the same amino acid in all organisms including bacteria, plants and animals.</p>"
+    },
+    {
+      "text": "<p><strong>Q88.</strong> Golden rice is a transgenic crop of the future with the following improved trait -</p>",
+      "options": [
+        "<p>High lysine (essential amino acid) content</p>",
+        "<p>High protein content</p>",
+        "<p>Insect resistance</p>",
+        "<p>High vitamin – A content</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Golden rice is a transgenic crop rice with high vitamin A content. It has been developed by transferring beta carotene synthesizing gene into the transgenic rice. Beta carotene is the precursor of vitamin A. This transgenic rice has been crossed with the already adapted varieties of rice to make them grow well in a particular area. It is very useful for the people suffering from vision impairment due to vitamin A deficiency.</p>"
+    },
+    {
+      "text": "<p><strong>Q89.</strong> ELISA is used to detect viruses, wherethe key reagent is :-</p>",
+      "options": [
+        "<p>Catalase</p>",
+        "<p>Southern</p>",
+        "<p>DNA probes</p>",
+        "<p>Alkaline phosphatase</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>ELISA test is a technique used to detect and quantitate extremely small amount of a protein, antibody or antigen with the help of enzyme. The commonly used enzymes are peroxidase and alkaline phosphatase. Southern blotting and DNA probes are used in molecular analysis of DNA. Catalase is not involved in ELISA.</p>"
+    },
+    {
+      "text": "<p><strong>Q90.</strong> ELISA is used to detect viruses, where the key reagent is :-</p>",
+      "options": [
+        "<p>Alkaline phosphatase</p>",
+        "<p>Southern</p>",
+        "<p>DNA probes</p>",
+        "<p>Catalase</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>ELISA test is a technique used to detect and quantitate extremely small amount of a protein, antibody or antigen with the help of enzyme. The commonly used enzymes are peroxidase and alkaline phosphatase. Southern blotting and DNA probes are used in molecular analysis of DNA. Catalase is not involved in ELISA.</p>"
+    }
+  ]
+},
+{
+  "name": "SWT 02 - Biotechnology and Its Applications (NEET Drill, Statement-Based & PYQs)",
+  "label": "SWT 02",
+  "bracket": "Advanced & PYQ - Part 2",
+  "subject": "neet_bio_apps",
+  "topics": "Transgenic Animals, Biopiracy, Basmati Rice Patent, GEAC Guidelines, RNA Interference Mechanism, Critical Statement Analysis",
+  "duration": "60 mins",
+  "questions": [
+    {
+      "text": "<p><strong>Q1.</strong> Nucleus of a donor embryonal cell/somatic cell is transferred to an enucleated egg cell. Then after the formation of organism, what shall be true?</p>",
+      "options": [
+        "<p>Organism will have extra-nuclear genes of the donor cell</p>",
+        "<p>Organism will have extra-nuclear genes of recipient cell</p>",
+        "<p>Organism will have extra-nuclear genes of both donor and recipient cell</p>",
+        "<p>Organism will have nuclear genes of recipient cell</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Only the nucleus of the donor cell is transferred, so the organism gets its nuclear genes from the donor.</p> <p>The recipient egg has been enucleated but keeps its cytoplasm with mitochondria, so the extra-nuclear (cytoplasmic, mitochondrial) genes of the organism come from the recipient egg.</p> <p>The recipient's own nuclear genes were removed with its nucleus, so option (d) is wrong.</p>"
+    },
+    {
+      "text": "<p><strong>Q2.</strong> Introduction of food plants developed by genetic engineering is not desirable because</p>",
+      "options": [
+        "<p>economy of developing countries may suffer</p>",
+        "<p>these products are less tasty as compared to the already existing products</p>",
+        "<p>this method is costly</p>",
+        "<p>there is danger of introduction of viruses and toxins with introduced crop</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The main objection to genetically modified food plants is biosafety: the foreign genes, microbial vectors and unintended genetic changes may bring viruses, toxins or allergens into the food chain and harm human health or the environment.</p> <p>GM foods are not necessarily less tasty, and cost or the economy of developing countries is a socio-economic issue, not the reason such food plants are considered unsafe to introduce.</p>"
+    },
+    {
+      "text": "<p><strong>Q3.</strong> The first successfully cloned mammals (animal) that gained worldwide publicity was</p>",
+      "options": [
+        "<p>Molly (a sheep)</p>",
+        "<p>Polly (a sheep)</p>",
+        "<p>Chance (a bull)</p>",
+        "<p>Dolly (a sheep)</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Dolly, a Finn Dorset sheep born in 1996 at the Roslin Institute (Ian Wilmut), was the first mammal cloned from an adult somatic cell by nuclear transfer, and became world famous in 1997.</p> <p>Polly and Molly (1997) were later cloned transgenic sheep, and the bull Chance came after Dolly in cloning work, so none of them was the first.</p>"
+    },
+    {
+      "text": "<p><strong>Q4.</strong> Producing a giant mouse in the laboratory was possible through</p>",
+      "options": [
+        "<p>gene mutation</p>",
+        "<p>gene manipulation</p>",
+        "<p>gene synthesis</p>",
+        "<p>gene duplication</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The giant (\"super\") mouse (Palmiter and Brinster, 1982) was produced by injecting the rat growth hormone gene into fertilised mouse eggs.</p> <p>The transgenic mice made extra growth hormone and grew nearly twice the normal size, so this is gene manipulation (recombinant DNA technology), not a natural mutation, synthesis or duplication of a gene.</p>"
+    },
+    {
+      "text": "<p><strong>Q5.</strong> Hybridoma cells are :</p>",
+      "options": [
+        "<p>product of spore formation in bacteria</p>",
+        "<p>hybrid cells resulting from myeloma cells</p>",
+        "<p>nervous cells of frog</p>",
+        "<p>only cells having oncogenes</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>A hybridoma is a hybrid cell formed by fusing an antibody-producing B-lymphocyte with a myeloma (cancerous plasma) cell.</p> <p>It combines the antibody production of the B-cell with the unlimited division of the myeloma cell, and its clones are used to produce monoclonal antibodies.</p>"
+    },
+    {
+      "text": "<p><strong>Q6.</strong> The term 'humulin' is used for</p>",
+      "options": [
+        "<p>human insulin</p>",
+        "<p>powerful antibiotic</p>",
+        "<p>isoenzyme</p>",
+        "<p>hydrolytic enzyme</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Humulin is the name of human insulin made by recombinant DNA technology (Eli Lilly, 1983).</p> <p>The genes for the A and B chains were expressed in <em>E. coli</em> and the two chains were joined to form insulin.</p>"
+    },
+    {
+      "text": "<p><strong>Q7.</strong> The first transgenic crop was</p>",
+      "options": [
+        "<p>cotton</p>",
+        "<p>pea</p>",
+        "<p>tobacco</p>",
+        "<p>flax</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Tobacco was the first transgenic crop plant: an antibiotic-resistant transgenic tobacco was produced in 1983, and the first field trials of transgenic (herbicide-resistant) tobacco were held in 1986.</p> <p>Transgenic cotton (Bt cotton) came much later.</p>"
+    },
+    {
+      "text": "<p><strong>Q8.</strong> When scientists make an animal superior by view of genotype, introducing some foreign genes in it, is called</p>",
+      "options": [
+        "<p>immunization</p>",
+        "<p>genetic engineering</p>",
+        "<p>tissue culture</p>",
+        "<p>biotechnology.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Genetic engineering is the direct alteration of an organism's genetic material, e.g. by inserting a foreign gene through recombinant DNA technology; animals so altered are transgenic animals.</p> <p>Immunization gives resistance to a disease by vaccines or antibodies and does not change the genotype.</p> <p>Tissue culture grows cells or tissues in a nutrient medium, and biotechnology is the much wider field of using organisms to make products.</p>"
+    },
+    {
+      "text": "<p><strong>Q9.</strong> The transgenic animals are those which have</p>",
+      "options": [
+        "<p>foreign RNA in all its cells</p>",
+        "<p>foreign DNA in some of its cells</p>",
+        "<p>foreign DNA in all its cells</p>",
+        "<p>both (a) and (b).</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In transgenic animals the foreign gene (DNA) is introduced into the fertilised egg or very early embryo, so it becomes part of the genome of every cell that develops from it.</p> <p>The foreign DNA is therefore present in all body cells, including the germ cells, and is passed on to the offspring.</p> <p>Foreign RNA is not integrated or inherited, and DNA present in only some cells makes a mosaic, not a transgenic animal.</p>"
+    },
+    {
+      "text": "<p><strong>Q10.</strong> Which one of the following is NOT a recombinant protein used in the treatment of cancer?</p>",
+      "options": [
+        "<p>Interferons</p>",
+        "<p>Relaxin</p>",
+        "<p>Interlukins</p>",
+        "<p>Tumor necrosis factor</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Interferons, interleukins and tumour necrosis factor are recombinant proteins used in cancer treatment.</p> <p>Relaxin is a hormone that relaxes pelvic ligaments during childbirth. It is not a recombinant protein used in cancer treatment.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q11.</strong> Match the transgenic crop in Column I with the inserted gene in Column II. Choose the correct option<br/><table style=\"border: 1px solid black; border-collapse: collapse; width: auto;\"><tr><th style=\"border: 1px solid black; padding: 10px;\">Column I</th><th style=\"border: 1px solid black; padding: 10px;\">Column II</th></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(A) Canola</td><td style=\"border: 1px solid black; padding: 10px;\">(I) Metallothionein</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(B) Tomato</td><td style=\"border: 1px solid black; padding: 10px;\">(II) Chalcone isomerase</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(C) Sugarbeet</td><td style=\"border: 1px solid black; padding: 10px;\">(III) Sucrose:sucrose fructosyl transferase</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(D) Rice</td><td style=\"border: 1px solid black; padding: 10px;\">(IV) &amp;gamma; - tocopherol methyl transferase</td></tr></table></p>",
+      "options": [
+        "<p>A - IV, B - III, C - II, D - I</p>",
+        "<p>A - IV, B - I, C - III, D - II</p>",
+        "<p>A - III, B - IV, C - I, D - II</p>",
+        "<p>A - IV, B - II, C - III, D - I</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>A – IV: transgenic canola carries the &amp;gamma; -tocopherol methyl transferase gene, which raises its vitamin E content.</p> <p>B – II: transgenic tomato carries chalcone isomerase, which raises flavonol (antioxidant) levels.</p> <p>C – III: transgenic sugar beet carries sucrose:sucrose fructosyl transferase, which makes low-calorie fructans.</p> <p>D – I: transgenic rice carries the metallothionein gene (with ferritin), which raises its iron content.</p> <p>So A pairs with IV, B with II, C with III and D with I.</p>"
+    },
+    {
+      "text": "<p><strong>Q12.</strong> The gene of &alpha; -amylase inhibitor for the development of pest resistant tobacco plant has been isolated from _________.</p>",
+      "options": [
+        "<p><em>Pisum sativum</em></p>",
+        "<p><em>Phaseolus vulgaris</em></p>",
+        "<p><em>Capsicum annum</em></p>",
+        "<p><em>Bacillus thuringiensis</em></p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Seeds of the common bean, Phaseolus vulgaris, contain a protein that inhibits insect &amp;alpha; -amylase.</p> <p>Its gene has been transferred to tobacco (and pea), where the inhibitor blocks starch digestion in the gut of feeding insects, so the pests starve.</p> <p>Bacillus thuringiensis supplies cry (Bt toxin) genes, not this inhibitor.</p> <p>So the &amp;alpha; -amylase inhibitor gene was isolated from Phaseolus vulgaris.</p>"
+    },
+    {
+      "text": "<p><strong>Q13.</strong> The bacterial gene <em>Cys E</em> and <em>Cys M</em> introduced in sheep are responsible for ________ .</p>",
+      "options": [
+        "<p>increase of casein in milk.</p>",
+        "<p>resistance to viral and coccidial diseases.</p>",
+        "<p>xenotransplantation.</p>",
+        "<p>increasing formation of keratin protein.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Wool is mainly keratin, which is rich in the sulphur amino acid cysteine.</p> <p>Sheep cannot make enough cysteine, so the bacterial genes cysE and cysM, which code for enzymes of the cysteine-synthesis pathway, were introduced into transgenic sheep.</p> <p>More cysteine allows more keratin to be made, improving wool growth.</p> <p>So these genes increase the formation of keratin protein.</p>"
+    },
+    {
+      "text": "<p><strong>Q14.</strong> Which of the following deals with the biological phenomena or events in relation to socially acceptable moral duty, conduct and judgement?</p>",
+      "options": [
+        "<p>Biopiracy.</p>",
+        "<p>Bioethics.</p>",
+        "<p>Biotechnology.</p>",
+        "<p>Biopatent.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bioethics is the study of the moral side of biology: it judges biological practices and research against socially accepted standards of duty, conduct and judgement.</p> <p>Biopiracy is unauthorised exploitation of bio-resources or traditional knowledge, a biopatent is a patent on biological material, and biotechnology is the use of organisms to make products.</p> <p>So the field described is bioethics.</p>"
+    },
+    {
+      "text": "<p><strong>Q15.</strong> Match the transgenes in <strong>List I</strong> with their applications in <strong>List II</strong>.<br/><table style=\"border: 1px solid black; border-collapse: collapse; width: auto;\"><tr><th style=\"border: 1px solid black; padding: 10px;\">LIST I (Transgene)</th><th style=\"border: 1px solid black; padding: 10px;\">LIST II (Application)</th></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(A) cys E and cys M</td><td style=\"border: 1px solid black; padding: 10px;\">(I) Pest control</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(B) Genes from marine mussels</td><td style=\"border: 1px solid black; padding: 10px;\">(II) Keratin protein found in wool.</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(C) Arabidopsis genes</td><td style=\"border: 1px solid black; padding: 10px;\">(III) Superglue.</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(D) &amp;alpha; AI-Pv gene from adzuki bean</td><td style=\"border: 1px solid black; padding: 10px;\">(IV) Oil content and oil quality of oil crops.</td></tr></table></p>",
+      "options": [
+        "<p>(A) - (I), (B) - (II), (C) - (III), (D) - (IV).</p>",
+        "<p>(A) - (II), (B) - (III), (C) - (IV), (D) - (I).</p>",
+        "<p>(A) - (I), (B) - (II), (C) - (IV), (D) - (III).</p>",
+        "<p>(A) - (III), (B) - (IV), (C) - (I), (D) - (II).</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>(A) – (II): Bacterial genes cys E and cys M put into sheep raise cysteine synthesis, needed for the wool protein keratin.</p> <p>(B) – (III): Genes from marine mussels code for the adhesive protein used as a natural superglue.</p> <p>(C) – (IV): Arabidopsis genes are transferred to oil crops to improve oil content and quality.</p> <p>(D) – (I): The αAI-Pv gene codes an α-amylase inhibitor that protects seeds from bruchid weevils, i.e. pest control.</p> <p>Hence the pairs are (A)-(II), (B)-(III), (C)-(IV), (D)-(I).</p>"
+    },
+    {
+      "text": "<p><strong>Q16.</strong> Which of the following crop plants is genetically modified using the genes for ferritin protein isolated from soybean and Phaseolus?</p>",
+      "options": [
+        "<p>Wheat.</p>",
+        "<p>Maize.</p>",
+        "<p>Tobacco.</p>",
+        "<p>Rice.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Ferritin is an iron-storage protein.</p> <p>Rice grain is poor in iron, so ferritin genes taken from soybean and Phaseolus (French bean) were introduced into rice.</p> <p>The transgenic rice stores more iron in its grains and helps fight iron-deficiency anaemia.</p> <p>So the crop modified with ferritin genes is rice.</p>"
+    },
+    {
+      "text": "<p><strong>Q17.</strong> Given below are two statements.<br/>Statement I - In germline gene therapy, the healthy genes are introduced into germ cells like sperms, eggs and early embryo for the transmission of modified genetic information to the next generation.<br/>Statement II - Somatic cell gene therapy is the only feasible option for the treatment of acquired disorders such as cancer, rheumatoid arthritis and thalassemia etc.<br/>In the light of above statements, select the correct option given below:</p>",
+      "options": [
+        "<p>Both statement I and statement II are correct.</p>",
+        "<p>Both statement I and statement II are incorrect.</p>",
+        "<p>Statement I is correct but statement II is incorrect.</p>",
+        "<p>Statement I is incorrect but statement II is correct.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Statement I is correct: in germline gene therapy normal genes are put into sperms, eggs or early embryos, so the correction is passed on to offspring.</p> <p>Statement II is wrong: cancer and rheumatoid arthritis may be acquired, but thalassemia is a hereditary haemoglobin disorder, so it cannot be listed among acquired disorders.</p> <p>Hence only Statement I is correct and Statement II is incorrect.</p>"
+    },
+    {
+      "text": "<p><strong>Q18.</strong> Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R). Assertion (A) : Bt corn, has adverse effects on Monarch butterfly populations. Reason (R) : It has adverse effects on Monarch butterfly populations, which are not the original target of the pesticide. In light of the above statements, choose the correct answer from the options given below.</p>",
+      "options": [
+        "<p>Both (A) and (R) are true and (R) is the correct explanation of (A).</p>",
+        "<p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A).</p>",
+        "<p>(A) is true but (R) is false.</p>",
+        "<p>(A) is false but (R) is true.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>(A) is true: laboratory studies showed that pollen of Bt corn dusted on milkweed leaves harmed the caterpillars of the Monarch butterfly that feed on them; this is cited as a risk of GM crops.</p> <p>(R) is also true: the Monarch is a non-target insect, since the Bt toxin was meant for pests like the European corn borer.</p> <p>However, (R) just repeats the effect and labels the butterfly as non-target; it does not give the cause, which is that the Cry toxin also acts on other lepidopteran larvae eating the pollen.</p> <p>So both statements hold, yet the reason does not account for the assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q19.</strong> Identify the INCORRECT pair (Substance and their GM crop)</p>",
+      "options": [
+        "<p>Provitamin A - Rice</p>",
+        "<p>Vitamin E - Canola</p>",
+        "<p>Iron - Rice</p>",
+        "<p>Fructans - Potato</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Golden rice is engineered to make provitamin A ( &amp;beta; -carotene) in the grain, so that pair is right.</p> <p>Canola has been modified for higher vitamin E, and rice for higher iron content, so these pairs are right too.</p> <p>Fructans (fructose polymers) have been raised by genetic engineering in sugar beet (and chicory), not potato; potato has been modified for starch quality and protein.</p> <p>So the incorrect pair is fructans – potato.</p>"
+    },
+    {
+      "text": "<p><strong>Q20.</strong> The gene of ---(i)---- has been isolated from -----(ii)----- and transferred to -----(iii)---- and this gene work against pest like <em>Zabrotes subfasciatus</em> and -----(iv)----.</p>",
+      "options": [
+        "<p>i) &alpha; -amylase inhibitor ii) <em>Agrobacterium tumefaciens</em> iii) Potato iv) <em>Callosobruchus chinensis</em></p>",
+        "<p>i) Cry gene ii) <em>Bacillus thuringiensis</em> iii) Brassica iv) Bt-Toxin</p>",
+        "<p>i) Cry gene ii) <em>Bacillus thuringiensis</em> iii) Tomato iv) <em>Callosobruchus chinensis</em></p>",
+        "<p>i) &alpha; -amylase inhibitor ii) Adzuki bean iii) Tobacco iv) <em>Callosobruchus chinensis</em></p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bruchid beetles damage stored legume seeds, and their larvae need the enzyme &amp;alpha; -amylase to digest starch.</p> <p>A gene for an &amp;alpha; -amylase inhibitor was taken from the adzuki bean and introduced into tobacco.</p> <p>The inhibitor blocks the insects' starch digestion, giving protection against bruchids such as Zabrotes subfasciatus and Callosobruchus chinensis.</p> <p>Cry genes from Bacillus thuringiensis target lepidopteran or coleopteran larvae in crops; and Bt toxin is a protein, not a pest.</p> <p>So the blanks are &amp;alpha; -amylase inhibitor, adzuki bean, tobacco and Callosobruchus chinensis.</p>"
+    },
+    {
+      "text": "<p><strong>Q21.</strong> Which enzyme in the midgut of insect is instrumental in the release of core toxic fragments from bacterial spores ingested by it?</p>",
+      "options": [
+        "<p>Pectinase</p>",
+        "<p>Acid phosphatase</p>",
+        "<p>Penicillinase</p>",
+        "<p>Proteinase</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bacillus thuringiensis makes Cry protein crystals (along with its spores) that are inactive protoxins.</p> <p>In the alkaline insect midgut the crystals dissolve, and midgut proteinases (proteases) trim the protoxin into the active core toxin fragment.</p> <p>The active toxin binds the midgut epithelium, makes pores, and the cells swell and lyse, killing the insect.</p> <p>So the enzyme responsible is proteinase.</p>"
+    },
+    {
+      "text": "<p><strong>Q22.</strong> To increase the production of Methionine in soya beans, researchers used a gene from the ----------------.</p>",
+      "options": [
+        "<p>walnut</p>",
+        "<p>cowpea</p>",
+        "<p>Brazil nut</p>",
+        "<p>maize</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Soybean protein is poor in the sulphur-containing essential amino acid methionine.</p> <p>To improve it, the gene for a methionine-rich 2S albumin storage protein from the Brazil nut (Bertholletia excelsa) was transferred into soybean.</p> <p>So the gene came from the Brazil nut.</p>"
+    },
+    {
+      "text": "<p><strong>Q23.</strong> Insulin production by recombinant DNA technology is designed by -----------------.</p>",
+      "options": [
+        "<p>Edward Sharpey Schafer</p>",
+        "<p>Gilbert and Villa-Komaroff</p>",
+        "<p>Itakura et al.</p>",
+        "<p>Stanley Cohen et al</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In 1978 Lydia Villa-Komaroff, working with Walter Gilbert, showed how insulin could be made by recombinant DNA technology: the (pro)insulin gene was joined into a bacterial plasmid next to a bacterial gene and expressed in E. coli.</p> <p>Sharpey-Schafer only named the hormone insulin, Itakura and co-workers made chemically synthesised genes for the A and B chains, and Stanley Cohen (with Boyer) built the first recombinant plasmid.</p> <p>So the design of insulin production by rDNA technology is credited to Gilbert and Villa-Komaroff.</p>"
+    },
+    {
+      "text": "<p><strong>Q24.</strong> Which one of the following is NOT an example of biopiracy?</p>",
+      "options": [
+        "<p>Neem.</p>",
+        "<p>Basmati rice.</p>",
+        "<p>Haldi (Turmeric).</p>",
+        "<p>Mango.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Biopiracy is the use of a country's bio-resources or traditional knowledge by outside organisations without authorisation or fair payment.</p> <p>Well-known Indian cases are the patents on basmati rice varieties, on neem-based pesticide uses and on wound-healing use of turmeric (haldi); the neem and turmeric patents were later revoked.</p> <p>Mango has no such patent dispute.</p> <p>So mango is not an example of biopiracy.</p>"
+    },
+    {
+      "text": "<p><strong>Q25.</strong> Introduction of additional copies of bovine beta and kappa casein into dairy cattle resulted in ____(A)____ increase in beta casein and ____(B)____ increase in kappa casein.</p>",
+      "options": [
+        "<p>(A) 5 - 10 % (B) twofold</p>",
+        "<p>(A) 8 - 20 % (B) twofold</p>",
+        "<p>(A) twofold (B) 5 - 10%</p>",
+        "<p>(A) twofold (B) 8 - 20%</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Transgenic dairy cattle were produced carrying extra copies of the bovine β-casein and κ-casein genes.</p> <p>Their milk showed an 8–20% rise in β-casein and a twofold rise in κ-casein, giving milk better suited for cheese making.</p> <p>So (A) is 8–20% and (B) is twofold.</p>"
+    },
+    {
+      "text": "<p><strong>Q26.</strong> Which of the following institutes from India objected to the US patent for 'haldi' and got it cancelled?</p>",
+      "options": [
+        "<p>OPECD</p>",
+        "<p>IRRI</p>",
+        "<p>CSIR</p>",
+        "<p>GEAC</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In 1995 a US patent was granted for using turmeric (haldi) powder to heal wounds.</p> <p>India's Council of Scientific and Industrial Research (CSIR) challenged it, showing ancient Indian texts and published papers in which turmeric was already used for wound healing.</p> <p>As the use was traditional knowledge and not new, the US patent office revoked the patent in 1997.</p> <p>So the institute was CSIR.</p>"
+    },
+    {
+      "text": "<p><strong>Q27.</strong> Match <strong>List I</strong> with <strong>List II</strong><br/><table style=\"border: 1px solid black; border-collapse: collapse; width: auto;\"><tr><th style=\"border: 1px solid black; padding: 10px;\">List I (Crops)</th><th style=\"border: 1px solid black; padding: 10px;\">List II (Transgene)</th></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(A). Canola</td><td style=\"border: 1px solid black; padding: 10px;\">(I). Ferritin</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(B). Tomato</td><td style=\"border: 1px solid black; padding: 10px;\">(II). &amp;gamma; -tocopherol methyl transferase</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(C). Sugar beet</td><td style=\"border: 1px solid black; padding: 10px;\">(III). Chalcone isomerase</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(D). Rice</td><td style=\"border: 1px solid black; padding: 10px;\">(IV). Sucrose fructosyl transferase</td></tr></table>Choose the <strong>correct</strong> answer from the options given below:</p>",
+      "options": [
+        "<p>(A) - (I), (B) - (II), (C) - (III), (D) - (IV)</p>",
+        "<p>(A) - (II), (B) - (III), (C) - (IV), (D) - (I)</p>",
+        "<p>(A) - (I), (B) - (II), (C) - (IV), (D) - (III)</p>",
+        "<p>(A) - (III), (B) - (IV), (C) - (I), (D) - (II)</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>(A) Canola – (II): the &amp;gamma; -tocopherol methyl transferase gene raises vitamin E content of the oil.</p> <p>(B) Tomato – (III): chalcone isomerase increases flavonol (antioxidant) content.</p> <p>(C) Sugar beet – (IV): a fructosyl transferase gene makes the plant store fructans, a low-calorie sweetener.</p> <p>(D) Rice – (I): the ferritin gene increases iron content of the grain.</p> <p>So A is with II, B with III, C with IV and D with I.</p>"
+    },
+    {
+      "text": "<p><strong>Q28.</strong> Which one of the following is NOT an application of genomics?</p>",
+      "options": [
+        "<p>It is used in pedigree analysis of cats, dogs, horses and human.</p>",
+        "<p>It is used in agriculture to develop transgenic crops with desirable characters.</p>",
+        "<p>It can lead to the introduction of new genes in microbes to produce enzymes, biofuels etc.</p>",
+        "<p>Genetic markers developed in genomics have applications in forensic analysis.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Genomics is the study of whole genomes – their sequencing, mapping and the function of genes.</p> <p>Its applications include developing transgenic crops with desirable traits, adding new genes to microbes to make enzymes, therapeutic proteins or biofuels, and providing genetic markers for forensic work.</p> <p>Pedigree analysis is a tool of classical genetics: it follows how a trait passes through the generations of a family using phenotypes and family records, not genome data.</p> <p>So use in pedigree analysis of cats, dogs, horses and humans is not listed as an application of genomics.</p>"
+    },
+    {
+      "text": "<p><strong>Q29.</strong> Identify the first biopatent among the following:</p>",
+      "options": [
+        "<p>Human insulin gene</p>",
+        "<p>Synthetic DNA</p>",
+        "<p>Oil clearing \"<em>Pseudomonas</em>\" bacterium</p>",
+        "<p>Bt cotton gene</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The first patent on a living organism was granted in the USA in 1980 (Diamond v. Chakrabarty).</p> <p>Ananda Mohan Chakrabarty had engineered a Pseudomonas bacterium carrying plasmids that let it break down several hydrocarbons of crude oil, for cleaning oil spills.</p> <p>Patents on genes like the human insulin gene or Bt genes came later.</p> <p>So the first biopatent was for the oil-clearing Pseudomonas bacterium.</p>"
+    },
+    {
+      "text": "<p><strong>Q30.</strong> Which was the first animal used for xenotransplantation of organs and tissues for humans?</p>",
+      "options": [
+        "<p>Cloned pig.</p>",
+        "<p>Cloned sheep</p>",
+        "<p>Cloned fish</p>",
+        "<p>Cloned cow</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Xenotransplantation means grafting cells, tissues or organs from an animal of another species into humans.</p> <p>Pig organs are close to human organs in size and physiology, so pigs were chosen as donors.</p> <p>Cloned transgenic pigs lacking the alpha-gal sugar on their cells (which triggers hyperacute rejection) were produced for this purpose; Dolly the sheep was cloned for a different aim.</p> <p>So the first animal used for xenotransplantation was the cloned pig.</p>"
+    },
+    {
+      "text": "<p><strong>Q31.</strong> Arrange the sequence which results in killing of insects which feed on Bt plant.<br/>(A). Midgut paralysis and cells of insect are disrupted.<br/>(B). The insect ingests bacterial spores with cry gene present in the insect resistant transgenic plant.<br/>(C). A combination of high pH and the enzyme proteinase of the insect's midgut, processes crystalline inclusions hydrolytically to release the core toxic fragments.</p>",
+      "options": [
+        "<p>(A) → (B) → (C)</p>",
+        "<p>(B) → (A) → (C)</p>",
+        "<p>(C) → (B) → (A)</p>",
+        "<p>(B) → (C) → (A)</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bacillus thuringiensis Cry proteins are present as inactive protoxin crystals.</p> <p>(B) First the insect eats the tissue of the Bt plant (or the bacterial spores) and takes in the crystals.</p> <p>(C) In the midgut the alkaline pH dissolves the crystals and the insect's own proteinases cut the protoxin into the active core toxin.</p> <p>(A) The active toxin binds the midgut epithelium and makes pores, so the cells swell and burst, the gut is paralysed and the insect dies.</p> <p>Hence the order is (B) → (C) → (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q32.</strong> Which GMO crop plant is having an adverse effect on Monarch butterfly populations?</p>",
+      "options": [
+        "<p>Bt brinjal</p>",
+        "<p>Bt cotton</p>",
+        "<p>Bt corn</p>",
+        "<p>Bt tobacco</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt corn carries a cry gene from Bacillus thuringiensis and its pollen also contains the Bt toxin.</p> <p>Wind carries this pollen onto milkweed leaves growing near corn fields.</p> <p>Monarch caterpillars feed only on milkweed; eating the pollen-dusted leaves harms or kills them, as reported in laboratory studies.</p> <p>So Bt corn is the GM crop linked with harm to monarch butterfly populations.</p>"
+    },
+    {
+      "text": "<p><strong>Q33.</strong> Match List I with List II<br/><table style=\"border: 1px solid black; border-collapse: collapse; width: auto;\"><tr><th style=\"border: 1px solid black; padding: 10px;\">List I<br/>(Disorder/Health condition.)</th><th style=\"border: 1px solid black; padding: 10px;\">List II<br/>(Recombinant protein.)</th></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(A). Emphysema</td><td style=\"border: 1px solid black; padding: 10px;\">(I). Platelet derived growth factor</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(B). Blood clots</td><td style=\"border: 1px solid black; padding: 10px;\">(II). Alpha 1 Antitrypsin</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(C). Atherosclerosis</td><td style=\"border: 1px solid black; padding: 10px;\">(III). Erythropoietin</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">(D). Anaemia</td><td style=\"border: 1px solid black; padding: 10px;\">(IV). Urokinase</td></tr></table>Choose the <strong>correct</strong> answer from the options given below:</p>",
+      "options": [
+        "<p>(A) - (I), (B) - (II), (C) - (III), (D) - (IV)</p>",
+        "<p>(A) - (II), (B) - (IV), (C) - (I), (D) - (III)</p>",
+        "<p>(A) - (I), (B) - (II), (C) - (IV), (D) - (III)</p>",
+        "<p>(A) - (III), (B) - (IV), (C) - (I), (D) - (II)</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>(A) – (II): Alpha-1 antitrypsin, made by recombinant technology, is used to treat emphysema.</p> <p>(B) – (IV): Urokinase is a clot-dissolving (thrombolytic) enzyme used against blood clots.</p> <p>(C) – (I): Platelet-derived growth factor is the recombinant protein listed for atherosclerosis.</p> <p>(D) – (III): Erythropoietin stimulates red blood cell production and is used in anaemia.</p> <p>So emphysema goes with II, blood clots with IV, atherosclerosis with I and anaemia with III.</p>"
+    },
+    {
+      "text": "<p><strong>Q34.</strong> Which vaccine is produced by ' melt in the mouth' concept ?</p>",
+      "options": [
+        "<p>Smallpox vaccine</p>",
+        "<p>Hepatitis vaccine</p>",
+        "<p>Flu vaccine by <em>Bacillus</em></p>",
+        "<p>Cervical cancer vaccine</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The \"melt in the mouth\" approach gives a vaccine without an injection.</p> <p>For influenza, spores of Bacillus subtilis engineered to carry flu antigens are put into a thin film or tablet that dissolves under the tongue.</p> <p>The antigen is delivered to the mucosa, and the spores are heat-stable, so needles and a cold chain are not needed.</p> <p>So the flu vaccine made using Bacillus is the one based on this concept.</p>"
+    },
+    {
+      "text": "<p><strong>Q35.</strong> Elimination of defective gene and insertion of healthy gene in a genome is achieved by ________</p>",
+      "options": [
+        "<p>traditional biotechnology</p>",
+        "<p>microbiology</p>",
+        "<p>rDNA technology</p>",
+        "<p>Cytogenetics</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Gene therapy relies on recombinant DNA technology.</p>"
+    },
+    {
+      "text": "<p><strong>Q36.</strong> Which one of the following genetically engineered microorganisms, used for clearing oil spills in the sea, was given first biopatent?</p>",
+      "options": [
+        "<p>E. coli</p>",
+        "<p>Pseudomonas</p>",
+        "<p>Agrobacterium</p>",
+        "<p>Bacillus</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Pseudomonas putida, engineered for oil spill cleanup, received the first biopatent (1980, Diamond v. Chakrabarty).</p>"
+    },
+    {
+      "text": "<p><strong>Q37.</strong> Which one of the following is NOT a traditional knowledge passed down through generations?</p>",
+      "options": [
+        "<p>Farming practices</p>",
+        "<p>Conservation of biological diversity</p>",
+        "<p>Biologically important medicines</p>",
+        "<p>Use of genetically engineered microorganism for cleaning oil spills.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Traditional knowledge includes farming, conservation, and medicines; GM microbes are modern biotechnology.</p>"
+    },
+    {
+      "text": "<p><strong>Q38.</strong> Given below are two statements.</p> <p>Statement I - GMO crops could potentially have negative effects on human health and natural biodiversity.</p> <p>Statement II - Insertion of a gene from Brazil nut to increase the production of methionine in soyabean has caused allergic reaction to those who have nut allergies.</p> <p>In the light of above statements, choose the correct option given below:</p>",
+      "options": [
+        "<p>Both statement I and statement II are correct.</p>",
+        "<p>Both statement I and statement II are incorrect.</p>",
+        "<p>Statement I is correct but statement II is incorrect.</p>",
+        "<p>Statement I is incorrect but statement II is correct.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p><strong>Statement I:</strong> </p> <blockquote> <p>GMO crops could potentially have negative effects on human health and natural biodiversity.</p> </blockquote> <p>This is <strong>correct.</strong> </p> <p>While GMOs are generally considered safe after rigorous testing, there are <em>potential</em> concerns — for example, unintended allergenicity, gene transfer to wild species, and effects on non-target organisms. So, the statement is valid in acknowledging potential (not proven) negative effects.</p> <p><strong>Statement II:</strong> </p> <blockquote> <p>Insertion of a gene from Brazil nut to increase the production of methionine in soybean has caused allergic reaction to those who have nut allergies.</p> </blockquote> <p>This is also <strong>correct.</strong> </p> <p>A well-known case occurred when scientists inserted a <em>Brazil nut gene</em> (encoding a methionine-rich storage protein) into soybean to enhance its amino acid content. Testing revealed that the transgenic soybean caused allergic reactions in individuals allergic to Brazil nuts, leading to the project being stopped before commercialization.</p> <p>✅ <strong>Correct option:</strong></p> <p><strong>Option A — Both Statement I and Statement II are correct.</strong></p>"
+    },
+    {
+      "text": "<p><strong>Q39.</strong> The _______ gene from Bacillus thuringiensis produces a protein that forms crystalline inclusions in bacterial spores.</p>",
+      "options": [
+        "<p>cry</p>",
+        "<p>myc</p>",
+        "<p>ras</p>",
+        "<p>nif</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The <strong>cry</strong> gene from <em>Bacillus thuringiensis</em> produces a protein that forms crystalline inclusions in bacterial spores.</p> <p>Let's understand why:</p> <p><p><strong>Bacillus thuringiensis (Bt)</strong> is a bacterium famous for its ability to produce certain proteins that are toxic to insects.</p></p> <p><p>These proteins are called <strong>Cry proteins</strong> (short for 'crystalline' proteins) because they often accumulate as large, insoluble crystals inside the bacterial cells, especially during spore formation.</p></p> <p><p>The genes that code for these Cry proteins are known as <strong>cry genes</strong>.</p></p> <p><p>When an insect ingests these crystals along with the bacterial spores, the alkaline conditions in the insect's gut dissolve the crystals, releasing the protoxin. This protoxin is then activated by proteases in the gut, becoming a toxic form that binds to the gut lining, creates pores, and ultimately kills the insect.</p></p> <p>Therefore, the correct option is A, <strong>cry</strong>.</p>"
+    },
+    {
+      "text": "<p><strong>Q40.</strong> Atherosclerosis can be treated with recombinant protein called __________</p>",
+      "options": [
+        "<p>platelet derived growth factor.</p>",
+        "<p>interleukin -1 receptor.</p>",
+        "<p>tissue plasminogen activator.</p>",
+        "<p>macrophage activating factor.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The correct answer is:</p> <p><strong>Option C — tissue plasminogen activator (tPA).</strong></p> <p>Atherosclerosis can lead to the formation of blood clots (thrombi) that block blood flow in arteries. Recombinant tissue plasminogen activator (tPA) is used as a clot-dissolving (thrombolytic) agent. It works by converting plasminogen to plasmin, which breaks down fibrin in clots, thereby restoring blood flow and reducing the risk of stroke or myocardial infarction.</p>"
+    },
+    {
+      "text": "<p><strong>Q41.</strong> Find the correct statements from the following</p> <p>I. Gene therapy is a genetic engineering technique used to treat diseases at molecular level.</p> <p>II. Calcitonin is medically useful recombinant product in the treatment of infertility.</p> <p>III. <i>Bt</i> toxin is a biodegradable insecticide obtained from <i>Bacillus thuringiensis</i>.</p>",
+      "options": [
+        "<p>Only I</p>",
+        "<p>Only II</p>",
+        "<p>I and III</p>",
+        "<p>I and II</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>I is correct: gene therapy corrects a defective gene inside the patient's cells, so it treats a disease at the molecular level (e.g. ADA deficiency).</p> <p>III is correct: Bt toxin is a biodegradable insecticidal protein made by the soil bacterium <i>Bacillus thuringiensis</i>.</p> <p>II is wrong: calcitonin is a hormone of the thyroid C-cells that regulates blood calcium and phosphate; it plays no part in treating infertility.</p>"
+    },
+    {
+      "text": "<p><strong>Q42.</strong> cry II Ab and cry I Ab produce toxins that control</p>",
+      "options": [
+        "<p>cotton bollworms and corn borer, respectively</p>",
+        "<p>corn borer and cotton bollworms, respectively</p>",
+        "<p>tobacco budworms and nematodes, respectively</p>",
+        "<p>nematodes and tobacco budworms, respectively</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The <i>cry</i> genes of <i>Bacillus thuringiensis</i> code for Bt toxins that kill particular groups of insects.</p> <p>The proteins of <i>cry</i>IAc and <i>cry</i>IIAb control cotton bollworms, so both genes are put into Bt cotton; the protein of <i>cry</i>IAb controls the corn borer and is used in Bt corn.</p> <p>So <i>cry</i> II Ab acts on cotton bollworms and <i>cry</i> I Ab on corn borer, in that order.</p>"
+    },
+    {
+      "text": "<p><strong>Q43.</strong> An example of gene therapy is</p>",
+      "options": [
+        "<p>production of injectable hepatitis-B vaccine</p>",
+        "<p>production of vaccines in food crops like potatoes which can be eaten</p>",
+        "<p>introduction of gene for adenosine deaminase in persons suffering from Severe Combined Immuno Deficiency (SCID)</p>",
+        "<p>production of test tube babies by artificial insemination and implantation of fertilised eggs</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Gene therapy corrects a genetic defect by delivering a normal, working gene into the cells of the patient to make up for the faulty one.</p> <p>The first clinical gene therapy (1990) was for adenosine deaminase (ADA) deficiency, which causes SCID: a functional ADA gene was introduced into the patient's lymphocytes, which were then returned to the body.</p> <p>Hepatitis-B vaccine and edible vaccines are products of recombinant DNA technology, and test tube babies come from assisted reproduction; none of them corrects a defective gene in a patient.</p>"
+    },
+    {
+      "text": "<p><strong>Q44.</strong> Adenosine deaminase (ADA deficiency) could be permanently cure, if the gene isolated from marrow cells producing ADA is introduced into cell at</p>",
+      "options": [
+        "<p>early embryonic stages</p>",
+        "<p>Late embryonic stages</p>",
+        "<p>early childhood</p>",
+        "<p>None of the above</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>ADA deficiency is caused by the loss of the gene for adenosine deaminase. It can be treated by bone marrow transplantation, by enzyme replacement (injecting functional ADA), or by gene therapy in which the patient's lymphocytes are given a working ADA gene and returned to the body.</p> <p>These treatments are not permanent, because the corrected lymphocytes die and have to be replaced periodically.</p> <p>If the ADA gene isolated from marrow cells is introduced into cells at an early embryonic stage, every cell descended from them carries it, and this could be a permanent cure.</p>"
+    },
+    {
+      "text": "<p><strong>Q45.</strong> Assertion : A genetic probe is helpful in the detection of specific DNA sequence.</p> <p>Reason : Genetic probe is a radiolabelled C-DNA, which has complementary base sequence, to DNA fragment which is to be detected.</p>",
+      "options": [
+        "<p>Both Assertion and Reason are true and Reason is the correct explanation of Assertion</p>",
+        "<p>Both Assertion and Reason are true, but Reason is not the correct explanation of the Assertion</p>",
+        "<p>Assertion is true, but Reason is false.</p>",
+        "<p>Both Assertion and Reason are false.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Assertion is true: a probe picks out one particular DNA sequence among many.</p> <p>Reason is true: a probe is a short, labelled (e.g. with 32P , or non-radioactively with biotin or digoxigenin) single-stranded nucleic acid whose bases are complementary to the target sequence.</p> <p>The probe base-pairs only with its complementary sequence, and its label then shows where that sequence is, so the Reason explains the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q46.</strong> The protein products of the following <i>Bt</i> toxin genes <i>cry</i> I <i>Ac</i> and <i>cry</i> II <i>Ab</i> are responsible for controlling</p>",
+      "options": [
+        "<p>bollworm</p>",
+        "<p>roundworm</p>",
+        "<p>moth</p>",
+        "<p>fruit fly</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p><i>Bacillus thuringiensis</i> makes Cry proteins as inactive protoxins; in the alkaline gut of an insect larva they become active toxins that bind the midgut cells and make pores, killing the insect.</p> <p>The genes <i>cryIAc</i> and <i>cryIIAb</i>, put into Bt cotton, code for proteins that control cotton bollworms (larvae of lepidopteran insects), while <i>cryIAb</i> controls the corn borer.</p>"
+    },
+    {
+      "text": "<p><strong>Q47.</strong> Among the following stem cells, which are found in the umblical cord?</p>",
+      "options": [
+        "<p>Embryonic stem cells</p>",
+        "<p>Adult stem cells</p>",
+        "<p>Cord blood stem cells</p>",
+        "<p>All of the above</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In the 1970s it was found that blood from the umbilical cord carries the same blood-forming (haematopoietic) stem cells that a bone-marrow donor provides.</p> <p>Since then cord blood has been collected and stored as a source of these cord blood stem cells, which can also give rise to other cell types.</p> <p>Embryonic stem cells come from the inner cell mass of the early embryo, and adult stem cells from tissues such as bone marrow.</p>"
+    },
+    {
+      "text": "<p><strong>Q48.</strong> Genetically engineered bovine (bST), sometimes called rbST (recombinant bovine somatotropin) or rbGH (recombinant bovine growth hormone) are used in the</p>",
+      "options": [
+        "<p>therapeutic drugs</p>",
+        "<p>agriculture</p>",
+        "<p>dairy industry</p>",
+        "<p>DNA fingerprinting</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>rbST (rbGH) is bovine growth hormone produced by recombinant DNA technology.</p> <p>It is injected into dairy cows to increase their milk production, so its use is in the dairy industry.</p>"
+    },
+    {
+      "text": "<p><strong>Q49.</strong> Cultivation of Bt cotton has been much in the news. The prefix Bt means :</p>",
+      "options": [
+        "<p>Barium-treated cotton seeds</p>",
+        "<p>Bigger thread variety of cotton with better tensile strength</p>",
+        "<p>produced by biotechnology using restriction enzymes and ligases</p>",
+        "<p>carrying an endotoxin gene from Bacillus thuringiensis</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>\"Bt\" stands for the soil bacterium <i>Bacillus thuringiensis</i>.</p> <p>Bt cotton is a transgenic plant that carries the bacterium's <i>cry</i> gene. This gene codes for an insecticidal endotoxin (Cry protein), which kills insect pests such as bollworms that feed on the plant.</p>"
+    },
+    {
+      "text": "<p><strong>Q50.</strong> Hybridomas are the fusion product of</p>",
+      "options": [
+        "<p>normal antibody producing cell with myeloma</p>",
+        "<p>abnormal antibody producing cell with myeloma</p>",
+        "<p>sex cells with myeloma</p>",
+        "<p>bone cells with myeloma</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In hybridoma technology, a normal antibody-producing B-lymphocyte (from an immunised animal) is fused with a myeloma cell, a cancerous plasma cell.</p> <p>The hybrid cell (hybridoma) makes one specific antibody, from the B-cell, and divides indefinitely in culture, from the myeloma. It is used to produce monoclonal antibodies.</p>"
+    },
+    {
+      "text": "<p><strong>Q51.</strong> Which one of the following is a correct statement?</p>",
+      "options": [
+        "<p>\"Bt\" in \"Bt-cotton\" indicates that it is a genetically modified organism produced through biotechnology</p>",
+        "<p>Somatic hybridization involves fusion of two complete plant cells carrying desired genes</p>",
+        "<p>The anticoagulant hirudin is being produced from transgenic Brassica napus seeds</p>",
+        "<p>\"Flavr Savr\" variety of tomato has enhanced the production of ethylene which improves its taste</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Recombinant hirudin, an anticoagulant protein first obtained from the leech, is produced commercially in the seeds of transgenic Brassica napus, from which it is extracted.</p> <p>(a) \"Bt\" stands for Bacillus thuringiensis, the soil bacterium that supplies the cry (Bt toxin) gene, not for biotechnology.</p> <p>(b) Somatic hybridisation fuses protoplasts, i.e. cells whose walls have been removed, not complete plant cells.</p> <p>(d) In the Flavr Savr tomato the polygalacturonase gene is silenced, so the fruit softens slowly and keeps longer; ethylene production was not enhanced.</p>"
+    },
+    {
+      "text": "<p><strong>Q52.</strong> C-DNA probes are copied from the messenger RNA molecules with the help of :</p>",
+      "options": [
+        "<p>restriction enzymes</p>",
+        "<p>reverse transcriptase</p>",
+        "<p>DNA polymerase</p>",
+        "<p>adenosine deaminase</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Reverse transcriptase, the RNA-dependent DNA polymerase of retroviruses, uses mRNA as a template to synthesise a complementary single strand of DNA, cDNA.</p> <p>Labelled cDNA made from a gene's mRNA is used as a probe to detect matching sequences.</p> <p>Restriction enzymes cut DNA, ordinary DNA polymerase needs a DNA template, and adenosine deaminase is the enzyme missing in ADA-deficiency SCID.</p>"
+    },
+    {
+      "text": "<p><strong>Q53.</strong> Which of the following is not true?</p>",
+      "options": [
+        "<p>&beta; - galactosidase - lac operon</p>",
+        "<p>Photorespiration −C3 - plants</p>",
+        "<p>Krebs' cycle - mitochondrial matrix</p>",
+        "<p>Southern hybridisation - related to identification of RNA sequence</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p> &amp;beta; -galactosidase is encoded by the structural gene z of the lac operon, photorespiration occurs in 3 plants and the Krebs' cycle takes place in the mitochondrial matrix, so (A), (B) and (C) are true.</p> <p>Southern hybridisation identifies specific DNA sequences; RNA sequences are detected by Northern hybridisation. Hence (D) is not true.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q54.</strong> Chromosome walking is</p>",
+      "options": [
+        "<p>used in genetic mapping</p>",
+        "<p>observed during mitosis</p>",
+        "<p>to see position of ribosomes on nuclear membrane</p>",
+        "<p>to check the expression of mutant genes</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Chromosome walking is a positional-cloning technique in which overlapping clones are isolated progressively along a chromosome from a known marker towards an unknown gene.</p> <p>Hence it is used in genetic mapping.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q55.</strong> The protein &alpha;−1 antitrypsin is used to treat which of the following disease?</p>",
+      "options": [
+        "<p>Cancer</p>",
+        "<p>Rhematoid arthritis</p>",
+        "<p>Emphysema</p>",
+        "<p>ADA deficiency disease in children</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p> &amp;alpha; -1-antitrypsin is a protein that protects lung tissue from damage by elastase. Its deficiency leads to emphysema, and the recombinant protein is used to treat this disorder.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q56.</strong> Herbicide resistant gene in plant is</p>",
+      "options": [
+        "<p>Mt</p>",
+        "<p>Gt</p>",
+        "<p>Ct</p>",
+        "<p>Bt</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Herbicide resistance in transgenic plants is conferred by genes such as bar (phosphinothricin acetyltransferase, which inactivates glufosinate) and a glyphosate-tolerant EPSPS gene.</p> <p> Bt refers to the cry genes of <em>Bacillus thuringiensis</em>, whose crystal (Cry) proteins kill insect larvae; they make a crop insect resistant, not herbicide resistant.</p> <p> Mt , Gt and Ct are not names of herbicide-resistance genes.</p> <p>None of the options names a herbicide-resistance gene, so this question is treated as a bonus.</p>"
+    },
+    {
+      "text": "<p><strong>Q57.</strong> Which of the following bio-engineered bacteria is utilized for cleaning of marine oil slicks?</p>",
+      "options": [
+        "<p>Escherichia coli</p>",
+        "<p>Pseudomonas syringae</p>",
+        "<p>Pseudomonas putida</p>",
+        "<p>Rhizoctonia solani</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Ananda Mohan Chakrabarty developed a genetically engineered strain of Pseudomonas putida that digests the hydrocarbons of crude oil. It is used to clean up marine oil spills.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q58.</strong> Product of biotechnology is</p>",
+      "options": [
+        "<p>transgenic crops (GM crops)</p>",
+        "<p>humulin</p>",
+        "<p>biofertilizer</p>",
+        "<p>All of the above</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Transgenic (GM) crops, humulin (recombinant human insulin) and biofertilisers are all products of biotechnology. Hence, all the above are correct.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q59.</strong> A kind of biotechnology involving manipulation of DNA is</p>",
+      "options": [
+        "<p>DNA replication</p>",
+        "<p>genetic engineering</p>",
+        "<p>denaturation</p>",
+        "<p>renaturation</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Genetic engineering (recombinant DNA technology) is the biotechnological technique in which DNA is cut, joined and transferred to alter the genotype of an organism.</p> <p>Replication, denaturation and renaturation are natural DNA processes, not types of biotechnology.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q60.</strong> Nucleic acid segment tagged with a radiactive molecule is called</p>",
+      "options": [
+        "<p>clone</p>",
+        "<p>probe</p>",
+        "<p>plasmid</p>",
+        "<p>vector</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>A probe is a single-stranded DNA or RNA segment, labelled with a radioactive isotope or a fluorescent marker, that hybridises with a complementary sequence and so detects it.</p> <p>A clone, plasmid or vector is not a labelled detector segment.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q61.</strong> C-peptide of human insulin is :</p>",
+      "options": [
+        "<p>a part of mature insulin molecule.</p>",
+        "<p>responsible for formation of disulphide bridges.</p>",
+        "<p>removed during maturation of pro-insulin to insulin.</p>",
+        "<p>responsible for its biological activity.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Insulin is synthesised as pro-insulin, which contains the A and B chains together with an extra stretch called the C-peptide. During maturation, the C-peptide is removed, leaving the A and B chains joined by disulphide bridges to form mature insulin.</p> <p>Hence the C-peptide is not part of mature insulin, does not form the disulphide bridges, and does not contribute to the biological activity.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q62.</strong> Cry proteins coded by the gene Cry IAb controls which one of the following pests ?</p>",
+      "options": [
+        "<p>Cotton bollworm</p>",
+        "<p>Corn borer</p>",
+        "<p>Tobacco budworm</p>",
+        "<p>Mosquito</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The Cry proteins are coded by cry genes of Bacillus thuringiensis. The gene cryIAb codes for a protein that kills the corn borer, whereas cryIAc and cryIIAb code for proteins that control the cotton bollworm and the tobacco budworm, and other cry genes act on mosquitoes.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q63.</strong> Genetically modified tobacco plants were produced using <i>Agrobacterium</i> vectors. Which properties of <i>Agrobacterium</i> help in carrying nematode-specific genes into the host plant ?</p>",
+      "options": [
+        "<p>Infectious for monocot plants; has Ti plasmid</p>",
+        "<p>Infectious for dicot plants; has Ti plasmid</p>",
+        "<p>Infectious for plants and animals; has Ti plasmid</p>",
+        "<p>Infectious for monocots and dicots; has cry genes</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Agrobacterium tumefaciens infects dicot plants and carries the Ti (tumour-inducing) plasmid, which is disarmed and used to transfer the nematode-specific genes into tobacco, a dicot. It does not infect animals, and cry genes belong to Bacillus thuringiensis.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q64.</strong> The human protein which is being obtained from transgenic animals and is used to treat emphysema is :</p>",
+      "options": [
+        "<p>Alpha-lactalbumin</p>",
+        "<p>Thyroxine</p>",
+        "<p>α-1-antitrypsin</p>",
+        "<p>Insulin</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p> &amp;alpha; -1-antitrypsin is a human protein produced in transgenic animals such as sheep and used to treat emphysema. Alpha-lactalbumin is the milk protein obtained from transgenic cows, while thyroxine is a hormone and insulin is produced in bacteria.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q65.</strong> Assertion (A) : ELISA is based on the principle of antigen antibody interaction.</p><p>Reason (R) : ELISA can detect the proteins/glycoproteins only when present in high concentration.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <b><i>not</i></b> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Assertion: ELISA depends on antigen-antibody interaction, so it is true. Reason: ELISA is a very sensitive technique and detects antigens (proteins or glycoproteins) or antibodies even when present in very low concentrations, so the reason is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q66.</strong> <b>Assertion (A) :</b> The milk produced by transgenic cow ‘Rosie’ was nutritionally more balanced product for human babies than natural cow milk.</p><p><b>Reason (R) :</b> It was human protein enriched milk containing human alpha lactaglobulin.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation for Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation for Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The milk of the transgenic cow Rosie was richer in a human protein and was nutritionally more balanced for babies, so the assertion is true.</p> <p>The human protein was alpha-lactalbumin, not \"alpha lactaglobulin\", so the reason as stated is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q67.</strong> Genetically modified tobacco plants were produced using <u>Agrobacterium</u> vectors. Which property of <u>Agrobacterium</u> helps in carrying nematode specific genes into the host plant ?</p>",
+      "options": [
+        "<p>Infectious for monocot plant ; has Ti plasmid</p>",
+        "<p>Infectious for dicot plant ; has Ti plasmid</p>",
+        "<p>Infectious for plants and animals ; has Ti plasmids</p>",
+        "<p>Infectious for monocot and dicot plants ; has cry gene</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>To make tobacco plants resistant to the nematode Meloidogyne incognita, nematode-specific genes were introduced using Agrobacterium tumefaciens. Tobacco is a dicot, and Agrobacterium naturally infects dicot plants. Its Ti plasmid (tumour-inducing) carries the T-DNA, which transfers the gene into the plant genome.</p> <p>The cry gene belongs to Bacillus thuringiensis, and Agrobacterium does not infect animals.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q68.</strong> In RNAi, genes are silenced using which of the following biomolecules ?</p>",
+      "options": [
+        "<p>ssDNA</p>",
+        "<p>dsDNA</p>",
+        "<p>dsRNA</p>",
+        "<p>ssRNA</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNA interference is a cellular defence in which a complementary double-stranded RNA (dsRNA) binds to the mRNA of a gene and silences it. Hence dsRNA is the biomolecule involved.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q69.</strong> Protein encoded by gene Cry-I Ab controls the infestation of which of the following ?</p>",
+      "options": [
+        "<p>Cotton bollworms</p>",
+        "<p>Mosquitoes</p>",
+        "<p>Corn borer</p>",
+        "<p>Agrobacterium</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt toxin genes of <em>Bacillus thuringiensis</em> code for crystal proteins. The proteins coded by the genes Cry I Ab and Cry I Ac control cotton bollworms, and the protein coded by Cry I Ab controls corn borer.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q70.</strong> The recombinant protein obtained from transgenic animals that could be used to treat emphysema is :</p>",
+      "options": [
+        "<p>Humulin</p>",
+        "<p>α-lactalbumin</p>",
+        "<p>α-1-antitrypsin</p>",
+        "<p>Iodothyronine</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p> &amp;alpha; -1-antitrypsin is the recombinant protein produced in transgenic animals that is used to treat emphysema, a lung disease caused by its deficiency.</p> <p> &amp;alpha; -lactalbumin is a milk protein from a transgenic cow, and humulin is recombinant insulin made in bacteria.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q71.</strong> Transgenic animals have their genetic material manipulated. Select the correct option in reference to transgenic animals.</p>",
+      "options": [
+        "<p>Foreign DNA and RNA are present in their cells.</p>",
+        "<p>Foreign RNA is present in all of their cells.</p>",
+        "<p>Foreign DNA is present in all of its cells.</p>",
+        "<p>Foreign RNA is present in some of its cells.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Transgenic animals are those whose DNA has been manipulated to possess and express an extra (foreign) gene. The foreign DNA is introduced at an early embryonic stage, so it is present in all the cells of the animal.</p> <p>Hence the statement that foreign DNA is present in all of its cells is correct; the other options refer to RNA, which is not the manipulated genetic material.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q72.</strong> Bt-toxin genes have been expressed in plants in order to provide resistance against :</p><p>(i) lepidopterans and fungi</p><p>(ii) animals and bacteria</p><p>(iii) coleopterans and dipterans</p><p>(iv) lepidopterans</p><p><b>Options :</b></p>",
+      "options": [
+        "<p>(ii) and (iii)</p>",
+        "<p>(i), (ii) and (iv)</p>",
+        "<p>(iii) and (iv)</p>",
+        "<p>(ii) and (iv)</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt-toxin genes from <em>Bacillus thuringiensis</em> have been expressed in plants such as cotton and maize. The different <em>cry</em> genes encode proteins toxic to specific insect groups: lepidopterans (tobacco budworm, armyworm, corn borer), coleopterans (beetles) and dipterans (flies, mosquitoes).</p> <p>Therefore the toxins give resistance against coleopterans and dipterans (iii) and lepidopterans (iv). They do not act against fungi, animals or bacteria, so (i) and (ii) are wrong.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q73.</strong> Assertion (A) : A patient of ADA-deficiency requires periodic or repeated infusion of genetically-engineered lymphocytes.</p><p>Reason (R) : Lymphocytes are not immortal, but have life span.</p>",
+      "options": [
+        "<p>Both (A) and (R) are true and (R) is the correct explanation of (A).</p>",
+        "<p>Both (A) and (R) are true, but (R) is not the correct explanation of (A).</p>",
+        "<p>(A) is true, but (R) is false.</p>",
+        "<p>(A) is false, but (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In ADA deficiency the genetically engineered lymphocytes are introduced into the patient, but lymphocytes are not immortal and have a limited life span, so (R) is true.</p> <p>Therefore the infusions must be repeated periodically, which is exactly (A), so (R) explains (A).</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q74.</strong> With respect to insulin, choose the correct option :</p><p>(i) C-peptide is not present in mature insulin.</p><p>(ii) The insulin produced by rDNA technology has C-peptide.</p><p>(iii) The pro-insulin has C-peptide.</p><p>(iv) A-peptide and B-peptide of insulin are interconnected by disulphide bridges.</p>",
+      "options": [
+        "<p>(i) and (iv) only</p>",
+        "<p>(ii) and (iv) only</p>",
+        "<p>(ii) and (iii) only</p>",
+        "<p>(i), (iii) and (iv) only</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Pro-insulin consists of chains A and B joined by chain C (the C-peptide), so (iii) is correct.</p> <p>In maturation the C-peptide is removed, so mature insulin has only the A and B chains, joined by disulphide bridges. Hence (i) and (iv) are correct.</p> <p>Insulin made by rDNA technology is produced as separate A and B chains that are then joined, so it has no C-peptide, and (ii) is incorrect.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q75.</strong> GEAC stands for</p>",
+      "options": [
+        "<p>Genome Engineering Action Committee</p>",
+        "<p>Ground Environment Action Committee</p>",
+        "<p>Genetic and Environment Approval Committee</p>",
+        "<p>Genetic Engineering Approval Committee</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>GEAC is the body set up by the Government of India to take decisions on the validity of GM research and on the safety of introducing GM organisms for public services.</p> <p>It is the Genetic Engineering Approval Committee.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q76.</strong> RNA interference (RNAi) helps in making tobacco-plant resistant to a nematode (<i>Meloidegyne incognitia</i>)</p><p>Choose the correct option that shows how RNAi is achieved :</p>",
+      "options": [
+        "<p>Preventing the process of translation of mRNA of the nematode.</p>",
+        "<p>Preventing the process of replication of DNA of the nematode.</p>",
+        "<p>Preventing the process of transcription of DNA of the plant.</p>",
+        "<p>Preventing the process of replication of DNA of the plant.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In RNA interference, a nematode-specific gene is introduced into the tobacco host so that it produces sense and antisense RNA.</p> <p>These two RNA strands are complementary and form double-stranded RNA (dsRNA), which silences the specific mRNA of the nematode.</p> <p>Thus translation of the nematode mRNA is prevented and the parasite cannot survive in the transgenic plant.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q77.</strong> The technique for the early detection of a disease based on the principle of antigen-antibody interaction is :</p>",
+      "options": [
+        "<p>RNAi</p>",
+        "<p>EST</p>",
+        "<p>PCR</p>",
+        "<p>ELISA</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>ELISA (enzyme-linked immunosorbent assay) detects a pathogen by the antigen-antibody interaction, so it permits early detection of a disease, even before symptoms appear.</p> <p>RNAi silences a gene, EST refers to expressed sequence tags used in genome annotation, and PCR amplifies nucleic acid and is based on DNA, not on an antigen-antibody reaction.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q78.</strong> The most widely used transgenic animal for testing the safety of vaccine before they are used in humans is :</p>",
+      "options": [
+        "<p>Rabbits</p>",
+        "<p>Pigs</p>",
+        "<p>Sheep</p>",
+        "<p>Mice</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Transgenic mice are used the most widely for testing the safety of vaccines before they are used in humans, for instance the polio vaccine. They replace the monkeys that were used earlier, and mice are also used to test the toxicity of drugs.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q79.</strong> Assertion (A) : Biotechnology produces transgenic microorganisms that function as microfactories for proteins.</p><p>Reason (R) : Transgenic microorganisms can be developed to produce proteins of human use, like insulin.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Biotechnology produces transgenic microorganisms that work as microfactories for proteins, so the Assertion is true.</p> <p>Transgenic bacteria and yeast can be made to produce human proteins such as insulin, which explains why they act as protein microfactories. So the Reason is true and is the correct explanation.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q80.</strong> Which one of the following is <i>not</i> the product of transgenic experiments ?</p>",
+      "options": [
+        "<p>Pest-resistant crop variety</p>",
+        "<p>High nutritional value in grains</p>",
+        "<p>Drought-resistant crops</p>",
+        "<p>Production of insulin by rDNA technique</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In a transgenic experiment a foreign gene is introduced into a plant or an animal so that the organism itself carries and expresses it. Pest-resistant crops such as Bt cotton, grains of high nutritional value such as vitamin A-enriched golden rice, and drought-resistant crops are all such transgenic (genetically modified) crop plants.</p> <p>Human insulin, in contrast, is a protein manufactured by recombinant DNA technology: the DNA sequences for its chains A and B are introduced into plasmids of <em>E. coli</em>, and the chains produced are extracted and joined to form insulin. It is an rDNA product made in bacteria, not a transgenic crop or animal.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q81.</strong> Out of the following, select the correct match :</p>",
+      "options": [
+        "<p>Transgenic cow milk – Human beta-lactalbumin protein</p>",
+        "<p>ELISA – Antigen antibody interaction</p>",
+        "<p>Corn Borer – Cry II Ab gene</p>",
+        "<p>Cotton plant – <i>Meloidegyne Incognitia</i></p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>ELISA is based on antigen-antibody interaction, so (B) is correct.</p> <p>Transgenic cow milk contains human &amp;alpha; -lactalbumin, not beta. The Cry II Ab gene acts against cotton bollworm, while corn borer is controlled by <em>cryIAb</em>. <em>Meloidogyne incognita</em> is the nematode that infects tobacco roots, and not a cotton pest controlled in this way.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q82.</strong> Crystals of Bt toxin produced by some bacteria, do not kill the bacteria producing them because :</p>",
+      "options": [
+        "<p>bacteria are resistant to the toxin</p>",
+        "<p>toxin is immature</p>",
+        "<p>toxin is inactive</p>",
+        "<p>bacteria encloses ‘toxin’ in a special capsule</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The <em>Bacillus thuringiensis</em> bacterium produces the Bt toxin as an inactive protoxin in crystalline form.</p> <p>The protoxin becomes active only in the alkaline gut of the insect, where it is solubilised and cleaved. Hence the toxin is harmless to the bacterium that makes it.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q83.</strong> Assertion (A) : Biotechnology produces transgenic micro-organisms that act as microfactories for proteins.</p><p>Reason (R) : To produce proteins for human use like insulin, transgenic microorganisms can be developed.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Assertion: transgenic micro-organisms carrying a foreign gene act as microfactories producing useful proteins. It is true.</p> <p>Reason: transgenic micro-organisms can be developed to make proteins such as insulin for human use. It is true.</p> <p>The reason only gives one example of the proteins made and does not explain why biotechnology produces transgenic micro-organisms that act as microfactories, so it is not the correct explanation.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q84.</strong> Which one of the following transgenic animals is being used to test the safety of the polio vaccine ?</p>",
+      "options": [
+        "<p>Sheep</p>",
+        "<p>Goat</p>",
+        "<p>Pig</p>",
+        "<p>Mice</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Transgenic mice are used to test the safety of the polio vaccine. This is used instead of monkeys, which were the earlier test animals, and it reduces the cost and the number of animals needed.</p> <p>Sheep, goat and pig are not used for this test.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q85.</strong> The improved trait that is found in the genetically modified transgenic crop – Golden rice is :</p>",
+      "options": [
+        "<p>High lysine content</p>",
+        "<p>Insect resistant</p>",
+        "<p>High protein content</p>",
+        "<p>High vitamin-A content</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Golden rice is a transgenic rice variety in which genes for the synthesis of &amp;beta; -carotene have been introduced. &amp;beta; -carotene is the precursor of vitamin A, so the improved trait is a high vitamin-A content. Insect resistance is the trait of Bt crops, and high lysine or protein content belongs to other biofortified varieties.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q86.</strong> Assertion (A) : Indian Government has set up an organisation known as GEAC to decide the validity of GM research.</p><p>Reason (R) : Genetic modification of organisms has no effect when such organisms are introduced in the ecosystem.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The Government of India set up the Genetic Engineering Appraisal Committee (GEAC) to decide the validity of GM research and the safety of introducing GM organisms for public services, so Assertion (A) is true. Genetic modification can have unpredictable effects on the ecosystem, which is why such regulation is needed, so Reason (R) is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q87.</strong> The specific Bt toxin genes which protect the cotton plants against the cotton bollworms are :</p>",
+      "options": [
+        "<p><i>Cry</i>-I Ac and <i>Cry</i>-II Ab</p>",
+        "<p><i>Cry</i>-I Ab and <i>Cry</i>-I Bc</p>",
+        "<p><i>Cry</i>-II Ac and <i>Cry</i>-I Ac</p>",
+        "<p><i>Cry</i>-II Ab and <i>Cry</i>-I Ab</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Bt cotton carries the genes of <em>Bacillus thuringiensis</em> that code for insecticidal Cry proteins active against lepidopteran larvae.</p> <p>The proteins encoded by cryIAc and cryIIAb control the cotton bollworms, whereas cryIAb controls the corn borer.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q88.</strong> Assertion (A) : Functional ADA cDNA genes must be inserted in the lymphocytes at the early embryonic stage in gene therapy for ADA deficiency.</p><p>Reason (R) : Cells in the embryonic stage are immortal, differentiated and easy to manipulate.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>Assertion: in gene therapy for ADA deficiency, lymphocytes cultured from the patient receive the functional ADA cDNA, but these cells are short-lived, so the treatment must be repeated. For a permanent cure the gene must be introduced into cells at the early embryonic stage. The Assertion is true.</p> <p>Reason: embryonic cells are totipotent and undifferentiated, and they are not immortal. The Reason is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q89.</strong> ELISA technique is based on the principle of</p>",
+      "options": [
+        "<p>DNA replication</p>",
+        "<p>antigen-antibody interaction</p>",
+        "<p>pathogen – antigen interaction</p>",
+        "<p>antigen – protein interaction</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>ELISA (enzyme-linked immunosorbent assay) detects a pathogen through its antigens, or through the antibodies made against them, by means of antigen–antibody interaction. It is therefore based on antigen–antibody interaction.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q90.</strong> Assertion (A) : Patents are granted by government to an inventor.</p><p>Reason (R) : Patents prevents others from commercial use of an invention.</p>",
+      "options": [
+        "<p>Both (A) and (R) are true and (R) is the correct explanation of (A).</p>",
+        "<p>Both (A) and (R) are true and (R) is not the correct explanation of (A).</p>",
+        "<p>(A) is true, but (R) is false.</p>",
+        "<p>(A) is false, but (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>A patent is granted by the government to an inventor, so Assertion (A) is true.</p> <p>A patent gives the inventor the exclusive right to make and sell the invention for a fixed period and prevents others from using it commercially without permission. Reason (R) is true and explains why the patent is granted.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q91.</strong> Assertion (A) : In molecular diagnosis, single stranded DNA or RNA tagged with radioactive molecule is called a probe.</p><p>Reason (R) : A probe always searches and hybridises with its complementary DNA in a clone of cells.</p>",
+      "options": [
+        "<p>Both (A) and (R) are true and (R) is the correct explanation of (A).</p>",
+        "<p>Both (A) and (R) are true, but (R) is not the correct explanation of (A).</p>",
+        "<p>(A) is true, but (R) is false.</p>",
+        "<p>(A) is false, but (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>A probe is a single-stranded DNA or RNA tagged with a radioactive molecule, so the assertion is true. The probe hybridises with its complementary DNA in a clone of cells, and the clone with the mutated gene shows up on autoradiography. This explains why the probe is used in molecular diagnosis, so the reason correctly explains the assertion.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q92.</strong> Who among the following challenged the patent right granted to the University of Mississippi Medical Centre for ‘use of turmeric in wound healing’ ?</p>",
+      "options": [
+        "<p>Mr. Ajay Phadke</p>",
+        "<p>Ms. Vandana Shiva</p>",
+        "<p>Dr. Venugopalan</p>",
+        "<p>Dr. R.A. Mashelkar</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The patent granted to the University of Mississippi Medical Centre for the use of turmeric in wound healing was challenged by the Council of Scientific and Industrial Research (CSIR), headed by Dr. R.A. Mashelkar. CSIR showed that the healing use of turmeric was already known in India for centuries, and the patent was revoked as biopiracy.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q93.</strong> Assertion (A) : A patient of ADA deficiency undergoing treatment for gene therapy requires periodic infusion of genetically engineered lymphocytes.</p><p>Reason (R) : Lymphocytes are immortal.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>In gene therapy for ADA deficiency, lymphocytes from the patient's blood are grown in culture, a functional ADA cDNA is introduced into them using a retroviral vector, and the cells are returned to the patient. Since these lymphocytes are not immortal and have a limited life span, the patient needs periodic infusions of genetically engineered lymphocytes. Hence, the Assertion is true.</p> <p>The Reason is false because lymphocytes are mortal; the cure becomes permanent only when the gene is introduced into marrow cells at an early embryonic stage.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q94.</strong> Which one of the following products was produced as a result of DNA manipulation in the first transgenic cow ‘Rosie’ ?</p>",
+      "options": [
+        "<p>&alpha; -1-antitrypsin</p>",
+        "<p>&alpha; -lactalbumin</p>",
+        "<p>&beta; -lactglucose</p>",
+        "<p>&alpha; -deaminase</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The first transgenic cow, Rosie (1997), produced human protein-enriched milk containing the human &amp;alpha; -lactalbumin, 2.4 grams per litre.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q95.</strong> Assertion (A) : Crystal protein Bt toxin does not kill the <i>Bacillus</i> but kills the insects.</p><p>Reason (R) : Bt toxin exists in inactive form in <i>Bacillus</i> but when ingested by the insect, the acidic pH of its gut changes it into an active form.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>The Bt toxin exists as inactive protoxin in <em>Bacillus</em>, so the bacterium is not killed, hence the assertion is true. In the insect gut the alkaline (not acidic) pH solubilises the crystals and activates the toxin, so the reason is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q96.</strong> Which one of the following is used during ‘RNA i’ process, to silence the desired gene ?</p>",
+      "options": [
+        "<p>dsDNA</p>",
+        "<p>dsRNA</p>",
+        "<p>rDNA</p>",
+        "<p>DNA polymerase</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Biotechnology and Its Applications",
+      "solution": "<p>RNA interference silences a gene post-transcriptionally. Double-stranded RNA (dsRNA) complementary to the mRNA of the target gene is introduced into the cell. It is processed into short fragments that bind and degrade the complementary mRNA, so the protein is not formed.</p> <p>dsDNA, rDNA and DNA polymerase do not take part in this silencing.</p> <p>Hence, the correct option is (B).</p>"
+    }
+  ]
+},
+{
+  "name": "SWT 01 - Organisms and Populations (Organism & Environment, Abiotic Factors & Adaptations)",
+  "label": "SWT 01",
+  "bracket": "NCERT Core - Part 1",
+  "subject": "neet_ecology_organisms",
+  "topics": "Major Abiotic Factors (Temperature, Water, Light, Soil), Homeostasis, Regulators, Conformers, Migration, Hibernation & Aestivation, Adaptations",
+  "duration": "60 mins",
+  "questions": [
+    {
+      "text": "<p><strong>Q1.</strong> Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R .</p> <p>Assertion A : Abingdon tortoise in Galapagos islands became extinct within a decade after goats were introduced.</p> <p>Reason R: Goats were more efficient at browsing than Abingdon tortoise.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p>",
+      "options": [
+        "<p> A is not correct but R is correct</p>",
+        "<p>Both A and R are correct and R is the correct explanation of A </p>",
+        "<p>Both A and R are correct but R is not the correct explanation of A </p>",
+        "<p> A is correct but R is not correct</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Abingdon tortoise in Galapagos islands became extinct within a decade after goats were introduced on the island, apparently due to the greater browsing efficiency of the goats.</p>"
+    },
+    {
+      "text": "<p><strong>Q2.</strong> Consider a population of 10 million cells. Given the per-capita birth rate of 0.002 (per unit time) and the percapita death rate of 0.002 (per unit time), the expected number of cells after 10 generations is ____ .</p>",
+      "options": [
+        "<p>100 million</p>",
+        "<p>1 million</p>",
+        "<p>5 million</p>",
+        "<p>10 million</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The per-capita birth rate of bacteria is 0.002 .</p> <p>The per-capita death rate of bacteria is 0.002 .</p> <p>The population dynamic equation is</p> <p> dNdt=(b−d)N </p> <p>Since r=(b−d)=0.002−0.002=0 </p> <p> dNdt=0 </p> <p>So, the population remains constant at all times. Thus, even after 10 generations, the expected number of cells will be 10 million.</p>"
+    },
+    {
+      "text": "<p><strong>Q3.</strong> Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.</p> <p>Assertion A : The logistic growth model of populations is considered more realistic than the exponential growth model.</p> <p>Reason R: Resources are finite.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below :</p>",
+      "options": [
+        "<p> A is not correct but R is correct</p>",
+        "<p>Both A and R are correct and R is the correct explanation of A </p>",
+        "<p>Both A and R are correct but R is not the correct explanation of A </p>",
+        "<p> A is correct but R is not correct</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The logistic growth model of populations is considered more realistic than the exponential growth model because resources are limited/finite in nature.</p>"
+    },
+    {
+      "text": "<p><strong>Q4.</strong>  Match List-I with List-II. </p> <table class=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td class=\"_empty\" style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">List-I</td> <td class=\"_empty\" style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">List-II</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">A.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">Both species are harmed</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">I.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">Predation</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">B.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">One species is harmed and the other is benefited</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">II.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">Mutualism</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">C.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">Both species are benefited</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">III.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">Competition</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">D.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">One is benefited while the other has no effect</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">IV.</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">Commensalism</td> </tr> </tbody> </table>Choose the correct answer from the options given below:",
+      "options": [
+        "<p>A-III, B-I, C-II, D-IV</p>",
+        "<p>A-III, B-IV, C-II, D-I</p>",
+        "<p>A-I, B-II, C-III, D-IV</p>",
+        "<p>A-II, B-I, C-IV, D-III</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Both species are harmed in competition.</p> <p>One species is harmed and the other is benefited in predation.</p> <p>Both species are benefited in mutualism.</p> <p>One species is benefited while the other has no effect in commensalism.</p>"
+    },
+    {
+      "text": "<p><strong>Q5.</strong> Which of the following equations depicts Verhulst-Pearl logistic population growth?</p>",
+      "options": [
+        "<p> dNdt=rN(K+NK) .</p>",
+        "<p> dNdt=rN(K−NK) </p>",
+        "<p> dNdt=rN(K−NN) </p>",
+        "<p> dNdt=rN(KK−N) </p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Verhulst-Pearl logistic population growth is depicted by the equation dNdt=rN(K−NK) </p> <p>Where</p> <ul> <li><p> K= Carrying capacity</p></li> <li><p> r= Intrinsic rate of natural increase</p></li> <li><p> N= Population density at time 't'</p></li> </ul>"
+    },
+    {
+      "text": "<p><strong>Q6.</strong> Which one of the following is an appropriate example of sexual deceit?</p>",
+      "options": [
+        "<p>Female wasp and fig</p>",
+        "<p>Ophrys and bumblebee</p>",
+        "<p>Sea anemone and clown fish</p>",
+        "<p>Cuckoo and crow</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Female wasp and fig - Mutualism</p> <p>Ophrys and bumblebee - Sexual deceit</p> <p>Sea anemone and clown fish - Commensalism</p> <p>Cuckoo and crow - Brood Parasitism</p>"
+    },
+    {
+      "text": "<p><strong>Q7.</strong> Choose the correct statements regarding population interactions between two species.</p> <p>A. In both parasitism and commensalism, only one species benefits and the other species is harmed.</p> <p>B. Both species benefit in mutualism.</p> <p>C. Both species benefit in commensalism.</p> <p>D. In parasitism, only one species benefits and the other species is harmed.</p> <p>E. In amensalism, one species is harmed and the other is unaffected.</p> <p>Choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>B and E only</p>",
+        "<p>A and B only</p>",
+        "<p>B, D and E only</p>",
+        "<p>A and D only</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In parasitism, one species is benefitted and the other is harmed. Whereas, in commensalism one species gets benefitted and the other remains unaffected.</p>"
+    },
+    {
+      "text": "<p><strong>Q8.</strong> Epiphytes that are growing on a mango branch is an example of which of the following? </p>",
+      "options": [
+        "<p>Predation</p>",
+        "<p>Amensalism</p>",
+        "<p>Commensalism</p>",
+        "<p>Mutualism</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Commensalism is the type of interaction in which one-species benefits and another is neither harmed nor benefited. An orchid growing as an epiphyte on a mango branch is an example of commensalism.</p>"
+    },
+    {
+      "text": "<p><strong>Q9.</strong> Given below are two statements :</p> <p>Statement I : Fig fruit is a non-vegetarian fruit as it has enclosed fig wasps in it.</p> <p>Statement II : Fig wasp and fig tree exhibit mutual relationship as fig wasp completes its life cycle in fig fruit and fig fruit gets pollinated by fig wasp.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p>",
+      "options": [
+        "<p>Statement I is correct but statement II is incorrect</p>",
+        "<p>Statement I is incorrect but statement II is correct</p>",
+        "<p>Both statement I and statement II are correct</p>",
+        "<p>Both statement I and statement II are incorrect</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Statement I is <strong>incorrect</strong>. A fig is the fruit of a plant. The fig wasp only uses it to lay eggs and to feed its larvae, so this does not make it a \"non-vegetarian\" fruit.</p> <p>Statement II is also <strong>incorrect</strong>. Fig and fig wasp do show mutualism, but NCERT says the wasp pollinates the fig <strong>inflorescence</strong> while searching for egg-laying sites, not the fruit. A fruit forms only after pollination and fertilisation, so a fruit cannot be \"pollinated\".</p> <p>The NTA final answer key also treats both statements as incorrect.</p> <p>So, the correct answer is:</p> <p> Option D: Both statement I and statement II are incorrect </p>"
+    },
+    {
+      "text": "<p><strong>Q10.</strong> Which one of the following equations represents the Verhulst-Pearl Logistic Growth of population?</p>",
+      "options": [
+        "<p>dNdt=rN(N−KN)</p>",
+        "<p>dNdt=N(r−KK)</p>",
+        "<p>dNdt=r(K−NK)</p>",
+        "<p>dNdt=rN(K−NK)</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Logistic growth is captured by the Verhulst-Pearl logistic growth equation, represented as:</p> <p> dNdt=rN(K−NK) </p> <p>In this equation:</p> <p><p> N is the population size,</p></p> <p><p> r is the intrinsic growth rate,</p></p> <p><p> K is the carrying capacity,</p></p> <p><p> dNdt indicates the rate of change of the population over time.</p></p> <p>This model describes how population growth slows as it approaches the carrying capacity, providing a more realistic scenario than exponential growth models.</p>"
+    },
+    {
+      "text": "<p><strong>Q11.</strong> When will the population density increase, under special conditions? When the number of :</p>",
+      "options": [
+        "<p>Deaths exceeds number of births and also number of emigrants equals number of immigrants.</p>",
+        "<p>Births plus number of immigrants equals number of deaths plus number of emigrants.</p>",
+        "<p>Births plus number of emigrants is more than the number of deaths plus number of immigrants.</p>",
+        "<p>Births plus number of immigrants is more than the sum of number of deaths and number of emigrants.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>(N) is the population density at time t, then its density at time t + 1 is</p> <p> Nt+1=Nt+[(B+I)−(D+E)] </p> <p>Population density will increase if the number of births plus the number of immigrants (B + I) is more than the number of deaths plus the number of emigrants (D + E).</p>"
+    },
+    {
+      "text": "<p><strong>Q12.</strong> Match List-I with List-II:</p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 746px\"><colgroup> <col style=\"width: 78px\"/> <col style=\"width: 262px\"/> <col style=\"width: 83px\"/> <col style=\"width: 323px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - I</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - II</th> </tr></thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">Predator</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">Ophrys</td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">Mutualism</td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\">Pisaster</td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">Parasitism</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">Female wasp and fig</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">Sexual deceit</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\">Plasmodium</td> </tr> </tbody> </table></p> <p>Choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>A-III, B-II, C-I, D-IV</p>",
+        "<p>A-IV, B-I, C-II, D-III</p>",
+        "<p>A-II, B-III, C-I, D-IV</p>",
+        "<p>A-II, B-III, C-IV, D-I</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>(1) In predation one species is benefitted ‘+’ while the other is detrimental ‘–’. Pisaster is an important predator in the rocky intertidal communities of the American pacific coast.</p> <p>(2) In many species of fig trees, there is tight one-to-one relationship with the pollinator species of wasp. It means that a given fig species can be pollinated only by its ‘partner’ wasp species and no other species is an example of mutualism.</p> <p>(3) Plasmodium is an endoparasite in humans that causes malaria.</p> <p>(4) The Mediterranean orchid Ophrys employs ‘sexual deceit’ to get pollination done by a species of bee.</p>"
+    },
+    {
+      "text": "<p><strong>Q13.</strong> Match List-I with List-II. </p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 746px\"><colgroup> <col style=\"width: 78px\"/> <col style=\"width: 262px\"/> <col style=\"width: 83px\"/> <col style=\"width: 323px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - I</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List - II</th> </tr></thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">Migratory flamingoes and resident fish in South American lakes</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">Interference competition</td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">Abingdon tortoise became extinct after introduction of goats in their habitat</td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\">Competitive release</td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">Chthamalus expands its distributional range in the absence of Balanus</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">Resource Partitioning</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">Five closely related species of Warblers feeding in different locations on same tree</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\">Interspecific competition</td> </tr> </tbody></table></p> <p>Choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>A-I, B-IV, C-III, D-II</p>",
+        "<p>A-IV, B-I, C-II, D-III</p>",
+        "<p>A-III, B-I, C-II, D-IV</p>",
+        "<p>A-II, B-IV, C-III, D-I</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>To correctly match List I with List II, let's understand the types of ecological interactions mentioned:</p> <p><b>(A) Migratory flamingoes and resident fish in South American lakes</b> would involve interaction for resources like food, which can be classified as <b>interspecific competition (IV)</b>.</p> <p><b>(B) Abingdon tortoise became extinct after introduction of goats in their habitat</b> indicates that the introduction of goats led to the extinction due to competition for resources, categorizing it as <b>interference competition (I)</b>.</p> <p><b>(C) Chthamalus expands its distributional range in the absence of Balanus</b> shows that one species expands its range when the other is absent, which is known as <b>competitive release (II)</b>.</p> <p><b>(D) Five closely related species of Warblers feeding in different locations on same tree</b> is an example of <b>resource partitioning (III)</b>, where species divide a niche to avoid competition.</p> <p>Thus, the correct matches are:</p> <p>(A) - IV</p> <p>(B) - I</p> <p>(C) - II</p> <p>(D) - III</p> <p>So, the correct option is:</p> <p><b>Option B</b></p> <p>A-IV, B-I, C-II, D-III</p>"
+    },
+    {
+      "text": "<p><strong>Q14.</strong> What do 'a' and 'b' represent in the following population growth curve?</p> <p><img alt=\"NEET 2024 (Re-Examination) Biology - Organisms and Populations Question 35 English\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1ly2r01sc/70071a87-f226-413c-951f-13244e487c77/2201d4c0-3788-11ef-b0fa-b1d2af0e81c3/file-jaoe38c1ly2r01sd.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>‘a’ represents exponential growth when resources are not limiting the growth; and ‘b’ represents logistic growth when resources are limiting the growth.</p>",
+        "<p>‘a’ represents logistic growth when resources are not limiting the growth; ‘b’ represents exponential growth when resources are limiting the growth.</p>",
+        "<p>‘a’ represents carrying capacity and ‘b’ shows logistic growth when resources are limiting the growth.</p>",
+        "<p>‘a’ represents exponential growth when resources are not limiting the growth and ‘b’ shows carrying capacity.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The given graph represents the population growth curve where ‘a’ represents exponential growth when resources are not limiting the growth which forms a J-shaped curve and ‘b’ represents logistic growth when resources are limiting the growth which forms an S-shaped curve.</p>"
+    },
+    {
+      "text": "<p><strong>Q15.</strong> The equation of Verhulst-Pearl logistic growth is dNdt=rN[K−NK] . From this equation, K indicates:</p>",
+      "options": [
+        "<p>Intrinsic rate of natural increase</p>",
+        "<p>Biotic potential</p>",
+        "<p>Carrying capacity</p>",
+        "<p>Population density</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The Verhulst-Pearl logistic growth equation you've presented is a fundamental model used to describe how populations grow under limited resource conditions. This model is sensitive to both the variables and coefficients it incorporates:</p> <p> dNdt=rN[K−NK] </p> <p>Here:</p> <ul> <li> N represents the population size at time t .</li> <li> r is the intrinsic rate of natural increase, indicating the rate at which the population grows per individual when resources are not limiting.</li> <li> K represents the carrying capacity of the environment.</li> </ul> <p>In the context of this equation:</p> <ul> <li>The term [K−NK] is a fraction that reduces the effective growth rate as the population size N approaches the carrying capacity K . This term essentially represents the remaining proportion of resources available as the population grows larger.</li> </ul> <p>Based on this understanding:</p> <ul> <li>Option A: \"Intrinsic rate of natural increase\" – Incorrect, this is represented by r in the equation.</li> <li>Option B: \"Biotic potential\" – Incorrect, biotic potential generally refers to the maximum reproductive capacity of an organism under optimal conditions, often considered similar to r but not specifically the same as K .</li> <li>Option C: \"Carrying capacity\" – Correct, as K in the equation is specifically describing the carrying capacity, which is the maximum population size that the environment can sustain indefinitely given the food, habitat, water, and other necessities available in the environment.</li> <li>Option D: \"Population density\" – Incorrect, while N relates directly to population density at any time, K is about the upper limit of that density sustainable by the environment.</li> </ul> <p>Therefore, Option C is the correct answer. The variable K in the Verhulst-Pearl logistic growth equation indeed stands for the carrying capacity.</p>"
+    },
+    {
+      "text": "<p><strong>Q16.</strong> Given below are two statements:</p> <p>Statement I: Gause's competitive exclusion principle states that two closely related species competing for different resources cannot exist indefinitely.</p> <p>Statement II: According to Gause's principle, during competition, the inferior will be eliminated. This may be true if resources are limiting.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p>",
+      "options": [
+        "<p>Both Statement I and Statement II are true.</p>",
+        "<p>Both Statement I and Statement II are false.</p>",
+        "<p>Statement I is true but Statement II is false.</p>",
+        "<p>Statement I is false but Statement II is true.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Let's analyze the two statements given and compare them with Gause's competitive exclusion principle.</p> <p><strong>Statement I:</strong> \"Gause's competitive exclusion principle states that two closely related species competing for different resources cannot coexist indefinitely.\" This statement is incorrect. Gause's principle actually states that two species competing for the <em>same limited resource</em> cannot coexist indefinitely. If the resources are different, the principle does not necessarily apply because the species are not directly competing against each other for the same needs. Therefore, the correct phrasing should refer to species competing for the <em>same</em> resource.</p> <p><strong>Statement II:</strong> \"According to Gause's principle, during competition, the inferior will be eliminated. This may be true if resources are limiting.\" This statement accurately describes a possible outcome according to Gause's competitive exclusion principle. The principle suggests that in a scenario where two species compete for the same limited resource, one species will often outcompete the other, leading to the decline or possible extinction of the less competitive species.</p> <p>From the analysis above:</p> <p>Statement I is false because it incorrectly states that species compete for different resources under Gause's principle.</p> <p>Statement II is true as it correctly highlights the eventual elimination of one species due to competition over limited resources.</p> <p>Therefore, the correct answer is:</p> <p><strong>Option D</strong>: Statement I is false but Statement II is true.</p>"
+    },
+    {
+      "text": "<p><strong>Q17.</strong> Plants offer rewards to animals in the form of pollen and nectar and the animals facilitate the pollination process. This is an example of :</p>",
+      "options": [
+        "<p>Amensalism</p>",
+        "<p>Competition</p>",
+        "<p>Commensalism</p>",
+        "<p>Mutualism</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>This is an example of Mutualism. Mutualism is a type of symbiotic relationship in which both organisms involved benefit. In this case, the plant benefits by having its pollen dispersed by the animal, thus facilitating pollination, and the animal benefits by obtaining food in the form of pollen and nectar. </p> <p>Therefore, the correct answer is Option D : Mutualism.</p>"
+    },
+    {
+      "text": "<p><strong>Q18.</strong> For chemical defence against herbivores, Calotropis has :</p>",
+      "options": [
+        "<p>cardiac glycosides</p>",
+        "<p>strychnine</p>",
+        "<p>toxic ricin</p>",
+        "<p>distasteful quinine</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The correct answer is Option A : cardiac glycosides.</p> <p>Calotropis, a type of milkweed, contains cardiac glycosides which are toxic compounds that interfere with the sodium-potassium pump in the heart and other cells. This makes the plant toxic to most herbivores.</p>"
+    },
+    {
+      "text": "<p><strong>Q19.</strong> If there are 250 snails in a pond, and within a year their number increases to 2500 by reproduction. What should be their birth rate per snail per year ?</p>",
+      "options": [
+        "<p>10</p>",
+        "<p>9</p>",
+        "<p>25</p>",
+        "<p>15</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Birth rate =ΔNNΔt <br/><br/>Here, N=250 <br/><br/> Δt=1ΔN=2500−250=2250 <br/><br/> =2250250×1=9</p>"
+    },
+    {
+      "text": "<p><strong>Q20.</strong> Given below are two statements:</p> <p>Statement I : Gause’s ‘Competitive Exclusion Principle’ states that two closely related species competing for the same resources cannot co-exist indefinitely and competitively inferior one will be eliminated eventually.</p> <p>Statement II : In general, carnivores are more adversely affected by competition than herbivores.</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>Both Statement I and Statement II are false.</p>",
+        "<p>Statement I is correct but Statement II is false.</p>",
+        "<p>Statement I is incorrect but Statement II is true.</p>",
+        "<p>Both Statement I and Statement II are true.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Gause's 'Competitive Exclusion Principle' states that two closely related species competing for the same resources cannot co-exist indefinitely and the competitively inferior one will be eliminated eventually. Thus, statement I is correct.</p> <p>Statement II is incorrect as in general, herbivores and plants appear to be more adversely affected by competition than carnivores.</p>"
+    },
+    {
+      "text": "<p><strong>Q21.</strong> Match List I with List II:</p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 447px\"> <colgroup> <col style=\"width: 49px\"/> <col style=\"width: 154px\"/> <col style=\"width: 54px\"/> <col style=\"width: 190px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List I<br/>(Interaction)</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List II<br/>(Species A and B)</th> </tr> </thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">Mutualism</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">+(A), 0(B)</td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">Commensalism</td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\"> − (A), 0(B)</td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">Amensalism</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">+(A), − (B)</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">Parasitism</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\">+(A), +(B)</td> </tr> </tbody> </table></p> <p>Choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>A-IV, B-I, C-II, D-III</p>",
+        "<p>A-IV, B-III, C-I, D-II</p>",
+        "<p>A-III, B-I, C-IV, D-II</p>",
+        "<p>A-IV, B-II, C-I, D-III</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>(+, +) Mutualism : In this interaction, both the interacting species are benefitted.</p> <p>(+, 0) Commensalism : Only one species is benefitted and the other species remains unharmed.</p> <p>( − , 0) Amensalism : Neither species is benefitted. One remains unharmed and the other is harmed.</p> <p>(+, − ) Parasitism : One species is benefitted and other is negatively effected.</p>"
+    },
+    {
+      "text": "<p><strong>Q22.</strong> Match List I with List II.</p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 447px\"> <colgroup> <col style=\"width: 49px\"/> <col style=\"width: 154px\"/> <col style=\"width: 54px\"/> <col style=\"width: 190px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List I<br/>(Interacting species)</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List II<br/>(Name of interaction)</th> </tr> </thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">A Leopard and a Lion in a forest/grassland</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">Competition</td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">A Cuckoo laying egg in a Crow's nest </td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\">Brood parasitism</td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">Fungi and root of a higher plant in Mycorrhizae</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">Mutualism</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">A cattle egret and a Cattle in a field</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\">Commensalism</td> </tr> </tbody> </table></p> <p>Choose the correct answer from the options given below.</p>",
+      "options": [
+        "<p>A-I, B-II, C-IV, D-III</p>",
+        "<p>A-III, B-IV, C-I, D-II</p>",
+        "<p>A-II, B-III, C-I, D-IV</p>",
+        "<p>A-I, B-II, C-III, D-IV</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>- A leopard and a lion in a forest/grassland (A) : These two species are predators that hunt in the same environment and likely compete for the same prey. This is an example of competition (I). <br/><br/>- A cuckoo laying an egg in a crow's nest (B) : The cuckoo is known for laying its eggs in the nests of other birds, such as crows. The crow then raises the cuckoo's young, often at the expense of its own offspring. This is a form of brood parasitism (II). <br/><br/>- Fungi and the root of a higher plant in mycorrhizae (C) : Mycorrhizae are symbiotic relationships between fungi and plant roots, in which the fungi help the plant absorb water and nutrients from the soil, while the plant provides the fungi with carbohydrates. This is an example of mutualism (III). <br/><br/>- A cattle egret and a cattle in a field (D) : Cattle egrets are often seen near cattle, feeding on the insects that the cattle stir up as they move and graze. The egret benefits from this interaction (by getting easy access to food), while the cattle are unaffected. This is an example of commensalism (IV). <br/><br/>Given this information, the correct match is : <br/><br/>Option D : <br/><br/>A-I, B-II, C-III, D-IV</p>"
+    },
+    {
+      "text": "<p><strong>Q23.</strong> Match List I with List II.</p> <p> <table class=\"tg\" style=\"undefined;table-layout: fixed; width: 447px\"> <colgroup> <col style=\"width: 49px\"/> <col style=\"width: 154px\"/> <col style=\"width: 54px\"/> <col style=\"width: 190px\"/> </colgroup> <thead> <tr> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List I</th> <th class=\"tg-7btt\"></th> <th class=\"tg-7btt\">List II</th> </tr> </thead> <tbody> <tr> <td class=\"tg-c3ow\">(A)</td> <td class=\"tg-0pky\">Logistic growth</td> <td class=\"tg-c3ow\">(I)</td> <td class=\"tg-0pky\">Unlimited resource availability condition</td> </tr> <tr> <td class=\"tg-c3ow\">(B)</td> <td class=\"tg-0pky\">Exponential growth</td> <td class=\"tg-c3ow\">(II)</td> <td class=\"tg-0pky\">Limited resource availability condition</td> </tr> <tr> <td class=\"tg-c3ow\">(C)</td> <td class=\"tg-0pky\">Expanding age pyramid</td> <td class=\"tg-c3ow\">(III)</td> <td class=\"tg-0pky\">The percent individuals of pre-reproductive age is largest followed by reproductive and post reproductive age groups</td> </tr> <tr> <td class=\"tg-c3ow\">(D)</td> <td class=\"tg-0pky\">Stable age pyramid</td> <td class=\"tg-c3ow\">(IV)</td> <td class=\"tg-0pky\">The percent individuals of pre-reproductive and reproductive age group are same</td> </tr> </tbody> </table></p> <p>Choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>A-II, B-III, C-I, D-IV</p>",
+        "<p>A-II, B-IV, C-I, D-III</p>",
+        "<p>A-II, B-IV, C-III, D-I</p>",
+        "<p>A-II, B-I, C-III, D-IV</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>- Logistic growth (A) is a type of population growth that occurs under conditions of limited resources (II). <br/><br/>- Exponential growth (B) is a type of population growth that occurs under conditions of unlimited resources (I). <br/><br/>- An expanding age pyramid (C) represents a population where the percentage of individuals in the pre-reproductive age group is the largest, followed by the reproductive and post-reproductive age groups (III). <br/><br/>- A stable age pyramid (D) represents a population where the percentage of individuals in the pre-reproductive and reproductive age groups are approximately equal (IV). <br/><br/>So, the correct match is : <br/><br/>A-II, B-I, C-III, D-IV.</p>"
+    },
+    {
+      "text": "<p><strong>Q24.</strong> Two butterfly species are competing for the same nectar of a flower in a garden. To survive and coexist together, they may avoid competition in the same garden by :</p>",
+      "options": [
+        "<p>Predating on each other</p>",
+        "<p>Feeding at the same time</p>",
+        "<p>Choosing different foraging patterns</p>",
+        "<p>Increasing time spent on attacking each other</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Two individuals that are competing for same resource can avoid competition by choosing different times for feeding or different foraging patterns.</p>"
+    },
+    {
+      "text": "<p><strong>Q25.</strong> Which one of the following statements cannot be connected to Predation?</p>",
+      "options": [
+        "<p>It helps in maintaining species diversity in a community</p>",
+        "<p>It might lead to extinction of a species</p>",
+        "<p>Both the integrating species are negatively impacted</p>",
+        "<p>It is necessitated by nature to maintain the ecological balance</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>One of the species in predation gains benefit on the expense of the other. Predators help in maintaining species diversity in a community, by reducing the intensity of competition among competing prey species. If a predator is too efficient and overexploits its prey, then the prey might become extinct.</p>"
+    },
+    {
+      "text": "<p><strong>Q26.</strong> While explaining interspecific interaction of population, (+) sign is assigned for beneficial interaction, ( − ) sign is assigned for detrimental interaction and (0) for neutral interaction. Which of the following interactions can be assigned (+) for one species and ( − ) for another species involved in the interaction?</p>",
+      "options": [
+        "<p>Predation</p>",
+        "<p>Amensalism</p>",
+        "<p>Commensalism</p>",
+        "<p>Competition</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In predation, one species is benefited where as the other is harmed. It is (+ − ) type of population interaction.</p>"
+    },
+    {
+      "text": "<p><strong>Q27.</strong> If '8' Drosophila in a laboratory population of '80' died during a week, the death rate in the population is ___________ individuals per Drosophila per week.</p>",
+      "options": [
+        "<p>0.1</p>",
+        "<p>10</p>",
+        "<p>1.0</p>",
+        "<p>zero</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>If 8 Drosophila in a laboratory population of 80 died during a week, the death rate in the population is 880=0.1 individuals per Drosophila per week.</p>"
+    },
+    {
+      "text": "<p><strong>Q28.</strong> Inspite of interspecific competition in nature, which mechanism the competing species might have evolved for their survival?</p>",
+      "options": [
+        "<p>Predation</p>",
+        "<p>Resource partitioning</p>",
+        "<p>Competitive release</p>",
+        "<p>Mutualism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>∙ Inspite of interspecific competition the competing species may co-exist by doing resource partitioning.<br/><br/> ∙ In mutualism two organisms are equally benefitted.<br/><br/> ∙ In predation one organism (Predator) eats another one (Prey).<br/><br/> ∙ In competition release there occurs dramatical increase in population of a less distributed species when its superior competitor is removed.</p>"
+    },
+    {
+      "text": "<p><strong>Q29.</strong> Amensalism can be represented as :</p>",
+      "options": [
+        "<p>Species A (+) ; Species B (0)</p>",
+        "<p>Species A ( − ); Species B (0)</p>",
+        "<p>Species A (+); Species B (+)</p>",
+        "<p>Species A ( − ); Species B ( − )</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>∙ Amensalism is an interaction between two organisms of different species in which one species inhibits the growth of other species by secreting certain chemicals. The first species is neither get benefited nor harmed.<br/><br/> ∙ (+) : (0) interaction is observed in commensalism.<br/><br/> ∙ (+) : (+) interaction is observed in mutualism.<br/><br/> ∙ ( − ) : ( − ) interaction is seen in competition.</p>"
+    },
+    {
+      "text": "<p><strong>Q30.</strong> In the exponential growth equation <br/>N<sub>t</sub> = N<sub>0</sub>e<sup>rt</sup>, e represents</p>",
+      "options": [
+        "<p>The base of geometric logarithms</p>",
+        "<p>The base of number logarithms</p>",
+        "<p>The base of exponential logarithms</p>",
+        "<p>The base of natural logarithms</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In the exponential growth equation <br/>N<sub>t</sub> = N<sub>0</sub>e<sup>rt</sup>, e represents the base of natural logarithms<br/><br/>N<sub>t</sub> = Population density after time t<br/><br/>N<sub>0</sub> = Population density at time zero<br/><br/>r = Intrinsic rate of natural increase called biotic potential.</p>"
+    },
+    {
+      "text": "<p><strong>Q31.</strong> Match List-I with List-II<br/><br/> <table class=\"tg\"> <thead> <tr> <th class=\"tg-amwm\"></th> <th class=\"tg-amwm\">List-I</th> <th class=\"tg-amwm\"></th> <th class=\"tg-amwm\">List-II</th> </tr> </thead> <tbody> <tr> <td class=\"tg-0lax\">(a)</td> <td class=\"tg-0lax\">Allen's Rule</td> <td class=\"tg-0lax\">(i)</td> <td class=\"tg-0lax\">Kangaroo rat</td> </tr> <tr> <td class=\"tg-0lax\">(b)</td> <td class=\"tg-0lax\">Physiological adaptation</td> <td class=\"tg-0lax\">(ii)</td> <td class=\"tg-0lax\">Desert lizard</td> </tr> <tr> <td class=\"tg-0lax\">(c)</td> <td class=\"tg-0lax\">Behavioural adaptation</td> <td class=\"tg-0lax\">(iii)</td> <td class=\"tg-0lax\">Marine fish at depth</td> </tr> <tr> <td class=\"tg-0lax\">(d)</td> <td class=\"tg-0lax\">Biochemical adaptation</td> <td class=\"tg-0lax\">(iv)</td> <td class=\"tg-0lax\">Polar seal</td> </tr> </tbody> </table><br/><br/>Choose the correct answer from the options given below.</p>",
+      "options": [
+        "<table> <thead> <tr> <th>(a)</th> <th>(b)</th> <th>(c)</th> <th>(d)</th> </tr> </thead> <tbody> <tr> <td>(iv)</td> <td>(iii)</td> <td>(ii)</td> <td>(i)</td> </tr> </tbody> </table>",
+        "<table> <thead> <tr> <th>(a)</th> <th>(b)</th> <th>(c)</th> <th>(d)</th> </tr> </thead> <tbody> <tr> <td>(iv)</td> <td>(ii)</td> <td>(iii)</td> <td>(i)</td> </tr> </tbody> </table>",
+        "<table> <thead> <tr> <th>(a)</th> <th>(b)</th> <th>(c)</th> <th>(d)</th> </tr> </thead> <tbody> <tr> <td>(iv)</td> <td>(i)</td> <td>(iii)</td> <td>(ii)</td> </tr> </tbody> </table>",
+        "<table> <thead> <tr> <th>(a)</th> <th>(b)</th> <th>(c)</th> <th>(d)</th> </tr> </thead> <tbody> <tr> <td>(iv)</td> <td>(i)</td> <td>(ii)</td> <td>(iii)</td> </tr> </tbody> </table>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>∙ Polar seal generally has shorter ears and limbs (extremities) to minimize heat loss. This is with reference to Allen's rule.<br/><br/> ∙ Kangaroo rat exhibits physiological adaptation.<br/><br/> ∙ Desert lizard shows behavioural adaptation. They lack the physiological ability to cope-up with extreme temperature but manage the body temperature by behavioural means.<br/><br/> ∙ Marine fishes at depth are adapted biochemically to survive in great depths in ocean.</p>"
+    },
+    {
+      "text": "<p><strong>Q32.</strong> The impact of immigration on population density is :</p>",
+      "options": [
+        "<p>Positive</p>",
+        "<p>Negative</p>",
+        "<p>Both positive and negative</p>",
+        "<p>Neutralized by natality</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Immigration is the number of individuals of the same species that come into the habitat from elsewhere during a given period.</p> <p>Population density changes as Nt+1=Nt+[(B+I)−(D+E)] , so immigration (I) always adds to the population and increases its density.</p> <p>Natality and immigration increase density; mortality and emigration decrease it.</p>"
+    },
+    {
+      "text": "<p><strong>Q33.</strong> Match the items in Column I with those in Column II :</p> <table style=\"border-collapse:collapse;margin:6px 0\"><tr><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">Column I</td><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">Column II</td></tr><tr><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(a) Herbivores-Plants</td><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(i) Commensalism</td></tr><tr><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(b) Mycorrhiza-Plants</td><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(ii) Mutualism</td></tr><tr><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(c) Sheep-Cattle</td><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(iii) Predation</td></tr><tr><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(d) Orchid-Tree</td><td style=\"border:1px solid #000;padding:4px 8px;vertical-align:top\">(iv) Competition</td></tr></table> <p>Select the correct option from following :</p>",
+      "options": [
+        "<p>(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)</p>",
+        "<p>(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)</p>",
+        "<p>(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)</p>",
+        "<p>(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Herbivores feeding on plants are treated as predators (+/–): (a)-(iii).</p> <p>Mycorrhiza, the association of a fungus with plant roots, benefits both partners — mutualism (+/+): (b)-(ii).</p> <p>Sheep and cattle feed on the same limited grass — competition (–/–): (c)-(iv).</p> <p>An orchid growing as an epiphyte on a tree benefits while the tree is unaffected — commensalism (+/0): (d)-(i).</p>"
+    },
+    {
+      "text": "<p><strong>Q34.</strong> Secondary metabolites such as nicotine, strychnine and caffeine are produced by plants for their</p>",
+      "options": [
+        "<p>Nutritive value</p>",
+        "<p>Growth response</p>",
+        "<p>Effect on reproduction</p>",
+        "<p>Defence action</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A wide variety of chemical substances that we extract from plants on a commercial scale (nicotine, caffeine, quinine, strychnine, opium, etc) are produced by them (plants) as defences against grazers and browsers.</p>"
+    },
+    {
+      "text": "<p><strong>Q35.</strong> Which of the following is not an attribute of a population?</p>",
+      "options": [
+        "<p>Natality</p>",
+        "<p>Sex ratio</p>",
+        "<p>Mortality</p>",
+        "<p>Species interaction</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Natality refers to the number of births during a given period in the population that are added to the initial density. Mortality is the number of deaths in the population during a given period. Population interaction is the interaction between different populations. It refers to the effects that the organisms in a community have on one another. The sex ratio is the ratio of males to females in a population.</p>"
+    },
+    {
+      "text": "<p><strong>Q36.</strong> Between which among the following, the relationship is <strong>not</strong> an example of commensalism?</p>",
+      "options": [
+        "<p>Female wasp and fig species</p>",
+        "<p>Orchid and the tree on which it grows</p>",
+        "<p>Cattle Egret and grazing cattle</p>",
+        "<p>Sea Anemone and Clown fish</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In commensalism one species benefits and the other is neither harmed nor benefited.</p> <p>Fig and its pollinator wasp show mutualism: the female wasp pollinates the fig inflorescence while laying eggs in it, and the fig gives its developing seeds as food for the wasp larvae, so both benefit.</p> <p>An orchid growing as an epiphyte on a tree, egrets catching insects stirred up by grazing cattle, and a clown fish sheltered among the stinging tentacles of a sea anemone are commensalism.</p>"
+    },
+    {
+      "text": "<p><strong>Q37.</strong> Carnivorous animals - lions and leopards, occupy the same niche but lions predate mostly larger animals and leopards take smaller ones. This mechanism of competition is referred to as–</p>",
+      "options": [
+        "<p>Competitive exclusion</p>",
+        "<p>Character displacement</p>",
+        "<p>Altruism</p>",
+        "<p>Resource partitioning</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>When two species use the same resource but avoid competition by choosing different prey sizes, feeding times or foraging patterns, the mechanism is resource partitioning; lions taking large prey and leopards small prey is such a case.</p> <p>Competitive exclusion means one species eliminating the other; character displacement is an evolved change in a trait where two competing species overlap; altruism is self-sacrificing behaviour, not a way of sharing a resource.</p>"
+    },
+    {
+      "text": "<p><strong>Q38.</strong> Match Column-I with Column –II. <br/><br/> <table class=\"tg\"> <tbody><tr> <th class=\"tg-fbrz\">Column - I</th> <th class=\"tg-fbrz\">Column - II</th> </tr> <tr> <td class=\"tg-60hs\">(a) Saprophyte</td> <td class=\"tg-60hs\">(i) Symbiotic association <br/>of fungi with plant roots</td> </tr> <tr> <td class=\"tg-60hs\">(b) Parasite</td> <td class=\"tg-60hs\">(ii) Decomposition of dead<br/> organic materials</td> </tr> <tr> <td class=\"tg-60hs\">(c) Lichens</td> <td class=\"tg-60hs\">(iii) Living on living plants or animals</td> </tr> <tr> <td class=\"tg-60hs\">(d) Mycorrhiza</td> <td class=\"tg-60hs\">(iv) Symbiotic association of algae and fungi</td> </tr> </tbody></table> <br/><br/>Choose the <b>correct</b> answer from the options given below :</p>",
+      "options": [
+        "<table class=\"tg\"> <tbody><tr> <th class=\"tg-eqm3\">(a)</th> <th class=\"tg-eqm3\">(b)</th> <th class=\"tg-eqm3\">(c)</th> <th class=\"tg-eqm3\">(d)</th> </tr> <tr> <td class=\"tg-eqm3\">(i)</td> <td class=\"tg-eqm3\">(ii)</td> <td class=\"tg-eqm3\">(iii)</td> <td class=\"tg-eqm3\">(iv)</td> </tr> </tbody></table>",
+        "<table class=\"tg\"> <tbody><tr> <th class=\"tg-eqm3\">(a)</th> <th class=\"tg-eqm3\">(b)</th> <th class=\"tg-eqm3\">(c)</th> <th class=\"tg-eqm3\">(d)</th> </tr> <tr> <td class=\"tg-eqm3\">(iii)</td> <td class=\"tg-eqm3\">(ii)</td> <td class=\"tg-eqm3\">(i)</td> <td class=\"tg-eqm3\">(iv)</td> </tr> </tbody></table>",
+        "<table class=\"tg\"> <tbody><tr> <th class=\"tg-eqm3\">(a)</th> <th class=\"tg-eqm3\">(b)</th> <th class=\"tg-eqm3\">(c)</th> <th class=\"tg-eqm3\">(d)</th> </tr> <tr> <td class=\"tg-eqm3\">(ii)</td> <td class=\"tg-eqm3\">(i)</td> <td class=\"tg-eqm3\">(iii)</td> <td class=\"tg-eqm3\">(iv)</td> </tr> </tbody></table>",
+        "<table class=\"tg\"> <tbody><tr> <th class=\"tg-eqm3\">(a)</th> <th class=\"tg-eqm3\">(b)</th> <th class=\"tg-eqm3\">(c)</th> <th class=\"tg-eqm3\">(d)</th> </tr> <tr> <td class=\"tg-eqm3\">(ii)</td> <td class=\"tg-eqm3\">(iii)</td> <td class=\"tg-eqm3\">(iv)</td> <td class=\"tg-eqm3\">(i)</td> </tr> </tbody></table>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A saprophyte is an organism that survives on dead and decaying organisms like fungi and decomposition bacteria. <br/>A parasite is an organism that survives on living plants and animals. <br/>A lichen is symbiotic association of algae & fungi. <br/>Mycorrhiza is a symbiotic association of fungi and roots of higher plants like pinus</p>"
+    },
+    {
+      "text": "<p><strong>Q39.</strong> Niche is</p>",
+      "options": [
+        "<p>all the biological factors in the organism’s environment</p>",
+        "<p>the physical space where an organism lives</p>",
+        "<p>the range of temperature that the organism needs to live</p>",
+        "<p>the functional role played by the organism where it lives</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Niche is functional role of organism in ecosystem.</p>"
+    },
+    {
+      "text": "<p><strong>Q40.</strong> Which one of the following population interactions is widely used in medical science for the production of antibiotics?</p>",
+      "options": [
+        "<p>Commensalism</p>",
+        "<p>Mutualism</p>",
+        "<p>Parasitism</p>",
+        "<p>Amensalism</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In amensalism, one species is harmed whereas the other is unaffected. Antibiosis also shows this feature where the antibiotics released by the microbial group (Penicillium) Has affect on other microbes (such as Staphylococcus.</p>"
+    },
+    {
+      "text": "<p><strong>Q41.</strong> Natality refers to</p>",
+      "options": [
+        "<p>death rate</p>",
+        "<p>birth rate</p>",
+        "<p>number of individuals leaving the habitat</p>",
+        "<p>number of individuals entering a habitat</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Natality refers to the number of births during a given period in the population that are added to the initial density.</p>"
+    },
+    {
+      "text": "<p><strong>Q42.</strong> Pneumatophores occur in</p>",
+      "options": [
+        "<p>halophytes</p>",
+        "<p>free-floating hydrophytes</p>",
+        "<p>carnivorous plants</p>",
+        "<p>submerged hydrophytes</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Halophyte or mangrove grow in oxygen deficient marshy area. In these plants root grow vertically upward & have breathing pore as pneumotophore.</p>"
+    },
+    {
+      "text": "<p><strong>Q43.</strong> Which one of the following plants shows a very close relationship with a species of moth, where none of the two can complete its life cycle without the other?</p>",
+      "options": [
+        "<p>Hydrilla</p>",
+        "<p>Yucca</p>",
+        "<p>Banana</p>",
+        "<p>Viola</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A very close relationship exists between a species of moth and Yucca where both species cannot complete their life cycles with out each other.</p>"
+    },
+    {
+      "text": "<p><strong>Q44.</strong> In a growing population of a country,</p>",
+      "options": [
+        "<p>pre-reproductive individuals are more than the reproductive individuals</p>",
+        "<p>reproductive individuals are less than the post-reproductive individuals</p>",
+        "<p>reproductive and pre-reproductive individuals are equal in number</p>",
+        "<p>pre-reproductive individuals are less than the reproductive individuals.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In a population where the number of prereproductive individuals or the younger individual is larger than the reproductive individuals, the population will increase.</p>"
+    },
+    {
+      "text": "<p><strong>Q45.</strong> Asymptote in a logistic growth curve is obtained when :</p>",
+      "options": [
+        "<p>K > N</p>",
+        "<p>The value of 'r' approaches zero</p>",
+        "<p>K< N</p>",
+        "<p>K = N</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Asymptote in a logistic growth curve is obtained when population density (N) reaches the carrying capacity (K), i.e., N = K.</p>"
+    },
+    {
+      "text": "<p><strong>Q46.</strong> Plants which produce characteristic pneumatophores and show vivipary belong to :</p>",
+      "options": [
+        "<p>Halophytes</p>",
+        "<p>Psammophytes</p>",
+        "<p>Hydrophytes</p>",
+        "<p>Mesophytes</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Halophytes growing in saline soils show vivipary for seed germination and have pneumatophores for gaseous exchange.</p>"
+    },
+    {
+      "text": "<p><strong>Q47.</strong> Mycorrhizae are the example of :</p>",
+      "options": [
+        "<p>Fungistasis</p>",
+        "<p>Antibiosis</p>",
+        "<p>Mutualism</p>",
+        "<p>Amensalism</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Mycorrhizae is a symbiotic association between fungi and roots of higher plants.</p>"
+    },
+    {
+      "text": "<p><strong>Q48.</strong> Which of the following is correct for r-selected species ?</p>",
+      "options": [
+        "<p>Small number of progeny with small size</p>",
+        "<p>Small number of progeny with large size</p>",
+        "<p>Large number of progeny with small size</p>",
+        "<p>Large number of progeny with large size</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Organisms that are r-selected (r-strategists) are able to colonise a habitat rapidly, utilising the food and other resources before other organisms are established and begin to compete. The r-strategists tend to be relatively small organisms with short life spans (e.g., bacteria) and often live in temporary or unstable environments; characteristically their survival depends on their ability to produce large numbers of offspring rather than on their ability to compete.</p>"
+    },
+    {
+      "text": "<p><strong>Q49.</strong> If '+' sign is assigned to beneficial interaction, '–' sign to detrimental and '0' sign to neutral interaction, then the population interaction represented by '+' '–' refers to</p>",
+      "options": [
+        "<p>parasitism</p>",
+        "<p>commensalism</p>",
+        "<p>mutualism</p>",
+        "<p>amensalism</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Parasitism is an association in which one organism (the parasite) lives on (ectoparasitism) or in (endoparasitism) the body of another organism (host), from which it obtains its nutrients. This association is beneficial for the parasites as they get continuous supply of nutrients from their host and are able to rapidly multiply their numbers. But it is detrimental for the host organism as parasitic infection leads to various complications and diseases in the host body may also be fatal to the host under certain circumstances.</p>"
+    },
+    {
+      "text": "<p><strong>Q50.</strong> The principle of competitive exclusion was stated by</p>",
+      "options": [
+        "<p>MacArthur</p>",
+        "<p>G. F. Gause</p>",
+        "<p>Verhulst & Pearl</p>",
+        "<p>C. Darwin</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Two or more species with closely similar niche requirements cannot exist indefinitely in the same area as sooner or later they come into competition for possession of it. This is called as Gause’s competitive exclusion principle, which states that an ecological niche cannot be simultaneously and completely occupied by established populations of more than one species. Two species can live in same habitat but not in the same niche. More similar the two niches are, severe the competition is.</p>"
+    },
+    {
+      "text": "<p><strong>Q51.</strong> It is much easier for a small animal to run uphill than for a large animal, because -</p>",
+      "options": [
+        "<p>The efficiency of muscles in large animals is less than in the small animals</p>",
+        "<p>Smaller animals have a higher metabolic rate</p>",
+        "<p>It is easier to carry a small body weight</p>",
+        "<p>Small animals have a lower O<sub>2</sub> requirement</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Basal metabolic rate is the minimum amount of energy needed to keep the body functioning. It is inversely proportional to the size of body, thus smaller animals have a higher metabolic rate.</p>"
+    },
+    {
+      "text": "<p><strong>Q52.</strong> When does the growth rate of a population following the logistic model equal zero?<br/> The logistic model is given as dN/dt = rN(1-N/K)</p>",
+      "options": [
+        "<p>When death rate is greater than birth rate.</p>",
+        "<p>When N/K equals zero.</p>",
+        "<p>When N/K is exactly one.</p>",
+        "<p>When N nears the carrying capacity of the habitat.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In logistic growth model population growth equation is described as<br/> dNdt=rN(1−NK) <br/> N = population density at time t;<br/> r = Intrinsic rate of natural increase;<br/> K = carrying capacity<br/> When N/K = 1; 1−NK = 0<br/> Therefore, dNdt=0</p>"
+    },
+    {
+      "text": "<p><strong>Q53.</strong> Gause's principle of competitive exclusion states that -</p>",
+      "options": [
+        "<p>Larger organisms exclude smaller ones through competition</p>",
+        "<p>More abundant species will exclude the less abundant species through competition</p>",
+        "<p>Competition for the same resources excludes species having different food preferences</p>",
+        "<p>No two species can occupy the same niche indefinitely for the same limiting resources</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Gause’s principle of competitive exclusion can be restated to say that no two species can occupy the same niche indefinitely when resources are limiting. Certainly species can and do coexist while competing for some of the same resources. Nevertheless, Gause’s theory predicts that when two species coexist on a long-term basis, either resources must not be limited or their niches will always differ in one or more features; otherwise, one species will outcompete the other and the extinction of the second species will inevitably result, a process referred to as competitive exclusion.</p>"
+    },
+    {
+      "text": "<p><strong>Q54.</strong> In which of the following interactions both partners are adversely affected?</p>",
+      "options": [
+        "<p>Competition</p>",
+        "<p>Predation</p>",
+        "<p>Mutualism</p>",
+        "<p>Parasitism</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Competition is the rivalry between two or more organisms for obtaining the same resources such as food, light, water, space, shelter, mate, etc. Competitors adversely affect each other.</p>"
+    },
+    {
+      "text": "<p><strong>Q55.</strong> An association of individuals of different species living in the same habitat and having functional interactions is -</p>",
+      "options": [
+        "<p>Ecological niche</p>",
+        "<p>Ecosystem</p>",
+        "<p>Population</p>",
+        "<p>Biotic community</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Biotic community is an association of individuals of different species living in the same habitat and showing functional interactions.</p>"
+    },
+    {
+      "text": "<p><strong>Q56.</strong> The following graph depicts changes in two populations (A and B) of herbivores in a grassy field. A possible reason for these changes is that:<br/><br/> <picture><source media=\"(max-width: 320px)\" srcset=\"https://neetcare-image.cdn.examgoal.net/7km5fk05mqgi3/8b9350ab-3368-48b0-8150-1de410001ef7/a830edb0-cf46-11e9-acf6-6d09a288f7f2/file-7km5fk05mqgi4-320w.jpg\"/><img alt=\"AIPMT 2015 Cancelled Paper Biology - Organisms and Populations Question 105 English\" src=\"https://neetcare-image.cdn.examgoal.net/7km5fk05mqgi3/8b9350ab-3368-48b0-8150-1de410001ef7/a830edb0-cf46-11e9-acf6-6d09a288f7f2/file-7km5fk05mqgi4-500w.jpg\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></picture></p>",
+      "options": [
+        "<p>Population B competed more successfully for food than population A</p>",
+        "<p>Population A consumed the members of population B</p>",
+        "<p>Both plant populations in this habitat decreased</p>",
+        "<p>Population A produced more offspring than population B</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The given graph illustrates that population B got success in the grassy field in comparison to population A</p>"
+    },
+    {
+      "text": "<p><strong>Q57.</strong> Just as a person moving from Delhi to Shimla to escape the heat for the duration of hot summer, thousands of migratory birds from Siberia and other extremely cold northern regions move to:</p>",
+      "options": [
+        "<p>Keolado National Park</p>",
+        "<p>Meghalaya</p>",
+        "<p>Corbett National Park</p>",
+        "<p>Western Ghat</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The Keoladeo National Park is a famous avifauna sanctuary in India that plays host to thousands of birds especially during the summer season. It is formerly known as the Bharatpur Bird Sanctuary in Bharatpur, Rajasthan. October to February is the best time, for the migratory birds are there as well as the residents. In August local birds start their nest building and rear their young for the next few months. October/November is when the migrants arrive. Most stay till March including the Siberian Crane.</p>"
+    },
+    {
+      "text": "<p><strong>Q58.</strong> The age pyramid with broad base indicates :</p>",
+      "options": [
+        "<p>high percentage of young individuals</p>",
+        "<p>high percentage of old individuals</p>",
+        "<p>a stable population</p>",
+        "<p>low percentage of young individuals</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Age pyramid is a graphic representation of abundance of individuals of different age groups with pre-reproductive individuals at the base, reproductive individuals in the middle and postreproductive individuals at the top. Triangular age pyramid has high proportion of pre-reproductive individuals, moderate number of reproductive individuals and fewer post-reproductive individuals. It represents young or rapidly growing population. In bell-shaped age pyramid, the number of prereproductive and reproductive individuals is almost equal. Post -reproductive individuals are comparatively fewer. It represents stable or stationary population where growth rate is nearly zero. In urn-shaped age pyramid, the number of reproductive individuals is higher than the number of pre-reproductive individuals. It represents declining or diminishing population.</p>"
+    },
+    {
+      "text": "<p><strong>Q59.</strong> Which one of the following is not a parasitic adaptation ?</p>",
+      "options": [
+        "<p>Loss of digestive organs</p>",
+        "<p>Loss of unnecessary sense organs</p>",
+        "<p>Development of adhesive organs</p>",
+        "<p>Loss of reproductive capacity</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In Parasitism, one species (parasite) is benefitted and the other (host) is harmed. Parasites have very high reproduction capacity. The life cycles of parasites are often complex, involving one or two intermediate hosts or vectors to facilitate parasitisation of its primary host.</p>"
+    },
+    {
+      "text": "<p><strong>Q60.</strong> Benthic organisms are affected most by :</p>",
+      "options": [
+        "<p>Surface turbulence of water</p>",
+        "<p>Water-holding capacity of soil</p>",
+        "<p>Light reaching the forest floor</p>",
+        "<p>Sediment characteristics of aquatic ecosystems</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The sediment characteristics often determine the type of benthic animals that can thrive there.</p>"
+    },
+    {
+      "text": "<p><strong>Q61.</strong> A sedentary sea anemone gets attached to the shell lining of hermit crab. The association is :</p>",
+      "options": [
+        "<p>Commensalism</p>",
+        "<p>Amensalism</p>",
+        "<p>Ectoparasitism</p>",
+        "<p>Symbiosis</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Sea anemone gets associated to the shell of hermit crab. It provides camouflage and protection to the crab due to presence of stinging cells in sea anemone. In turn, sea anemone is transported to new places reaching new food sources. This is symbiosis as both the organisms are benefitted.</p>"
+    },
+    {
+      "text": "<p><strong>Q62.</strong> A biologist studied the population of rats in a barn, He found that the average natality was 250, average mortality 240, immigration 20 and emigration 30. The net increase in population is :</p>",
+      "options": [
+        "<p>15</p>",
+        "<p>05</p>",
+        "<p>10</p>",
+        "<p>zero</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Net increase in population :<br/> (Natality + Immigration) – (Mortality + Emigration)<br/> (250 + 20) – (240 + 30) = 270 – 270 = 0</p>"
+    },
+    {
+      "text": "<p><strong>Q63.</strong> Cuscuta is an example of :</p>",
+      "options": [
+        "<p>Ectoparasitism</p>",
+        "<p>Predation</p>",
+        "<p>Endoparasitism</p>",
+        "<p>Brood parasitism</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Cuscuta, or Dodder plant, is a parasitic plant that wraps around other plants for nourishment. Cuscuta is found on outer side of the host and is total stem parasite. Cuscuta a parasite of Acacia.</p>"
+    },
+    {
+      "text": "<p><strong>Q64.</strong> The logistic population growth is expressed by the equation :</p>",
+      "options": [
+        "<p>dt/dN=Nr(K−NK)</p>",
+        "<p>dN/dt=rN(K−NK)</p>",
+        "<p>dN/dt=rN(N−KN)</p>",
+        "<p>dN/dt=rN</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The logistic population growth is expressed by the equation dNdt=rN((K−N)K) where N is population density at time t, r is the Malthusian parameter (rate of maximum population growth) and K is the so called carrying capacity (i.e. maximum sustainable population). It is a type of population growth when resources are limiting.</p>"
+    },
+    {
+      "text": "<p><strong>Q65.</strong> Consider the following statements (A)-(D) each with one or two blanks :<br/> (A) Bears go into _____ (1) ____ during winter to _____(2)____ cold weather.<br/> (B) A conical age pyramid with a broad base represents ____(3)_____ human population. <br/> (C) A wasp pollinating a fig flower is an example of _____ (4) _____ .<br/> (D) An area with high levels of species richness is known as ____(5)_____.<br/> Which of the following options, gives the correct fill ups for the respective blank numbers from (1) to (5) in the statements ?</p>",
+      "options": [
+        "<p>(1) - aestivation, (2) - escape,<br/> (3) - stable, (4) - mutualism</p>",
+        "<p>(3) - expanding, (4) - commensalism,<br/> (5) - biodiversity park</p>",
+        "<p>(1) - hibernation, (2) - escape,<br/> (3) - expanding, (5) - hot spot</p>",
+        "<p>(3) - stable, (4) - commensalism,<br/> (5) - marsh</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Bears undergo hibernation during winter to escape stressful cold conditions, so (1) is hibernation and (2) is escape.</p> <p>An age pyramid with a broad base has a large proportion of pre-reproductive individuals, which represents an expanding population, so (3) is expanding.</p> <p>The relationship between a pollinator wasp and a fig flower is an obligate mutualism, so (4) is mutualism.</p> <p>A region with exceptionally high species richness and high endemism is designated as a biodiversity hot spot, so (5) is hot spot.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q66.</strong> What type of human population is represented by the following age pyramid ? <img alt=\"AIPMT 2011 Prelims Biology - Organisms and Populations Question 97 English\" src=\"https://neetcare-image.cdn.examgoal.net/7km5fk05ojw0j/e1a7e954-d3e0-435e-a54a-9a084bb14cd3/c3c4d940-cf4d-11e9-acf6-6d09a288f7f2/file-7km5fk05ojw0k-320w.jpg\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>Declining population</p>",
+        "<p>Vanishing population</p>",
+        "<p>Expanding population</p>",
+        "<p>Stable population</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>This age pyramid represents the declining population of any organism. Population decline is the reduction over time in region’s census. It can be caused for several reasons that includes heavy immigration disease, famine or sub-replacement fertility.</p>"
+    },
+    {
+      "text": "<p><strong>Q67.</strong> Large Woody Vines are more commonly found in</p>",
+      "options": [
+        "<p>Mangroves</p>",
+        "<p>Tropical rainforests</p>",
+        "<p>Alpine forests</p>",
+        "<p>Temperate forests</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Lianas are large climbing woody vines that drape tropical rainforest trees. They have adapted to life in rainforest by having their roots in the ground and climbing high onto the tree canopy to reach available sunlight. Many lianas start life in the rainforest canopy and send roots down to the ground.</p>"
+    },
+    {
+      "text": "<p><strong>Q68.</strong> Consider the following four conditions (a – d) and select the correct pair of them as adaptation to environment in desert lizards.<br/> The conditions : <br/> (a) burrowing in soil to escape high temperature<br/> (b) losing heat rapidly from the body during high temperature<br/> (c) bask in sun when temperature is low<br/> (d) insulating body due to thick fatty dermis</p>",
+      "options": [
+        "<p>(c), (d)</p>",
+        "<p>(b), (d)</p>",
+        "<p>(a), (c)</p>",
+        "<p>(a), (b)</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Desert lizards lack the physiological ability that mammals have to deal with the high temperatures of their habitat, but manage to keep their body temperature fairly constant by behavioural means. They bask in the sun and absorb heat when their body temperature drops below the comfort zone, but move into shade when the ambient temperature starts increasing. Some species are capable of burrowing into the soil to hide and escape from the above-ground heat.</p>"
+    },
+    {
+      "text": "<p><strong>Q69.</strong> Which one of the following is categorised as a parasite in true sense ?</p>",
+      "options": [
+        "<p>The female anopheles bites and sucks blood from humans</p>",
+        "<p>Head louse living on the human scalp as well as laying eggs on human hair</p>",
+        "<p>The cuckoo (koel) lays its eggs in crow's nest</p>",
+        "<p>Human foetus developing inside the uterus draws nourishment from the mother</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Head louse is an obligate ectoparasite of human scalp and as well as laying egg on human hair.</p>"
+    },
+    {
+      "text": "<p><strong>Q70.</strong> Which one of the following is most appropriately defined ?</p>",
+      "options": [
+        "<p>Parasite is an organism which always lives inside the body of other organism and may kill it.</p>",
+        "<p>Host is an organism which provides food to another organism.</p>",
+        "<p>Amensalism is a relationship in which one species is benefited where as the other is unaffected</p>",
+        "<p>Predator is an organism that catches and kills other organism for food.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Predation is an interaction between members of two species in which members of one species capture, kill and eat up members of other species. Host is a term which is specifically related to parasitism. Amensalism is an interspecies interaction in which one species is harmed whereas the other one is unaffected. Parasitic organism can live both over the surface of their host or inside their body.</p>"
+    },
+    {
+      "text": "<p><strong>Q71.</strong> The figure given below is a diagrammatic representation of response of organisms to abiotic factors. What do a, b and c represent respectively – <img alt=\"AIPMT 2010 Prelims Biology - Organisms and Populations Question 92 English\" src=\"https://neetcare-image.cdn.examgoal.net/7km5fk05ot991/d9848098-0220-489f-a21e-f5207eb38e06/c8467450-cf4e-11e9-acf6-6d09a288f7f2/file-7km5fk05ot992-373w.jpg\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>(a) → partial regulator, (b) → regulator, (c) → conformer</p>",
+        "<p>(a) → conformer, (b) → regulator, (c) → partial regulator</p>",
+        "<p>(a) → regulator, (b) → conformer, (c) → partial regulator</p>",
+        "<p>(a) → regulator, (b) → partial regulator, (c) → conformer</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Some organisms are able to maintain homeostasis by physiological (sometimes behavioural also) means which ensures constant body temperature, constant osmotic concentration, etc. They are known as regulators. A majority of animals and plants cannot maintain a constant internal environment. Their body temperature changes with the ambient temperature. These animals and plants are simply conformers. During the course of evolution, the costs and benefits of maintaining a constant internal environment are taken into consideration. Some species have evolved the ability to regulate, but only over a limited range of environmental conditions, beyond which they simply conform. They are known as partial regulators.</p>"
+    },
+    {
+      "text": "<p><strong>Q72.</strong> Study the four statements (a–d) given below and select the two correct ones out of them –<br/> (a) A lion eating a deer and a sparrow feeding on grain are ecologically similar in being consumers<br/> (b) Predator star fish Pisaster helps in maintaining species diversity of some invertebrates<br/> (c) Predators ultimately lead to the extinction of prey species<br/> (d) Production of chemicals such as nicotine, strychnine by the plants are metabolic disorders<br/> The two correct statements are-</p>",
+      "options": [
+        "<p>b and c</p>",
+        "<p>a and d</p>",
+        "<p>c and d</p>",
+        "<p>a and b</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Predator and prey evolve together. The prey is part of the predator’s environment, and the predator dies if it does not get food, so it evolves whatever is necessary in order to eat the prey. Likewise, the predator is part of the prey’s environment, and the prey dies if it is eaten by the predator, so it evolves whatever is necessary to avoid being eaten. So, predators cannot lead to the extinction of prey species.<br/> Nicotine is an alkaloid found in the night shade family of plants (Solanaceae) that constitutes approximately 0.6–3.0% of dry weight of tobacco, with biosynthesis taking place in the roots and accumulation occurring in the leaves. Strychnine is an alkaloid plant toxin extracted chiefly from Nux vomica; formerly used as a stimulant. These are not metabolic disorder products but are metabolic wastes.</p>"
+    },
+    {
+      "text": "<p><strong>Q73.</strong> A country with a high rate of population growth took measures to reduce it. The figure below shows age-sex pyramids of populations A and B twenty years apart. Select the correct interpretation about them : – <br/> <img alt=\"AIPMT 2009 Biology - Organisms and Populations Question 90 English\" src=\"https://neetcare-image.cdn.examgoal.net/7km5fk05p22fv/694e5d35-8a48-4363-8d8c-14d352ccfe19/bd4bfab0-cf4f-11e9-acf6-6d09a288f7f2/file-7km5fk05p22fw-374w.jpg\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>\"A\" is more recent shows slight reduction in the growth rate</p>",
+        "<p>\"B\" is more recent showing that population is very young</p>",
+        "<p>\"A\" is the earlier pyramid and no change has occurred in the growth rate</p>",
+        "<p>\"B\" is earlier pyramid and shows stabilized growth rate</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>‘A’ is more recent and shows slight reduction in growth rate.</p>"
+    },
+    {
+      "text": "<p><strong>Q74.</strong> Reduction in vascular tissue, mechanical tissue and cuticle is characteristic of :</p>",
+      "options": [
+        "<p>Xerophytes</p>",
+        "<p>Epiphytes</p>",
+        "<p>Hydrophytes</p>",
+        "<p>Mesophytes</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Reduction in vascular tissue, mechanical tissue and cuticle is characteristic of hydrophytes.</p>"
+    },
+    {
+      "text": "<p><strong>Q75.</strong> Consider the following four statements (1-4) about certain desert animals such as kangaroo-rat.<br/> (i) They have dark colour and high rate of reproduction and excrete solid urine<br/> (ii) They do not drink water, breathe at a slow rate to conserve water and have their body covered with thick hairs<br/> (iii) They feed on dry seeds and do not required drinking water<br/> (iv) They excrete very concentrated urine and do not use water to regulate body temperature<br/> Out of these four, which two are correct-</p>",
+      "options": [
+        "<p>(i) and (ii)</p>",
+        "<p>(ii) and (iii)</p>",
+        "<p>(iii) and (i)</p>",
+        "<p>(iii) and (iv)</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Characteristics of certain desert animals such as kangaroo, rat are -<br/> • They feed on dry seeds and do not require drinking water.<br/> • They excrete very concentrated urine and do not use water to regulate body temperature.</p>"
+    },
+    {
+      "text": "<p><strong>Q76.</strong> Quercus species are the dominant component in:</p>",
+      "options": [
+        "<p>Temperate deciduous forests</p>",
+        "<p>Alpine forests</p>",
+        "<p>Scrub forests</p>",
+        "<p>Tropical rain forests</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Quercus (oak) is a broad-leaved tree that dominates temperate deciduous forests, which shed their leaves in winter. Alpine, scrub and tropical rain forests are dominated by other vegetation.</p><p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q77.</strong> Geometric representation of age structure is a characteristic of :-</p>",
+      "options": [
+        "<p>Biotic community</p>",
+        "<p>Landscape</p>",
+        "<p>Ecosystem</p>",
+        "<p>Population</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The correct answer is Option D - Population.</p> <p>Age structure refers to the distribution of individuals of different ages within a population. It can be represented geometrically using age pyramids (also known as population pyramids), which are graphical illustrations that show the distribution of various age groups in a population, typically with males on one side and females on the other. This distribution can give insights into the reproductive status, growth potential, and social dynamics of the population.</p> <p>A biotic community (Option A) consists of all the living organisms in an area, often including a diverse range of species, where the age structure of each species would be considered separately rather than in aggregate.</p> <p>Landscape (Option B) refers to a larger area that includes one or more ecosystems, encompassing both biotic and abiotic components. While age structure is relevant to the populations within the landscape, it isn't a characteristic that describes the landscape itself.</p> <p>An ecosystem (Option C) is a community of living organisms in conjunction with the nonliving components of their environment (like air, water, and mineral soil), interacting as a system. While populations within the ecosystem have age structures, the ecosystem as a whole is characterized by energy flows and material cycles rather than the age structure of its constituent populations.</p> <p>Population (Option D), however, is a group of individuals of the same species that live in the same area and interbreed, producing fertile offspring. The term \"population\" directly refers to the individuals to which age structure can be applied, making it the characteristic feature of a population among the options given.</p>"
+    },
+    {
+      "text": "<p><strong>Q78.</strong> The population of an insect species shows an explosive increase in numbers during rainy season followed by its disappearance at the end of the season. What does this show ?</p>",
+      "options": [
+        "<p>The food plants mature and die at the end of the rainy season</p>",
+        "<p>The population of its predators increases enormously</p>",
+        "<p>Its population growth curve is of J-type</p>",
+        "<p>S-shaped or sigmoid growth of this insect</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>If a population (e.g reindeer population) is allowed to grow in a predator free environment, the population grows beyond carrying capacity and there occurs population crash due to sudden shortage of food. Such growth curves also occur in insect populations during rainy season, and in algal blooms.</p>"
+    },
+    {
+      "text": "<p><strong>Q79.</strong> If the mean and the median pertaining to a certain character of a population are of the same value, the following is most likely to occur:-</p>",
+      "options": [
+        "<p>A normal distribution</p>",
+        "<p>a T-shaped curve</p>",
+        "<p>A skewed curve</p>",
+        "<p>A bi-modal distribution</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>If the mean and the median pertaining to a certain character of a population are of the same value, a normal distribution is most likely to occur.</p>"
+    },
+    {
+      "text": "<p><strong>Q80.</strong> A high density of elephant population in an area can result in :-</p>",
+      "options": [
+        "<p>Mutualism</p>",
+        "<p>Interspecific competition</p>",
+        "<p>Predation on one another</p>",
+        "<p>Intraspecific competition</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>It is competition between individuals of same species. The intraspecific competition may be very severe because all the members of a species have similar requirements of food, habitat mate, etc. and they also have similar adaptations to get their needs.</p>"
+    },
+    {
+      "text": "<p><strong>Q81.</strong> Which of the following is an example of negative feedback loop in humans?</p>",
+      "options": [
+        "<p>Secretion of tears after falling of sand particles into the eye</p>",
+        "<p>Salivation of mouth at the sight of delicious food</p>",
+        "<p>Secretion of sweat glands and constriction of skin blood vessels when it is too hot</p>",
+        "<p>Constriction of skin blood vessels and contraction of skeletal muscles when it is too cold</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In a negative feedback loop the response opposes the change and brings the body back to its set point.</p> <p>When it is too cold, the hypothalamus causes constriction of skin blood vessels (less heat loss) and shivering, i.e., contraction of skeletal muscles (more heat), so body temperature rises back to normal.</p> <p>In heat the skin vessels dilate, not constrict, so (c) is wrong; tears and salivation are simple reflexes, not feedback control of a body variable.</p>"
+    },
+    {
+      "text": "<p><strong>Q82.</strong> The formula for exponential population growth is-</p>",
+      "options": [
+        "<p>dN/dt = rN</p>",
+        "<p>dt/dN = rN</p>",
+        "<p>rN/dN = dt</p>",
+        "<p>dN/rN = dt</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Nearly all populations will tend to grow exponentially as long as there are resources available. The formula for exponential population growth is dN/dt = rN. In this equation d is the rate of change, N is the number of existing individuals, r is the intrinsic growth rate, t is time, and dN/dt is the rate of change in population size.</p>"
+    },
+    {
+      "text": "<p><strong>Q83.</strong> Niche overlap indicates-</p>",
+      "options": [
+        "<p>Sharing of one or more resources between the two species</p>",
+        "<p>Mutualism between two species</p>",
+        "<p>Active cooperation between two species</p>",
+        "<p>Two different parasites on the same host</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Niche indicate the habitat of a particular species and the interaction of that species with the resources present in the habitat. Niche overlap means that two or more species share the resources present in a particular niche.</p>"
+    },
+    {
+      "text": "<p><strong>Q84.</strong> More than 70% of world's fresh water is contained in –</p>",
+      "options": [
+        "<p>Polar ice</p>",
+        "<p>Greenland</p>",
+        "<p>Antarctica</p>",
+        "<p>Glaciers and Mountains</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Three fourth surface of earth is covered by oceans which contain 97.5% of total water. It is marine water with about 3.5% salt content only 2.5% is fresh water which occurs on land. Most of this water (1.97%) occurs as frozen ice caps and glaciers, 0.5% fresh water occurs as ground water. Rivers and lakes contain 0.02%, soil 0.01% while atmosphere possesses 0.001% of water as vapours.</p>"
+    },
+    {
+      "text": "<p><strong>Q85.</strong> At which latitude, heat gain through insolation approximately equals heat loss through terrestrial radiation -</p>",
+      "options": [
+        "<p>40<sup>o</sup> North and South</p>",
+        "<p>42 12o North and South</p>",
+        "<p>66<sup>o</sup> North and South</p>",
+        "<p>22 12o North and South</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Earth does not receive equal radiation at all points. The East West rotation of earth provides equal exposure to sunlight but latitude and dispersion do affect the amount of radiation received. The poles receive far less radiation than equator. This uneven heating is called differential insolation. At 40º North and South, approximately the heat gain is equal to heat loss through terrestrial radiation.</p>"
+    },
+    {
+      "text": "<p><strong>Q86.</strong> Animals have the innate ability to escape from predation. Examples for the same are given below. Select the incorrect example</p>",
+      "options": [
+        "<p>Poison fangs in snakes</p>",
+        "<p>Enlargement of body size by swallowing air in puffer fish</p>",
+        "<p>Colour change in chameleon</p>",
+        "<p>Melanism in moths</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Animals resist predation by cryptic coloration deceptive marking, behavioural defenses and possession of mechanical or chemical defenses. Examples are<br/> colour change in Chameleon<br/> Enlargement of body size by swallowing air in potter fish, Melanism in moths.</p>"
+    },
+    {
+      "text": "<p><strong>Q87.</strong> Which one of the following pairs in mismatched ?</p>",
+      "options": [
+        "<p>Tundra - permafrost</p>",
+        "<p>Savanna - acacia trees</p>",
+        "<p>Prairie - epiphytes</p>",
+        "<p>Coniferous forest - evergreen trees</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A biome is a major terrestrial community characterized by a distinct climate and inhabited by a particular species of plants and animals. Tundra is characterized by precipitation of less than 25 cm annually. Permafrost or permanent ice is found about a meter down from the surface, it never melts and is impenetrable to both water and roots. Savannahs are open grasslands with scattered shrubs and trees. Coniferous forest contain evergreen trees. In these forests all plants do not shed their leaves at the same time hence forest remains always evergreen. But Prairies is a grassland and epiphytes and ephemerals are found in deserts.</p>"
+    },
+    {
+      "text": "<p><strong>Q88.</strong> Certain characteristic demographic features of developing countries are -</p>",
+      "options": [
+        "<p>High fertility, low or rapidly falling mortality rate, rapid population growth and a very young age distribution</p>",
+        "<p>High mortality high density, uneven population growth and a very old age distribution</p>",
+        "<p>High fertility, high density, rapidly rising mortality rate and very young age distribution</p>",
+        "<p>High infant mortality, low fertility, uneven population growth and a very young age distribution</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Demography is the study of population in all aspects. Fertility refers to the number of children per couple. Mortality rate is the average number of natural deaths per unit population per unit time. Age distribution refers to the proportionate occurrence of individuals of the three age groups. Developing countries usually have high rate of population growth, because of increasing fertility and declining mortality.</p>"
+    },
+    {
+      "text": "<p><strong>Q89.</strong> What is a keystone species ?</p>",
+      "options": [
+        "<p>A dominant species that constitutes a large proportion of the biomass and which affects many other species</p>",
+        "<p>A species which makes up only a small proportion of the total biomass of a community, yet has a huge impact on the community's organization and survival</p>",
+        "<p>A common species that has plenty of biomass, yet has a fairly low impact on the community's organization</p>",
+        "<p>A rare species that has minimal impact on the biomass and on other species in the community</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A keystone species is the one which makes up only a small proportion of the total biomass of a community, yet has a huge impact on the community’s organization and survival.</p>"
+    },
+    {
+      "text": "<p><strong>Q90.</strong> In which of the following pairs is the specific characteristic of a soil not correctly matched ?</p>",
+      "options": [
+        "<p>Chernozems – Richest soil in the world</p>",
+        "<p>Laterite – Contains aluminium compound</p>",
+        "<p>Terra rossa – Most suitable for roses</p>",
+        "<p>Black soil – Rich in calcium carbonate</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Black soil forms the largest group. It is developed mainly on the Deccan traps of Maharashtra, Madhya Pradesh and Kathiawar. Because of its hydrology and climatic conditions of the environment, the medium and deep black soils are very suitable for cotton cultivation. Laterite soil is rich in insoluble iron oxides and aluminium compounds, which gives laterites a reddish appearance. Chernozems are rich in nutrients (due to abundant organic rich compounds) and consequently the most fertile in the world.</p>"
+    }
+  ]
+},
+{
+  "name": "SWT 02 - Organisms and Populations (Population Attributes, Growth Models & Life History)",
+  "label": "SWT 02",
+  "bracket": "NCERT Core - Part 2",
+  "subject": "neet_ecology_organisms",
+  "topics": "Population Attributes, Natality, Mortality, Sex Ratio, Age Pyramids, Exponential (J-shaped) & Logistic (Verhulst-Pearl) Growth Curves, Carrying Capacity",
+  "duration": "60 mins",
+  "questions": [
+    {
+      "text": "<p><strong>Q1.</strong> The maximum growth rate occurs in :-</p>",
+      "options": [
+        "<p>Exponential phase</p>",
+        "<p>Stationary phase</p>",
+        "<p>Senescent phase</p>",
+        "<p>Lag phase</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Maximum growth rate occurs in exponential or acceleration or log phase. The point at which the exponential growth begins to slow down is known as inflexion point.</p>"
+    },
+    {
+      "text": "<p><strong>Q2.</strong> In which one of the following habitats does the diurnal temperature of soil surface vary most ?</p>",
+      "options": [
+        "<p>Grassland</p>",
+        "<p>Desert</p>",
+        "<p>Shrub land</p>",
+        "<p>Forest</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Desert show maximum difference between day and night temperature.</p>"
+    },
+    {
+      "text": "<p><strong>Q3.</strong> Two opposite forces operate in the growth and development of every population. One of them relates to the ability to reproduce at a given rate. The force opposing it is called : -</p>",
+      "options": [
+        "<p>Biotic potential</p>",
+        "<p>Environmental resistance</p>",
+        "<p>Morbidity</p>",
+        "<p>Fecundity</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The environmental factors which can check the growth of population size constitute the environmental resistance. These include predators, food, water, nesting sites, similar competitors, etc. All living things tend to reproduce until the point at which their environment becomes a limiting factor. No population, human or otherwise, can grow indefinitely; eventually, some biotic or abiotic variable will begin to limit population growth.</p>"
+    },
+    {
+      "text": "<p><strong>Q4.</strong> Mycorrhiza is an example of :-</p>",
+      "options": [
+        "<p>Ectoparasitism</p>",
+        "<p>Decomposers</p>",
+        "<p>Endoparasitism</p>",
+        "<p>Symbiotic relationship</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In mutalism or symbiosis both the organisms in association are mutually benefitted and further this association is obligatory, i.e., necessary for existence of both organisms. Mycorrhiza is a example of symbiosis. It is association between roots of higher plants and fungal hyphae. The fungal hyphae supply water and nutrients to the plant and in turn get food form the plant. So both the organism are mutually benefitted.</p>"
+    },
+    {
+      "text": "<p><strong>Q5.</strong> The growth curve of bacterial population in lab is plotted against time. What will be the shape of graph?</p>",
+      "options": [
+        "<p>Sigmoid</p>",
+        "<p>Hyperbolic</p>",
+        "<p>Ascending straight line</p>",
+        "<p>Descending straight line</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The correct option is <strong>Option A: Sigmoid</strong>.</p> <p>When a bacterial population is grown in a laboratory, it is kept in a closed vessel with a fixed amount of food and space. Because the resources are limited, the bacteria cannot keep multiplying forever. This type of growth under limited resources is called logistic growth. </p> <p>If we plot the population density ( N ) against time ( t ), the growth happens in specific phases:</p> <p>First, there is a <strong>lag phase</strong>, where the bacteria are just adjusting to the new lab environment, so growth is very slow. </p> <p>Next comes the <strong>log phase</strong> (or exponential phase). Here, the bacteria have plenty of food, so they divide rapidly and the population increases sharply.</p> <p>However, as the population grows, the food starts running out and waste products build up. This slows down the growth rate, which is called the <strong>deceleration phase</strong>.</p> <p>Finally, the population reaches the maximum limit that the lab container can support, known as the carrying capacity ( K ). At this point, the number of new bacteria being formed equals the number of bacteria dying. The growth stops, and the graph flattens out. This is the <strong>stationary phase</strong>.</p> <p>In NCERT, this logistic growth is represented by the Verhulst-Pearl logistic growth equation:</p> <p> dNdt=rN(K−NK) </p> <p>Here, N is the population density at time t , r is the intrinsic rate of natural increase, and K is the carrying capacity.</p> <p>When you connect all these phases on a graph—starting slow, rising fast, and then flattening out at the top—it forms an S-shaped curve, which is known as a <strong>sigmoid curve</strong>.</p>"
+    },
+    {
+      "text": "<p><strong>Q6.</strong> In a population, unrestricted reproductive capacity is called as -</p>",
+      "options": [
+        "<p>Biotic potential</p>",
+        "<p>Birth rate</p>",
+        "<p>Carrying capacity</p>",
+        "<p>Fertility</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Carrying capacity refers to the maximum number of individuals that can be sustained by the environment. Birth rate refers to number of births per unit population.</p>"
+    },
+    {
+      "text": "<p><strong>Q7.</strong> What is true for individuals of same species ?</p>",
+      "options": [
+        "<p>Live in same habitat</p>",
+        "<p>Live in different habitat</p>",
+        "<p>Interbreeding</p>",
+        "<p>Live in same niche</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Individuals of the same species can interbreed. No two individuals share the same ecological niche.</p>"
+    },
+    {
+      "text": "<p><strong>Q8.</strong> Which type of association is found in between entomophilous flower and pollinating agent ?</p>",
+      "options": [
+        "<p>Cooperation</p>",
+        "<p>Co-evolution</p>",
+        "<p>Mutualism</p>",
+        "<p>Commensalism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Co-evolution can occur in any interspecific relationship like symbiosis or mutualism. The relation between an entomophilous flower and pollinating insect shows co-evolved mutualism. In this the plant depends exclusively on the insect for pollination and the insect relies on the plant for food.</p>"
+    },
+    {
+      "text": "<p><strong>Q9.</strong> Two different species can not live for long duration in the same niche or habitat. This law is : -</p>",
+      "options": [
+        "<p>Competitive exclusion principle</p>",
+        "<p>Weiseman's theory</p>",
+        "<p>Allen's law</p>",
+        "<p>Gause's hypothesis</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Interspecific competition is rivalry amongst members of different species. The severity of competition depends upon similarity in the requirement of food and shelter. Every type of organism has a particular niche, no two organisms can live in same niche. One of the two is eliminated. This phenomenon is called Gause hypothesis of competitive exclusion.</p>"
+    },
+    {
+      "text": "<p><strong>Q10.</strong> Which of the following is a correct pair?</p>",
+      "options": [
+        "<p><em>Cuscuta</em> - parasite</p>",
+        "<p><em>Dischidia</em> - insectivorous</p>",
+        "<p><em>Opuntia</em> - predator</p>",
+        "<p><em>Capsella</em> - hydrophyte</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p><em>Cuscuta</em> (dodder) is a leafless, rootless total stem parasite that draws food and water from the host through haustoria, so pair (a) is correct.</p> <p><em>Dischidia</em> is an epiphyte whose pitcher-like leaves store water and debris; it is not insectivorous.</p> <p><em>Opuntia</em> is a xerophyte with phylloclades, not a predator; <em>Capsella</em> (shepherd's purse) is a mesophytic land herb, not a hydrophyte.</p>"
+    },
+    {
+      "text": "<p><strong>Q11.</strong> What is the best pH of the soil for cultivation of plants?</p>",
+      "options": [
+        "<p>3.4−5.4</p>",
+        "<p>6.5−7.5</p>",
+        "<p>4.5−8.5</p>",
+        "<p>5.5−6.5</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Most crop plants grow best in soils that are nearly neutral, pH about 6.5−7.5 ; at this pH most mineral nutrients (N, P, K, Ca, Mg and micronutrients) are readily available and soil microbes are most active.</p> <p>Strongly acidic soils ( 3.4−5.4 ) make phosphorus, calcium and magnesium scarce and Al and Mn toxic.</p> <p> 4.5−8.5 is only the whole range in which cultivated soils occur, not the best pH; 5.5−6.5 (slightly acidic) suits only some crops such as tea or potato.</p>"
+    },
+    {
+      "text": "<p><strong>Q12.</strong> Temperature changes in the environment affect most of the animals which are</p>",
+      "options": [
+        "<p>homoeothermic</p>",
+        "<p>aquatic</p>",
+        "<p>poikilothermic</p>",
+        "<p>desert living</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Poikilothermic (cold-blooded) animals cannot regulate their body temperature, which changes with the temperature of the surroundings, so they are affected most.</p> <p>Homoeothermic animals (birds, mammals) keep a nearly constant body temperature.</p>"
+    },
+    {
+      "text": "<p><strong>Q13.</strong> Angiosperm to which the largest flowers belong is</p>",
+      "options": [
+        "<p>partial stem parasite</p>",
+        "<p>total stem parasite</p>",
+        "<p>total root parasite</p>",
+        "<p>partial root parasite</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The largest flower belongs to <em>Rafflesia</em>, which has no chlorophyll, leaves or stem of its own.</p> <p>It lives inside the roots of the vine <em>Tetrastigma</em> and draws all its food from them, so it is a total root parasite.</p>"
+    },
+    {
+      "text": "<p><strong>Q14.</strong> Two opposite forces operate in the growth and development of every population. One of them is related to the ability to reproduce at a given rate. The force opposing to it is called</p>",
+      "options": [
+        "<p>biotic control</p>",
+        "<p>mortality</p>",
+        "<p>fecundity</p>",
+        "<p>environmental resistance</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The inherent capacity of a population to reproduce and increase at its maximum rate is its biotic potential.</p> <p>It is opposed by environmental resistance: the sum of limiting factors such as shortage of food and space, competition, predators, parasites, disease and unfavourable climate, which keeps actual growth below the maximum and gives the S-shaped (logistic) growth curve.</p> <p>Mortality is only one result of environmental resistance, and fecundity is part of the reproductive ability itself.</p>"
+    },
+    {
+      "text": "<p><strong>Q15.</strong> Plants such as <em>Prosopis</em>, <em>Acacia</em> and <em>Capparis</em> represent examples of tropical</p>",
+      "options": [
+        "<p>grass lands</p>",
+        "<p>thorn forests</p>",
+        "<p>deciduous forests</p>",
+        "<p>evergreen forests</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Tropical thorn forests occur in hot, low-rainfall regions (below about 70 cm a year) such as Rajasthan, Gujarat and Punjab.</p> <p>Their vegetation is xerophytic: thorny, small-leaved trees and shrubs such as <em>Prosopis</em>, <em>Acacia</em>, <em>Capparis</em>, <em>Zizyphus</em> and <em>Euphorbia</em>.</p> <p>Evergreen and deciduous forests are formed of tall broad-leaved trees, and grasslands are dominated by grasses.</p>"
+    },
+    {
+      "text": "<p><strong>Q16.</strong> In desert grasslands, which type of animals are relatively more abundant?</p>",
+      "options": [
+        "<p>Diurnal</p>",
+        "<p>Arboreal</p>",
+        "<p>Aquatic</p>",
+        "<p>Fossorial</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Desert grasslands have intense heat by day, very little water and few trees.</p> <p>Most animals there escape the heat and their predators by living in burrows underground (fossorial animals, e.g. desert rodents, many reptiles and insects) and come out mostly at night.</p> <p>Arboreal animals need trees and aquatic animals need water bodies, both scarce in deserts; daytime heat also limits diurnal activity.</p>"
+    },
+    {
+      "text": "<p><strong>Q17.</strong> During adverse season, therophytes survive by</p>",
+      "options": [
+        "<p>rhizomes</p>",
+        "<p>seeds</p>",
+        "<p>bulbs</p>",
+        "<p>corms</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Therophytes (a life-form class of Raunkiaer) are annual plants: they complete their life cycle during the favourable season and pass the unfavourable season only as seeds.</p> <p>Rhizomes, bulbs and corms are underground perennating organs of geophytes (cryptophytes), not of therophytes.</p>"
+    },
+    {
+      "text": "<p><strong>Q18.</strong> The animals of cold countries have relatively shorter and poorly developed ears, eyes, hairs and other phenotypic characters. This is known by which law?</p>",
+      "options": [
+        "<p>Cope’s Law</p>",
+        "<p>Dollo’s Law</p>",
+        "<p>Allen’s Law</p>",
+        "<p>Bergamann’s Law</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Allen's rule: mammals of colder climates have shorter ears, limbs and other extremities, which reduces surface area and so heat loss.</p> <p>Bergmann's rule concerns larger body size in colder climates, Cope's rule the increase of body size along a lineage, and Dollo's law the irreversibility of evolution.</p>"
+    },
+    {
+      "text": "<p><strong>Q19.</strong> Benthoic animals are those, which</p>",
+      "options": [
+        "<p>are submerged in area</p>",
+        "<p>float on the sea surface</p>",
+        "<p>are deep dweller in sea</p>",
+        "<p>are floating (free) organisms</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Benthic animals (benthos) live on or in the bottom of a water body, e.g., on the deep sea floor: sponges, corals, sea anemones, clams, snails and many worms.</p> <p>Organisms that float at the surface or drift freely are plankton, and actively swimming forms are nekton.</p>"
+    },
+    {
+      "text": "<p><strong>Q20.</strong> The ‘niche’ of a species is meant for</p>",
+      "options": [
+        "<p>habitat and specific functions of a species</p>",
+        "<p>specific place where an organism lives</p>",
+        "<p>specific species function and its competitive power</p>",
+        "<p>none of these</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The niche is the total role of a species in its community: the physical space it occupies (habitat) together with its functional role, i.e., the range of conditions it tolerates, the resources it uses and its interactions with other organisms.</p> <p>The specific place where an organism lives is only its habitat, and competitive power alone does not define the niche.</p>"
+    },
+    {
+      "text": "<p><strong>Q21.</strong> In India, human population is heavily weighed towards the younger age groups as a result of</p>",
+      "options": [
+        "<p>short life span of many individuals and high birth rate</p>",
+        "<p>long life span of many individuals and high birth rate</p>",
+        "<p>short life span of many individuals and low birth rate</p>",
+        "<p>long life span of many individuals and low birth rate</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A high birth rate adds a large number of children every year, so the pre-reproductive age group becomes the broadest part of the population.</p> <p>When many individuals also die young (short life span), few survive into the older age groups.</p> <p>Together these give a broad-based, triangular (expanding) age pyramid, typical of a growing population such as India's.</p> <p>A long life span or a low birth rate would instead increase the share of the older age groups.</p>"
+    },
+    {
+      "text": "<p><strong>Q22.</strong> The abundance of a species population, within its habitat, is called</p>",
+      "options": [
+        "<p>relative density</p>",
+        "<p>regional density</p>",
+        "<p>absolute density</p>",
+        "<p>niche density</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Population density can be expressed per unit of total space (crude density) or per unit of the habitat space actually available to and used by the species.</p> <p>The number of individuals per unit of the habitat actually occupied is the ecological density, also called niche (specific) density.</p> <p>Relative density only compares abundance with other species or other times, and absolute density counts individuals per unit total area without regard to the habitat.</p>"
+    },
+    {
+      "text": "<p><strong>Q23.</strong> Which one of the following pairs is correctly matched?</p>",
+      "options": [
+        "<p>Parasitism - intraspecific relationship</p>",
+        "<p>Uricotelism - aquatic habitat</p>",
+        "<p>Excessive perspiration - xeric adaptation</p>",
+        "<p>Streamlined body - aquatic adaptation</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A streamlined (spindle-shaped) body reduces drag and is an adaptation for swimming in water, as in fishes and whales.</p> <p>Parasitism is an interspecific interaction; uricotelism is a water-saving adaptation of terrestrial animals (insects, reptiles, birds); animals of dry (xeric) habitats reduce, not increase, perspiration.</p>"
+    },
+    {
+      "text": "<p><strong>Q24.</strong> Study of inter-relationships between organisms and their environment is</p>",
+      "options": [
+        "<p>ecology</p>",
+        "<p>ecosystem</p>",
+        "<p>phytogeography</p>",
+        "<p>ethology</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Ecology (term coined by Haeckel; Greek <em>oikos</em> = home) is the study of the interactions of organisms with one another and with their physical environment.</p> <p>An ecosystem is a functional unit of nature, not a branch of study; phytogeography studies the distribution of plants and ethology studies animal behaviour.</p>"
+    },
+    {
+      "text": "<p><strong>Q25.</strong> The sum total of the populations of the same kind of organisms constitute</p>",
+      "options": [
+        "<p>colony</p>",
+        "<p>genus</p>",
+        "<p>community</p>",
+        "<p>species</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A population is a group of individuals of one kind living in an area; all the populations of the same kind (able to interbreed) together make up a species.</p> <p>A community is formed by populations of different species living together, a genus is a group of related species, and a colony is a group of individuals living attached or close together.</p>"
+    },
+    {
+      "text": "<p><strong>Q26.</strong> Association of animals when both partners are benefitted</p>",
+      "options": [
+        "<p>colony</p>",
+        "<p>mutualism</p>",
+        "<p>commensalism</p>",
+        "<p>ammensalism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In mutualism both interacting species benefit (+, +), e.g., hermit crab and sea anemone, lichens, mycorrhiza.</p> <p>In commensalism one partner benefits and the other is unaffected (+, 0); in amensalism one is harmed and the other is unaffected (−, 0); a colony is a group of individuals of one species.</p>"
+    },
+    {
+      "text": "<p><strong>Q27.</strong> Fertility of soil is measured by its ability to</p>",
+      "options": [
+        "<p>retain nutrients</p>",
+        "<p>hold organic materials</p>",
+        "<p>hold water</p>",
+        "<p>support life</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Soil fertility is the capacity of a soil to supply all essential nutrients in proper amounts and so to sustain abundant plant life (good growth and yield of crops).</p> <p>Retention of nutrients, organic matter and water are only some of the properties that contribute to fertility; the overall measure is the plant life the soil can support.</p>"
+    },
+    {
+      "text": "<p><strong>Q28.</strong> Soil particles determine its</p>",
+      "options": [
+        "<p>texture</p>",
+        "<p>field capacity</p>",
+        "<p>water holding capacity</p>",
+        "<p>soil flora</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Soil texture is the relative proportion of particles of different sizes (sand, silt and clay), so the soil particles themselves decide the texture: sandy, loamy or clayey.</p> <p>Field capacity and water holding capacity depend on texture together with organic matter and structure, and the soil flora depends on many other factors.</p>"
+    },
+    {
+      "text": "<p><strong>Q29.</strong> Homeostasis is</p>",
+      "options": [
+        "<p>tendency to charge with change in environment</p>",
+        "<p>tendency to resist change</p>",
+        "<p>disturbance in regulatory control</p>",
+        "<p>plants and animal extracts used in homeopathy</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Homeostasis is the maintenance of a nearly constant internal environment (body temperature, water and salt balance, blood sugar) in spite of changes outside, i.e., a tendency to resist change.</p> <p>Changing with the environment is the behaviour of conformers, a disturbance of regulation is the opposite of homeostasis, and homeopathy is unrelated.</p>"
+    },
+    {
+      "text": "<p><strong>Q30.</strong> Deep black soil is productive due to high proportion of</p>",
+      "options": [
+        "<p>sand and zinc</p>",
+        "<p>gravel and calcium</p>",
+        "<p>clay and humus</p>",
+        "<p>silt and earthworm</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Deep black soil is rich in fine clay, which holds water and mineral ions, and in humus (decomposed organic matter), which supplies nutrients and improves soil structure; hence it is highly productive.</p> <p>Sand and gravel are coarse particles with poor retention of water and nutrients, and zinc, calcium or earthworms alone do not account for its fertility.</p>"
+    },
+    {
+      "text": "<p><strong>Q31.</strong> Which one is true?</p>",
+      "options": [
+        "<p>Commensalism when none of the interacting populations affect each other.</p>",
+        "<p>Symbiosis when the interaction is useful to both the populations.</p>",
+        "<p>Symbiosis when neither populations affects each other.</p>",
+        "<p>Commensalism when the interaction is useful to both the populations.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Symbiosis (mutualism) is an interaction in which both populations benefit (+, +).</p> <p>In commensalism only one population benefits and the other is neither harmed nor benefited (+, 0); an interaction in which neither population affects the other is neutralism (0, 0).</p>"
+    },
+    {
+      "text": "<p><strong>Q32.</strong> The relation between algae and fungi in a lichen is</p>",
+      "options": [
+        "<p>symbiosis</p>",
+        "<p>parasitism</p>",
+        "<p>commenalism</p>",
+        "<p>protocooperation</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A lichen is a mutualistic (symbiotic) association: the alga (phycobiont) makes food by photosynthesis, and the fungus (mycobiont) gives shelter and absorbs water and minerals.</p> <p>Both partners benefit and live together permanently as one body, so it is neither parasitism nor commensalism; protocooperation is a loose, non-obligatory mutual benefit.</p>"
+    },
+    {
+      "text": "<p><strong>Q33.</strong> Competition for light, nutrients and space is most severe between</p>",
+      "options": [
+        "<p>closely related organism growing in different niches</p>",
+        "<p>closely related organisms growing in the same area/niche</p>",
+        "<p>distantly related organisms growing in the same habitat</p>",
+        "<p>distantly related organisms growing in different niches</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Competition is most intense when the requirements of the organisms overlap most, i.e., between closely related organisms living in the same area and niche.</p> <p>By Gause's competitive exclusion principle, two such species cannot coexist indefinitely; distantly related organisms, or those in different niches, share fewer resources and compete less.</p>"
+    },
+    {
+      "text": "<p><strong>Q34.</strong> A mutually beneficial association necessary for survival of both partners is</p>",
+      "options": [
+        "<p>mutualism/symbiosis</p>",
+        "<p>commensalism</p>",
+        "<p>amensalism</p>",
+        "<p>both (1) and (2)</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Mutualism (symbiosis) is an interaction in which both partners benefit; when it is obligatory, neither partner can survive well alone, e.g., lichens, mycorrhiza, fig and fig wasp.</p> <p>Commensalism benefits only one partner and amensalism harms one partner, so neither is mutually beneficial.</p>"
+    },
+    {
+      "text": "<p><strong>Q35.</strong> Association between cattle egret foraging close to buffalo is that of ________.</p>",
+      "options": [
+        "<p>mutualism</p>",
+        "<p>commensalism</p>",
+        "<p>ammensalism</p>",
+        "<p>parasitism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Cattle egrets forage close to buffalo and feed on insects disturbed by the grazing animals. The egrets benefit while the buffalo are neither benefited nor harmed.</p> <p>An interaction in which one species benefits and the other is unaffected is commensalism.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q36.</strong> Density of population of a species will increase in case of which following phenomenon?<br/>A. Increase in immigration<br/>B. Increased Birth rate<br/>C. Increase in emigraition<br/>D. Increased Death rate</p>",
+      "options": [
+        "<p>A and D only</p>",
+        "<p>B and C only</p>",
+        "<p>C and D only</p>",
+        "<p>A and B only</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Population density changes as Nt+1=Nt+(B+I)−(D+E) , where B is natality, D is mortality, I is immigration and E is emigration.</p> <p>Density increases with increased natality and increased immigration (A and B), while increased emigration and increased mortality decrease it.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q37.</strong> Which of the following is NOT a role of predator?</p>",
+      "options": [
+        "<p>They keep prey populations under control.</p>",
+        "<p>They help in maintaining species diversity in a community.</p>",
+        "<p>They always over exploit their prey.</p>",
+        "<p>They reduce the intensity of competition among competing prey species.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Predators keep prey populations under control, help maintain species diversity by reducing the intensity of competition among prey species, and act as conduits for energy transfer.</p> <p>Predators do not always over-exploit their prey, as this would lead to their own extinction. Hence statement C is not a role of predators.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q38.</strong> Observe the following diagram and identify 'A' and 'B' Biomes from the following list. [Desert, Grassland, Tropical, Temperate, Coniferous, Arctic and alpine tundra]<br/><img alt=\"MHT CET (PCB) 2026 10th May Morning Shift Biology - Organisms and Populations Question 1 English\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mw1gdsxg/4edf9de3-cb7f-41c9-ab31-fd6e9e0e72b7/2e4e2740-d7f1-11f1-9083-ed28ae523621/file-6y3zli1mw1gdsxh.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>A - Temperate forest, B - Coniferous forest</p>",
+        "<p>A - Tropical forest, B - Arctic and alpine tundra</p>",
+        "<p>A - Coniferous forest, B - Grassland</p>",
+        "<p>A - Arctic and alpine tundra, B - Tropical forest.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Biome A occupies the region of high mean annual temperature (about 20 to 26∘ ) and the highest mean annual precipitation (about 150 to 420 cm). Warm and very wet conditions throughout the year are characteristic of the tropical forest.</p> <p>Biome B occupies the region of the lowest mean annual temperature (about −11 to 1∘ ) and low precipitation (about 20 to 120 cm). Cold and dry conditions are characteristic of the arctic and alpine tundra.</p> <p>Therefore, A is the tropical forest and B is the arctic and alpine tundra.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q39.</strong> Match the Pairs<br/><table style=\"border: 1px solid black; border-collapse: collapse; width: auto;\"><tr><th style=\"border: 1px solid black; padding: 10px;\">Column- I (Type of Interaction)</th><th style=\"border: 1px solid black; padding: 10px;\">Column- II (Mechanism involved)</th></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">A) Competition</td><td style=\"border: 1px solid black; padding: 10px;\">I) loss of digestive system</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">B) Prey - predation</td><td style=\"border: 1px solid black; padding: 10px;\">II) feeding efficiency of one species is reduced due to interference of other species</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">C) Mutualism</td><td style=\"border: 1px solid black; padding: 10px;\">III) Co-evolution in plants and animals</td></tr><tr><td style=\"border: 1px solid black; padding: 10px;\">D) Endoparasitism</td><td style=\"border: 1px solid black; padding: 10px;\">IV) Camouflage for concealment</td></tr></table>Choose the correct option.</p>",
+      "options": [
+        "<p>A - IV, B - III, C - I, D - II</p>",
+        "<p>A - II, B - IV, C - III, D - I</p>",
+        "<p>A - IV, B - III, C - II, D - I</p>",
+        "<p>A - II, B - IV, C - I, D - III</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A – II: in interference competition, one species lowers the feeding efficiency of another merely by its presence.</p> <p>B – IV: prey escape predators by camouflage (cryptic colouring), an adaptation produced by predation.</p> <p>C – III: mutualism, e.g. a fig and its pollinating wasp, shows tight co-evolution of plant and animal.</p> <p>D – I: endoparasites such as tapeworms absorb the host's digested food and have lost their own digestive system.</p> <p>So A pairs with II, B with IV, C with III and D with I.</p>"
+    },
+    {
+      "text": "<p><strong>Q40.</strong> Identify the correct equation with respect to diagram below, which depicts decrease in population density.<br/><img alt=\"MHT CET (PCB) 2026 26th April Morning Shift Biology - Organisms and Populations Question 40 English\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mvkmcz6o/c0e9996a-0457-4339-a6de-76f70ff10949/3b105200-ceaf-11f1-9285-539ed74f7479/file-6y3zli1mvkmcz6p.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>P>Q</p>",
+        "<p>P<Q</p>",
+        "<p>P=Q</p>",
+        "<p>P∝Q</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The diagram shows the population going from state P, through a decrease in population density, to state Q.</p> <p>So P is the density before the change and Q the density after it.</p> <p>A fall in density means the final value is smaller than the initial one, Q&lt;P ; this happens when deaths plus emigration exceed births plus immigration ( D+E&gt;B+I ).</p> <p>So the correct relation is P&gt;Q .</p>"
+    },
+    {
+      "text": "<p><strong>Q41.</strong> Select the statement which explains the commensalism best.</p>",
+      "options": [
+        "<p>One species is benefited, other is harmed.</p>",
+        "<p>Both species are benefited.</p>",
+        "<p>One species is benefited, other is neither harmed nor benefited.</p>",
+        "<p>Both species harm each other.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Commensalism is a (+, 0) interaction: one partner gains while the other is neither harmed nor helped, e.g. an orchid growing on a mango branch, or barnacles on a whale.</p> <p>One gaining while the other is harmed is parasitism or predation; both gaining is mutualism; both harmed is competition.</p> <p>So commensalism is best described as one species benefited and the other neither harmed nor benefited.</p>"
+    },
+    {
+      "text": "<p><strong>Q42.</strong> Which one of the following is INCORRECT regarding brood parasitism?</p>",
+      "options": [
+        "<p>Asian koel lays eggs in the nest of Indian crow</p>",
+        "<p>Indian crow incubates eggs of Asian koel</p>",
+        "<p>Eggs of Indian crow have evolved to resemble Asian koel's eggs to avoid ejection.</p>",
+        "<p>Eggs of Asian Koel hatch before that of common Indian crow</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In brood parasitism the koel (parasite) lays its eggs in the crow's (host's) nest – true.</p> <p>The crow then incubates and rears the koel's eggs and chicks as its own – true.</p> <p>To escape detection, it is the parasite's eggs that have evolved to look like the host's, i.e. koel eggs resemble crow eggs; the reverse claim is false.</p> <p>Koel eggs need a shorter incubation and hatch before the crow's, giving the young koel a head start – true.</p> <p>So the incorrect statement is that crow eggs evolved to resemble koel eggs.</p>"
+    },
+    {
+      "text": "<p><strong>Q43.</strong> As an efficient reproductive strategy under environmental selection pressure, some organisms like _________ and _________ produce a small number of large-sized offspring</p>",
+      "options": [
+        "<p>oysters and pelagic fishes</p>",
+        "<p>birds and mammals</p>",
+        "<p>clown fish and sea anemone</p>",
+        "<p>zebra mussels and chlamydomonas</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Life-history strategies differ: some species produce huge numbers of tiny offspring with no care, as oysters and pelagic fishes do.</p> <p>Others produce only a few large offspring and invest heavily in each through parental care, which raises the survival of each young.</p> <p>Birds and mammals follow this second strategy.</p> <p>So birds and mammals produce a small number of large-sized offspring.</p>"
+    },
+    {
+      "text": "<p><strong>Q44.</strong> Which of the following depicts Exponential growth curve of a population?</p>",
+      "options": [
+        "<p><img alt=\"MHT CET (PCB) 2026 25th April Evening Shift Biology - Organisms and Populations Question 36 English Option 1\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mvkm82sw/9fa4f281-aacf-4c8a-9652-260fafb86224/b2cff300-ceae-11f1-9285-539ed74f7479/file-6y3zli1mvkm82sx.webp\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"MHT CET (PCB) 2026 25th April Evening Shift Biology - Organisms and Populations Question 36 English Option 2\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mvkm88kw/fc2d224a-83eb-4c87-9015-3261401a948d/b7468700-ceae-11f1-9285-539ed74f7479/file-6y3zli1mvkm88kx.webp\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"MHT CET (PCB) 2026 25th April Evening Shift Biology - Organisms and Populations Question 36 English Option 3\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mvkm8e7u/b57c00b6-6ff3-454e-85b0-56ec0843b55d/bba155a0-ceae-11f1-9285-539ed74f7479/file-6y3zli1mvkm8e7v.webp\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"MHT CET (PCB) 2026 25th April Evening Shift Biology - Organisms and Populations Question 36 English Option 4\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mvkm8jsj/2a941ccd-79f3-46b3-af9a-5e5059cf86b9/bfefc830-ceae-11f1-9285-539ed74f7479/file-6y3zli1mvkm8jsk.webp\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>With unlimited resources a population grows as dNdt=rN , i.e. Nt=N0ert .</p> <p>The growth rate keeps rising with population size, so the plot of size against time stays nearly flat at first and then shoots upward without levelling off: a J-shaped curve.</p> <p>The S-shaped curve that flattens at the top shows logistic growth; the rise-and-fall and falling curves describe neither model.</p> <p>So the J-shaped graph (fourth one) depicts exponential growth.</p>"
+    },
+    {
+      "text": "<p><strong>Q45.</strong> Which of the following statements is INCORRECT regarding Niche?</p>",
+      "options": [
+        "<p>It is not species specific</p>",
+        "<p>It is an activity or role performed by organism</p>",
+        "<p>It supports single species at a time</p>",
+        "<p>It deals with flow of energy from one organism to another</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A niche is the functional role of a species – what it eats, where and when it is active, and how it interacts with its surroundings.</p> <p>By the competitive exclusion principle no two species can share exactly the same niche for long, so each niche belongs to one species; calling it not species-specific is false.</p> <p>It describes the activity or role of the organism – true; it holds a single species at a time – true; and through the species' trophic position it relates to energy flow between organisms – true.</p> <p>So the incorrect statement is that the niche is not species specific.</p>"
+    },
+    {
+      "text": "<p><strong>Q46.</strong> Conformers are those organisms ________ .</p>",
+      "options": [
+        "<p>whose body temperature and osmotic concentration remains constant.</p>",
+        "<p>whose body temperature and osmotic concentration changes with that of surrounding.</p>",
+        "<p>who move away from stressful condition.</p>",
+        "<p>who can suspend their activities.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Conformers cannot keep their internal environment constant.</p> <p>Their body temperature follows the temperature of the surroundings, and in aquatic forms the osmotic concentration of body fluids follows that of the water.</p> <p>Organisms keeping these constant are regulators, those moving away are migrants, and those suspending activity show hibernation, aestivation or diapause.</p> <p>So conformers are organisms whose body temperature and osmotic concentration change with the surroundings.</p>"
+    },
+    {
+      "text": "<p><strong>Q47.</strong> Absolute natality is ________ .</p>",
+      "options": [
+        "<p>number of births under ideal conditions.</p>",
+        "<p>total number of births in a particular time.</p>",
+        "<p>number of births when environmental pressures come into play.</p>",
+        "<p>age related natality.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Natality is the birth rate of a population.</p> <p>Absolute (maximum or physiological) natality is the highest possible number of births when conditions are ideal – no shortage of food or space and no adverse factors – so reproduction is limited only by physiology.</p> <p>Realised (ecological) natality is the actual number of births under the existing environmental pressures, which is always lower.</p> <p>So absolute natality is the number of births under ideal conditions.</p>"
+    },
+    {
+      "text": "<p><strong>Q48.</strong> In accordance to their life styles ________ have evolved characters like loss of unnecessary sense organs, suckers, loss of digestive system and high reproductive capacity.</p>",
+      "options": [
+        "<p>endoparasites</p>",
+        "<p>ectoparasites</p>",
+        "<p>hosts</p>",
+        "<p>brood parasites</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Endoparasites live inside the host's body (e.g. tapeworm, liver fluke), where food is already digested and the surroundings are stable.</p> <p>So they have lost unnecessary sense organs and, in many cases, the digestive system, absorbing nutrients through the body surface.</p> <p>They have hooks and suckers to hold on to host tissue, and produce enormous numbers of eggs because the chance of reaching a new host is small.</p> <p>So these adaptations are seen in endoparasites.</p>"
+    },
+    {
+      "text": "<p><strong>Q49.</strong> If the population of a country has the mutual relation of different age groups as shown below, then what type of population growth will that country have?<br/>Pre-reproductive age group < Reproductive age group < Post-reproductive group.</p>",
+      "options": [
+        "<p>Negative growth</p>",
+        "<p>Zero growth</p>",
+        "<p>Slow growth</p>",
+        "<p>Rapid growth</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The given age structure has the fewest individuals in the pre-reproductive group and the most in the post-reproductive group.</p> <p>With few young people, fewer individuals will enter the reproductive age in coming years, so births will fall below deaths.</p> <p>Such an age pyramid is urn-shaped (narrow base), typical of a declining population.</p> <p>So the country will show negative population growth.</p>"
+    },
+    {
+      "text": "<p><strong>Q50.</strong> Given below are two statements, one is labelled as Assertion (A) and other one labelled as Reason (R).<br/>Assertion (A) : Most of the poikilothermic animals are thermo-conformers in nature.<br/>Reason (R) : Poikilothermic animals can maintain constant body temperature with ambient temperature.<br/>In light of the above statements, choose the <em>most appropriate</em> answer from the options given below.</p>",
+      "options": [
+        "<p>Both (A) and (R) are correct and (R) is the correct explanation of (A).</p>",
+        "<p>Both (A) and (R) are correct but (R) is NOT the correct explanation of (A).</p>",
+        "<p>(A) is correct but (R) is incorrect.</p>",
+        "<p>(A) is incorrect but (R) is correct.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion (A) is correct: poikilotherms (fishes, amphibians, reptiles, most invertebrates) cannot regulate body temperature internally, so their temperature follows that of the surroundings; they are conformers.</p> <p>Reason (R) is incorrect: poikilotherms cannot keep a constant body temperature; it rises and falls with ambient temperature. Constant temperature is a feature of homeotherms (birds and mammals).</p> <p>So (A) is correct and (R) is incorrect.</p>"
+    },
+    {
+      "text": "<p><strong>Q51.</strong> Various morphological, physiological and behavioural attributes of an organism to survive and reproduce in its habitat is said to be ______</p>",
+      "options": [
+        "<p>Aestivation</p>",
+        "<p>Adaptation</p>",
+        "<p>Emigration</p>",
+        "<p>Hibernation</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Any morphological, physiological or behavioural feature that lets an organism survive and reproduce in its habitat is an adaptation (e.g. thick fur in polar animals, CAM in desert plants).</p> <p>Aestivation and hibernation are specific responses (summer and winter dormancy), and emigration is movement out of a population; each is only one kind of response, not the general term.</p> <p>So such attributes are called adaptation.</p>"
+    },
+    {
+      "text": "<p><strong>Q52.</strong> Which one of the following is NOT an example of prey-predator interaction?</p>",
+      "options": [
+        "<p>Sparrows and seeds</p>",
+        "<p>Frogs and Locusts</p>",
+        "<p>Monarch butterfly and birds</p>",
+        "<p>Clown fish and sea anemone</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In predation one organism (predator) feeds on another (prey).</p> <p>Sparrows eating seeds (seed predation) and frogs eating locusts are predation.</p> <p>Monarch butterflies are prey that defend themselves chemically — birds that eat them find them distasteful — so this is still a prey–predator relationship.</p> <p>Clown fish living among the stinging tentacles of a sea anemone get protection without being eaten; this is commensalism/mutualism.</p> <p>So clown fish and sea anemone is not a prey–predator interaction.</p>"
+    },
+    {
+      "text": "<p><strong>Q53.</strong> Density of population of a species decreases in case of which of the following phenomena?<br/>A. Increase in immigration<br/>B. Decrease in birth rate<br/>C. Decrease in emigration<br/>D. Increase in death rate.</p>",
+      "options": [
+        "<p>A and B only</p>",
+        "<p>B and C only</p>",
+        "<p>B and D only</p>",
+        "<p>C and D only</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Population density changes as Nt+1=Nt+(B+I)−(D+E) , where B is births, I immigration, D deaths and E emigration.</p> <p>A rise in immigration (A) adds individuals, so density increases — excluded.</p> <p>A fall in birth rate (B) adds fewer individuals, so density decreases — included.</p> <p>A fall in emigration (C) means fewer leave, so density increases — excluded.</p> <p>A rise in death rate (D) removes more individuals, so density decreases — included.</p> <p>So density decreases in B and D only.</p>"
+    },
+    {
+      "text": "<p><strong>Q54.</strong> In a population, the most common evolutionary stable strategy for a sex ratio is when _________.</p>",
+      "options": [
+        "<p>Number of males exceeds the number of females.</p>",
+        "<p>Number of females exceeds the number of males.</p>",
+        "<p>males and females are in a ratio of 1:1</p>",
+        "<p>females are economically independent from males.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>An evolutionarily stable strategy is one that, once common in a population, cannot be replaced by any alternative.</p> <p>If one sex becomes rarer, each member of that sex leaves more offspring on average, so parents producing the rarer sex are favoured (Fisher's principle).</p> <p>This frequency-dependent selection pushes the population back until both sexes are equally produced.</p> <p>So the stable sex ratio is males and females in the ratio 1:1.</p>"
+    },
+    {
+      "text": "<p><strong>Q55.</strong> Basic unit of ecological hierarchy is ___________.</p>",
+      "options": [
+        "<p>Biome</p>",
+        "<p>Community</p>",
+        "<p>Population</p>",
+        "<p>Organism</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The levels of ecological organisation, from simplest to most complex, are organism → population → community → ecosystem → biome → biosphere.</p> <p>A population is a group of organisms of one species, a community is several populations together, and a biome is a large regional ecosystem.</p> <p>The single living individual, which interacts with its environment on its own, is the lowest level.</p> <p>So the basic unit of ecological hierarchy is the organism.</p>"
+    },
+    {
+      "text": "<p><strong>Q56.</strong> Which of the following associations is NOT an example of commensalism?</p>",
+      "options": [
+        "<p>Interaction between sea anemone that has stinging tentacles and the clown fish that lives among them</p>",
+        "<p>Epiphytic Orchid on Mango tree</p>",
+        "<p>Cattle egret and grazing cattle</p>",
+        "<p>Tick on Dog</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In commensalism one partner gains and the other is neither helped nor harmed.</p> <p>The clown fish gets shelter among the anemone's stinging tentacles; the orchid gets support on the mango branch; the egret catches insects stirred up by grazing cattle. In each case the other partner is unaffected.</p> <p>A tick sucks the dog's blood, benefiting itself while harming the dog, which is parasitism (ectoparasite).</p> <p>So the tick on a dog is not an example of commensalism.</p>"
+    },
+    {
+      "text": "<p><strong>Q57.</strong> In animals, if the organisms is unable to migrate, it may go into ------during winter.</p>",
+      "options": [
+        "<p>Dormancy</p>",
+        "<p>Hibernation</p>",
+        "<p>Aestivation</p>",
+        "<p>Normal sleep</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Animals facing a harsh winter can either move away (migrate) or stay and escape the stress in time.</p> <p>Animals that cannot migrate, such as bears, bats and some squirrels, lower their metabolism and body activity and pass the winter in a sleep-like state called hibernation.</p> <p>Aestivation is the comparable summer inactivity (e.g. snails, some fishes) to avoid heat and drought, and dormancy is the general term.</p> <p>So such animals go into hibernation during winter.</p>"
+    },
+    {
+      "text": "<p><strong>Q58.</strong> The dissolved salt concentration is ---- in the fresh water of the streams.</p>",
+      "options": [
+        "<p>less than 5 ppt</p>",
+        "<p>50 ppt</p>",
+        "<p>30-35 ppt</p>",
+        "<p>more than 100 ppt</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Salinity is expressed in parts per thousand (ppt).</p> <p>Inland fresh waters such as streams, rivers and lakes contain under 5 ppt of dissolved salts.</p> <p>Sea water has about 30–35 ppt, and some hypersaline lagoons exceed 100 ppt.</p> <p>So the salt concentration in stream water is less than 5 ppt.</p>"
+    },
+    {
+      "text": "<p><strong>Q59.</strong> Given below are two statements related to natality and mortality:<br/>Statement (I): Absolute natality will be always more than realized natality.<br/>Statement (II): Absolute mortality will be always more than realized mortality.<br/>In light of the above statements, choose the <em>most appropriate</em> answer from the options given below.</p>",
+      "options": [
+        "<p>Both Statement (I) and Statement (II) are correct.</p>",
+        "<p>Both Statement (I) and Statement (II) are incorrect.</p>",
+        "<p>Statement (I) is correct but Statement (II) is incorrect.</p>",
+        "<p>Statement (I) is incorrect but Statement (II) is correct.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Absolute (potential) natality is the greatest number of births possible under ideal conditions, while realised (ecological) natality is the actual birth rate under real conditions; since real conditions always limit reproduction, absolute natality is the larger — Statement (I) is true.</p> <p>Absolute (minimum) mortality is the death rate under ideal conditions, when individuals die only of old age; realised mortality adds deaths from predators, disease, shortage of food and so on, so it is the larger one.</p> <p>Hence Statement (II), which makes absolute mortality the larger, is false.</p> <p>So Statement (I) is correct but Statement (II) is incorrect.</p>"
+    },
+    {
+      "text": "<p><strong>Q60.</strong> Which of the following population interaction is represented by the signs: + , 0</p>",
+      "options": [
+        "<p>Symbiosis</p>",
+        "<p>Commensalism</p>",
+        "<p>Amensalism</p>",
+        "<p>Parasitism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In the sign notation, + means the species gains, − means it is harmed and 0 means it is unaffected.</p> <p>Commensalism is +,0 : one partner benefits and the other is neither helped nor harmed (for example, an orchid growing on a mango branch).</p> <p>Mutualism (symbiosis) is +,+ ; amensalism is −,0 ; parasitism is +,− .</p> <p>So the interaction shown by +,0 is commensalism.</p>"
+    },
+    {
+      "text": "<p><strong>Q61.</strong> Desert lizards bask in the sun and absorb heat, when their body temperature drops below the comfort zone, but move into shade, when the ambient temperature starts increasing. This is an example of -------------adaptations.</p>",
+      "options": [
+        "<p>morphological</p>",
+        "<p>physiological</p>",
+        "<p>biochemical</p>",
+        "<p>behavioural</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Lizards are ectotherms and cannot generate or shed much heat internally the way mammals do.</p> <p>They control body temperature by what they do: lying in the sun to warm up when they are cold, and moving into shade (or burrowing) when it gets too hot.</p> <p>Such adjustments made through actions and movements, rather than through body structure or internal chemistry, are behavioural adaptations.</p> <p>So this is an example of behavioural adaptation.</p>"
+    },
+    {
+      "text": "<p><strong>Q62.</strong> Select the INCORRECT statement from the following with respect to osmoregulation.</p>",
+      "options": [
+        "<p>Marine birds like Albatross have special salt glands near nostrils for osmoregulation.</p>",
+        "<p>Marine organisms like sea turtles and marine iguanas have salt secreting glands to manage osmotic balance.</p>",
+        "<p>Marine organisms are mostly osmoregulators because their body fluids and external environment are isoosmotic in nature.</p>",
+        "<p>Fresh water forms and terrestrial organisms are osmoregulators.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Albatross and other sea birds remove excess salt through salt glands near the nostrils — true.</p> <p>Sea turtles and marine iguanas also have salt-secreting glands to keep their osmotic balance — true.</p> <p>Most marine invertebrates have body fluids isosmotic with sea water, so they do not need to regulate; such animals are osmoconformers, not osmoregulators. This statement is wrong.</p> <p>Freshwater and land animals must actively control water and salt levels, so they are osmoregulators — true.</p> <p>So the incorrect statement is the one calling marine organisms mostly osmoregulators because their body fluids are isoosmotic with the surroundings.</p>"
+    },
+    {
+      "text": "<p><strong>Q63.</strong> Which one of the following is INCORRECT about endoparasites?</p>",
+      "options": [
+        "<p>Presence of suckers.</p>",
+        "<p>Loss of digestive system</p>",
+        "<p>Loss of unnecessary sense organs.</p>",
+        "<p>Very low reproductive capacity.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Endoparasites live inside the host (gut, liver, blood, etc.) and show special adaptations.</p> <p>They have hooks or suckers for attachment to host tissue, and many (e.g. tapeworm) have lost the digestive system because they absorb ready-made food.</p> <p>Sense organs not needed inside the host are reduced or lost.</p> <p>Because the chance of reaching a new host is small, they have an enormous reproductive capacity, not a low one.</p> <p>So 'very low reproductive capacity' is the incorrect feature.</p>"
+    },
+    {
+      "text": "<p><strong>Q64.</strong> Given below are two statements about desert plants.<br/>Statement (I): Desert plants have thick cuticle on their leaf surfaces and sunken stomata.<br/>Statement (II): Desert plants like <em>Opuntia</em> carry out photosynthesis with their leaves.<br/>In light of the above statements, choose the <em>most appropriate</em> answer from the options given below.</p>",
+      "options": [
+        "<p>Both Statement (I) and Statement (II) are correct.</p>",
+        "<p>Both Statement (I) and Statement (II) are incorrect.</p>",
+        "<p>Statement (I) is correct but Statement (II) is incorrect.</p>",
+        "<p>Statement (I) is incorrect but Statement (II) is correct.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Statement (I) – true: to cut water loss, desert plants have a thick cuticle on the leaf surface and stomata sunk in pits.</p> <p>Statement (II) – false: in Opuntia the leaves are reduced to spines; photosynthesis is done by the flattened green stem (phylloclade).</p> <p>So Statement (I) is correct but Statement (II) is incorrect.</p>"
+    },
+    {
+      "text": "<p><strong>Q65.</strong> Which of the following statements are correct about niche?<br/>(A). It denotes the functional role played by an organism.<br/>(B). The same niche is shared by two or more species.<br/>(C). As soon as a niche is left vacant, other organisms fill that position.<br/>(D). It includes the organism's role in the flow of energy from one organism to another.<br/>(E). Organisms living in the same habitat differ in their niches.<br/>Choose the correct answer from the options given below:</p>",
+      "options": [
+        "<p>(A), (B) and (D) only.</p>",
+        "<p>(A), (B) and (C) only.</p>",
+        "<p>(A), (B), (C) and (D) only.</p>",
+        "<p>(A), (C), (D) and (E) only.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>(A) True: a niche is the functional role of an organism – what it feeds on, what feeds on it and how it uses its surroundings.</p> <p>(B) False: by Gause's competitive exclusion principle, two species cannot share exactly the same niche for long; one displaces the other.</p> <p>(C) True: a vacant niche is soon occupied by another organism able to use those resources.</p> <p>(D) True: the niche includes the organism's place in food chains and hence its part in energy flow.</p> <p>(E) True: species living together in one habitat avoid competition by having different niches (resource partitioning).</p> <p>So the correct statements are (A), (C), (D) and (E) only.</p>"
+    },
+    {
+      "text": "<p><strong>Q66.</strong> The tiger census in our national parks and tiger reserves is often based on ____.</p>",
+      "options": [
+        "<p>the number on the collar tied on their necks.</p>",
+        "<p>the actual count of every individual.</p>",
+        "<p>the pug marks and fecal pellets.</p>",
+        "<p>the photograph of each individual.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Tigers are shy, wide-ranging and hard to see, so counting every animal directly is not practical.</p> <p>Instead their numbers are estimated indirectly from signs they leave – pug marks (footprints, each with an individual pattern) and faecal pellets (scats).</p> <p>So the tiger census is often based on pug marks and faecal pellets.</p>"
+    },
+    {
+      "text": "<p><strong>Q67.</strong> ' Resource partitioning ' in a natural habitat means ____.</p>",
+      "options": [
+        "<p>the resources are protected by walls.</p>",
+        "<p>the resources are restricted to a geographical area.</p>",
+        "<p>equal distribution of resources among all organisms of the population.</p>",
+        "<p>distribution of resources among two competing species by choosing different times for feeding.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>When two species need the same limited resource, competition between them can be reduced if they use the resource in different ways.</p> <p>For example, they may feed at different times, eat different food items or forage in different parts of the habitat.</p> <p>This sharing of a resource between competitors is resource partitioning; it allows coexistence instead of competitive exclusion (e.g. MacArthur's warblers).</p> <p>So resource partitioning means distribution of resources between two competing species, e.g. by choosing different feeding times.</p>"
+    },
+    {
+      "text": "<p><strong>Q68.</strong> Birds living in the same habitat differ in their niches because they ____.</p>",
+      "options": [
+        "<p>have different sizes and shapes.</p>",
+        "<p>make different types of nests.</p>",
+        "<p>have different eating habits.</p>",
+        "<p>migrate to different parts.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A niche is the functional role of a species, including what it eats, where and when it feeds.</p> <p>Several bird species can live in the same habitat, such as one tree, without competing directly.</p> <p>They avoid competition because they feed on different kinds of food or search for food in different ways and places (e.g. warblers feeding on insects in different parts of a tree).</p> <p>So birds of the same habitat differ in their niches because they have different eating habits.</p>"
+    },
+    {
+      "text": "<p><strong>Q69.</strong> Select the INCORRECT pair from the following:</p>",
+      "options": [
+        "<p>Mutualism - Both species are benefited</p>",
+        "<p>Commensalism - One species benefited and other is neither benefited nor harmed</p>",
+        "<p>Parasitism - Interaction is detrimental to parasite</p>",
+        "<p>Competition - Both species are harmed</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Mutualism (+, +) benefits both partners, and commensalism (+, 0) benefits one while the other is unaffected; both pairs are right.</p> <p>In parasitism (+, −) the parasite gains food and shelter and it is the host that is harmed, so calling it harmful to the parasite is wrong.</p> <p>In competition (−, −) both species suffer because they share a limited resource, which is right.</p> <p>So the incorrect pair is parasitism – detrimental to parasite.</p>"
+    },
+    {
+      "text": "<p><strong>Q70.</strong> Select the INCORRECT statement about <em>Opuntia</em>:</p>",
+      "options": [
+        "<p>Leaves are reduced to spines</p>",
+        "<p>Leaf spines perform the function of photosynthesis</p>",
+        "<p><em>Opuntia</em> show CAM pathway</p>",
+        "<p>Stomata remains closed during day time</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Opuntia is a desert cactus whose leaves are reduced to spines, cutting down water loss; that statement is true.</p> <p>Photosynthesis is done by the flattened, green, fleshy stem (phylloclade), not by the spines, which only reduce transpiration and protect the plant.</p> <p>Opuntia fixes CO2 by the CAM pathway: stomata open at night and stay shut during the day; those statements are true.</p> <p>So the incorrect statement is that the leaf spines photosynthesise.</p>"
+    },
+    {
+      "text": "<p><strong>Q71.</strong> Polar bears are restricted to a narrow range of temperature hence they are</p>",
+      "options": [
+        "<p>Eurythermal</p>",
+        "<p>Stenothermal</p>",
+        "<p>Euryhaline</p>",
+        "<p>Stenohaline</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Organisms that tolerate only a narrow range of temperature are called stenothermal, while those tolerating a wide range are eurythermal.</p> <p>Euryhaline and stenohaline describe tolerance to salinity, not temperature.</p> <p>Polar bears survive only in cold polar conditions, so they are stenothermal.</p>"
+    },
+    {
+      "text": "<p><strong>Q72.</strong> Select the INCORRECT match.</p>",
+      "options": [
+        "<p>Humming birds and plants : Co-evolution</p>",
+        "<p>Lice on humans : Parasitism</p>",
+        "<p>Sea anemone and clown fish : Mutualism</p>",
+        "<p>Flamingos and resident fish on the west coast of Mumbai : Competition</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Hummingbirds and the flowers they pollinate have evolved together (bill shape and flower shape), so co-evolution is a correct match.</p> <p>Lice live on the human body and feed at the host's expense, so parasitism is correct.</p> <p>Visiting flamingos and resident fishes feed on the same zooplankton, so competition is correct.</p> <p>A clownfish gets shelter among the stinging tentacles of a sea anemone while the anemone is neither helped nor harmed; this is commensalism.</p> <p>So the wrong pairing is sea anemone and clownfish with mutualism.</p>"
+    },
+    {
+      "text": "<p><strong>Q73.</strong> Which out of the four basic processes that act on the population growth contribute to an increase in population density ?</p>",
+      "options": [
+        "<p>Natality and Mortality</p>",
+        "<p>Natality and Emigration</p>",
+        "<p>Mortality and Immigration</p>",
+        "<p>Natality and Immigration</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Population density changes through four processes: natality (births), mortality (deaths), immigration and emigration.</p> <p>Births and individuals arriving from outside add to the population.</p> <p>Deaths and individuals leaving remove from it.</p> <p>So natality and immigration increase population density.</p>"
+    },
+    {
+      "text": "<p><strong>Q74.</strong> What kind of adaptation is shown by desert lizards to survive in their habitats ?</p>",
+      "options": [
+        "<p>Morphological</p>",
+        "<p>Physiological</p>",
+        "<p>Biochemical</p>",
+        "<p>Behavioural</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Desert lizards cannot regulate body temperature physiologically the way mammals do.</p> <p>They keep it fairly steady by what they do: basking in the sun when cool, moving into shade when hot, and burrowing into the sand to escape the midday heat.</p> <p>Such adjustments in activity are behavioural adaptations.</p> <p>So desert lizards show behavioural adaptation.</p>"
+    },
+    {
+      "text": "<p><strong>Q75.</strong> The position of an organism in the environmental gradient is called ---------------------.</p>",
+      "options": [
+        "<p>Spatial niche</p>",
+        "<p>Multidimensional niche</p>",
+        "<p>Trophic niche</p>",
+        "<p>Habitat niche</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A habitat (spatial) niche is the physical space an organism occupies, and a trophic niche is its feeding position in the food web.</p> <p>Hutchinson described the niche as the range of every environmental factor (temperature, moisture, pH, etc.) within which a species can live, an n-dimensional hypervolume.</p> <p>The location of an organism along these environmental gradients is therefore its multidimensional niche.</p>"
+    },
+    {
+      "text": "<p><strong>Q76.</strong> Select the correct sequential level with decreasing complexity of ecological organisation.</p>",
+      "options": [
+        "<p>Biome, population, community, organism</p>",
+        "<p>Biome, community, population, organism</p>",
+        "<p>Community, population, organism, Biome</p>",
+        "<p>Organism, community, population, Biome</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>There are four sequential levels with increasing complexity of ecological (biological) organizations viz. Organism, Populations. Communities and Biomes.</p>"
+    },
+    {
+      "text": "<p><strong>Q77.</strong> Which one of the following does not show suspend type of adaptation?</p>",
+      "options": [
+        "<p>Dormancy of seeds.</p>",
+        "<p>Hibernation of polar bear</p>",
+        "<p>Aestivation in some snails</p>",
+        "<p>Movement of birds to a more hospitable location during stress</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Migration is an avoidance strategy, not suspend type of adaptation.</p>"
+    },
+    {
+      "text": "<p><strong>Q78.</strong> Number of deaths with no competition and abundance of resources such as food and water is ________.</p>",
+      "options": [
+        "<p>Realized natality</p>",
+        "<p>Absolute mortality</p>",
+        "<p>Realized mortality</p>",
+        "<p>Absolute natality</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The correct answer is: </p> <p>✅ <strong>Option B: Absolute mortality</strong> </p> <h3>Explanation:</h3> <ul> <li><p><strong>Absolute mortality</strong> refers to <strong>the total number of deaths under ideal conditions</strong>, that is, when there are <strong>no limiting factors</strong> such as competition, food shortage, or disease. </p></li> <li><p><strong>Realized mortality</strong>, on the other hand, refers to <strong>deaths actually observed in nature</strong>, where environmental pressures and competition exist.</p></li> </ul> <p>So, </p> <blockquote> <p><strong>Number of deaths with no competition and abundance of resources = Absolute mortality.</strong></p> </blockquote>"
+    },
+    {
+      "text": "<p><strong>Q79.</strong> Given below are two statements.</p> <p>Statement I - Osmoconformers are animals, that are iso-osmotic to the surroundings.</p> <p>Statement II - Marine organisms mostly are osmoconformers because their body fluids and external environment are iso-osmotic in nature. In the light of above statements, select the correct option given below:</p>",
+      "options": [
+        "<p>Both statement I and statement II are correct.</p>",
+        "<p>Both statement I and statement II are incorrect.</p>",
+        "<p>Statement I is correct but statement II is incorrect.</p>",
+        "<p>Statement I is incorrect but statement II is correct.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Osmoconformers are iso-osmotic to their surroundings, common in marine organisms.</p>"
+    },
+    {
+      "text": "<p><strong>Q80.</strong> Which of the following depicts Logistic growth curve of population?</p>",
+      "options": [
+        "<p><img alt=\"MHT CET (PCB) 2025 9th April Evening Shift Biology - Organisms and Populations Question 44 English Option 1\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mfnwzmsp/a2c44527-04df-4cda-babd-adb5acce3b18/b0482190-93bb-11f0-ad09-1308d61aa264/file-jaoe38c1mfnwzmsq.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"MHT CET (PCB) 2025 9th April Evening Shift Biology - Organisms and Populations Question 44 English Option 2\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mfnx09m9/c54950d6-a000-49a7-99e3-538cf97f30da/c1e91210-93bb-11f0-ad09-1308d61aa264/file-jaoe38c1mfnx09ma.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"MHT CET (PCB) 2025 9th April Evening Shift Biology - Organisms and Populations Question 44 English Option 3\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mfnx0ilf/704a583b-19d4-4a2e-9518-23a53ab2eed6/c8d84730-93bb-11f0-ad09-1308d61aa264/file-jaoe38c1mfnx0ilg.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"MHT CET (PCB) 2025 9th April Evening Shift Biology - Organisms and Populations Question 44 English Option 4\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mfnx0t06/326c625d-ef1e-4cac-9427-7b32c6d25579/d0e2d760-93bb-11f0-ad09-1308d61aa264/file-jaoe38c1mfnx0t07.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A population growing in an environment with limited resources exhibits logistic growth (Verhulst-Pearl Logistic Growth), described by the differential equation:</p> <p> dNdt=rN(K−NK) </p> <p>Plotting population size against time yields a characteristic sigmoid or S-shaped curve with an initial lag phase, followed by acceleration, deceleration, and finally an asymptote as the population reaches the carrying capacity ( K ).</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q81.</strong> In the above logistic growth curve of population, identify ' A ', ' B ' and ' C '.</p><img alt=\"MHT CET (PCB) 2025 9th April Morning Shift Biology - Organisms and Populations Question 43 English\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1mfkytvbp/40954f60-ee85-456a-bf0e-56ac445f947c/88533760-921c-11f0-b59e-694a6076c44a/file-jaoe38c1mfkytvbq.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/>",
+      "options": [
+        "<p>A - Stationary phase, B - Log phase, C - Lag phase</p>",
+        "<p>A - Lag phase, B - exponential phase, C - Stationary phase</p>",
+        "<p>A - Log phase, B - Lag phase, C - Diminishing growth phase</p>",
+        "<p>A - Log phase, B - Stationary phase, C - Lag phase</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In a standard sigmoid (logistic) growth curve, the initial slow-growth phase is the lag phase (A), followed by a period of rapid growth termed the exponential or log phase (B), which culminates in the stationary phase (C) when growth reaches a plateau.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q82.</strong> Interaction between flamingos visiting Mumbai west coast and resident fishes is of _________ type.</p>",
+      "options": [
+        "<p>mutualism</p>",
+        "<p>competition</p>",
+        "<p>amensalism</p>",
+        "<p>predation</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Flamingos and resident fishes compete for food resources like algae, small organisms etc. in shared habitats.</p>"
+    },
+    {
+      "text": "<p><strong>Q83.</strong> Which one of the following is INCORRECT regarding 'resource partitioning'?</p>",
+      "options": [
+        "<p>It occurs when two species compete for same resources.</p>",
+        "<p>Competition can be avoided by choosing different times for feeding.</p>",
+        "<p>It promotes co-existence.</p>",
+        "<p>It works on exclusion principle.</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Resource partitioning promotes coexistence by reducing competition, not by following competitive exclusion.</p>"
+    },
+    {
+      "text": "<p><strong>Q84.</strong> Match the Column I with Column II. <table class=\"tg\"><thead> <tr> <th class=\"tg-c3ow\" colspan=\"2\">Column (I)<br/>(Parasite)<br/></th> <th class=\"tg-c3ow\" colspan=\"2\">\\begin{aligned}<br/>&amp; \\text { Column (II) } \\\\<br/>&amp; \\text { (Host) }<br/>\\end{aligned}</th> </tr></thead> <tbody> <tr> <td class=\"tg-c3ow\">i.</td> <td class=\"tg-c3ow\">Ticks</td> <td class=\"tg-c3ow\">a.</td> <td class=\"tg-c3ow\">Marine fish</td> </tr> <tr> <td class=\"tg-c3ow\">ii.</td> <td class=\"tg-c3ow\">Copepods</td> <td class=\"tg-c3ow\">b.</td> <td class=\"tg-c3ow\">Dog</td> </tr> <tr> <td class=\"tg-c3ow\">iii.</td> <td class=\"tg-c3ow\">Cuscuta</td> <td class=\"tg-c3ow\">c.</td> <td class=\"tg-c3ow\">Indian crow</td> </tr> <tr> <td class=\"tg-c3ow\">iv.</td> <td class=\"tg-c3ow\">Asian Koel</td> <td class=\"tg-c3ow\">d.</td> <td class=\"tg-c3ow\">Hedge plants</td> </tr> </tbody> </table> Choose the correct option:</p>",
+      "options": [
+        "<p>i-b, ii-a, iii-c, iv-d</p>",
+        "<p>i - b, ii - a, iii - d, iv - c</p>",
+        "<p> i−b,ii−c,iii−d,iv−a </p>",
+        "<p>i - b, ii - d, iii - c, iv -a</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Ticks are ectoparasites commonly found on dogs (i → b).</p> <p>Ectoparasitic copepods live on marine fish (ii → a).</p> <p><i>Cuscuta</i> is a parasitic plant that grows on hedge plants, deriving nutrition from them (iii → d).</p> <p>The Asian koel exhibits brood parasitism and lays its eggs in the nest of the Indian crow (iv → c).</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q85.</strong> Match types of niche in Column I with its explanation in Column II.</p> <table class=\"tg\"><thead> <tr> <th class=\"tg-baqh\" colspan=\"2\">Column I<br/>(Type of niche)</th> <th class=\"tg-baqh\" colspan=\"2\">Column II<br/>(Explanation)</th> </tr></thead> <tbody> <tr> <td class=\"tg-baqh\">i.</td> <td class=\"tg-baqh\">Habitat</td> <td class=\"tg-baqh\">a.</td> <td class=\"tg-baqh\">absence of all competitors</td> </tr> <tr> <td class=\"tg-baqh\">ii.</td> <td class=\"tg-baqh\">Hypervolume</td> <td class=\"tg-baqh\">b.</td> <td class=\"tg-baqh\">physical space occupied by the organism</td> </tr> <tr> <td class=\"tg-baqh\">iii.</td> <td class=\"tg-baqh\">Fundamental</td> <td class=\"tg-baqh\">c.</td> <td class=\"tg-baqh\">presence of competition for resources</td> </tr> <tr> <td class=\"tg-baqh\">iv.</td> <td class=\"tg-baqh\">Realized</td> <td class=\"tg-baqh\">d.</td> <td class=\"tg-baqh\">considers biotic and abiotic environmental factors</td> </tr> </tbody> </table> Select the correct option",
+      "options": [
+        "<p>i - b ii - d iii - c iv - a</p>",
+        "<p>i-b ii - d iii - a iv - c</p>",
+        "<p>i-d ii-b iii-a iv-c</p>",
+        "<p>i-d ii - b iii - c iv -a</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>1️⃣ <strong>Habitat niche</strong> → refers to the <strong>physical space occupied by the organism</strong>. </p> <p>→ <strong>(i - b)</strong></p> <p>2️⃣ <strong>Hypervolume niche</strong> (Hutchinson’s concept) → describes the niche as an <strong>n-dimensional space considering all biotic and abiotic environmental factors</strong>. </p> <p>→ <strong>(ii - d)</strong></p> <p>3️⃣ <strong>Fundamental niche</strong> → the niche an organism could potentially occupy in the <strong>absence of all competitors</strong>. </p> <p>→ <strong>(iii - a)</strong></p> <p>4️⃣ <strong>Realized niche</strong> → the niche actually occupied in the <strong>presence of competition for resources</strong>. </p> <p>→ <strong>(iv - c)</strong></p> <p>✅ <strong>Correct Option: B</strong></p> <p><strong>Answer:</strong> Option B (i - b, ii - d, iii - a, iv - c)</p>"
+    },
+    {
+      "text": "<p><strong>Q86.</strong> Which of the following pair of organisms are euryhaline in nature?</p>",
+      "options": [
+        "<p>Catla and clams</p>",
+        "<p>Barnacles and Labeo</p>",
+        "<p>Mrigala and barnacles</p>",
+        "<p>barnacles</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p><strong>Step 1. Recall the definition</strong> </p> <ul> <li><p><em>Euryhaline organisms</em> are those which can tolerate a wide range of salinity. </p></li> <li><p><em>Stenohaline organisms</em> can tolerate only a narrow range of salinity.</p></li> </ul> <p><strong>Step 2. Check examples from NCERT</strong> </p> <ul> <li><p>NCERT Class 12 Biology (Chapter 13, Organisms and Populations) clearly mentions: </p> <p><em>Euryhaline organisms like salmon and certain estuarine organisms (e.g., some species of barnacles, mussels)</em> can survive in both fresh water and salt water. </p> <p><em>Stenohaline organisms like most of the freshwater fishes (e.g., Catla, Mrigala, Labeo) and clams</em> cannot tolerate wide ranges of salinity.</p></li> </ul> <p><strong>Step 3. Analyse each option</strong> </p> <ul> <li><p><strong>Option A: Catla and clams</strong> → Both are stenohaline (narrow salinity). ❌ </p></li> <li><p><strong>Option B: Barnacles and Labeo</strong> → Barnacles = euryhaline, Labeo = stenohaline. ❌ </p></li> <li><p><strong>Option C: Mrigala and barnacles</strong> → Mrigala = stenohaline, barnacles = euryhaline. ❌ </p></li> <li><p><strong>Option D: Barnacles</strong> → Barnacles are euryhaline. ✅</p></li> </ul> <p><strong>Final Answer:</strong> </p> <p>The correct option is <strong>D. Barnacles</strong>.</p>"
+    },
+    {
+      "text": "<p><strong>Q87.</strong> Which of the following in INCORRECT about conformers?</p>",
+      "options": [
+        "<p>They cannot maintain a constant internal environment.</p>",
+        "<p>Their body temperature changes with ambient temperature.</p>",
+        "<p>They perform physiological changes to ensure constant body temperature.</p>",
+        "<p>When acquatic, they change osmotic concentration of body fluids as per ambient water osmotic concentration.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Option C is INCORRECT.</p> <p><strong>Explanation:</strong></p> <ul> <li><p><strong>Option A:</strong> Correct. Conformers cannot maintain a constant internal environment.</p></li> <li><p><strong>Option B:</strong> Correct. Body temperature of conformers changes with the surrounding (ambient) temperature.</p></li> <li><p><strong>Option C:</strong> <strong>Incorrect.</strong> Conformers <em>do not</em> perform physiological changes to maintain a constant body temperature. This characteristic belongs to regulators, not conformers.</p></li> <li><p><strong>Option D:</strong> Correct. Aquatic conformers change the osmotic concentration of their body fluids according to the osmotic concentration of the surrounding water.</p></li> </ul> <p><strong>Final Answer:</strong> </p> <p><strong>Option C is incorrect.</strong></p>"
+    },
+    {
+      "text": "<p><strong>Q88.</strong> Which one of the following is INCORRECT with respect to Verhulst - Pearl Logisitc Growth.</p>",
+      "options": [
+        "<p>It occurs when resources are limited</p>",
+        "<p>It is a sigmoid curve</p>",
+        "<p>It is more realistic</p>",
+        "<p>It shows geometric growth in population</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Let’s analyze each option with respect to <strong>Verhulst–Pearl Logistic Growth</strong>: </p> <p><strong>Verhulst–Pearl Logistic Growth</strong> describes population growth that starts exponentially but levels off as resources become limited, forming an S-shaped (sigmoid) curve.</p> <h3>Option A: <em>It occurs when resources are limited</em></h3> <p>✅ <strong>Correct.</strong> Logistic growth occurs when environmental resistance (limited resources, competition, etc.) slows down population growth.</p> <h3>Option B: <em>It is a sigmoid curve</em></h3> <p>✅ <strong>Correct.</strong> Logistic growth produces an S-shaped or sigmoid curve.</p> <h3>Option C: <em>It is more realistic</em></h3> <p>✅ <strong>Correct.</strong> Logistic growth reflects real-world limits, so it is considered more realistic than exponential or geometric growth.</p> <h3>Option D: <em>It shows geometric growth in population</em></h3> <p>❌ <strong>Incorrect.</strong> Logistic growth does <strong>not</strong> show geometric (exponential) growth for the entire time; population growth is initially exponential but slows and stabilizes at carrying capacity.</p> <p>✅ <strong>Correct Answer: Option D – It shows geometric growth in population</strong></p>"
+    },
+    {
+      "text": "<p><strong>Q89.</strong> Given below are two statements regarding, competitive interaction.</p> <p>Statement I - Competition is the type of interaction where totally unrelated species may compete for the same resource.</p> <p>Statement II - Competition occurs only when resources are limited.</p> <p>In the light of above statements, choose the correct option given below:</p>",
+      "options": [
+        "<p>Both statement I and statement II are correct.</p>",
+        "<p>Both statement I and statement II are incorrect.</p>",
+        "<p>Statement I is correct but statement II is incorrect.</p>",
+        "<p>Statement I is incorrect but statement II is correct.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Let us examine both statements one by one: </p> <p><strong>Statement I:</strong> <em>“Competition is the type of interaction where totally unrelated species may compete for the same resource.”</em> </p> <ul> <li><p>This is <strong>correct</strong>. </p></li> <li><p>Different species, even if they are not closely related, can compete for the same limited resource. Example: Insects and birds may compete for fruits of the same plant. </p></li> </ul> <p><strong>Statement II:</strong> <em>“Competition occurs only when resources are limited.”</em> </p> <ul> <li><p>This is <strong>incorrect</strong>. </p></li> <li><p>Resources need not be limiting for competition to occur. In interference competition, the feeding efficiency of one species is reduced by the interfering and inhibitory presence of the other species, even if resources (food and space) are abundant. </p></li> </ul> <p>Therefore, the correct answer is: </p> <p><strong>Option C: Statement I is correct but statement II is incorrect.</strong> ✅</p>"
+    },
+    {
+      "text": "<p><strong>Q90.</strong> What is the horizontal distribution of different species occupying levels on land or in water called?</p>",
+      "options": [
+        "<p>Stratification</p>",
+        "<p>Niche</p>",
+        "<p>Ecosystem</p>",
+        "<p>Zonation</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The horizontal distribution of different species occupying levels on land or in water is called <strong>Zonation</strong>. </p> <ul> <li><p><strong>Stratification</strong> → vertical distribution of species at different levels (like in a forest: herbs, shrubs, trees). </p></li> <li><p><strong>Niche</strong> → functional role of a species in its habitat. </p></li> <li><p><strong>Ecosystem</strong> → interaction of biotic and abiotic components. </p></li> <li><p><strong>Zonation</strong> → horizontal distribution pattern of species across an area. </p></li> </ul> <p><strong>Correct Answer: Option D — Zonation</strong> ✅</p>"
+    }
+  ]
+},
+{
+  "name": "SWT 03 - Organisms and Populations (Population Interactions, Competition & PYQ Drill)",
+  "label": "SWT 03",
+  "bracket": "Interactions & PYQ Drill",
+  "subject": "neet_ecology_organisms",
+  "topics": "Interspecific Interactions: Predation, Gause Competitive Exclusion, Mac Arthur Resource Partitioning, Parasitism, Commensalism, Mutualism, Amensalism",
+  "duration": "60 mins",
+  "questions": [
+    {
+      "text": "<p><strong>Q1.</strong> The term 'Niche' denotes the _________ role played by an organism in its environment.</p>",
+      "options": [
+        "<p>chemical</p>",
+        "<p>functional</p>",
+        "<p>biological</p>",
+        "<p>physical</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p><ol> <li><p>In NCERT terminology, an organism’s niche is its “functional role” in the ecosystem—how it obtains food, interacts with other species and contributes to energy flow and nutrient cycling. </p></li> <li><p>It differs from “habitat” (the place where an organism lives). </p></li> <li><p>Hence, the blank is best filled by Option B: functional. </p></li> </ol> <p>Answer: functional (Option B)</p></p>"
+    },
+    {
+      "text": "<p><strong>Q2.</strong> The highest level of ecological hierarchy in ecological organization is</p>",
+      "options": [
+        "<p>biome</p>",
+        "<p>community</p>",
+        "<p>population</p>",
+        "<p>organism</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p><ol> <li><p><strong>Organism:</strong> This is the basic unit of ecological hierarchy, representing an individual living being.</p></li> <li><p><strong>Population:</strong> A group of organisms of the same species living in a particular geographical area at a given time.</p></li> <li><p><strong>Community:</strong> An assemblage of different populations of plants and animals living and interacting with each other in a particular area.</p></li> <li><p><strong>Ecosystem:</strong> This includes a community of living organisms interacting with their non-living (abiotic) environment.</p></li> <li><p><strong>Biome:</strong> A large regional unit characterized by major vegetation types, climate patterns, and associated animal life. Examples include deserts, grasslands, tropical rainforests, etc.</p></li> <li><p><strong>Biosphere:</strong> The highest level, representing the entire part of the Earth inhabited by living organisms, including land, water, and atmosphere.</p></li> </ol> <p>Comparing the options provided with this hierarchy:</p> <ul> <li><p>Organism is the lowest level among the options.</p></li> <li><p>Population is higher than Organism.</p></li> <li><p>Community is higher than Population.</p></li> <li><p>Biome is higher than Community.</p></li> </ul> <p>Therefore, among the given options, <strong>Biome</strong> represents the highest level of ecological hierarchy.</p> <p>The correct option is <strong>A) biome</strong>.</p></p>"
+    },
+    {
+      "text": "<p><strong>Q3.</strong> Given below are two statements.</p> <p>Statement I - Calotropis growing in abandoned fields is never consumed by cattle and goats.</p> <p>Statement II - Calotropis produces highly poisonous cardiac glycosides.</p> <p>In light of above statements, select the most appropriate answer from the option given below.</p>",
+      "options": [
+        "<p>Both statement I and statement II are correct.</p>",
+        "<p>Both statement I and statement II are incorrect.</p>",
+        "<p>Statement I is correct and statement II is incorrect.</p>",
+        "<p>Statement I is incorrect and statement II is correct.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p><ul> <li><p><strong>Statement I</strong>: <em>Calotropis growing in abandoned fields is never consumed by cattle and goats.</em> </p> <p>✔ This is <strong>correct</strong> because these animals avoid eating Calotropis due to its toxicity. </p></li> <li><p><strong>Statement II</strong>: <em>Calotropis produces highly poisonous cardiac glycosides.</em> </p> <p>✔ This is also <strong>correct</strong>. Cardiac glycosides are toxic substances that affect the heart when ingested. </p></li> </ul> <h3>Correct Answer:</h3> <p><strong>Option A: Both statement I and statement II are correct.</strong> ✅</p></p>"
+    },
+    {
+      "text": "<p><strong>Q4.</strong> <img alt=\"AIIMS 2019 Biology - Organisms and Populations Question 30 English\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m0eu4w20/7c6c6cf4-cbd7-4da2-8ac4-163dc48a6605/3a904c80-65c6-11ef-a08b-6fc4233967e4/file-jaoe38c1m0eu4w21.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p> <p>Select the correct option w.r.t. age pyramids.</p>",
+      "options": [
+        "<p>A-Expanding, B-Stable, C-Declining</p>",
+        "<p>A-Stable, B-Expanding, C-Declining</p>",
+        "<p>A-Stable, B-Declining, C-Expanding</p>",
+        "<p>A-Declining, B-Stable, C-Expanding</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>An age pyramid shows the proportions of pre-reproductive (base), reproductive and post-reproductive individuals in a population.</p> <p>A has a broad base, with many more young than adults: an expanding (growing) population.</p> <p>B is bell-shaped, with pre-reproductive and reproductive groups about equal: a stable population.</p> <p>C is urn-shaped, with fewer pre-reproductive than reproductive individuals: a declining population.</p>"
+    },
+    {
+      "text": "<p><strong>Q5.</strong> <b>Assertion :</b> In commensalism, one organism is benefitted and other is unaffected.</p> <p><b>Reason :</b> Cattle egret bird and cattle is an example of commensalism.</p>",
+      "options": [
+        "<p>If both assertion and reason are true and reason is the correct explanation of assertion.</p>",
+        "<p>If both assertion and reason are true, but reason is not the correct explanation of assertion.</p>",
+        "<p>If assertion is true, but reason is false.</p>",
+        "<p>If both assertion and reason are false.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: in commensalism one species benefits while the other is neither harmed nor benefited.</p> <p>Reason is true: cattle egrets forage near grazing cattle and catch the insects stirred up from the vegetation, while the cattle are unaffected.</p> <p>The reason is only an example of commensalism; it does not explain the assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q6.</strong> From the graph of population growth, select the correct option having correct value of ' r ' and bar graph.</p> <p><img alt=\"AIIMS 2018 Biology - Organisms and Populations Question 28 English\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m3o1ky5o/76c4ea55-6b59-4755-bd05-4c4b528b1ab3/0d04e2c0-a63b-11ef-a300-b723d4598e73/file-jaoe38c1m3o1ky5p.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p><img alt=\"AIIMS 2018 Biology - Organisms and Populations Question 28 English Option 1\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m3o1o1w8/5ca01c0b-abd7-4c59-9b71-2eefeb286611/63557180-a63b-11ef-a300-b723d4598e73/file-jaoe38c1m3o1o1w9.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"AIIMS 2018 Biology - Organisms and Populations Question 28 English Option 2\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m3o1nyig/dd104fa9-385c-4a7d-ad1f-7a1416c4ac48/60b87f80-a63b-11ef-a300-b723d4598e73/file-jaoe38c1m3o1nyih.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"AIIMS 2018 Biology - Organisms and Populations Question 28 English Option 3\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m3o1nvdd/0cdf32da-3899-4b90-a787-0f63b8d5d930/5e4b5010-a63b-11ef-a300-b723d4598e73/file-jaoe38c1m3o1nvde.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"AIIMS 2018 Biology - Organisms and Populations Question 28 English Option 4\" src=\"https://app-content.cdn.examgoal.net/image/jaoe38c1m3o1ns8k/894365d9-528c-4517-a928-048be83ec01d/5bdfa740-a63b-11ef-a300-b723d4598e73/file-jaoe38c1m3o1ns8l.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The curve is the S-shaped logistic curve: after the fast phase, growth slows and the population levels off at the carrying capacity, as in the boxed region.</p> <p>On this plateau the birth rate equals the death rate, so the intrinsic rate of increase r=0 and the population is stable.</p> <p>A stable population has a bell-shaped age pyramid: the pre-reproductive and reproductive groups are about equal and the post-reproductive group is the smallest. Options (a)–(c) give a negative r , which would mean a declining population.</p>"
+    },
+    {
+      "text": "<p><strong>Q7.</strong> Assertion : Allelopathy is a form of amensalism that occurs in plants.</p> <p>Reason : Allelopathy is the symbiotic association of the roots of higher plant and fungi.</p>",
+      "options": [
+        "<p>Both Assertion and Reason are true and Reason is the correct explanation of Assertion</p>",
+        "<p>Both Assertion and Reason are true, but Reason is not the correct explanation of the Assertion</p>",
+        "<p>Assertion is true, but Reason is false.</p>",
+        "<p>Both Assertion and Reason are false.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: in allelopathy one plant releases chemicals that inhibit the growth of other plants while the producer itself is unaffected, which is amensalism (one species harmed, the other unaffected).</p> <p>Reason is false: the symbiotic association of the roots of higher plants with fungi is mycorrhiza, not allelopathy.</p>"
+    },
+    {
+      "text": "<p><strong>Q8.</strong> The graph shows two types of population growth curve. A is exponential and B is logistic.</p> <p><img alt=\"AIIMS 2016 Biology - Organisms and Populations Question 23 English\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mvk00ej7/aa577251-b877-4d0b-bd9b-a79be259ee53/d48f6540-ce57-11f1-9811-87130d5a8c86/file-6y3zli1mvk00ej8.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p> <p>Which one of the following growth model considered as more realistic one?</p>",
+      "options": [
+        "<p>Exponential growth curve</p>",
+        "<p>Logistic growth curve</p>",
+        "<p>Both the growth curves</p>",
+        "<p>None of the above</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Exponential growth, dNdt=rN , assumes unlimited resources, which no natural habitat provides.</p> <p>Logistic (sigmoid) growth allows for the carrying capacity K : dNdt=rN(K−NK) , where N is population size, r the intrinsic rate of natural increase and K−NK the environmental resistance.</p> <p>As N approaches K growth slows, and at N=K it stops and the population levels off. Because resources are always limited, the logistic model is the more realistic one.</p>"
+    },
+    {
+      "text": "<p><strong>Q9.</strong> Assertion : Inhibition or death of one organism by another through the production of some byproduct is known as antibiosis.</p> <p>Reason : Antibiosis is a type of negative interaction.</p>",
+      "options": [
+        "<p>Both Assertion and Reason are true and Reason is the correct explanation of Assertion</p>",
+        "<p>Both Assertion and Reason are true, but Reason is not the correct explanation of the Assertion</p>",
+        "<p>Assertion is true, but Reason is false.</p>",
+        "<p>Both Assertion and Reason are false.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: in antibiosis one organism releases a substance that partly or wholly inhibits or kills another, e.g. antibiotics of fungi acting on bacteria.</p> <p>Reason is true: one partner is harmed and neither gains, so it is a negative interaction.</p> <p>The Reason only classifies the interaction; it does not explain what antibiosis is, so it is not the explanation of the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q10.</strong> Assertion : Genecology is the study of genetic compositions and changes in relation to the origin of ecades, ecotypes, new sps., etc.</p> <p>Reason : Autecology deals with the study of a group of organisms.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and Reason is correct explanation of Assertion.</p>",
+        "<p>If both Assertion and Reason are true but Reason is not the correct explanation of Assertion.</p>",
+        "<p>If Assertion is true but Reason is false.</p>",
+        "<p>If both Assertion and Reason are false.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: genecology studies the genetic make-up of populations and how it changes in relation to the origin of ecads, ecotypes and new species.</p> <p>Reason is false: autecology deals with an individual organism or a single species in relation to its environment. The study of groups (communities) of organisms is synecology.</p>"
+    },
+    {
+      "text": "<p><strong>Q11.</strong> Assertion : Smaller the organism, higher is the rate of metabolism per gram weight.</p> <p>Reason : The heart rate of six months old baby is much higher than that of an old person.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and Reason is correct explanation of Assertion.</p>",
+        "<p>If both Assertion and Reason are true but Reason is not the correct explanation of Assertion.</p>",
+        "<p>If Assertion is true but Reason is false.</p>",
+        "<p>If both Assertion and Reason are false.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: a smaller body has more surface area per unit volume and loses heat faster, so its metabolic rate per gram of body weight is higher.</p> <p>Reason is true: a six-month-old baby's heart beats much faster than an old person's, because its high metabolic rate needs faster delivery of oxygen and nutrients.</p> <p>The fast heart rate is a result of the high metabolic rate, not its cause, so the Reason does not explain the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q12.</strong> In an area, a population with large size individuals having long life span, more parental care and slow development was present. The type of population growth curve will be</p>",
+      "options": [
+        "<p>S-shaped</p>",
+        "<p>J-shaped</p>",
+        "<p>Z-shaped</p>",
+        "<p>All of these</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Large size, long life span, parental care and slow development are features of species that live close to the carrying capacity of their environment (K-selected species).</p> <p>Such populations grow logistically, giving an S-shaped (sigmoid) curve with lag, acceleration, exponential, deceleration and stationary phases; most organisms, including humans, show this curve.</p> <p>The J-shaped curve is unchecked exponential growth.</p>"
+    },
+    {
+      "text": "<p><strong>Q13.</strong> The plants which can withstand with narrow and broad range of temperature tolerance respectively are</p>",
+      "options": [
+        "<p>monothermal and stenothermal</p>",
+        "<p>stenothermal and monothermal</p>",
+        "<p>stenothermal and eurythermal</p>",
+        "<p>stenothermal and mesothermal</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Stenothermal organisms can tolerate only a narrow range of temperature.</p> <p>Eurythermal organisms can tolerate and thrive in a wide range of temperature.</p>"
+    },
+    {
+      "text": "<p><strong>Q14.</strong> Desert can be converted into a lush green land by planting</p>",
+      "options": [
+        "<p>terrestrial plant</p>",
+        "<p>xerophytic plant</p>",
+        "<p>halophytes</p>",
+        "<p>psammophytes</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Psammophytes are plants that grow readily on sand and gravel, so planting them can cover a sandy desert and turn it into green land.</p> <p>Xerophytes are adapted to survive scarcity of water, halophytes grow on saline soil, and \"terrestrial plants\" is a general term for land plants.</p>"
+    },
+    {
+      "text": "<p><strong>Q15.</strong> Resemblance of one organism to another for protection and hiding is</p>",
+      "options": [
+        "<p>mimicry</p>",
+        "<p>predation</p>",
+        "<p>adaptation</p>",
+        "<p>camouflage</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Mimicry is the resemblance of one organism (the mimic) to another organism (the model), which protects it from predators or hides it from its prey; e.g. palatable butterflies that look like the distasteful Monarch.</p> <p>Camouflage is resemblance to the surroundings rather than to another organism, predation is one animal feeding on another, and adaptation is a general term for any such feature.</p>"
+    },
+    {
+      "text": "<p><strong>Q16.</strong> Assertion : Allelopathy is a form of amensalism that occurs in plants.</p> <p>Reason : Association of rooting plants with fungal hyphae is an important example of amensalism.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and reason is correct explanation of Assertion</p>",
+        "<p>If both Assertion and Reason are true but reason is not the correct explanation of Assertion</p>",
+        "<p>If Assertion is true but Reason is false</p>",
+        "<p>If both Assertion and Reason are false</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: in allelopathy a plant releases chemicals that inhibit the growth of other plant species while it is itself unaffected, and one partner harmed with the other unaffected is amensalism.</p> <p>Reason is false: the association of plant roots with fungal hyphae is mycorrhiza, in which both partners benefit; it is mutualism, not amensalism.</p>"
+    },
+    {
+      "text": "<p><strong>Q17.</strong> Assertion : In the hydrophytes, the xylem is not differentiated into different types of cells.</p> <p>Reason : Xylem provides support and helps in the conduction of water which are not very important in hydrophytes.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion.</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion.</p>",
+        "<p>If Assertion is true but Reason is false.</p>",
+        "<p>If both Assertion and Reason are false.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: in hydrophytes the xylem is poorly developed, often with a few tracheids only, or replaced by a water-filled cavity.</p> <p>Reason is true: xylem conducts water and minerals and gives mechanical support, but a water plant absorbs water over its whole surface and is buoyed up by the water.</p> <p>Since these jobs are hardly needed, the xylem stays reduced, so the Reason explains the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q18.</strong> Assertion : <i>Monotropa</i> grows in pine forests with the roots of pines.</p> <p>Reason : Saprophytes obtain their nutrition from dead organic matter.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion.</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion.</p>",
+        "<p>If Assertion is true but Reason is false.</p>",
+        "<p>If both Assertion and Reason are false.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: <i>Monotropa</i>, a non-green flowering plant, grows in the humus of pine forests among the pine roots. Its much-branched roots are covered by a mycorrhizal fungus, chiefly ectotrophic, which links it with the pines.</p> <p>Reason is true: saprophytes get their food from dead organic matter.</p> <p>Its growth with pine roots is due to this mycorrhizal association, not to saprophytic nutrition as such, so the Reason does not explain the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q19.</strong> Assertion : Mesophytes show well developed root system.</p> <p>Reason : Mesophytes depend on moderate supply of water which they draw from their root.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion.</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion.</p>",
+        "<p>If Assertion is true but Reason is false.</p>",
+        "<p>If both Assertion and Reason are false.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: mesophytes, plants of habitats with moderate water, have a well-developed, branched root system covered with root hairs.</p> <p>Reason is true: they cannot survive extreme conditions and depend on a moderate supply of water and minerals taken up through the roots.</p> <p>The roots are well developed for this absorption, so the Reason explains the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q20.</strong> Sinking of zooplankton during the day and rising to the surface at night is an example of</p>",
+      "options": [
+        "<p>circinal rhythm</p>",
+        "<p>circadian rhythm</p>",
+        "<p>tidal rhythm</p>",
+        "<p>None of these</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Zooplankton move down to deeper water by day and up to the surface at night (diel vertical migration). The movement repeats once in every 24 hours, so it is a circadian (diurnal) rhythm, governed by a biological clock and set by the day–night cycle.</p> <p>A tidal rhythm follows the tides (about every 12.4 h), not the day–night cycle.</p>"
+    },
+    {
+      "text": "<p><strong>Q21.</strong> Assertion : Mechanical tissues are absent or less developed in the floating and submerged parts of hydrophytic plants.</p> <p>Reason : Generally, elongated and loosely arranged spongy cells are found in the body of submerged hydrophytic plants.</p>",
+      "options": [
+        "<p>Both Assertion and Reason are true and Reason is the correct explanation of Assertion</p>",
+        "<p>Both Assertion and Reason are true and Reason is not the correct explanation of Assertion</p>",
+        "<p>Assertion is true but Reason is false</p>",
+        "<p>Both Assertion and Reason are false</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: the surrounding water buoys up floating and submerged parts and shields them from physical injury, so mechanical tissues are absent or poorly developed.</p> <p>Reason is true: their bodies are made largely of elongated, loosely arranged, thin-walled spongy cells, and these cells, when turgid, give the plant the mechanical support it needs.</p> <p>Because turgid spongy tissue provides the support, special mechanical tissue is not needed, so the Reason explains the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q22.</strong> Assertion : Inhibition of death of one organism by another through the production of some by-products is known as antibiosis.</p> <p>Reason : Antibiosis is a type of negative interaction.</p>",
+      "options": [
+        "<p>Both Assertion and Reason are true and Reason is the correct explanation of Assertion</p>",
+        "<p>Both Assertion and Reason are true and Reason is not the correct explanation of Assertion</p>",
+        "<p>Assertion is true but Reason is false</p>",
+        "<p>Both Assertion and Reason are false</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true (as intended, \"inhibition or death\"): antibiosis is the complete or partial inhibition, or the death, of one organism caused by substances produced by another, e.g. antibiotics made by fungi act against bacteria.</p> <p>Reason is true: in a negative interaction one or both organisms are harmed, and in antibiosis one is harmed while the other gains nothing.</p> <p>The Reason only classifies antibiosis; it does not explain the inhibition, so it is not the explanation of the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q23.</strong> Assertion : Conducting tissues, especially xylem show greatest reduction in submerged hydrophytes.</p> <p>Reason : Hydrophytes live in water so no need of tissues.</p>",
+      "options": [
+        "<p>Both Assertion and Reason are true and Reason is the correct explanation of Assertion</p>",
+        "<p>Both Assertion and Reason are true and Reason is not the correct explanation of Assertion</p>",
+        "<p>Assertion is true but Reason is false</p>",
+        "<p>Both Assertion and Reason are false</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: submerged hydrophytes absorb water and nutrients over their whole surface directly from the surrounding water, so conducting tissues are poorly developed, xylem most of all; in some the xylem elements do not develop at all.</p> <p>Reason is false: hydrophytes still have and need tissues; only the need to conduct water from roots is reduced.</p>"
+    },
+    {
+      "text": "<p><strong>Q24.</strong> Assertion : Allelopathy is a form of ammensalism that occurs in plants.</p> <p>Reason : Association of rooting plants with fungal hyphae, is an important example of ammensalism.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion.</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion.</p>",
+        "<p>If Assertion is true but Reason is false.</p>",
+        "<p>If both Assertion and Reason are false.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: in allelopathy one plant releases chemicals that inhibit the growth of other plant species while it is itself unaffected, which is amensalism (one species harmed, the other unaffected).</p> <p>Reason is false: the association of roots with fungal hyphae (mycorrhiza) benefits both partners and is mutualism, not amensalism.</p>"
+    },
+    {
+      "text": "<p><strong>Q25.</strong> Assertion : Leaf butterfly and stick insect show mimicry to dodge their enemies.</p> <p>Reason : Mimicry is a method of acquire body colour blending with the surroundings.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion.</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion.</p>",
+        "<p>If Assertion is true but Reason is false.</p>",
+        "<p>If both Assertion and Reason are false.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: the leaf butterfly and stick insect resemble leaves and twigs, which hides them from predators.</p> <p>Reason is true: mimicry is a way by which organisms gain protection from predators, most commonly through body colouring that blends with the surroundings.</p> <p>This protective resemblance is how the two insects escape their enemies, so the Reason explains the Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q26.</strong> Assertion : Smaller the organism higher is the rate of metabolism per gram weight.</p> <p>Reason : The heart rate of a six month old baby is much higher than that of an old person.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion, then mark (a)</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion, then mark (b)</p>",
+        "<p>If Assertion is true statement but Reason is false, then mark (c)</p>",
+        "<p>If both Assertion and Reason are false statements, then mark (d)</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: a small animal has a larger surface area for its volume, so it loses heat faster and must keep up a higher metabolic rate per gram of body weight.</p> <p>Reason is true: an infant's heart beats about 120–130 times a minute, against about 70–75 in an elderly person.</p> <p>The Reason is only an example of a fast body rate in a small individual. It does not explain why metabolic rate per gram rises as size falls, so it is not the correct explanation.</p>"
+    },
+    {
+      "text": "<p><strong>Q27.</strong> Choose the correct sequence of stages of growth curve for bacetria</p>",
+      "options": [
+        "<p>lag, log, stationary, decline phase</p>",
+        "<p>lag, log, stationary phase</p>",
+        "<p>stationary, lag, log, decline phase</p>",
+        "<p>decline, lag, log phase</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Bacteria grown in a closed (batch) culture give a growth curve with four phases, in this order:</p> <p>Lag phase: the cells adjust to the medium and there is little increase in number.</p> <p>Log (exponential) phase: the cells divide at a constant, maximum rate.</p> <p>Stationary phase: nutrients run short and wastes build up, so new cells only balance dying ones.</p> <p>Decline (death) phase: the number of living cells falls logarithmically.</p> <p>The bacterial growth curve:</p> <p><img alt=\"AIIMS 2007 Biology - Organisms and Populations Question 4 English Explanation\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mvk3vqt5/69785b6b-ec19-41b1-9cb4-7bb871027427/f7837690-ce66-11f1-96d0-dd338dbd023d/file-6y3zli1mvk3vqt6.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>"
+    },
+    {
+      "text": "<p><strong>Q28.</strong> Which one of the following is a matching pair of certain organism(s) and the kind of association?</p>",
+      "options": [
+        "<p>Shark and sucker fish—Commensalism</p>",
+        "<p>Red algae and fungi in lichens—Mutualism</p>",
+        "<p>Orchids growing on trees—Parasitism</p>",
+        "<p><i>Cuscuta</i> (dodder) growing on other flowering plants—Epiphytism</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The sucker fish (Echeneis, remora) clings to the underside of a shark with a sucker formed from its dorsal fin. It gains transport, protection and scraps of food, while the shark is neither helped nor harmed: commensalism.</p> <p>(b) Lichens are partnerships of fungi with green algae or cyanobacteria, not red algae.</p> <p>(c) Orchids growing on trees are epiphytes, not parasites.</p> <p>(d) Cuscuta is a parasite, not an epiphyte.</p>"
+    },
+    {
+      "text": "<p><strong>Q29.</strong> Which one of the following correctly represents an organism and its ecological niche?</p>",
+      "options": [
+        "<p>Vallisneria and pond</p>",
+        "<p>Desert locust (Scistocerca) and desert</p>",
+        "<p>Plant lice (aphids) and leaf</p>",
+        "<p>Vultures and dense forest</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>An ecological niche is the precise place and functional role of a species, how it lives and uses its resources, not merely the general area where it lives.</p> <p>Aphids (plant lice) live on leaves and feed on their sap, so the leaf is their niche.</p> <p>A pond for Vallisneria, the desert for the desert locust and a dense forest for vultures are habitats, not niches.</p>"
+    },
+    {
+      "text": "<p><strong>Q30.</strong> Which one of the following is correct matching of a plant, its habit and the forest type where it normally occurs?</p>",
+      "options": [
+        "<p>Prosopis, tree, scrub</p>",
+        "<p>Saccharum officinarum, grass, forest</p>",
+        "<p>Shorea robusta, herb, tropical rain forest</p>",
+        "<p>Acacia catechu, tree, coniferous forest</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Prosopis (e.g. khejri, Prosopis cineraria) is a thorny tree of dry thorn-scrub vegetation, so (a) is correct.</p> <p>Saccharum officinarum (sugarcane) is a cultivated grass, not a forest plant; Shorea robusta (sal) is a large tree of tropical deciduous forests, not a herb; Acacia catechu (khair) is a tree of dry deciduous forests, not coniferous forests.</p>"
+    },
+    {
+      "text": "<p><strong>Q31.</strong> Assertion : The sex ratio of Kerala is highest in India.</p> <p>Reason : In countries like India the population is increasing at a rapid rate.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion</p>",
+        "<p>If Assertion is true but Reason is false</p>",
+        "<p>If both Assertion and Reason are false</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: Kerala has the highest sex ratio in India (1058 females per 1000 males in the 2001 census).</p> <p>Reason is true: the population of India is growing rapidly.</p> <p>The rapid growth of population has nothing to do with Kerala's high sex ratio, so Reason does not explain Assertion.</p>"
+    },
+    {
+      "text": "<p><strong>Q32.</strong> The great barrier reef along the east coast of Australia can be categorised as :</p>",
+      "options": [
+        "<p>population</p>",
+        "<p>community</p>",
+        "<p>ecosystem</p>",
+        "<p>biome</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A population is a group of individuals of one species in an area, and a community is all the populations of different species living together in that area.</p> <p>An ecosystem is a community together with its non-living (abiotic) surroundings, while a biome is a very large ecological unit whose organisms are shaped by a particular climatic zone.</p> <p>The Great Barrier Reef off north-eastern Australia is a vast system of coral reefs, more than 2000 km long and up to about 150 km from the shore, built up as coral polyps keep budding into huge masses. On this scale the book classes it as a biome.</p>"
+    },
+    {
+      "text": "<p><strong>Q33.</strong> Assertion : Animals adopt different strategies to survive in hostile environment.</p> <p>Reason : Praying mantis is green in colour which merges with plant foliage.</p>",
+      "options": [
+        "<p>If both Assertion and Reason are true and the Reason is the correct explanation of the Assertion</p>",
+        "<p>If both Assertion and Reason are true but the Reason is not the correct explanation of the Assertion</p>",
+        "<p>If Assertion is true but Reason is false</p>",
+        "<p>If both Assertion and Reason are false</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion is true: adaptation lets animals adopt different strategies (camouflage, mimicry, migration, hibernation, etc.) to survive in hostile conditions.</p> <p>Reason is true: the green praying mantis (like the stick insect) closely resembles twigs and foliage, a protective adaptation that hides it.</p> <p>The mantis is just one example of such a strategy and does not explain the general statement, so R is not the explanation of A.</p>"
+    },
+    {
+      "text": "<p><strong>Q34.</strong> An interaction in which one organism is benefitted and other is unaffected</p>",
+      "options": [
+        "<p>predation</p>",
+        "<p>commensalism</p>",
+        "<p>mutualism</p>",
+        "<p>parasitism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In commensalism, one species benefits and the other is neither harmed nor benefited ( +,0 ).</p> <p>Predation is +,− , mutualism is +,+ and parasitism is +,− .</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q35.</strong> Choose the wrong pair</p>",
+      "options": [
+        "<p>Cenchrus-Savanna</p>",
+        "<p>Abies - Coniferous forest</p>",
+        "<p>Quercus - Broad leaf forest</p>",
+        "<p>Tectona - Temperate forest</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Tectona (teak) is a tree of tropical moist deciduous forests, not temperate forests. Cenchrus is a grass of the savanna, Abies is a conifer of coniferous forests and Quercus (oak) is a broad-leaf forest tree, so these pairs are correct.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q36.</strong> Viscum album grown on trees. This is an example of</p>",
+      "options": [
+        "<p>symbiosis</p>",
+        "<p>parasitism</p>",
+        "<p>commensalism</p>",
+        "<p>predation</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Viscum album (mistletoe) grows on the branches of trees and sends haustoria into the host to absorb water and minerals, harming it. A relationship in which one organism benefits at the cost of the host is parasitism.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q37.</strong> Biotic potential or potential natality means</p>",
+      "options": [
+        "<p>natural increase of population under ideal/optimum conditions</p>",
+        "<p>potential of organism in a biome</p>",
+        "<p>number of organisms in a biome</p>",
+        "<p>species of maximum number in a population</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Biotic potential (potential natality) is the maximum rate of increase of a population under ideal conditions, with unlimited resources and no limiting factors. The other options do not define it.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q38.</strong> Zero growth means</p>",
+      "options": [
+        "<p>natality balance mortality</p>",
+        "<p>natality is more than mortality</p>",
+        "<p>natality is less than mortality</p>",
+        "<p>natality is zero</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Population growth is ΔN=(−)+(−) . Zero growth means no net change in size, which happens when natality balances mortality.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q39.</strong> Factor govering the earth surface is</p>",
+      "options": [
+        "<p>topographic</p>",
+        "<p>edaphic</p>",
+        "<p>temperature</p>",
+        "<p>biotic</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Topographic factors (altitude, slope and aspect of the land) govern the nature of the earth's surface. Edaphic factors relate to the soil, and biotic factors to living organisms.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q40.</strong> Predation and parasitism are which type of interactions.</p>",
+      "options": [
+        "<p>(+,+)</p>",
+        "<p>(+,0)</p>",
+        "<p>(−,−)</p>",
+        "<p>(+,−)</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In predation and parasitism one species benefits ( + ) and the other is harmed ( − ). The interaction is therefore of the (+,−) type.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q41.</strong> Benthic organisms are found in</p>",
+      "options": [
+        "<p>surface of marine water</p>",
+        "<p>middle of water in sea</p>",
+        "<p>bottom of sea</p>",
+        "<p>on ground</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Benthic organisms (benthos) live on or in the bottom of a water body such as the sea floor. Surface dwellers are neuston and organisms in the middle water are nekton or plankton.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q42.</strong> The permanent decrease in population number occurs due to</p>",
+      "options": [
+        "<p>migration</p>",
+        "<p>natality</p>",
+        "<p>emigration</p>",
+        "<p>mortality</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Population density increases by natality and immigration and decreases by mortality and emigration.</p> <p>Mortality is the loss of individuals by death. A dead individual can never rejoin the population, so the decrease caused by mortality is permanent.</p> <p>Emigrated individuals are still alive and can be regained by immigration, and migration is a periodic movement with return, so neither causes a permanent loss.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q43.</strong> Small fish get stuck near the bottom of a shark and derives its nutrition from it. This kind of association is called as</p>",
+      "options": [
+        "<p>antibiosis</p>",
+        "<p>commensalism</p>",
+        "<p>predation</p>",
+        "<p>parasitism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The sucker fish attaches to the shark and feeds on its leftovers. The fish benefits while the shark is neither harmed nor benefited, which is commensalism.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q44.</strong> Animals undergoes inactive stage during winter, is known as</p>",
+      "options": [
+        "<p>aestivation</p>",
+        "<p>hibernation</p>",
+        "<p>adaptation</p>",
+        "<p>acclimatization</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Winter dormancy of an animal, with greatly reduced metabolism, is hibernation. Aestivation is dormancy in summer.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q45.</strong> Animals having a built in thermostat to maintain constant body temperature are known as</p>",
+      "options": [
+        "<p>biothermic</p>",
+        "<p>poikilothermic</p>",
+        "<p>oligothermic</p>",
+        "<p>homeothermic</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Animals such as birds and mammals maintain a constant body temperature irrespective of the environment, by thermoregulation. They are homeothermic (regulators), whereas poikilotherms change their body temperature with the surroundings.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q46.</strong> Study of Ecology of population is called</p>",
+      "options": [
+        "<p>Autecology</p>",
+        "<p>Synecology</p>",
+        "<p>Ecotype</p>",
+        "<p>Demecology</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Autecology studies a single species, synecology a community, and demecology the ecology of populations.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q47.</strong> Which one of the following pairs is mismatched?</p>",
+      "options": [
+        "<p>Savanna — Acacia trees</p>",
+        "<p>Prairie — Epiphytes</p>",
+        "<p>Tundra — Permafrost</p>",
+        "<p>Coniferous forest — Evergreen trees</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Savanna has scattered Acacia trees, tundra has permanently frozen soil (permafrost), and coniferous forest has evergreen trees.</p> <p>A prairie is a temperate grassland dominated by grasses with few trees, and epiphytes are characteristic of tropical rainforests. Hence the pair prairie-epiphytes is mismatched.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q48.</strong> The plant that is characteristics component of mangrove vegetation :</p>",
+      "options": [
+        "<p>Rhizophora mangel</p>",
+        "<p>Ficus religiosa</p>",
+        "<p>Mangifera indica</p>",
+        "<p>Prosopis specigera</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Mangrove vegetation grows in saline coastal swamps and has stilt roots and pneumatophores.</p> <p> Rhizophora mangle is a characteristic mangrove plant. Ficus religiosa , Mangifera indica and Prosopis are not mangroves.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q49.</strong> Biotic factors are :</p>",
+      "options": [
+        "<p>chemical factors of soil which affect life</p>",
+        "<p>physical factors of soil which affect life</p>",
+        "<p>all living organisms which influence other organisms</p>",
+        "<p>factors of atmosphere which affect life</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Biotic factors are the living components of the environment, such as plants, animals and microbes, which influence other organisms through interactions like predation, competition and parasitism.</p> <p>Chemical and physical soil factors are edaphic, and atmospheric factors are climatic (abiotic).</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q50.</strong> On high mountains, difficulty in breathing is due to :</p>",
+      "options": [
+        "<p>decrease in partial pressure of O2</p>",
+        "<p>decrease in amount of O2</p>",
+        "<p>increase in CO2 concentration</p>",
+        "<p>all of the above</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>At high altitude, the percentage of oxygen in air stays about 21 percent, but the atmospheric pressure falls. Hence the partial pressure of oxygen decreases, and the haemoglobin saturation is lower, causing difficulty in breathing (altitude sickness).</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q51.</strong> Plants growing on sand and gravel are called</p>",
+      "options": [
+        "<p>eremophytes</p>",
+        "<p>psammophytes</p>",
+        "<p>psilophytes</p>",
+        "<p>oxylophytes</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Plants are named by habitat. Psammophytes grow on sand and gravel. Eremophytes are desert plants and oxylophytes grow on acidic soils.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q52.</strong> The part of earth in which life exist is known as ?</p>",
+      "options": [
+        "<p>Lithosphere</p>",
+        "<p>Biosphere</p>",
+        "<p>Atmosphere</p>",
+        "<p>Hydrosphere</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The biosphere is the zone of the earth where life exists, comprising the lower atmosphere, the hydrosphere and the upper lithosphere. Each of the other options is only one part of it.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q53.</strong> The Orobanche plant is</p>",
+      "options": [
+        "<p>partial stem parasite</p>",
+        "<p>total root parasite</p>",
+        "<p>symbiont</p>",
+        "<p>total stem parasite</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Orobanche (broomrape) has no chlorophyll and draws water and food entirely through haustoria from the roots of host plants such as mustard and tobacco. It is therefore a total root parasite.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q54.</strong> The effect of intraspecific competition on niches is to make them</p>",
+      "options": [
+        "<p>smaller</p>",
+        "<p>larger</p>",
+        "<p>change location</p>",
+        "<p>more triangular</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>When members of the same species compete for limited resources, individuals are driven to use a wider range of resources, so the niche of the population widens (niche expansion). It is interspecific competition that narrows (restricts) the niche.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q55.</strong> Cattle or goats are never seen browsing on the weed, <i>Calotropis</i>. Select the correct option for the reason.</p>",
+      "options": [
+        "<p>The plant produces highly poisonous tannins.</p>",
+        "<p>The plant produces quinine, which is bitter in taste.</p>",
+        "<p>The plant produces the poisonous chemical, cardiac glycoside.</p>",
+        "<p>The plant bears prickles.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Plants protect themselves from herbivores with chemical defences. <em>Calotropis</em> produces highly poisonous cardiac glycosides, which is why cattle and goats avoid it.</p> <p>Quinine is produced by <em>Cinchona</em>, and the tannins of the plant and prickles are not the reason for the avoidance of <em>Calotropis</em>.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q56.</strong> If a new habitat is being colonized, out of the four processes affecting population growth, which are the two factors that contribute to an increase in population density ?</p><p>(i) Immigration</p><p>(ii) Natality</p><p>(iii) Emigration</p><p>(iv) Mortality</p><p><b>Options :</b></p>",
+      "options": [
+        "<p>(i) and (ii)</p>",
+        "<p>(ii) and (iii)</p>",
+        "<p>(iii) and (iv)</p>",
+        "<p>(i) and (iv)</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Population density changes as Nt+1=Nt+[(B+I)−(D+E)] . Natality ( B ) and immigration ( I ) add individuals and so increase density, while mortality ( D ) and emigration ( E ) decrease it. In a newly colonised habitat the increase comes from natality and immigration, i.e. (i) and (ii).</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q57.</strong> In spite of interspecific competition in nature, which of the following mechanisms might competing species have evolved to coexist and survive ?</p>",
+      "options": [
+        "<p>Competitive exclusion</p>",
+        "<p>Competitive release</p>",
+        "<p>Resource partitioning</p>",
+        "<p>Co-evolution</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Closely related species competing for the same resources may evolve differences in their feeding times or habits, so that each uses the resources differently. This resource partitioning (as in MacArthur's warblers) permits coexistence, whereas competitive exclusion eliminates one species and competitive release is the expansion of a species when its competitor is removed.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q58.</strong> Which type of interaction is being shown in the figure given below ?</p><p><img alt=\"CBSE 12th Biology 2026 Compartment Set 57/7/3 Biology - Organisms and Populations Question 4 English\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd33kl1/e9c73866-3351-4cdd-9472-e65bed8ee470/a2e1b250-de56-11f1-be98-fde0f6410277/file-6y3zli1mwd33kl2.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>Parasitism</p>",
+        "<p>Commensalism</p>",
+        "<p>Predation</p>",
+        "<p>Amensalism</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The figure shows a fish swallowing a frog: one organism (the fish, the predator) kills and eats another organism (the frog, the prey).</p> <p>In this interaction the predator benefits (+) and the prey is harmed (−) , which is predation.</p> <p>A parasite lives on or in its host and obtains nourishment from it without eating it whole, commensalism benefits one species with the other unaffected (+/0) , and amensalism harms one species with the other unaffected (−/0) .</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q59.</strong> What could be the reason of extinction of Abingdon Tortoise from Galapagos Islands ?</p>",
+      "options": [
+        "<p>Intraspecific Competition</p>",
+        "<p>Predation</p>",
+        "<p>Parasitism</p>",
+        "<p>Interspecific Competition</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>On the Galapagos island of Abingdon, goats were introduced. They grazed the vegetation on which the tortoise fed, and the tortoise became extinct within a decade. Goats and tortoises are different species competing for the same food, so the cause is interspecific competition.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q60.</strong> Which of the following is an important parameter for assessing the impact of any biotic or abiotic factor on population growth ?</p>",
+      "options": [
+        "<p>Birth rate</p>",
+        "<p>K-carrying capacity</p>",
+        "<p>Death rate</p>",
+        "<p>r-Intrinsic rate of natural increase</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The intrinsic rate of natural increase ( r ) is the difference between per capita birth rate and death rate of a population under ideal conditions. It integrates both natality and mortality, so any biotic or abiotic factor that alters either is reflected as a change in r . Hence r is the parameter used to assess the impact of a factor on population growth.</p> <p>Birth rate and death rate individually express only one side of the change, and K is the upper limit that the environment can support, not a measure of the growth rate.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q61.</strong> Connell’s elegant field experiments on the rocky seacoast of Scotland, found that larger barnacles <i>Balanus</i> dominated the intertidal area and removed the smaller barnacles <i>Chathamalus</i>. This happened due to :</p>",
+      "options": [
+        "<p>Parasitism</p>",
+        "<p>Predation</p>",
+        "<p>Mutualism</p>",
+        "<p>Competition</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In Connell's experiments, the larger barnacle <em>Balanus</em> excluded the smaller <em>Chthamalus</em> from the lower intertidal zone because both competed for the same resources, space and food. This interaction is competition.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q62.</strong> <i>Assertion (A) :</i> The interaction between a whale and the small barnacles on its back is considered as commensalism.</p><p><i>Reason (R) :</i> In the above association, neither of the species is benefitted.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <b><i>not</i></b> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In the association between a whale and the barnacles growing on its back, the barnacles gain a surface for attachment and are carried to water rich in food, while the whale is neither benefited nor harmed. Therefore, this is commensalism and Assertion (A) is true.</p> <p>In commensalism one species benefits and the other is neither benefited nor harmed; the barnacles are benefited. Hence Reason (R), stating that neither species benefits, is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q63.</strong> Choose a correct option that shows an interaction in which one species benefits while the other is neither harmed nor benefitted.</p>",
+      "options": [
+        "<p>Mycorrhizal associations between fungi and roots of higher plants</p>",
+        "<p>Sea anemone and clownfish</p>",
+        "<p>Abingdon tortoises and goats in the Galapagos Island</p>",
+        "<p>Cuscuta on hedge plants</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>An interaction in which one species benefits and the other is neither harmed nor benefited is commensalism. The clownfish gets protection from predators among the stinging tentacles of the sea anemone, while the anemone is not affected.</p> <p>Mycorrhiza is mutualism, the competition of tortoises and goats is interspecific competition, and <em>Cuscuta</em> on hedge plants is parasitism.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q64.</strong> <i>Assertion (A) :</i> Competition is a type of interspecific interaction between two or more species when the resources necessary for them are limited and adversely affect them.</p><p><i>Reason (R) :</i> Special adaptation may allow the competing species to coexist in the same geographical area.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Competition is an interspecific interaction in which the species are adversely affected when resources are limited, so the assertion is true. Special adaptations such as resource partitioning (for example Connell's barnacle study or MacArthur's warblers) may allow competing species to coexist, so the reason is true. However, coexistence does not explain what competition is, so the reason is not the correct explanation of the assertion.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q65.</strong> <i>Assertion (A) :</i> Verhulst-Pearl logistic growth curve is sigmoid in nature.</p><p><i>Reason (R) :</i> A population growing in a habitat with limited resources shows initially a lag phase, followed by phases of acceleration and deceleration and finally an asymptote.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion (A) is true: in the Verhulst-Pearl logistic growth model, the plot of population density against time is an S-shaped (sigmoid) curve.</p> <p>Reason (R) is true: with limited resources a population first shows a lag phase, then acceleration and deceleration phases, and finally an asymptote when the density reaches the carrying capacity.</p> <p>These phases together make the curve sigmoid, so (R) explains (A).</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q66.</strong> A biologist studied the population of rats in a granary. He found the average natality was 280, average mortality was 200, immigration was 40 and emigration was 50. The net increase in population is :</p>",
+      "options": [
+        "<p>80</p>",
+        "<p>70</p>",
+        "<p>10</p>",
+        "<p>90</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Net increase =(+)−(+) .</p> <p> =(280+40)−(200+50)=320−250=70 </p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q67.</strong> The population interaction where one species is harmed and the other is unaffected is :</p>",
+      "options": [
+        "<p>Amensalism</p>",
+        "<p>Commensalism</p>",
+        "<p>Parasitism</p>",
+        "<p>Predation</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In amensalism, one species is harmed while the other is unaffected (for example, an antibiotic-secreting <em>Penicillium</em> harming bacteria).</p> <p>In commensalism one species benefits and the other is unaffected, in parasitism one benefits and the other is harmed, and in predation the predator benefits while the prey is harmed.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q68.</strong> Read the four statements given below and select the option having two correct statements :</p><p>(i) A lion eating a deer and a sparrow feeding on grains are ecologically similar in being consumers.</p><p>(ii) Predator starfish <i>Pisaster</i> helps in maintaining species diversity of some invertebrates.</p><p>(iii) Predators ultimately lead to extinction of prey species.</p><p>(iv) Production of chemicals nicotine and strychnine by plants are metabolic disorders.</p>",
+      "options": [
+        "<p>(i) and (iii)</p>",
+        "<p>(ii) and (iv)</p>",
+        "<p>(i) and (ii)</p>",
+        "<p>(iii) and (iv)</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Statement (i) is correct: a lion and a sparrow both depend on other organisms for food, so both are consumers.</p> <p>Statement (ii) is correct: the predator starfish <em>Pisaster</em> keeps the numerically dominant prey in check, so competitive exclusion does not occur and invertebrate diversity is maintained.</p> <p>Statement (iii) is incorrect: predators regulate prey populations and normally do not exterminate them, since the prey would then be lost as food.</p> <p>Statement (iv) is incorrect: nicotine and strychnine are secondary metabolites that protect plants against herbivores and are not metabolic disorders.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q69.</strong> The population growth curve applicable for a population growing in a geometric fashion, when the resources are not limiting in the habitat will be :</p>",
+      "options": [
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/1 Biology - Organisms and Populations Question 17 English Option 1\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2v3rf/73bd3d9d-9f35-41ca-a171-2318de25abcb/b769d9b0-de55-11f1-90f8-7dad7956aeb4/file-6y3zli1mwd2v3rg.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/1 Biology - Organisms and Populations Question 17 English Option 2\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2v8bd/a90fe9a1-5b1b-41de-a504-ef37c879f41e/baee6c90-de55-11f1-90f8-7dad7956aeb4/file-6y3zli1mwd2v8be.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/1 Biology - Organisms and Populations Question 17 English Option 3\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2vchf/ae6e8355-7b92-4cb3-8dd9-92e8c76a532d/be26b430-de55-11f1-90f8-7dad7956aeb4/file-6y3zli1mwd2vchg.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/1 Biology - Organisms and Populations Question 17 English Option 4\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2v3vw/850a5c55-7346-453d-943f-6e7eb6333fda/b7826ac0-de55-11f1-be98-fde0f6410277/file-6y3zli1mwd2v3vx.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>When resources are unlimited, each individual reproduces at its full innate capacity and the population grows geometrically (exponentially):</p> <p> dNdt=rN⇒Nt=N0ert </p> <p>Population density therefore rises slowly at first and then ever faster with time, giving a J-shaped curve, as in (C).</p> <p>The sigmoid curve (D) is logistic growth, in which density levels off at the carrying capacity K because resources are limited.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q70.</strong> The population growth curve applicable for a population growing in nature with limited resources available to them will be :</p>",
+      "options": [
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/2 Biology - Organisms and Populations Question 15 English Option 1\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2vp1a/c5d54365-0c46-4e7f-ae12-1e013d2d383a/c7d8d9e0-de55-11f1-af98-71bd3de1bc9e/file-6y3zli1mwd2vp1b.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/2 Biology - Organisms and Populations Question 15 English Option 2\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2viks/8895b71b-2c00-4edb-be88-5ac568702dbe/c2dbb0c0-de55-11f1-86f5-e5c8e54e1b2f/file-6y3zli1mwd2vikt.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/2 Biology - Organisms and Populations Question 15 English Option 3\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2vnfg/06f5420a-0aa7-4938-a9eb-c2c2a7ea963a/c69b29c0-de55-11f1-86f5-e5c8e54e1b2f/file-6y3zli1mwd2vnfh.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/2 Biology - Organisms and Populations Question 15 English Option 4\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2vrtn/a8a5d630-8afc-4230-b6aa-ad842cf9db5a/ca0026b0-de55-11f1-86f5-e5c8e54e1b2f/file-6y3zli1mwd2vrto.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In nature resources are limited, so a population shows logistic growth:</p> <p> dNdt=rNK−NK </p> <p>where K is the carrying capacity. The population first grows slowly (lag phase), then rapidly, and the growth rate falls as N approaches K , after which the density levels off at K .</p> <p>A plot of population density against time is therefore a sigmoid (S-shaped) curve, as in graph (C). The J-shaped curve in (B) is exponential growth, possible only when resources are unlimited.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q71.</strong> The population growth curve applicable for a population of beetles growing in nature under unlimited resource conditions available to them will be :</p>",
+      "options": [
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/3 Biology - Organisms and Populations Question 14 English Option 1\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2vnwk/57dab3ea-85f7-4123-a5ff-6fbd90bbd42b/c6f92840-de55-11f1-90f8-7dad7956aeb4/file-6y3zli1mwd2vnwl.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/3 Biology - Organisms and Populations Question 14 English Option 2\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2vsvl/e57bbc4d-3c0c-41a3-9447-3eee54fbb798/cad09610-de55-11f1-90f8-7dad7956aeb4/file-6y3zli1mwd2vsvm.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/3 Biology - Organisms and Populations Question 14 English Option 3\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2vwxy/fe62b9fa-25b5-4fab-8c8f-9cf10ba2b53d/cdf49260-de55-11f1-90f8-7dad7956aeb4/file-6y3zli1mwd2vwxz.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+        "<p><img alt=\"CBSE 12th Biology 2024 Set 57/3/3 Biology - Organisms and Populations Question 14 English Option 4\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2w1nu/17e4e22c-8dc9-4c8f-bc05-78d067bad4f9/d199cca0-de55-11f1-90f8-7dad7956aeb4/file-6y3zli1mwd2w1nv.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>With unlimited resources every individual can realise its full innate potential to grow, so the population grows exponentially:</p> <p> dNdt=rN⇒Nt=N0ert </p> <p>The density rises slowly at first and then ever more steeply, so a plot of population density against time is a J-shaped curve, as in graph (C). The S-shaped curve in (B), levelling off at the carrying capacity, applies only when resources are limited.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q72.</strong> Assertion (A) : A given fig species can be pollinated only by its partner’ wasp.</p><p>Reason (R) : The wasp pollinates the fig inflorescence while searching for suitable egg laying sites.</p>",
+      "options": [
+        "<p>Both (A) and (R) are true and (R) is the correct explanation of (A).</p>",
+        "<p>Both (A) and (R) are true and (R) is not the correct explanation of (A).</p>",
+        "<p>(A) is true, but (R) is false.</p>",
+        "<p>(A) is false, but (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Each fig species is pollinated by its own particular wasp species, so Assertion (A) is true.</p> <p>The wasp pollinates the fig inflorescence while searching for suitable egg-laying sites, so Reason (R) is true. This is exactly why the wasp pollinates the fig, so (R) explains (A).</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q73.</strong> Assertion (A) : A cattle egret and grazing cattle in close association is a classic example of commensalism.</p><p>Reason (R) : As grazing cattle move through the field, they stir up and flush out insects from the vegetation that otherwise might be difficult for egrets to find and catch.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In the association of a cattle egret with grazing cattle, the egret feeds on insects flushed out by the moving cattle, so the egret benefits while the cattle are neither benefited nor harmed. This is commensalism, so the Assertion is true.</p> <p>The Reason is also true and states exactly how the egret benefits, hence it explains the Assertion.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q74.</strong> The status of the human population reflected in the human age pyramid given below is :</p><p><img alt=\"CBSE 12th Biology 2023 Set 57/1/1 Biology - Organisms and Populations Question 18 English\" src=\"https://app-content.cdn.examgoal.net/image/6y3zli1mwd2r35v/210bf7d8-476f-4a2c-8d25-b02ec6409b6d/47b6e130-de55-11f1-86f5-e5c8e54e1b2f/file-6y3zli1mwd2r35w.png\" style=\"max-width:100%;height:auto;display:block;margin:10px auto;\"/></p>",
+      "options": [
+        "<p>Declining population</p>",
+        "<p>Stable population</p>",
+        "<p>Expanding population</p>",
+        "<p>Extinct population</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The future growth of a population depends on how many individuals will enter the reproductive age group. In the given pyramid the pre-reproductive (bottom) bars are narrower than the reproductive bars, so fewer young individuals will replace the present reproductive group.</p> <p>Such an urn-shaped pyramid represents a declining population. A broad-based triangular pyramid would show an expanding population, and a bell-shaped pyramid with nearly equal pre-reproductive and reproductive groups a stable one.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q75.</strong> Assertion (A) : Cattle and goats are never seen browsing on <i>Calotropis</i> growing in abandoned fields.</p><p>Reason (R) : Cattle and goats avoid grazing on <i>Calotropis</i> because of the offensive smell of its flowers.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p><em>Calotropis</em> produces poisonous cardiac glycosides, which is why cattle and goats avoid it. The assertion is true, but the reason (offensive smell of flowers) is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q76.</strong> Examples that show commensalism are :</p><p>(i) An orchid growing on mango tree</p><p>(ii) Cuckoo bird and crow</p><p>(iii) <i>Cuscuta</i> growing on Nerium tree</p><p>(iv) Barnacles growing on a whale</p>",
+      "options": [
+        "<p>(i) and (ii)</p>",
+        "<p>(i) and (iv)</p>",
+        "<p>(ii) and (iii)</p>",
+        "<p>(ii) and (iv)</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Commensalism is an interaction in which one species benefits and the other is neither harmed nor benefited.</p> <p>(i) An orchid growing on a mango tree (epiphyte) and (iv) barnacles growing on a whale are commensalism.</p> <p>(ii) Cuckoo and crow is brood parasitism, and (iii) <em>Cuscuta</em> on <em>Nerium</em> is parasitism; in both the host is harmed.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q77.</strong> Assertion (A) : A species of wasp and a fig species cannot complete their life cycle without each other.</p><p>Reason (R) : While visiting wasps come to lay eggs in the fig inflorescence, the flower of wasp gets pollinated in return.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion: a particular fig species is pollinated only by its own wasp species, and the wasp lays its eggs in the fig ovaries and the larvae develop there. Neither can complete its life cycle without the other, so the assertion is true.</p> <p>Reason: the visiting wasp pollinates the fig flowers while laying eggs, and this is the return the fig receives for providing the brood site. It explains the mutual dependence stated in the assertion.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q78.</strong> Assertion (A) : Darwin showed how even a slow growing animal like an elephant could reach enormous numbers.</p><p>Reason (R) : When resources in the habitat are unlimited, each species has the ability to realise its innate potential fully.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "A",
+      "correct": 0,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Darwin, using the elephant (the slowest breeder known) as an example, showed that even a slow-breeding species would produce enormous numbers in a few centuries, so the assertion is true.</p> <p>Reason: when resources are unlimited, every species can realise its full biotic (innate) potential, which is true. This is the basis of the calculation for the elephant, so the reason explains the assertion.</p> <p>Hence, the correct option is (A).</p>"
+    },
+    {
+      "text": "<p><strong>Q79.</strong> Many copepods live on the body surface of marine fish. This relationship is an example of :</p>",
+      "options": [
+        "<p>Commensalism</p>",
+        "<p>Parasitism</p>",
+        "<p>Amensalism</p>",
+        "<p>Mutualism</p>"
+      ],
+      "answer": "B",
+      "correct": 1,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Copepods live on the body surface of marine fish and feed on them, so the copepod benefits while the fish is harmed. Such an association, in which one species (the parasite) obtains nourishment from another (the host) and harms it, is parasitism. Here the copepods are ectoparasites.</p> <p>Commensalism and mutualism involve no harm to the fish, and amensalism does not involve any benefit to the other species.</p> <p>Hence, the correct option is (B).</p>"
+    },
+    {
+      "text": "<p><strong>Q80.</strong> Interaction between clown fish living among the stinging tentacles of sea anemone is an example of –</p>",
+      "options": [
+        "<p>Amensalism</p>",
+        "<p>Parasitism</p>",
+        "<p>Mutualism</p>",
+        "<p>Commensalism</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The clown fish lives among the stinging tentacles of the sea anemone and gets protection from predators. The anemone is neither harmed nor benefited by the fish.</p> <p>An interaction in which one species benefits and the other is neither harmed nor benefited is commensalism.</p> <p>Amensalism and parasitism involve harm to one species, and mutualism requires benefit to both.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q81.</strong> A Tight one-to-one relationship between many species of fig tree and certain wasps is an example of -</p>",
+      "options": [
+        "<p>Commensalism</p>",
+        "<p>Parasitism</p>",
+        "<p>Amensalism</p>",
+        "<p>Mutualism</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>In the fig-wasp relationship each fig species is pollinated by its own species of wasp, and the wasp lays its eggs in the fig fruit and feeds on the developing seeds. Both partners benefit and depend on each other, which is mutualism. In commensalism one partner is unaffected, in parasitism one is harmed, and in amensalism one is harmed while the other is unaffected.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q82.</strong> Important attributes belonging to a population but not to an individual are :</p><p>(i) Birth rate and death rate<br/>(ii) Male and female<br/>(iii) Birth and death<br/>(iv) Sex-ratio</p><p>Select the correct option from the given options :</p>",
+      "options": [
+        "<p>(i) only</p>",
+        "<p>(ii) only</p>",
+        "<p>(ii) and (iii)</p>",
+        "<p>(i) and (iv)</p>"
+      ],
+      "answer": "D",
+      "correct": 3,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Birth rate, death rate and sex-ratio are statistical attributes that exist only for a group, so they belong to a population.</p> <p>An individual is simply born, dies, and is either male or female; these are individual traits, not population attributes. Hence (ii) and (iii) are excluded.</p> <p>Hence, the correct option is (D).</p>"
+    },
+    {
+      "text": "<p><strong>Q83.</strong> Assertion (A): The Monarch butterfly is highly distasteful to the predators.</p><p>Reason (R): The butterfly has a very rough skin which is not palatable.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>Assertion: the Monarch butterfly is highly distasteful to its predators, which is true.</p> <p>Reason: it acquires a special chemical (cardiac glycoside) from the poisonous weed it feeds on as a caterpillar, and the chemical makes it unpalatable. Its skin is not rough, so the reason is false.</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q84.</strong> Identify the option that does not exhibit a parasitic relationship.</p>",
+      "options": [
+        "<p>Head lice in humans</p>",
+        "<p><i>Cuscuta</i> on a mango tree</p>",
+        "<p>Female <i>Anopheles</i></p>",
+        "<p>Ticks on dogs</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>A parasite lives on or in a host and obtains food from it, harming the host.</p> <p>Head lice on humans, <em>Cuscuta</em> (a parasitic plant) on a mango tree and ticks on dogs are all parasites that depend on their hosts.</p> <p>The female <em>Anopheles</em> is only a blood-sucking vector that takes a blood meal temporarily and does not live on a host, so it is not treated as a parasite (it is the host of the <em>Plasmodium</em> parasite).</p> <p>Hence, the correct option is (C).</p>"
+    },
+    {
+      "text": "<p><strong>Q85.</strong> Assertion (A): The Mediterranean orchid <i>Ophrys</i> uses sexual deceit to get pollinated by a species of bee.</p><p>Reason (R): The female bee changes its colour depending on the temperature of the area.</p>",
+      "options": [
+        "<p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p>",
+        "<p>Both Assertion (A) and Reason (R) are true, but Reason (R) is <i>not</i> the correct explanation of the Assertion (A).</p>",
+        "<p>Assertion (A) is true, but Reason (R) is false.</p>",
+        "<p>Assertion (A) is false, but Reason (R) is true.</p>"
+      ],
+      "answer": "C",
+      "correct": 2,
+      "marks": 4,
+      "neg": 1,
+      "type": "MCQ",
+      "subject": "Biology",
+      "chapter": "Organisms and Populations",
+      "solution": "<p>The Mediterranean orchid <em>Ophrys</em> is pollinated by sexual deceit: one petal of its flower resembles the female bee in size, colour and markings, so the male bee pseudocopulates with the flower and pollinates it. Assertion (A) is true.</p> <p>The resemblance is a fixed floral mimicry, evolved with the bee species; the female bee does not change its colour with temperature. Reason (R) is false.</p> <p>Hence, the correct option is (C).</p>"
+    }
+  ]
+}
 ];
 
   window.NEET_DEFAULT_TESTS = neetTests.map((t, idx) => ({
@@ -9867,7 +17584,7 @@
     testLabel: t.label,
     testType: "SWT",
     bracket: t.bracket,
-    subject: "neet_bio_principles",
+    subject: t.subject || "neet_bio_principles",
     topicsCovered: t.topics,
     duration: t.duration,
     questionCount: t.questions.length,
@@ -9908,5 +17625,5 @@
     }
   });
 
-  console.log("Apex NEET UG Tests successfully registered:", neetTests.length, "tests loaded. Total questions:", 611);
+  console.log("Apex NEET UG Tests successfully registered:", neetTests.length, "tests loaded. Total questions:", 1062);
 })();

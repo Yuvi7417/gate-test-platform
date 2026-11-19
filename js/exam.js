@@ -1603,7 +1603,7 @@ async function startPlayer(testName, fetchedQuestions) {
   );
   playerCurrent = 0;
   const testNameUpper = (testName || "").toUpperCase();
-  const isNeetTest = testNameUpper.includes("BIOTECHNOLOGY") || testNameUpper.includes("NEET") || (currentTestListId === "neet-ug-practice");
+  const isNeetTest = testNameUpper.includes("BIOTECHNOLOGY") || testNameUpper.includes("ORGANISMS") || testNameUpper.includes("POPULATIONS") || testNameUpper.includes("NEET") || (currentTestListId === "neet-ug-practice");
   const isTopicwiseTest = testNameUpper.includes("TOPICWISE") || testNameUpper.includes("TWT");
   const isWeeklyQuizTest = testNameUpper.includes("WQT") || testNameUpper.includes("WEEKLY QUIZ");
   const isGatePyqTest = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || testNameUpper.includes("GATE CSE"));

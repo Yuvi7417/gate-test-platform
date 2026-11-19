@@ -1602,6 +1602,10 @@ main {
   margin-top: 3px;
 }
 
+#view-detail {
+  padding-bottom: 70px;
+}
+
 .enroll-bar {
   margin-top: 40px;
   position: sticky;
