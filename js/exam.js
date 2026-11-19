@@ -4255,10 +4255,6 @@ function createChart(canvasId, type, labels, datasets, yTitle, isStacked = false
   if (!ctx) return;
   if (__chartInstances[canvasId]) __chartInstances[canvasId].destroy();
 
-  const isDark = document.body.classList.contains("dark-mode");
-  const textColor = isDark ? "#cbd5e1" : "#64748b";
-  const gridColor = isDark ? "rgba(255, 255, 255, 0.08)" : "#f1f4f8";
-
   __chartInstances[canvasId] = new Chart(ctx, {
     type: type,
     data: { labels, datasets },
@@ -4267,11 +4263,11 @@ function createChart(canvasId, type, labels, datasets, yTitle, isStacked = false
       maintainAspectRatio: false,
       interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: { position: 'bottom', labels: { usePointStyle: true, padding: 20, color: textColor } }
+        legend: { position: 'bottom', labels: { usePointStyle: true, padding: 20 } }
       },
       scales: {
-        x: { stacked: isStacked, grid: { display: false }, ticks: { color: textColor } },
-        y: { stacked: isStacked, title: { display: true, text: yTitle, color: textColor }, grid: { color: gridColor }, ticks: { color: textColor } }
+        x: { stacked: isStacked, grid: { display: false } },
+        y: { stacked: isStacked, title: { display: true, text: yTitle }, grid: { color: '#f1f4f8' } }
       }
     }
   });
@@ -4282,10 +4278,6 @@ function renderBarChart(canvasId, labels, counts, color, stackedDatasets) {
   const ctx = document.getElementById(canvasId);
   if (!ctx) return;
   if (__chartInstances[canvasId]) __chartInstances[canvasId].destroy();
-
-  const isDark = document.body.classList.contains("dark-mode");
-  const textColor = isDark ? "#cbd5e1" : "#64748b";
-  const gridColor = isDark ? "rgba(255, 255, 255, 0.08)" : "#f1f4f8";
 
   const isMulti = Array.isArray(labels);
   const chartLabels = isMulti ? labels : [String(labels).toUpperCase()];
@@ -4329,7 +4321,7 @@ function renderBarChart(canvasId, labels, counts, color, stackedDatasets) {
         legend: {
           display: Boolean(stackedDatasets),
           position: 'bottom',
-          labels: { usePointStyle: true, padding: 15, color: textColor }
+          labels: { usePointStyle: true, padding: 15 }
         },
         tooltip: {
           callbacks: {
@@ -4347,44 +4339,20 @@ function renderBarChart(canvasId, labels, counts, color, stackedDatasets) {
           stacked: Boolean(stackedDatasets),
           grid: { display: false },
           ticks: {
-            color: textColor,
             font: { size: 12, weight: '500' }
           }
         },
         y: {
           stacked: Boolean(stackedDatasets),
           beginAtZero: true,
-          grid: { color: gridColor },
-          title: { display: true, text: 'Questions Count', color: textColor },
-          ticks: { precision: 0, color: textColor }
+          grid: { color: '#f1f4f8' },
+          title: { display: true, text: 'Questions Count' },
+          ticks: { precision: 0 }
         }
       }
     }
   });
 }
-
-window.updateChartsTheme = function () {
-  const isDark = document.body.classList.contains("dark-mode");
-  const textColor = isDark ? "#cbd5e1" : "#64748b";
-  const gridColor = isDark ? "rgba(255, 255, 255, 0.08)" : "#f1f4f8";
-
-  Object.values(__chartInstances || {}).forEach(chart => {
-    if (chart && chart.options) {
-      if (chart.options.plugins && chart.options.plugins.legend && chart.options.plugins.legend.labels) {
-        chart.options.plugins.legend.labels.color = textColor;
-      }
-      if (chart.options.scales) {
-        if (chart.options.scales.x && chart.options.scales.x.ticks) chart.options.scales.x.ticks.color = textColor;
-        if (chart.options.scales.y) {
-          if (chart.options.scales.y.ticks) chart.options.scales.y.ticks.color = textColor;
-          if (chart.options.scales.y.title) chart.options.scales.y.title.color = textColor;
-          if (chart.options.scales.y.grid) chart.options.scales.y.grid.color = gridColor;
-        }
-      }
-      chart.update();
-    }
-  });
-};
 
 function closeResult() {
   document.getElementById("resultOverlay").classList.remove("show");

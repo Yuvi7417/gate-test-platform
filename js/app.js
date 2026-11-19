@@ -4931,33 +4931,3 @@ window.renderEEAccordion = function (isUnlocked) {
     `;
   }).join("");
 };
-
-
-/* ==========================================================================
-   THEME TOGGLE SYSTEM (DARK / LIGHT MODE)
-   ========================================================================== */
-window.initTheme = function () {
-  const saved = localStorage.getItem("apex_theme");
-  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  if (saved === "dark" || (!saved && prefersDark)) {
-    document.body.classList.add("dark-mode");
-  } else {
-    document.body.classList.remove("dark-mode");
-  }
-};
-
-window.toggleTheme = function () {
-  const isDark = document.body.classList.toggle("dark-mode");
-  localStorage.setItem("apex_theme", isDark ? "dark" : "light");
-  if (typeof window.updateChartsTheme === "function") {
-    window.updateChartsTheme();
-  }
-};
-
-if (typeof document !== "undefined") {
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", window.initTheme);
-  } else {
-    window.initTheme();
-  }
-}
