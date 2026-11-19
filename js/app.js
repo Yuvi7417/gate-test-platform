@@ -4931,3 +4931,10 @@ window.renderEEAccordion = function (isUnlocked) {
     `;
   }).join("");
 };
+
+try {
+  localStorage.removeItem("apex_theme");
+  if (typeof document !== "undefined" && document.body) {
+    document.body.classList.remove("dark-mode");
+  }
+} catch (e) {}
