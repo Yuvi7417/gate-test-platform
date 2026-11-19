@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="css/style.css?v=18">
+  <link rel="stylesheet" href="css/style.css?v=19">
   <style>
     /* Security Styles */
     body {
@@ -128,6 +128,14 @@
 
 
 <body>
+  <script>
+    (function () {
+      const s = localStorage.getItem("apex_theme");
+      if (s === "dark" || (!s && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.body.classList.add("dark-mode");
+      }
+    })();
+  </script>
 
   <div class="shell">
     <!-- TOP BAR -->
@@ -141,6 +149,14 @@
       </div>
       <div class="top-actions">
         <!-- <div class="helpline"><span>Helpline</span><b>+91 90213 00500</b></div> -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+          <span class="theme-icon-sun">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </span>
+          <span class="theme-icon-moon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
         <button class="btn-login" id="loginBtn" onclick="openLogin()">Login</button>
         <div class="profile-chip" id="profileChip" onclick="toggleProfileMenu(event)">
           <div class="profile-avatar" id="profileAvatar">Y</div>
@@ -546,6 +562,15 @@
             <path d="M14 2v6h6" />
           </svg>
           Question Paper
+        </span>
+        <span class="pt-icon theme-toggle-btn-player" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+          <span class="theme-icon-sun">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </span>
+          <span class="theme-icon-moon">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+          Theme
         </span>
         <span class="pt-icon" id="fullscreenToggleBtn" onclick="toggleExamFullScreen()" title="Toggle Full Screen">
           <svg id="fsIconExpand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
@@ -961,7 +986,7 @@
     </div>
   </div>
 
-  <script src="js/app.js?v=73"></script>
+  <script src="js/app.js?v=74"></script>
   <script src="js/test-registry.js?v=27"></script>
   <script src="js/neet-registry.js?v=2"></script>
   <script src="js/full-test-registry.js?v=25"></script>
@@ -1103,7 +1128,7 @@
   <!-- Razorpay Checkout SDK -->
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-  <script src="js/exam.js?v=86"></script>
+  <script src="js/exam.js?v=87"></script>
   <script src="js/questions/pw-test-registry.js?v=5"></script>
   <script src="js/pw-level-registry.js?v=3"></script>
   <script src="js/demo.registry.js?v=31"></script>

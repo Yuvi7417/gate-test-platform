@@ -6664,3 +6664,704 @@ main {
 
 
 
+
+/* =========================================================================
+   APEX CORE - ADVANCE DARK MODE SYSTEM
+   Complete Eye-Care Optimized Theme with Maximum Contrast & Visual Polish
+   ========================================================================= */
+
+body.dark-mode {
+  --paper: #090d16;
+  --card: #121824;
+  --ink: #1a2332;
+  --ink-deep: #070a10;
+  --graphite: #e2e8f0;
+  --muted: #94a3b8;
+  --paper-line: rgba(255, 255, 255, 0.08);
+  background: #090d16 !important;
+  color: #e2e8f0 !important;
+  color-scheme: dark;
+}
+
+/* Theme Toggle Button in Topbar */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-right: 12px;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: var(--amber);
+  transform: scale(1.06);
+  box-shadow: 0 0 14px rgba(217, 142, 43, 0.3);
+}
+
+.theme-icon-sun {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon-moon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.dark-mode .theme-icon-sun {
+  display: flex;
+  color: #fbbf24;
+}
+
+body.dark-mode .theme-icon-moon {
+  display: none;
+}
+
+/* Theme Toggle in Player Header */
+.pt-icon.theme-toggle-btn-player {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.pt-icon.theme-toggle-btn-player:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Sidebar & Shell in Dark Mode */
+body.dark-mode .shell {
+  background: #090d16;
+}
+
+body.dark-mode .sidebar {
+  background: #0c111a !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .sidebar-link {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .sidebar-link:hover,
+body.dark-mode .sidebar-link.active {
+  background: rgba(217, 142, 43, 0.14) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .sidebar-link.active svg {
+  stroke: var(--amber);
+}
+
+/* Topbar in Dark Mode */
+body.dark-mode .topbar {
+  background: #070a10 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .profile-chip {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .profile-name {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .profile-email {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .profile-menu {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7) !important;
+}
+
+body.dark-mode .profile-menu-head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .pname {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .pemail {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .profile-logout:hover {
+  background: rgba(239, 68, 68, 0.15) !important;
+  color: #ef4444 !important;
+}
+
+/* Cards & Listing in Dark Mode */
+body.dark-mode .filter-tabs .tab {
+  background: #121824 !important;
+  color: #94a3b8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .filter-tabs .tab:hover {
+  background: #182232 !important;
+  color: #f8fafc !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+body.dark-mode .filter-tabs .tab.active {
+  background: var(--amber) !important;
+  color: #ffffff !important;
+  border-color: var(--amber) !important;
+}
+
+body.dark-mode .ts-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .ts-card:hover {
+  border-color: rgba(217, 142, 43, 0.45) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.dark-mode .ts-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .ts-meta-tag {
+  border-color: rgba(255, 255, 255, 0.09) !important;
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .ts-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .ts-footer b {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .search-bar {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #f8fafc !important;
+}
+
+/* Detail View in Dark Mode */
+body.dark-mode .detail-banner-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .detail-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .detail-desc {
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .detail-meta-row {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .detail-meta-row b {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .feature-chip {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: #cbd5e1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .batch-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .batch-card.selected {
+  border-color: var(--amber) !important;
+  background: rgba(217, 142, 43, 0.1) !important;
+}
+
+body.dark-mode .batch-name {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .schedule-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .schedule-name {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .schedule-date {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .enroll-bar {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.dark-mode .enroll-price {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .section-heading {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .crumb {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .crumb-active {
+  color: #f8fafc !important;
+}
+
+/* Accordion Tables in Dark Mode */
+body.dark-mode .pyq-subject-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .pyq-subject-head:hover {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+body.dark-mode .pyq-subj-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .pyq-done-badge {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #cbd5e1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .pyq-table th {
+  background: #0c111a !important;
+  color: #94a3b8 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .pyq-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .pyq-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+body.dark-mode .pyq-test-name-cell span {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .pyq-test-sublabel {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .pyq-topics-cell {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .pyq-btn-result {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dark-mode .pyq-btn-result:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .pyq-status-ready {
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.12) !important;
+}
+
+body.dark-mode .pyq-score-badge {
+  background: rgba(47, 158, 99, 0.15) !important;
+  color: #4ade80 !important;
+  border: 1px solid rgba(74, 222, 128, 0.25) !important;
+}
+
+/* Test Player in Dark Mode */
+body.dark-mode .player-overlay {
+  background: #090d16 !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .player-topbar {
+  background: #070a10 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .pt-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .pt-right .pt-icon {
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .pt-right .pt-icon:hover {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .player-sec-bar {
+  background: #0c111a !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .player-sec-btn {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .player-sec-btn.active {
+  background: #121824 !important;
+  color: #f8fafc !important;
+  border-bottom-color: var(--amber) !important;
+}
+
+body.dark-mode .player-center {
+  background: #090d16 !important;
+}
+
+body.dark-mode .player-q-head {
+  background: #0c111a !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .player-q-num {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .player-marks-pos {
+  color: #4ade80 !important;
+}
+
+body.dark-mode .player-marks-neg {
+  color: #f87171 !important;
+}
+
+body.dark-mode .player-q-body {
+  background: #090d16 !important;
+  color: #f1f5f9 !important;
+}
+
+body.dark-mode .player-q-text {
+  color: #f1f5f9 !important;
+}
+
+body.dark-mode .player-q-text * {
+  color: inherit !important;
+}
+
+body.dark-mode .player-q-text table {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dark-mode .player-q-text table th,
+body.dark-mode .player-q-text table td {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .player-q-text table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+body.dark-mode .player-option {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .player-option:hover {
+  background: #182232 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .player-option.selected {
+  background: rgba(47, 158, 99, 0.16) !important;
+  border-color: #2f9e63 !important;
+  color: #f1f5f9 !important;
+}
+
+body.dark-mode .player-option.opt-correct {
+  background: rgba(47, 158, 99, 0.22) !important;
+  border-color: #2f9e63 !important;
+  color: #4ade80 !important;
+}
+
+body.dark-mode .player-option.opt-wrong {
+  background: rgba(217, 83, 79, 0.22) !important;
+  border-color: #d9534f !important;
+  color: #f87171 !important;
+}
+
+body.dark-mode .player-sol-box {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .player-sidebar {
+  background: #0c111a !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .player-side-user {
+  background: #121824 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .player-side-user b {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .player-palette-sec {
+  background: #0c111a !important;
+}
+
+body.dark-mode .player-palette-title {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .bubble.not-visited {
+  background: #1e293b !important;
+  color: #94a3b8 !important;
+  border-color: #334155 !important;
+}
+
+body.dark-mode .player-bottom-bar {
+  background: #0c111a !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .btn-clear {
+  background: transparent !important;
+  color: #94a3b8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+body.dark-mode .btn-clear:hover {
+  color: #f8fafc !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+body.dark-mode .player-wm-item {
+  color: #ffffff !important;
+  opacity: 0.05 !important;
+}
+
+/* Result & Analysis Screen in Dark Mode */
+body.dark-mode .result-overlay {
+  background: #090d16 !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .result-header {
+  background: #070a10 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .result-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .result-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .result-stat-val {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .result-stat-lbl {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .result-subject-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .result-subject-name {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .rsc-metric-val {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .rsc-metric-lbl {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .rsc-score-val {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .rsc-score-lbl {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .rsc-accuracy {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .rsc-accuracy b {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .rsc-bottom-stat {
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+body.dark-mode .qm-box {
+  background: #0c111a !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .swot-card,
+body.dark-mode .leakage-card,
+body.dark-mode .pacing-card,
+body.dark-mode .topper-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Modals & Popups in Dark Mode */
+body.dark-mode .exam-overlay {
+  background: #090d16 !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .exam-instr-header {
+  background: #070a10 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .exam-instr-top-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .exam-instr-box {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .exam-instr-box-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .exam-instr-footer {
+  background: #0c111a !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .qp-modal-box {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .qp-modal-head {
+  background: #0c111a !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .qp-modal-head h3 {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .qp-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .login-box,
+body.dark-mode .modal-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .login-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .login-sub {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .form-input {
+  background: #090d16 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #f8fafc !important;
+}
+
+body.dark-mode .form-input:focus {
+  border-color: var(--amber) !important;
+}
+
+body.dark-mode .form-label {
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .learn-card,
+body.dark-mode .bookmark-card,
+body.dark-mode .test-card {
+  background: #121824 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .learn-title,
+body.dark-mode .test-title {
+  color: #f8fafc !important;
+}
+
+body.dark-mode .learn-valid,
+body.dark-mode .test-dates {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .test-card-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #94a3b8 !important;
+}
