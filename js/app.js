@@ -217,15 +217,16 @@ window.testSeries = [
     f: "neet",
     lang: "English",
     objective: "Objective (NEET Pattern)",
-    tests: 4,
+    tests: 8,
     startDate: "2026-05-01",
     endDate: "2027-05-31",
     session: "2026-2027",
-    desc: "Comprehensive NCERT-aligned chapter-wise practice tests for NEET UG aspirants. Features 90-question Subject-Wise Tests (SWT) with authentic NEET marking (+4 for correct, -1 for negative) and detailed NCERT page reference explanations.",
+    desc: "Comprehensive NCERT-aligned chapter-wise practice tests for NEET UG aspirants. Features 90-question Subject-Wise Tests (SWT) with authentic NEET marking (+4 for correct, -1 for negative), Assertion-Reason, Match Lists, and detailed NCERT page reference explanations.",
     features: [
       "Strictly 100% NCERT Word-to-Word Based",
       "Standard NEET Marking (+4 Correct, -1 Negative)",
       "90 Questions Subject-Wise Tests (SWT)",
+      "Assertion-Reason & Match-Column NEET Drills",
       "Detailed NCERT Explanations with Page Citations",
       "Time-Bound Exam Simulation (60 Minutes)",
       "Sectional Speed & Accuracy Analytics",
@@ -239,10 +240,14 @@ window.testSeries = [
       },
     ],
     schedule: [
-      ["SWT 01 - Biotechnology: Principles & Processes (Part-1)", "May 10, 2026"],
-      ["SWT 02 - Biotechnology: Principles & Processes (Part-2)", "May 15, 2026"],
-      ["SWT 03 - Biotechnology: Principles & Processes (Part-3)", "May 20, 2026"],
-      ["SWT 04 - Biotechnology: Principles & Processes (Part-4 - NCERT Exemplar & Advanced)", "May 25, 2026"],
+      ["SWT 01 - Biotechnology: Principles & Processes (NCERT Core - Part 1)", "May 10, 2026"],
+      ["SWT 02 - Biotechnology: Principles & Processes (NCERT Core - Part 2)", "May 12, 2026"],
+      ["SWT 03 - Biotechnology: Principles & Processes (NCERT Core - Part 3)", "May 15, 2026"],
+      ["SWT 04 - Biotechnology: Principles & Processes (NCERT Exemplar & Advanced)", "May 18, 2026"],
+      ["SWT 05 - Biotechnology: Principles & Processes (NEET PYQ & Match-List Drill)", "May 20, 2026"],
+      ["SWT 06 - Biotechnology: Principles & Processes (Assertion-Reason & Statement Drill)", "May 22, 2026"],
+      ["SWT 07 - Biotechnology: Principles & Processes (Diagram & High-Yield PYQs)", "May 25, 2026"],
+      ["SWT 08 - Biotechnology: Principles & Processes (Rapid Speed Sprint)", "May 28, 2026"],
     ],
     oldPrice: "₹499",
     price: "FREE",
@@ -1172,7 +1177,7 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026" || id === "pw-cs-gate") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026" || id === "pw-cs-gate" || id === "neet-ug-practice") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
@@ -1848,6 +1853,7 @@ window.launchPYQTest = function (rawName, enrolled, seriesId = "cse-gate-2027") 
     currentDetailId = seriesId;
   }
   let isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries(seriesId));
+  if (seriesId === "neet-ug-practice") isEnrolled = true;
   if (!isEnrolled) {
     const isFree = (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
     if (isFree) isEnrolled = true;
@@ -2048,6 +2054,93 @@ window.PYQ_EE_TOPIC_MAP = {
   "Mock Test 5": "Complete GATE 2027 EE Syllabus (Mock 5)",
   "Mock Test 6": "Complete GATE 2027 EE Syllabus (Mock 6)",
   "Mock Test 7": "Complete GATE 2027 EE Syllabus (Mock 7)"
+};
+
+/* ==========================================================================
+   NEET UG Chapter & Subject Accordion Configuration
+   ========================================================================== */
+
+window.NEET_SUBJECTS = [
+  {
+    id: "neet_bio_principles",
+    name: "Biotechnology: Principles and Processes (Chapter Drill & PYQs)",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/><circle cx="12" cy="12" r="3"/></svg>`,
+    iconBg: "#d1fae5",
+    iconColor: "#059669",
+    regex: /(biotechnology: principles|principles and processes|biotechnology.*principles|swt\s*0[1-8])/i
+  },
+  {
+    id: "neet_bio_apps",
+    name: "Biotechnology and Its Applications",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 2 4 4-14 14-4-4L18 2zM15 5l4 4M5 15l-3 5 5-3M14 6l-2-2"/></svg>`,
+    iconBg: "#cffafe",
+    iconColor: "#0891b2",
+    comingSoon: true,
+    regex: /(biotechnology and its applications|applications of biotechnology)/i
+  },
+  {
+    id: "neet_genetics",
+    name: "Genetics & Molecular Basis of Inheritance",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M18 6a9 9 0 0 1-9 9M6 18a9 9 0 0 1 9-9"/></svg>`,
+    iconBg: "#ede9fe",
+    iconColor: "#7c3aed",
+    comingSoon: true,
+    regex: /(genetics|molecular basis|inheritance)/i
+  },
+  {
+    id: "neet_plant",
+    name: "Plant Physiology & Photosynthesis",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>`,
+    iconBg: "#dcfce7",
+    iconColor: "#16a34a",
+    comingSoon: true,
+    regex: /(plant physiology|photosynthesis|respiration in plants)/i
+  },
+  {
+    id: "neet_human",
+    name: "Human Physiology & Health",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>`,
+    iconBg: "#ffe4e6",
+    iconColor: "#e11d48",
+    comingSoon: true,
+    regex: /(human physiology|human health|locomotion|neural control)/i
+  },
+  {
+    id: "neet_physics",
+    name: "NEET Physics - Mechanics, Optics & Modern Physics",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M12 2a10 5 0 0 1 0 20 10 5 0 0 1 0-20"/><path d="M2 12a5 10 0 0 1 20 0 5 10 0 0 1-20 0"/></svg>`,
+    iconBg: "#dbeafe",
+    iconColor: "#2563eb",
+    comingSoon: true,
+    regex: /(neet physics|mechanics|optics|modern physics)/i
+  },
+  {
+    id: "neet_chemistry",
+    name: "NEET Chemistry - Organic, Inorganic & Physical",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M10 3v6l-4 8a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-8V3"/></svg>`,
+    iconBg: "#fef3c7",
+    iconColor: "#d97706",
+    comingSoon: true,
+    regex: /(neet chemistry|organic chemistry|inorganic chemistry|physical chemistry)/i
+  }
+];
+
+window.NEET_TOPIC_MAP = {
+  "SWT 01 - Biotechnology: Principles & Processes (NCERT Core - Part 1)": "Principles of Biotechnology, History, Tools of rDNA, Restriction Endonucleases, Agarose Gel Electrophoresis",
+  "SWT 02 - Biotechnology: Principles & Processes (NCERT Core - Part 2)": "Cloning Vectors, pBR322 Features, Selectable Markers, Competent Host, Transformation & Biolistics",
+  "SWT 03 - Biotechnology: Principles & Processes (NCERT Core - Part 3)": "Polymerase Chain Reaction (PCR), Bioreactors (Sparged & Stirred Tank), Downstream Processing",
+  "SWT 04 - Biotechnology: Principles & Processes (NCERT Exemplar & Advanced)": "NCERT Exemplar Problems, Advanced Conceptual Analysis, Experimental Techniques",
+  "SWT 05 - Biotechnology: Principles & Processes (NEET PYQ & Match-List Drill)": "Authentic NEET 15-Year PYQs, Match List-I with List-II Column Questions, Enzymes & Vector Mechanisms",
+  "SWT 06 - Biotechnology: Principles & Processes (Assertion-Reason & Statement Drill)": "High-Yield Assertion A & Reason R, Statement I & Statement II Critical Reasoning Questions",
+  "SWT 07 - Biotechnology: Principles & Processes (Diagram & High-Yield PYQs)": "Figure & Schematic Analysis, Gel Electrophoresis Bands, PCR Cycle Steps, Sparged Stirred Tank Diagrams",
+  "SWT 08 - Biotechnology: Principles & Processes (Rapid Speed Sprint)": "Complete Chapter Rapid Speed Sprint Test, Exam-Readiness Booster"
 };
 
 window.PYQ_EE_DEFAULT_TESTS = [
@@ -3649,6 +3742,10 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).forEach(t => {
       registeredMap.set(t.name, { ...t });
     });
+  } else if (seriesId === "neet-ug-practice") {
+    (window.NEET_DEFAULT_TESTS || []).forEach(t => {
+      registeredMap.set(t.name, { ...t });
+    });
   }
 
   // 2. Tests from apexTestRegistry
@@ -3735,12 +3832,35 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   // Render each subject card
   let html = `<div class="pyq-accordion-wrap">`;
 
-  const rawTargetSubjects = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []);
-  const targetSubjects = (seriesId === "cse-gate-2027")
+  const rawTargetSubjects = (seriesId === "neet-ug-practice")
+    ? (window.NEET_SUBJECTS || [])
+    : ((seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []));
+  const targetSubjects = (seriesId === "cse-gate-2027" || seriesId === "neet-ug-practice")
     ? rawTargetSubjects
     : rawTargetSubjects.filter(s => s.id !== "isro" && s.id !== "gate_pyq");
-  const activeTopicMap = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {});
+  const activeTopicMap = (seriesId === "neet-ug-practice")
+    ? (window.NEET_TOPIC_MAP || {})
+    : ((seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {}));
   targetSubjects.forEach((subj) => {
+    // Sleek Coming Soon accordion row
+    if (subj.comingSoon) {
+      html += `
+        <div class="pyq-subject-card coming-soon" id="pyq-card-${subj.id}">
+          <div class="pyq-subject-head" style="cursor: default; opacity: 0.85;">
+            <div class="pyq-head-left">
+              <div class="pyq-icon-box" style="background:${subj.iconBg}; color:${subj.iconColor};">
+                ${subj.iconType === "svg" ? subj.iconVal : subj.iconVal}
+              </div>
+              <div class="pyq-subj-title">${subj.name}</div>
+            </div>
+            <div class="pyq-head-right">
+              <span class="pyq-done-badge" style="background: rgba(148, 163, 184, 0.15); color: #64748b; font-weight: 600;">Coming Soon</span>
+            </div>
+          </div>
+        </div>`;
+      return;
+    }
+
     // Find tests matching this subject
     const subjTests = allTests.filter(t => {
       if ((subj.id === "isro" || subj.id === "gate_pyq") && seriesId !== "cse-gate-2027") return false;
@@ -3843,7 +3963,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       }
 
       // Check if test is free/unlocked
-      const isFree = t.isFree === true || t.free === true || t.status === "free" || t.status === "unlocked" ||
+      const isFree = t.isFree === true || t.free === true || t.status === "free" || t.status === "unlocked" || seriesId === "neet-ug-practice" ||
         (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || (bracket && window.PYQ_FREE_TESTS.includes(bracket)) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
       const canAttempt = isEnrolled || isFree;
 

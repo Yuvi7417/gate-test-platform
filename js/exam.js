@@ -1022,7 +1022,7 @@ window.filterByType = function () {
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
   grid.className = "test-list-grid";
-  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "pw-cs-gate-2026" || t.id === "pw-cs-gate") {
+  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "pw-cs-gate-2026" || t.id === "pw-cs-gate" || t.id === "neet-ug-practice") {
     if (window.renderPYQAccordion) {
       if (grid) {
         grid.classList.add("pyq-full-width");
@@ -1292,7 +1292,7 @@ function openInstructions(testName, seriesId) {
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
     if (customDur) instrDurationElement.textContent = customDur + " minutes";
-    else if (isNeet) instrDurationElement.textContent = (testName || "").includes("Part-4") ? "30 minutes" : "60 minutes";
+    else if (isNeet) instrDurationElement.textContent = (testName || "").includes("Part-4") ? "30 minutes" : ((testName || "").includes("Sprint") || (testName || "").includes("SWT 08") ? "20 minutes" : "60 minutes");
     else if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
     else if (isFullTest || isMixedSubject) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
@@ -1631,7 +1631,13 @@ async function startPlayer(testName, fetchedQuestions) {
       playerSections = null;
     }
   } else if (isNeetTest) {
-    playerDurationMins = (playerQuestions.length === 45 || testNameUpper.includes("PART-4")) ? 30 : 60;
+    if (playerQuestions.length <= 30 || testNameUpper.includes("SWT 08") || testNameUpper.includes("SPRINT")) {
+      playerDurationMins = 20;
+    } else if (playerQuestions.length === 45 || testNameUpper.includes("PART-4")) {
+      playerDurationMins = 30;
+    } else {
+      playerDurationMins = 60;
+    }
     playerSections = null;
   } else if (isFullTest || isMixedSubjectTest) {
     playerDurationMins = 180;
