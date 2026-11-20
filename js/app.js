@@ -1372,11 +1372,21 @@ async function viewBookmark(testId, qIndex) {
     document.getElementById("bookmarkDetailModal").style.display = "flex";
 
     if (window.MathJax && window.MathJax.typesetPromise) {
-      window.MathJax.typesetPromise([
+      const targets = [
         document.getElementById("bookmarkModalQText"),
         document.getElementById("bookmarkModalOptions"),
         document.getElementById("bookmarkModalSolutionContent")
-      ]).catch(err => console.error("MathJax typeset failed:", err));
+      ].filter(Boolean);
+      if (window.MathJax.typesetClear) {
+        try { window.MathJax.typesetClear(targets); } catch (e) {}
+      }
+      if (window.MathJax.startup && window.MathJax.startup.promise) {
+        window.MathJax.startup.promise = window.MathJax.startup.promise
+          .then(() => window.MathJax.typesetPromise(targets))
+          .catch(err => console.error("MathJax typeset failed:", err));
+      } else {
+        window.MathJax.typesetPromise(targets).catch(err => console.error("MathJax typeset failed:", err));
+      }
     }
   } catch (err) {
     console.error(err);

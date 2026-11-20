@@ -1827,7 +1827,17 @@ function openQuestionPaper() {
   document.getElementById("qpaperOverlay").classList.add("show");
 
   if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise([body]).catch((err) => console.log('MathJax typeset failed: ' + err.message));
+    const targets = [body].filter(Boolean);
+    if (window.MathJax.typesetClear) {
+      try { window.MathJax.typesetClear(targets); } catch (e) {}
+    }
+    if (window.MathJax.startup && window.MathJax.startup.promise) {
+      window.MathJax.startup.promise = window.MathJax.startup.promise
+        .then(() => window.MathJax.typesetPromise(targets))
+        .catch((err) => console.log('MathJax typeset failed: ' + err.message));
+    } else {
+      window.MathJax.typesetPromise(targets).catch((err) => console.log('MathJax typeset failed: ' + err.message));
+    }
   }
 }
 
@@ -2070,11 +2080,21 @@ function renderPlayerQuestion(i) {
   updatePlayerCounts();
 
   if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise([
+    const targets = [
       document.getElementById("playerQText"),
       document.getElementById("playerOptions"),
       document.getElementById("playerSolutionBox")
-    ]).catch((err) => console.log('MathJax typeset failed: ' + err.message));
+    ].filter(Boolean);
+    if (window.MathJax.typesetClear) {
+      try { window.MathJax.typesetClear(targets); } catch (e) {}
+    }
+    if (window.MathJax.startup && window.MathJax.startup.promise) {
+      window.MathJax.startup.promise = window.MathJax.startup.promise
+        .then(() => window.MathJax.typesetPromise(targets))
+        .catch((err) => console.log('MathJax typeset failed: ' + err.message));
+    } else {
+      window.MathJax.typesetPromise(targets).catch((err) => console.log('MathJax typeset failed: ' + err.message));
+    }
   }
   if (window.Prism) {
     Prism.highlightAllUnder(document.getElementById("playerQText"));
@@ -3791,7 +3811,17 @@ window.openQuestionPreview = function(idx) {
   modal.classList.add("show");
 
   if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise([modalBody]).catch(() => {});
+    const targets = [modalBody].filter(Boolean);
+    if (window.MathJax.typesetClear) {
+      try { window.MathJax.typesetClear(targets); } catch (e) {}
+    }
+    if (window.MathJax.startup && window.MathJax.startup.promise) {
+      window.MathJax.startup.promise = window.MathJax.startup.promise
+        .then(() => window.MathJax.typesetPromise(targets))
+        .catch(() => {});
+    } else {
+      window.MathJax.typesetPromise(targets).catch(() => {});
+    }
   }
   if (window.Prism && window.Prism.highlightAllUnder) {
     window.Prism.highlightAllUnder(modalBody);
