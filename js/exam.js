@@ -1671,24 +1671,26 @@ async function startPlayer(testName, fetchedQuestions) {
 
   playerTimerSecs = playerDurationMins * 60;
 
-  // Cloud Sync Resume Check (Disabled as per user request to always start fresh)
-  // const token = localStorage.getItem('apexcore_token');
-  // if (token && !solutionMode) {
-  //   try {
-  //     const res = await fetch(`/api/sync/teststate/${encodeURIComponent(testName)}`, {
-  //       headers: { 'Authorization': `Bearer ${token}` }
-  //     });
-  //     const data = await res.json();
-  //     if (data.success && data.testState) {
-  //       playerState = data.testState.playerState;
-  //       playerCurrent = data.testState.playerCurrent || 0;
-  //       playerTimerSecs = data.testState.playerTimerSecs || playerTimerSecs;
-  //       console.log("Resumed test from cloud state");
-  //     }
-  //   } catch(err) {
-  //     console.error("Failed to fetch cloud test state", err);
-  //   }
-  // }
+  // Local Safe Resume Check (Restore paused/saved test state if available)
+  const currentTName = (testName || "").trim();
+  const testSeriesId = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
+  const saveKey = "apex_saved_test_" + (testSeriesId ? testSeriesId + "_" : "") + currentTName;
+  if (!solutionMode) {
+    try {
+      const rawSaved = localStorage.getItem(saveKey) || localStorage.getItem("apex_saved_test_" + currentTName);
+      if (rawSaved) {
+        const savedData = JSON.parse(rawSaved);
+        if (savedData && savedData.playerState && typeof savedData.playerTimerSecs === "number" && savedData.playerTimerSecs > 0) {
+          playerState = savedData.playerState;
+          playerCurrent = typeof savedData.playerCurrent === "number" ? savedData.playerCurrent : 0;
+          playerTimerSecs = savedData.playerTimerSecs;
+          console.log("Resuming test from saved state at " + playerTimerSecs + "s");
+        }
+      }
+    } catch(err) {
+      console.warn("Failed to restore saved local state", err);
+    }
+  }
 
   renderPlayer();
 
@@ -1782,34 +1784,117 @@ function renderPlayer() {
     if (submitWrap) submitWrap.style.display = "block";
   }
 
+  startPlayerTimer();
+}
+
+function startPlayerTimer() {
   if (playerTimerInterval) clearInterval(playerTimerInterval);
 
   if (solutionMode) {
-    document.getElementById("playerTimer").textContent = "Solution Mode";
-  } else {
-    playerTimerInterval = setInterval(() => {
-      playerTimerSecs--;
-
-      if (playerState[playerCurrent]) {
-        playerState[playerCurrent].timeSpent = (playerState[playerCurrent].timeSpent || 0) + 1;
-      }
-
-      if (playerTimerSecs <= 0) {
-        clearInterval(playerTimerInterval);
-        playerTimerSecs = 0;
-        playerSubmit();
-        return;
-      }
-      const m = Math.floor(playerTimerSecs / 60),
-        s = playerTimerSecs % 60;
-      document.getElementById("playerTimer").textContent =
-        String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
-
-      // Auto-sync state every 30 seconds
-      if (playerTimerSecs % 30 === 0) syncTestState();
-    }, 1000);
+    const timerEl = document.getElementById("playerTimer");
+    if (timerEl) timerEl.textContent = "Solution Mode";
+    return;
   }
+
+  const m0 = Math.floor(playerTimerSecs / 60), s0 = playerTimerSecs % 60;
+  const timerEl0 = document.getElementById("playerTimer");
+  if (timerEl0) timerEl0.textContent = String(m0).padStart(2, "0") + ":" + String(s0).padStart(2, "0");
+
+  playerTimerInterval = setInterval(() => {
+    playerTimerSecs--;
+
+    if (playerState[playerCurrent]) {
+      playerState[playerCurrent].timeSpent = (playerState[playerCurrent].timeSpent || 0) + 1;
+    }
+
+    if (playerTimerSecs <= 0) {
+      clearInterval(playerTimerInterval);
+      playerTimerSecs = 0;
+      playerSubmit();
+      return;
+    }
+    const m = Math.floor(playerTimerSecs / 60),
+      s = playerTimerSecs % 60;
+    const timerEl = document.getElementById("playerTimer");
+    if (timerEl) {
+      timerEl.textContent = String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+    }
+
+    // Auto-sync state every 30 seconds
+    if (playerTimerSecs % 30 === 0) syncTestState();
+  }, 1000);
 }
+
+window.startPlayerTimer = startPlayerTimer;
+
+// Test Pause and Save modal controllers
+window.openTestPauseModal = function () {
+  const overlay = document.getElementById("playerOverlay");
+  if (!overlay || !overlay.classList.contains("show") || solutionMode) return;
+
+  if (playerTimerInterval) clearInterval(playerTimerInterval);
+
+  const m = Math.max(0, Math.floor(playerTimerSecs / 60));
+  const s = Math.max(0, playerTimerSecs % 60);
+  const timeStr = String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+
+  let answeredCount = 0;
+  const totalQ = (playerQuestions && playerQuestions.length) || 10;
+  Object.values(playerState || {}).forEach(st => {
+    if (st && (st.answer !== null && st.answer !== undefined && st.answer !== "" || st.marked)) answeredCount++;
+  });
+
+  const testTitle = (document.getElementById("playerTopTitle") ? document.getElementById("playerTopTitle").textContent : "") || pendingTestName || "Active Test";
+
+  const modal = document.getElementById("testPauseModal");
+  if (modal) {
+    const nameEl = document.getElementById("pauseModalTestName");
+    const timeEl = document.getElementById("pauseModalTimeLeft");
+    const ansEl = document.getElementById("pauseModalAnswered");
+
+    if (nameEl) nameEl.textContent = testTitle;
+    if (timeEl) timeEl.textContent = timeStr;
+    if (ansEl) ansEl.textContent = `${answeredCount} / ${totalQ}`;
+
+    modal.classList.add("show");
+    modal.style.display = "flex";
+  }
+
+  // Persist current attempt safely to localStorage
+  try {
+    const rawTName = (testTitle || "").trim();
+    const testSeriesId = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
+    const saveKey = "apex_saved_test_" + (testSeriesId ? testSeriesId + "_" : "") + rawTName;
+    localStorage.setItem(saveKey, JSON.stringify({
+      playerState,
+      playerCurrent,
+      playerTimerSecs,
+      testName: rawTName,
+      seriesId: testSeriesId,
+      savedAt: Date.now()
+    }));
+  } catch (e) {
+    console.warn("Could not save test state:", e);
+  }
+};
+
+window.resumeActiveTest = function () {
+  const modal = document.getElementById("testPauseModal");
+  if (modal) {
+    modal.classList.remove("show");
+    modal.style.display = "none";
+  }
+  startPlayerTimer();
+};
+
+window.saveAndExitTest = function () {
+  const modal = document.getElementById("testPauseModal");
+  if (modal) {
+    modal.classList.remove("show");
+    modal.style.display = "none";
+  }
+  exitPlayer();
+};
 
 function exitPlayer() {
   examTabSwitchCount = 0;
@@ -2652,6 +2737,13 @@ function confirmSubmit() {
     timeTakenSecs,
     answers: playerState
   };
+
+  // Clear any paused/saved test state upon final submission
+  try {
+    const rawTName = (payload.testName || "").trim();
+    localStorage.removeItem("apex_saved_test_" + (testSeriesId ? testSeriesId + "_" : "") + rawTName);
+    localStorage.removeItem("apex_saved_test_" + rawTName);
+  } catch (e) {}
 
   // Immediate local update so user can see result right away
   const payLower = (payload.testName || "").trim().toLowerCase();

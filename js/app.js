@@ -37,20 +37,79 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("popstate", (e) => {
-  // Close any open overlays/modals when navigating back
-  document.querySelectorAll('.show, .open').forEach(el => {
-    if (el.id && (el.id.includes('Overlay') || el.id.includes('Modal'))) {
-      el.classList.remove('show', 'open');
+  // 1. If test player is active, INTERCEPT back gesture so test is not cancelled!
+  const playerOverlay = document.getElementById("playerOverlay");
+  if (playerOverlay && playerOverlay.classList.contains("show")) {
+    if (typeof solutionMode !== "undefined" && solutionMode) {
+      if (typeof exitPlayer === "function") exitPlayer();
+      return;
     }
-  });
-
-  // Also reset body overflow which might have been hidden by overlays
-  document.body.style.overflow = "";
-
-  // Specific cleanups if certain overlays were open
-  if (typeof playerTimerInterval !== 'undefined' && playerTimerInterval) {
-    clearInterval(playerTimerInterval);
+    // Re-push state so page history doesn't leave the test
+    history.pushState({ view: "player" }, "", "");
+    if (typeof openTestPauseModal === "function") {
+      openTestPauseModal();
+    }
+    return;
   }
+
+  // 2. Close any open sub-modals or overlays first without navigating the page
+  const pauseModal = document.getElementById("testPauseModal");
+  if (pauseModal && pauseModal.classList.contains("show")) {
+    pauseModal.classList.remove("show");
+    pauseModal.style.display = "none";
+    return;
+  }
+
+  const qpModal = document.getElementById("questionPreviewModal");
+  if (qpModal && qpModal.classList.contains("show")) {
+    if (typeof closeQuestionPreviewModal === "function") closeQuestionPreviewModal();
+    return;
+  }
+
+  const qpaperOverlay = document.getElementById("qpaperOverlay");
+  if (qpaperOverlay && qpaperOverlay.classList.contains("show")) {
+    if (typeof closeQuestionPaper === "function") closeQuestionPaper();
+    return;
+  }
+
+  const snapModal = document.getElementById("solutionSnapshotModal");
+  if (snapModal && snapModal.classList.contains("show")) {
+    if (typeof closeQuestionSnapshot === "function") closeQuestionSnapshot();
+    return;
+  }
+
+  const bookmarkModal = document.getElementById("bookmarkDetailModal");
+  if (bookmarkModal && bookmarkModal.style.display !== "none") {
+    bookmarkModal.style.display = "none";
+    return;
+  }
+
+  const calcModal = document.getElementById("calcModal");
+  if (calcModal && calcModal.classList.contains("show")) {
+    if (typeof calcClose === "function") calcClose();
+    return;
+  }
+
+  const loginModal = document.getElementById("loginModal");
+  if (loginModal && loginModal.classList.contains("show")) {
+    if (typeof closeLogin === "function") closeLogin();
+    return;
+  }
+
+  const instrOverlay = document.getElementById("examOverlay");
+  if (instrOverlay && instrOverlay.classList.contains("show")) {
+    if (typeof closeInstructions === "function") closeInstructions();
+    return;
+  }
+
+  const resultOverlay = document.getElementById("resultOverlay");
+  if (resultOverlay && resultOverlay.classList.contains("show")) {
+    if (typeof closeResult === "function") closeResult();
+    return;
+  }
+
+  // 3. Clean up overflow and navigate main view
+  document.body.style.overflow = "";
 
   if (!e.state) {
     showView("list", false);
@@ -58,23 +117,30 @@ window.addEventListener("popstate", (e) => {
   }
 
   if (e.state.view === "detail") {
-    if (typeof openDetail === "function") {
+    if (typeof openDetail === "function" && e.state.param) {
       openDetail(e.state.param, false);
+    } else {
+      showView("list", false);
     }
   } else if (e.state.view === "tests") {
-    if (typeof openTestList === "function") {
+    if (typeof openTestList === "function" && e.state.param) {
       openTestList(e.state.param, false);
+    } else {
+      showView("list", false);
     }
-  } else if (id === "ee-gate-pyq-2027") {
-    const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
-    if (dSchedule) {
-      dSchedule.className = "ee-accordion-schedule-wrap";
-      dSchedule.style.display = "block";
-      dSchedule.style.width = "100%";
-      dSchedule.innerHTML = window.renderEEAccordion ? window.renderEEAccordion(enrolled) : "";
+  } else if (e.state.view === "learn") {
+    if (typeof openLearn === "function") {
+      openLearn();
+    } else {
+      showView("learn", false);
     }
+  } else if (e.state.view === "bookmarks") {
+    showView("bookmarks", false);
+    if (typeof renderBookmarks === "function") renderBookmarks();
+  } else if (e.state.view === "contact") {
+    showView("contact", false);
   } else {
-    showView(e.state.view, false);
+    showView(e.state.view || "list", false);
   }
 });
 

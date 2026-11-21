@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="css/style.css?v=22">
+  <link rel="stylesheet" href="css/style.css?v=23">
   <style>
     /* Security Styles */
     body {
@@ -598,6 +598,13 @@
           </svg>
           Question Paper
         </span>
+        <span class="pt-icon" onclick="if (typeof openTestPauseModal === 'function') openTestPauseModal();" title="Pause & Save Progress" style="color: #f59e0b;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:15px;height:15px;">
+            <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+            <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+          </svg>
+          Pause & Save
+        </span>
         <span class="pt-icon" id="fullscreenToggleBtn" onclick="toggleExamFullScreen()" title="Toggle Full Screen">
           <svg id="fsIconExpand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
             <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
@@ -848,6 +855,47 @@
           <button class="summary-yes" onclick="confirmSubmit()">Yes</button>
           <button class="summary-no" onclick="closeSummaryModal()">No</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== TEST PAUSE & PROGRESS SAVED MODAL ===================== -->
+  <div class="pause-overlay" id="testPauseModal" style="display: none;">
+    <div class="pause-card">
+      <div class="pause-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="12" cy="12" r="10" stroke-width="2"/>
+          <line x1="10" y1="9" x2="10" y2="15" stroke-linecap="round"/>
+          <line x1="14" y1="9" x2="14" y2="15" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="pause-title">Test Paused & Progress Saved</div>
+      <div class="pause-test-name" id="pauseModalTestName">Active Test</div>
+      
+      <div class="pause-stats-row">
+        <div class="pause-stat-item">
+          <div class="pause-stat-val" id="pauseModalTimeLeft">--:--</div>
+          <div class="pause-stat-lbl">Time Left</div>
+        </div>
+        <div class="pause-stat-sep"></div>
+        <div class="pause-stat-item">
+          <div class="pause-stat-val" id="pauseModalAnswered">0 / 0</div>
+          <div class="pause-stat-lbl">Questions Attempted</div>
+        </div>
+      </div>
+
+      <p class="pause-desc">
+        Aapka test progress safe save ho chuka hai. Agli baar jab bhi aap ye test open karenge, test theek <b>isi time aur answers</b> ke sath wahi se shuru hoga!
+      </p>
+
+      <div class="pause-actions">
+        <button class="pause-btn-resume" onclick="resumeActiveTest()">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Resume Test
+        </button>
+        <button class="pause-btn-exit" onclick="saveAndExitTest()">
+          Save & Exit
+        </button>
       </div>
     </div>
   </div>
@@ -1110,7 +1158,7 @@
       });
     })();
   </script>
-  <script src="js/app.js?v=84"></script>
+  <script src="js/app.js?v=85"></script>
   <script src="js/test-registry.js?v=27"></script>
   <script src="js/neet-registry.js?v=3"></script>
   <script src="js/full-test-registry.js?v=25"></script>
@@ -1270,7 +1318,7 @@
   <!-- Razorpay Checkout SDK -->
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-  <script src="js/exam.js?v=96"></script>
+  <script src="js/exam.js?v=97"></script>
   <script src="js/questions/pw-test-registry.js?v=5"></script>
   <script src="js/pw-level-registry.js?v=3"></script>
   <script src="js/demo.registry.js?v=31"></script>

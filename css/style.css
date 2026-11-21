@@ -6677,5 +6677,153 @@ main {
   white-space: nowrap;
 }
 
+/* ==========================================================================
+   Test Pause & Safe Progress Modal Styles
+   ========================================================================== */
+.pause-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: pauseFadeIn 0.2s ease-out;
+}
+.pause-overlay.show {
+  display: flex !important;
+}
+@keyframes pauseFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.pause-card {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 460px;
+  width: 100%;
+  padding: 32px 28px;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  animation: pausePop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes pausePop {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.pause-icon {
+  width: 64px;
+  height: 64px;
+  background: #fef3c7;
+  color: #d97706;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.pause-icon svg {
+  width: 32px;
+  height: 32px;
+}
+.pause-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+.pause-test-name {
+  font-size: 13.5px;
+  color: #64748b;
+  margin-bottom: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+}
+.pause-stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+.pause-stat-item {
+  flex: 1;
+}
+.pause-stat-val {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e293b;
+  font-variant-numeric: tabular-nums;
+}
+.pause-stat-lbl {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-top: 3px;
+}
+.pause-stat-sep {
+  width: 1px;
+  height: 34px;
+  background: #cbd5e1;
+}
+.pause-desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #475569;
+  margin-bottom: 24px;
+}
+.pause-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pause-btn-resume {
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 11px;
+  padding: 13px 20px;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+}
+.pause-btn-resume:hover {
+  background: #0369a1;
+  transform: translateY(-1px);
+}
+.pause-btn-exit {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+  border-radius: 11px;
+  padding: 11px 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.pause-btn-exit:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
 
 
