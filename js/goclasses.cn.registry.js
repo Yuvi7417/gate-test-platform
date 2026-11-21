@@ -8,6 +8,7 @@ registerTest({
     "subject": "cn",
     "date": "Nov 03, 2026",
     "duration": "30 Min",
+    "isFree": "true",
     "totalMarks": 10,
     "topicsCovered": "IPv4 Addressing & Routing (Practice Set 1)",
     "questions": [
@@ -164,6 +165,7 @@ registerTest({
     "subject": "cn",
     "date": "Nov 03, 2026",
     "duration": "30 Min",
+    "isFree": "true",
     "totalMarks": 10,
     "topicsCovered": "IPv4 Addressing & Routing (Practice Set 2)",
     "questions": [
@@ -711,6 +713,7 @@ registerTest({
     "subject": "cn",
     "date": "Nov 03, 2026",
     "duration": "20 Min",
+    "isFree": "true",
     "totalMarks": 7,
     "topicsCovered": "Error Detection & Correction Practice Questions",
     "questions": [
