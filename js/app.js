@@ -437,10 +437,10 @@ window.testSeries = [
   {
     id: "cse-dpp-2027",
     code: "CSE",
-    learnTag: "GO CLASSES DPP",
+    learnTag: "Apex CLASSES DPP",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
-    title: "GO Classes CSE DPP Test Series",
+    title: "Apex Classes CSE DPP Test Series",
     f: "gate",
     lang: "English",
     objective: "Objective",
@@ -1220,7 +1220,7 @@ function openDetail(id, pushHistory = true) {
 
   const dSchedule = document.getElementById("dSchedule");
   if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026" || id === "pw-cs-gate" || id === "neet-ug-practice" || id === "cse-dpp-2027") {
-    const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
+    const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || id === "cse-dpp-2027" || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
       dSchedule.style.display = "block";
@@ -1900,6 +1900,7 @@ window.togglePYQAccordion = function (cardEl) {
 };
 
 window.isEnrolledSeries = function (id) {
+  if (id === "cse-dpp-2027" || id === "neet-ug-practice") return true;
   if (typeof enrolledIds !== "undefined" && Array.isArray(enrolledIds)) {
     return enrolledIds.includes(id);
   }
@@ -4320,7 +4321,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       return true;
     });
 
-    const isInitiallyOpen = false; // Always closed initially, only opens when clicked
+    const isInitiallyOpen = (seriesId === "cse-dpp-2027"); // Auto-expand when single subject series
     const totalCount = subjTests.length;
 
     html += `

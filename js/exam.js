@@ -708,7 +708,7 @@ async function fetchUserResults(retries = 5) {
         }
       }
       const detailView = document.getElementById("view-detail");
-      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && (currentDetailId === "cse-gate-2027" || currentDetailId === "cs-gate-pyq" || currentDetailId === "pw-cs-gate-2026" || currentDetailId === "pw-cs-gate")) {
+      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && (currentDetailId === "cse-gate-2027" || currentDetailId === "cs-gate-pyq" || currentDetailId === "pw-cs-gate-2026" || currentDetailId === "pw-cs-gate" || currentDetailId === "cse-dpp-2027")) {
         if (typeof openDetail === 'function') {
           openDetail(currentDetailId, false);
         }
@@ -969,7 +969,7 @@ function openLearn() {
 
 function renderLearn() {
   const wrap = document.getElementById("learnGrid");
-  const active = testSeries.filter((t) => enrolledIds.includes(t.id));
+  const active = testSeries.filter((t) => enrolledIds.includes(t.id) || t.id === "cse-dpp-2027");
   if (active.length === 0) {
     wrap.innerHTML = `
           <div class="empty-state">
@@ -1025,19 +1025,22 @@ window.filterByType = function () {
 
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
+  const modFilter = document.querySelector(".module-filter");
   grid.className = "test-list-grid";
-  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "pw-cs-gate-2026" || t.id === "pw-cs-gate" || t.id === "neet-ug-practice") {
+  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "pw-cs-gate-2026" || t.id === "pw-cs-gate" || t.id === "neet-ug-practice" || t.id === "cse-dpp-2027") {
+    if (modFilter) modFilter.style.display = "none";
     if (window.renderPYQAccordion) {
       if (grid) {
         grid.classList.add("pyq-full-width");
         grid.style.display = "block";
         grid.style.width = "100%";
       }
-      const isEnrolled = (window.isEnrolledSeries ? window.isEnrolledSeries(t.id) : (typeof enrolledIds !== "undefined" && enrolledIds.includes(t.id)));
+      const isEnrolled = (window.isEnrolledSeries ? window.isEnrolledSeries(t.id) : (typeof enrolledIds !== "undefined" && enrolledIds.includes(t.id))) || t.id === "cse-dpp-2027";
       grid.innerHTML = window.renderPYQAccordion(isEnrolled, filter, t.id);
       return;
     }
   } else {
+    if (modFilter) modFilter.style.display = "";
     if (grid) {
       grid.classList.remove("pyq-full-width");
       grid.style.display = "";
