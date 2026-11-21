@@ -5426,6 +5426,17 @@ main {
   color: #db2777;
 }
 
+.pyq-type-pill.free-demo {
+  background: #ecfdf5;
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.pyq-subject-card.free-demo-card {
+  border: 1.5px solid rgba(16, 185, 129, 0.35);
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+}
+
 .pyq-topics-cell {
   color: #64748b;
   font-size: 12.5px;

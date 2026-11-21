@@ -1931,6 +1931,21 @@ window.promptEnrollment = function (seriesId = "cse-gate-2027") {
   }
 };
 
+window.PYQ_FREE_TESTS = [
+  "DPP 01 - Computer Networks (IPv4 Addressing & Routing - Part 1)",
+  "DPP 01 - Algorithms (Asymptotic Analysis & Recurrences - Part 1)",
+  "DPP 01 - C Programming (Pointers, Arrays & Strings - Part 1)",
+  "DPP 01 - Computer Organization (Cache Memory - Part 1)",
+  "DPP 01 - Compiler Design (Lexical Analysis & Compiler Basics - Part 1)",
+  "DPP 01 - DBMS (FD & Normalization - Part 1)",
+  "DPP 01 - Digital Logic (Number System - Part 1)",
+  "DPP 01 - Discrete Mathematics (Mathematical Logic - Part 1)",
+  "DPP 01 - Data Structures (Arrays & Linked Lists - Part 1)",
+  "DPP 01 - Operating System (Process Management & CPU Scheduling - Part 1)",
+  "DPP 01 - Theory of Computation (Finite Automata - Part 1)",
+  "DPP 01 - Engineering Mathematics (Limits, Continuity & Differentiability - Part 1)"
+];
+
 window.launchPYQTest = function (rawName, enrolled, seriesId = "cse-gate-2027") {
   if (seriesId) {
     currentTestListId = seriesId;
@@ -1944,6 +1959,18 @@ window.launchPYQTest = function (rawName, enrolled, seriesId = "cse-gate-2027") 
   }
   if (!isEnrolled) {
     window.promptEnrollment(seriesId);
+    return;
+  }
+
+  // Mandatory Login Check: Free demo tests still require a registered user session
+  if (!document.body.classList.contains("logged-in") || !localStorage.getItem("apexcore_token")) {
+    alert("Please log in or sign up to attempt this free demo test.");
+    if (typeof pendingTestAfterLogin !== "undefined") {
+      pendingTestAfterLogin = { testName: rawName, seriesId };
+    }
+    if (typeof openLogin === "function") {
+      openLogin();
+    }
     return;
   }
 
@@ -8632,9 +8659,24 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   const rawTargetSubjects = (seriesId === "neet-ug-practice")
     ? (window.NEET_SUBJECTS || [])
     : ((seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []));
-  const targetSubjects = (seriesId === "cse-gate-2027" || seriesId === "neet-ug-practice")
+  let targetSubjects = (seriesId === "cse-gate-2027" || seriesId === "neet-ug-practice")
     ? rawTargetSubjects
     : rawTargetSubjects.filter(s => s.id !== "isro" && s.id !== "gate_pyq");
+
+  if (seriesId === "cse-dpp-2027") {
+    targetSubjects = [
+      {
+        id: "dpp_free_demo",
+        name: "Free Demo DPPs (All Subjects)",
+        iconType: "text",
+        iconVal: "🎁",
+        iconBg: "#ecfdf5",
+        iconColor: "#059669",
+        isFreeDemoSection: true
+      },
+      ...targetSubjects
+    ];
+  }
   const activeTopicMap = (seriesId === "neet-ug-practice")
     ? (window.NEET_TOPIC_MAP || {})
     : ((seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {}));
@@ -8659,16 +8701,28 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     }
 
     // Find tests matching this subject
-    const subjTests = allTests.filter(t => {
-      if ((subj.id === "isro" || subj.id === "gate_pyq") && seriesId !== "cse-gate-2027") return false;
-      if (t.subject) return t.subject === subj.id;
-      return subj.regex && subj.regex.test(t.name);
-    });
+    let subjTests;
+    if (subj.id === "dpp_free_demo") {
+      subjTests = allTests.filter(t => Array.isArray(window.PYQ_FREE_TESTS) && window.PYQ_FREE_TESTS.includes(t.name));
+    } else {
+      subjTests = allTests.filter(t => {
+        if ((subj.id === "isro" || subj.id === "gate_pyq") && seriesId !== "cse-gate-2027") return false;
+        if (t.subject) return t.subject === subj.id;
+        return subj.regex && subj.regex.test(t.name);
+      });
+    }
 
     if (!subjTests || subjTests.length === 0) return;
 
-    // Sort tests: For ISRO & GATE PYQ sort by year descending (latest first: 2026 -> 2003); otherwise Topic Tests (TWT) first by number, then Subject Tests (SWT)
-    if (subj.id === "isro" || subj.id === "gate_pyq") {
+    // Sort tests: For Free Demo sort by subject order; For ISRO & GATE PYQ sort by year descending; otherwise Topic Tests first, then Subject Tests
+    if (subj.id === "dpp_free_demo") {
+      const subjOrder = ["em", "dm", "dl", "dbms", "c_prog", "ds", "algo", "toc", "cd", "os", "coa", "cn"];
+      subjTests.sort((a, b) => {
+        const aIdx = subjOrder.indexOf(a.subject);
+        const bIdx = subjOrder.indexOf(b.subject);
+        return (aIdx !== -1 ? aIdx : 99) - (bIdx !== -1 ? bIdx : 99);
+      });
+    } else if (subj.id === "isro" || subj.id === "gate_pyq") {
       subjTests.sort((a, b) => {
         const aYear = parseInt((a.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
         const bYear = parseInt((b.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
@@ -8718,7 +8772,12 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       let testType = t.testType || "Topic";
       let testLabel = t.testLabel || "";
 
-      if (isISRO) {
+      if (subj.id === "dpp_free_demo") {
+        const foundSubj = (window.PYQ_CS_SUBJECTS || []).find(s => s.id === t.subject);
+        const subjTitle = foundSubj ? foundSubj.name : "DPP";
+        testLabel = `${subjTitle} (DPP 01)`;
+        testType = "Free Demo";
+      } else if (isISRO) {
         testLabel = rawName;
         testType = "PYQ";
         bracket = "Scientist/Engineer 'SC' Examination";
@@ -8828,7 +8887,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     const totalCount = subjTests.length;
 
     html += `
-      <div class="pyq-subject-card ${isInitiallyOpen ? "open" : ""}" id="pyq-card-${subj.id}">
+      <div class="pyq-subject-card ${subj.isFreeDemoSection ? "free-demo-card" : ""} ${isInitiallyOpen ? "open" : ""}" id="pyq-card-${subj.id}">
         <div class="pyq-subject-head" onclick="window.togglePYQAccordion(this.closest('.pyq-subject-card'))">
           <div class="pyq-head-left">
             <div class="pyq-icon-box" style="background:${subj.iconBg}; color:${subj.iconColor};">
@@ -8837,15 +8896,17 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
             <div class="pyq-subj-title">${subj.name}</div>
           </div>
           <div class="pyq-head-right">
-            ${isEnrolled
-        ? `<span class="pyq-done-badge">${doneCount} / ${totalCount} Done</span>`
-        : `
+            ${subj.isFreeDemoSection
+        ? `<span class="pyq-done-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669; font-weight: 700;">${doneCount} / ${totalCount} Done • Free Demo</span>`
+        : (isEnrolled
+          ? `<span class="pyq-done-badge">${doneCount} / ${totalCount} Done</span>`
+          : `
                   <span class="pyq-locked-badge">
                     <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                     Locked
                   </span>
                   <span class="pyq-done-badge">${totalCount} Tests</span>
-                `
+                `)
       }
             <svg class="pyq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
