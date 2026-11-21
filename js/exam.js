@@ -1376,21 +1376,32 @@ window.testBackendIdMap = Object.assign(window.testBackendIdMap || {}, {
 });
 
 function findMatchingTest(testName) {
+  if (!testName) return null;
+  // 1. Check with series prefix first to prevent cross-series collisions
+  if (typeof currentTestListId !== "undefined" && currentTestListId) {
+    const seriesComposite = currentTestListId + "|" + testName;
+    if (window.testBackendIdMap && window.testBackendIdMap[seriesComposite]) return seriesComposite;
+  }
+  // 2. Exact testName in testBackendIdMap or testMap
   if (window.testBackendIdMap && window.testBackendIdMap[testName]) return testName;
   if (window.testMap && window.testMap[testName]) return testName;
 
   const bracketMatch = testName.match(/\(([^)]+)\)/);
   if (bracketMatch) {
     const bracketText = bracketMatch[1];
-    const compositeKey = currentTestListId + "|" + bracketText;
-    if (window.testBackendIdMap[compositeKey]) return compositeKey;
+    if (typeof currentTestListId !== "undefined" && currentTestListId) {
+      const compositeKey = currentTestListId + "|" + bracketText;
+      if (window.testBackendIdMap[compositeKey]) return compositeKey;
+    }
     if (window.testBackendIdMap[bracketText]) return bracketText;
   }
 
-  let compKey = Object.keys(window.testBackendIdMap).find((key) => {
-    return key.startsWith(currentTestListId + "|") && testName.includes(key.split("|")[1]);
-  });
-  if (compKey) return compKey;
+  if (typeof currentTestListId !== "undefined" && currentTestListId) {
+    let compKey = Object.keys(window.testBackendIdMap).find((key) => {
+      return key.startsWith(currentTestListId + "|") && testName.includes(key.split("|")[1]);
+    });
+    if (compKey) return compKey;
+  }
 
   return Object.keys(window.testBackendIdMap).find((key) => !key.includes("|") && testName.includes(key));
 }
