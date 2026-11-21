@@ -969,7 +969,7 @@ function openLearn() {
 
 function renderLearn() {
   const wrap = document.getElementById("learnGrid");
-  const active = testSeries.filter((t) => enrolledIds.includes(t.id) || t.id === "cse-dpp-2027");
+  const active = testSeries.filter((t) => enrolledIds.includes(t.id));
   if (active.length === 0) {
     wrap.innerHTML = `
           <div class="empty-state">
@@ -1035,7 +1035,7 @@ function renderTestList(t, filter) {
         grid.style.display = "block";
         grid.style.width = "100%";
       }
-      const isEnrolled = (window.isEnrolledSeries ? window.isEnrolledSeries(t.id) : (typeof enrolledIds !== "undefined" && enrolledIds.includes(t.id))) || t.id === "cse-dpp-2027";
+      const isEnrolled = (window.isEnrolledSeries ? window.isEnrolledSeries(t.id) : (typeof enrolledIds !== "undefined" && enrolledIds.includes(t.id)));
       grid.innerHTML = window.renderPYQAccordion(isEnrolled, filter, t.id);
       return;
     }

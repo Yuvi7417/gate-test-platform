@@ -467,7 +467,7 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹499",
-    price: "29",
+    price: "₹29",
     basePrice: 29,
     brandLabel: "Apex CLASSES DPP"
   },
@@ -1220,7 +1220,7 @@ function openDetail(id, pushHistory = true) {
 
   const dSchedule = document.getElementById("dSchedule");
   if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026" || id === "pw-cs-gate" || id === "neet-ug-practice" || id === "cse-dpp-2027") {
-    const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || id === "cse-dpp-2027" || false;
+    const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
       dSchedule.style.display = "block";
@@ -1245,7 +1245,7 @@ function openDetail(id, pushHistory = true) {
   }
 
   // Smart Enroll Bar State
-  const isEnrolledNow = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || id === "neet-ug-practice" || id === "cse-dpp-2027";
+  const isEnrolledNow = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || id === "neet-ug-practice";
   const btnEnrollEl = document.querySelector(".btn-enroll");
   if (btnEnrollEl) {
     if (isEnrolledNow) {
@@ -1900,7 +1900,7 @@ window.togglePYQAccordion = function (cardEl) {
 };
 
 window.isEnrolledSeries = function (id) {
-  if (id === "cse-dpp-2027" || id === "neet-ug-practice") return true;
+  if (id === "neet-ug-practice") return true;
   if (typeof enrolledIds !== "undefined" && Array.isArray(enrolledIds)) {
     return enrolledIds.includes(id);
   }
@@ -1937,7 +1937,7 @@ window.launchPYQTest = function (rawName, enrolled, seriesId = "cse-gate-2027") 
     currentDetailId = seriesId;
   }
   let isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries(seriesId));
-  if (seriesId === "neet-ug-practice" || seriesId === "cse-dpp-2027") isEnrolled = true;
+  if (seriesId === "neet-ug-practice") isEnrolled = true;
   if (!isEnrolled) {
     const isFree = (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
     if (isFree) isEnrolled = true;
