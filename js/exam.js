@@ -618,6 +618,9 @@ function isResultForSeries(r, tId) {
   if (sId && sId !== String(tId)) return false;
 
   const nameUpper = (r.testName || '').toUpperCase();
+  if (tId === 'cse-dpp-2027') {
+    return nameUpper.includes('DPP') || r.seriesId === 'cse-dpp-2027' || nameUpper.includes('GOCLASSES-CN');
+  }
   if (tId === 'neet-ug-practice') {
     return nameUpper.includes('BIOTECHNOLOGY') || nameUpper.includes('NEET') || (r.seriesId === 'neet-ug-practice');
   }
@@ -628,7 +631,7 @@ function isResultForSeries(r, tId) {
     return nameUpper.includes('DEMO');
   }
   if (tId === 'cs-gate-classes') {
-    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || /\bEE\b/.test(nameUpper) || nameUpper.includes('ELECTRIC') || nameUpper.includes('POWER') || nameUpper.includes('CIVIL') || nameUpper.includes('MECHANICAL') || nameUpper.includes('BIOTECHNOLOGY') || nameUpper.includes('NEET')) {
+    if (nameUpper.includes('DPP') || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || /\bEE\b/.test(nameUpper) || nameUpper.includes('ELECTRIC') || nameUpper.includes('POWER') || nameUpper.includes('CIVIL') || nameUpper.includes('MECHANICAL') || nameUpper.includes('BIOTECHNOLOGY') || nameUpper.includes('NEET')) {
       return false;
     }
     // Accordion pyq tests in cse-gate-2027 have raw names like TWT-c-programming, SWT-c-programming (no spaces)
@@ -638,16 +641,17 @@ function isResultForSeries(r, tId) {
     return nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST') || nameUpper.startsWith('FLT') || nameUpper.includes('TOPICWISE') || nameUpper.includes('SUBJECTWISE') || nameUpper.includes('MIXED') || nameUpper.startsWith('TWT') || nameUpper.startsWith('SWT') || nameUpper.startsWith('MST');
   }
   if (tId === 'pw-cs-gate-2026' || tId === 'pw-cs-gate' || tId === 'cse-gate-2026-pyq') {
-    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO')) return false;
+    if (nameUpper.includes('DPP') || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO')) return false;
     return true;
   }
   if (tId === 'cs-gate-pyq') {
-    if (nameUpper.includes('ISRO') || (nameUpper.startsWith('GATE CSE') && /20\d\d/.test(nameUpper)) || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
+    if (nameUpper.includes('DPP') || nameUpper.includes('ISRO') || (nameUpper.startsWith('GATE CSE') && /20\d\d/.test(nameUpper)) || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
       return false;
     }
     return true;
   }
   if (tId === 'cse-gate-2027') {
+    if (nameUpper.includes('DPP')) return false;
     if (nameUpper.includes('ISRO') || (nameUpper.startsWith('GATE CSE') && /20\d\d/.test(nameUpper))) {
       return true;
     }
@@ -1282,7 +1286,7 @@ function openInstructions(testName, seriesId) {
   const isMixedSubject = (testName || "").includes("Mixed") || (testName || "").includes("MST");
   let customDur = null;
   if (typeof window !== "undefined") {
-    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []);
+    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []).concat(window.PYQ_DPP_DEFAULT_TESTS || []);
     const foundDef = allDefs.find(x => x.name === testName || (pendingTestSeriesId && x.series === pendingTestSeriesId && x.name === testName));
     if (foundDef && foundDef.duration) {
       const dm = String(foundDef.duration).match(/\d+/);
@@ -1612,7 +1616,7 @@ async function startPlayer(testName, fetchedQuestions) {
 
   let customPlayerDur = null;
   if (typeof window !== "undefined") {
-    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []);
+    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []).concat(window.PYQ_DPP_DEFAULT_TESTS || []);
     const foundDef = allDefs.find(x => x.name === testName || (currentTestListId && x.series === currentTestListId && x.name === testName));
     if (foundDef && foundDef.duration) {
       const dm = String(foundDef.duration).match(/\d+/);

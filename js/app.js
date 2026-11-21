@@ -435,6 +435,43 @@ window.testSeries = [
     // comingSoon: true
   },
   {
+    id: "cse-dpp-2027",
+    code: "CSE",
+    learnTag: "GO CLASSES DPP",
+    examTag: "GATE 2027",
+    subjectTag: "Computer Science",
+    title: "GO Classes CSE DPP Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 15,
+    startDate: "2026-03-01",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "A structured, topic-wise Daily Practice Problem (DPP) test series by GO Classes covering Computer Networks and core GATE CSE subjects, with 10 questions per test and comprehensive step-by-step solutions.",
+    features: [
+      "Topic-wise DPP practice with 10 questions per test",
+      "Full coverage of Computer Networks topics",
+      "Detailed step-by-step solutions for every question",
+      "Simulate real GATE exam environment",
+      "Speed, accuracy, and topic-wise analytics",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "March 15, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+    ],
+    oldPrice: "₹499",
+    price: "FREE",
+    basePrice: 0,
+    brandLabel: "Apex CLASSES DPP"
+  },
+  {
     id: "pw-cs-gate-2026",
     code: "CSE",
     learnTag: "PW CSE",
@@ -1182,7 +1219,7 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026" || id === "pw-cs-gate" || id === "neet-ug-practice") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026" || id === "pw-cs-gate" || id === "neet-ug-practice" || id === "cse-dpp-2027") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
@@ -1208,7 +1245,7 @@ function openDetail(id, pushHistory = true) {
   }
 
   // Smart Enroll Bar State
-  const isEnrolledNow = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || id === "neet-ug-practice";
+  const isEnrolledNow = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || id === "neet-ug-practice" || id === "cse-dpp-2027";
   const btnEnrollEl = document.querySelector(".btn-enroll");
   if (btnEnrollEl) {
     if (isEnrolledNow) {
@@ -1378,7 +1415,7 @@ async function viewBookmark(testId, qIndex) {
         document.getElementById("bookmarkModalSolutionContent")
       ].filter(Boolean);
       if (window.MathJax.typesetClear) {
-        try { window.MathJax.typesetClear(targets); } catch (e) {}
+        try { window.MathJax.typesetClear(targets); } catch (e) { }
       }
       if (window.MathJax.startup && window.MathJax.startup.promise) {
         window.MathJax.startup.promise = window.MathJax.startup.promise
@@ -1477,6 +1514,21 @@ window.PYQ_TOPIC_MAP = {
   "Computer network-1": "Concept of Layering, OSI & TCP/IP, Flow & Error Control",
   "Computer network-2": "Routing Algorithms, IP Addressing, IPv4/IPv6, TCP/UDP, Sockets",
   "Computer network": "Complete Computer Networks Syllabus",
+  "IPv4 Addressing & Routing - Part 1": "IPv4 Addressing, Subnetting, Supernetting & Longest Prefix Matching",
+  "IPv4 Addressing & Routing - Part 2": "Classful/Classless Addressing, Subnet Mask & Routing Algorithms",
+  "IPv4 Addressing & Routing - Part 3": "CIDR, Route Aggregation, NAT & Distance Vector Routing",
+  "IPv4 Addressing & Routing - Part 4": "IP Header, Fragmentation & Reassembly, Path MTU",
+  "IPv4 Addressing & Routing - Part 5": "IP Datagram Delivery & Control Protocols (ICMP, ARP)",
+  "Error Detection & Correction": "Parity, CRC, Checksum & Hamming Code Error Correction",
+  "Flow Control & Sliding Window Protocols - Part 1": "Stop and Wait, Go-Back-N ARQ & Efficiency",
+  "Flow Control & Sliding Window Protocols - Part 2": "Selective Repeat ARQ, Sequence Number & Window Size Bounds",
+  "Ethernet & Medium Access Control - Part 1": "Pure ALOHA, Slotted ALOHA, CSMA/CD Basics",
+  "Ethernet & Medium Access Control - Part 2": "Binary Exponential Backoff, Collision Domain, Minimum Frame Length",
+  "Ethernet & Medium Access Control - Part 3": "Token Ring, Bridges, Switches & Spanning Tree Protocol",
+  "Transport Layer & Congestion Control - Part 1": "TCP Header Format, UDP Protocol & Port Multiplexing",
+  "Transport Layer & Congestion Control - Part 2": "TCP Congestion Control (Slow Start, Congestion Avoidance, AIMD)",
+  "Transport Layer & Congestion Control - Part 3": "TCP 3-Way Handshake, Connection Teardown, TCP Timers",
+  "Application Layer & Services": "DNS, HTTP/HTTPS, Email (SMTP, POP3, IMAP) & Network Security",
 
   "C programming and data structure-1": "Programming in C, Arrays, stacks and queues, Recursion.",
   "Programming and Data Structures-1": "Programming in C, Arrays, stacks and queues, Recursion.",
@@ -1884,7 +1936,7 @@ window.launchPYQTest = function (rawName, enrolled, seriesId = "cse-gate-2027") 
     currentDetailId = seriesId;
   }
   let isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries(seriesId));
-  if (seriesId === "neet-ug-practice") isEnrolled = true;
+  if (seriesId === "neet-ug-practice" || seriesId === "cse-dpp-2027") isEnrolled = true;
   if (!isEnrolled) {
     const isFree = (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
     if (isFree) isEnrolled = true;
@@ -3761,6 +3813,204 @@ window.handleNotifyMe = function (btn, testName) {
   alert(`🔔 You will be notified as soon as "${testName}" is released!`);
 };
 
+window.PYQ_DPP_DEFAULT_TESTS = [
+  {
+    "series": "cse-dpp-2027",
+    "order": 1,
+    "name": "DPP 01 - Computer Networks (IPv4 Addressing & Routing - Part 1)",
+    "testLabel": "DPP 01",
+    "testType": "DPP",
+    "bracket": "IPv4 Addressing & Routing - Part 1",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "IPv4 Addressing & Routing (Practice Set 1)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 2,
+    "name": "DPP 02 - Computer Networks (IPv4 Addressing & Routing - Part 2)",
+    "testLabel": "DPP 02",
+    "testType": "DPP",
+    "bracket": "IPv4 Addressing & Routing - Part 2",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "IPv4 Addressing & Routing (Practice Set 2)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 3,
+    "name": "DPP 03 - Computer Networks (IPv4 Addressing & Routing - Part 3)",
+    "testLabel": "DPP 03",
+    "testType": "DPP",
+    "bracket": "IPv4 Addressing & Routing - Part 3",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 11,
+    "topicsCovered": "IPv4 Addressing & Routing (Practice Set 3)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 4,
+    "name": "DPP 04 - Computer Networks (IPv4 Addressing & Routing - Part 4)",
+    "testLabel": "DPP 04",
+    "testType": "DPP",
+    "bracket": "IPv4 Addressing & Routing - Part 4",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "IPv4 Addressing & Routing (Practice Set 4)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 5,
+    "name": "DPP 05 - Computer Networks (IPv4 Addressing & Routing - Part 5)",
+    "testLabel": "DPP 05",
+    "testType": "DPP",
+    "bracket": "IPv4 Addressing & Routing - Part 5",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "15 Min",
+    "totalMarks": 4,
+    "topicsCovered": "IPv4 Addressing & Routing (Practice Set 5)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 6,
+    "name": "DPP 06 - Computer Networks (Error Detection & Correction)",
+    "testLabel": "DPP 06",
+    "testType": "DPP",
+    "bracket": "Error Detection & Correction",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "20 Min",
+    "totalMarks": 7,
+    "topicsCovered": "Error Detection & Correction Practice Questions"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 7,
+    "name": "DPP 07 - Computer Networks (Flow Control & Sliding Window Protocols - Part 1)",
+    "testLabel": "DPP 07",
+    "testType": "DPP",
+    "bracket": "Flow Control & Sliding Window Protocols - Part 1",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "Flow Control & Sliding Window Protocols (Practice Set 1)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 8,
+    "name": "DPP 08 - Computer Networks (Flow Control & Sliding Window Protocols - Part 2)",
+    "testLabel": "DPP 08",
+    "testType": "DPP",
+    "bracket": "Flow Control & Sliding Window Protocols - Part 2",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "25 Min",
+    "totalMarks": 9,
+    "topicsCovered": "Flow Control & Sliding Window Protocols (Practice Set 2)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 9,
+    "name": "DPP 09 - Computer Networks (Ethernet & Medium Access Control - Part 1)",
+    "testLabel": "DPP 09",
+    "testType": "DPP",
+    "bracket": "Ethernet & Medium Access Control - Part 1",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "Ethernet & Medium Access Control (Practice Set 1)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 10,
+    "name": "DPP 10 - Computer Networks (Ethernet & Medium Access Control - Part 2)",
+    "testLabel": "DPP 10",
+    "testType": "DPP",
+    "bracket": "Ethernet & Medium Access Control - Part 2",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "Ethernet & Medium Access Control (Practice Set 2)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 11,
+    "name": "DPP 11 - Computer Networks (Ethernet & Medium Access Control - Part 3)",
+    "testLabel": "DPP 11",
+    "testType": "DPP",
+    "bracket": "Ethernet & Medium Access Control - Part 3",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "18 Min",
+    "totalMarks": 5,
+    "topicsCovered": "Ethernet & Medium Access Control (Practice Set 3)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 12,
+    "name": "DPP 12 - Computer Networks (Transport Layer & Congestion Control - Part 1)",
+    "testLabel": "DPP 12",
+    "testType": "DPP",
+    "bracket": "Transport Layer & Congestion Control - Part 1",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "Transport Layer & Congestion Control (Practice Set 1)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 13,
+    "name": "DPP 13 - Computer Networks (Transport Layer & Congestion Control - Part 2)",
+    "testLabel": "DPP 13",
+    "testType": "DPP",
+    "bracket": "Transport Layer & Congestion Control - Part 2",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "30 Min",
+    "totalMarks": 10,
+    "topicsCovered": "Transport Layer & Congestion Control (Practice Set 2)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 14,
+    "name": "DPP 14 - Computer Networks (Transport Layer & Congestion Control - Part 3)",
+    "testLabel": "DPP 14",
+    "testType": "DPP",
+    "bracket": "Transport Layer & Congestion Control - Part 3",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "18 Min",
+    "totalMarks": 6,
+    "topicsCovered": "Transport Layer & Congestion Control (Practice Set 3)"
+  },
+  {
+    "series": "cse-dpp-2027",
+    "order": 15,
+    "name": "DPP 15 - Computer Networks (Application Layer & Services)",
+    "testLabel": "DPP 15",
+    "testType": "DPP",
+    "bracket": "Application Layer & Services",
+    "subject": "cn",
+    "date": "Nov 03, 2026",
+    "duration": "15 Min",
+    "totalMarks": 4,
+    "topicsCovered": "Application Layer & Services Practice Questions"
+  }
+];
+
 window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", seriesId = "cse-gate-2027") {
   // Collect all tests belonging to this series
   const registeredMap = new Map();
@@ -3790,6 +4040,10 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     (window.NEET_DEFAULT_TESTS || []).forEach(t => {
       registeredMap.set(t.name, { ...t });
     });
+  } else if (seriesId === "cse-dpp-2027") {
+    (window.PYQ_DPP_DEFAULT_TESTS || []).forEach(t => {
+      registeredMap.set(t.name, { ...t });
+    });
   }
 
   // 2. Tests from apexTestRegistry
@@ -3803,7 +4057,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         // Match against existing keys in registeredMap (e.g. by prefix like "TWT 01", "SWT 1", etc.)
         let matchedKey = null;
         const cleanLower = cleanName.toLowerCase().trim();
-        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+)/i);
+        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+|DPP\s*\d+)/i);
 
         for (const existingKey of registeredMap.keys()) {
           const exLower = existingKey.toLowerCase().trim();
@@ -3812,7 +4066,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
             break;
           }
           if (prefixMatch) {
-            const exPrefix = existingKey.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+)/i);
+            const exPrefix = existingKey.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+|DPP\s*\d+)/i);
             if (exPrefix && exPrefix[1].replace(/\s+/g, ' ').toUpperCase() === prefixMatch[1].replace(/\s+/g, ' ').toUpperCase()) {
               matchedKey = existingKey;
               break;
@@ -4981,4 +5235,4 @@ try {
   if (typeof document !== "undefined" && document.body) {
     document.body.classList.remove("dark-mode");
   }
-} catch (e) {}
+} catch (e) { }
