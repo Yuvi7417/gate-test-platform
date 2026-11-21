@@ -1812,6 +1812,7 @@ function renderPlayer() {
 }
 
 function exitPlayer() {
+  examTabSwitchCount = 0;
   clearInterval(playerTimerInterval);
   document.getElementById("playerOverlay").classList.remove("show");
   document.body.style.overflow = "";
@@ -1824,7 +1825,21 @@ function closePlayerAndShowResult() {
 }
 
 /* ---------- question paper (read-only full view of all questions) ---------- */
+function renderQuestionPaperWatermark() {
+  const container = document.getElementById("qpaperWatermarkOverlay");
+  if (!container) return;
+  const user = (typeof currentUser !== "undefined" && currentUser) ? currentUser : {};
+  const userText = (user.email || user.phone || user.name || "ApexCore Student").trim();
+  const wmText = `${userText} • ApexCore GATE`;
+  let html = "";
+  for (let i = 0; i < 60; i++) {
+    html += `<span class="player-wm-item">${wmText}</span>`;
+  }
+  container.innerHTML = html;
+}
+
 function openQuestionPaper() {
+  renderQuestionPaperWatermark();
   const body = document.getElementById("qpaperBody");
   body.innerHTML = playerQuestions
     .map(
@@ -4943,3 +4958,44 @@ async function deleteAnswer(id) {
   }
 }
 
+
+/* ==========================================================================
+   LEVEL 1 SECURITY: TAB SWITCH & ANTI-CHEAT MONITOR
+   ========================================================================== */
+let examTabSwitchCount = 0;
+const MAX_EXAM_TAB_SWITCH = 3;
+
+function isExamActive() {
+  const overlay = document.getElementById("playerOverlay");
+  return overlay && overlay.classList.contains("show") && (typeof solutionMode !== "undefined" ? !solutionMode : true);
+}
+
+function handleExamTabSwitch() {
+  if (!isExamActive()) return;
+
+  examTabSwitchCount++;
+
+  if (examTabSwitchCount < MAX_EXAM_TAB_SWITCH) {
+    const remaining = MAX_EXAM_TAB_SWITCH - examTabSwitchCount;
+    alert(`⚠️ Anti-Cheating Alert!\n\nLeaving or switching the exam window is strictly prohibited.\nWarning: ${examTabSwitchCount} of ${MAX_EXAM_TAB_SWITCH} (${remaining} warning${remaining > 1 ? 's' : ''} remaining).\n\nIf you leave the exam window again, your test will be automatically submitted!`);
+  } else {
+    alert("🚨 Exam Terminated!\n\nYou have exceeded the maximum allowed window/tab switches (3). Your exam is being automatically submitted now.");
+    if (typeof confirmSubmit === "function") {
+      confirmSubmit();
+    } else if (typeof playerSubmit === "function") {
+      playerSubmit();
+    }
+  }
+}
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden && isExamActive()) {
+    handleExamTabSwitch();
+  }
+});
+
+window.addEventListener("blur", () => {
+  if (isExamActive()) {
+    handleExamTabSwitch();
+  }
+});
