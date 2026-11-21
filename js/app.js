@@ -8540,22 +8540,35 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
           ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
           : t.name;
 
-        // Match against existing keys in registeredMap (e.g. by prefix like "TWT 01", "SWT 1", etc.)
+        // Match against existing keys in registeredMap
         let matchedKey = null;
         const cleanLower = cleanName.toLowerCase().trim();
-        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+|DPP\s*\d+)/i);
 
-        for (const existingKey of registeredMap.keys()) {
-          const exLower = existingKey.toLowerCase().trim();
-          if (exLower === cleanLower) {
-            matchedKey = existingKey;
-            break;
-          }
-          if (prefixMatch) {
-            const exPrefix = existingKey.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+|DPP\s*\d+)/i);
-            if (exPrefix && exPrefix[1].replace(/\s+/g, ' ').toUpperCase() === prefixMatch[1].replace(/\s+/g, ' ').toUpperCase()) {
+        // 1. Exact match first
+        if (registeredMap.has(cleanName)) {
+          matchedKey = cleanName;
+        } else {
+          for (const existingKey of registeredMap.keys()) {
+            if (existingKey.toLowerCase().trim() === cleanLower) {
               matchedKey = existingKey;
               break;
+            }
+          }
+        }
+
+        // 2. Only if no exact match, try prefix match (scoped by subject so DPP 01 of one subject does not hijack another)
+        if (!matchedKey) {
+          const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+|DPP\s*\d+)/i);
+          if (prefixMatch) {
+            for (const [existingKey, existingData] of registeredMap.entries()) {
+              if (t.subject && existingData.subject && t.subject !== existingData.subject) {
+                continue;
+              }
+              const exPrefix = existingKey.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+|DPP\s*\d+)/i);
+              if (exPrefix && exPrefix[1].replace(/\s+/g, ' ').toUpperCase() === prefixMatch[1].replace(/\s+/g, ' ').toUpperCase()) {
+                matchedKey = existingKey;
+                break;
+              }
             }
           }
         }
@@ -8670,6 +8683,11 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       subjTests.sort((a, b) => {
         if (a.order !== undefined && b.order !== undefined) {
           return a.order - b.order;
+        }
+        const aDpp = (a.testLabel || a.name || "").match(/DPP\s*(\d+)/i);
+        const bDpp = (b.testLabel || b.name || "").match(/DPP\s*(\d+)/i);
+        if (aDpp && bDpp) {
+          return parseInt(aDpp[1], 10) - parseInt(bDpp[1], 10);
         }
         const aName = a.name || "";
         const bName = b.name || "";
