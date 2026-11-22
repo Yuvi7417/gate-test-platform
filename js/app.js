@@ -8601,6 +8601,26 @@ window.PYQ_DPP_DEFAULT_TESTS = [
   }
 ];
 
+
+function formatTopicsHtml(topics, testName) {
+  if (!topics) return '';
+  if (typeof topics !== 'string') return topics;
+  if (topics.startsWith('<div')) return topics;
+  
+  // Split comma-separated topics into stylish chips
+  const parts = topics.split(',').map(s => s.trim()).filter(Boolean);
+  if (parts.length <= 1) return topics;
+  
+  let chipClass = 'pyq-topic-chip';
+  const tn = (testName || '').toLowerCase();
+  if (tn.includes('principles')) chipClass += ' bio-principles';
+  else if (tn.includes('applications')) chipClass += ' bio-apps';
+  else if (tn.includes('organisms') || tn.includes('populations')) chipClass += ' bio-ecology';
+  
+  const chips = parts.map(p => '<span class="' + chipClass + '">' + p + '</span>').join('');
+  return '<div class="pyq-topic-chips-wrap">' + chips + '</div>';
+}
+
 window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", seriesId = "cse-gate-2027") {
   // Collect all tests belonging to this series
   const registeredMap = new Map();
@@ -9030,7 +9050,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
                               </div>
                               <div class="pyq-test-sublabel">${item.bracket || ""}</div>
                             </td>
-                            <td class="pyq-topics-cell">${item.topicsCovered}</td>
+                            <td class="pyq-topics-cell">${formatTopicsHtml(item.topicsCovered, item.rawName)}</td>
                             <td class="pyq-status-cell">
                               ${item.isComingSoon
               ? `<span class="pyq-status-coming">Coming Soon</span>`
