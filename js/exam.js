@@ -1289,7 +1289,7 @@ function openInstructions(testName, seriesId) {
   const isMixedSubject = (testName || "").includes("Mixed") || (testName || "").includes("MST");
   let customDur = null;
   if (typeof window !== "undefined") {
-    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []).concat(window.PYQ_DPP_DEFAULT_TESTS || []);
+    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []).concat(window.PYQ_DPP_DEFAULT_TESTS || []).concat(window.NEET_DEFAULT_TESTS || []).concat(window.apexTestRegistry || []);
     const foundDef = allDefs.find(x => x.name === testName || (pendingTestSeriesId && x.series === pendingTestSeriesId && x.name === testName));
     if (foundDef && foundDef.duration) {
       const dm = String(foundDef.duration).match(/\d+/);
@@ -1299,7 +1299,7 @@ function openInstructions(testName, seriesId) {
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
     if (customDur) instrDurationElement.textContent = customDur + " minutes";
-    else if (isNeet) instrDurationElement.textContent = (testName || "").includes("Part-4") ? "30 minutes" : ((testName || "").includes("Sprint") || (testName || "").includes("SWT 08") ? "20 minutes" : "60 minutes");
+    else if (isNeet) instrDurationElement.textContent = ((testName || "").includes("2019") || (testName || "").includes("Code - B") || (testName || "").includes("AAKASH")) ? "180 minutes" : ((testName || "").includes("Part-4") ? "30 minutes" : ((testName || "").includes("Sprint") || (testName || "").includes("SWT 08") ? "20 minutes" : "60 minutes"));
     else if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
     else if (isFullTest || isMixedSubject) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
@@ -1630,7 +1630,7 @@ async function startPlayer(testName, fetchedQuestions) {
 
   let customPlayerDur = null;
   if (typeof window !== "undefined") {
-    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []).concat(window.PYQ_DPP_DEFAULT_TESTS || []);
+    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []).concat(window.PYQ_DPP_DEFAULT_TESTS || []).concat(window.NEET_DEFAULT_TESTS || []).concat(window.apexTestRegistry || []);
     const foundDef = allDefs.find(x => x.name === testName || (currentTestListId && x.series === currentTestListId && x.name === testName));
     if (foundDef && foundDef.duration) {
       const dm = String(foundDef.duration).match(/\d+/);
@@ -1648,8 +1648,10 @@ async function startPlayer(testName, fetchedQuestions) {
     } else {
       playerSections = null;
     }
-  } else if (isNeetTest) {
-    if (playerQuestions.length <= 30 || testNameUpper.includes("SWT 08") || testNameUpper.includes("SPRINT")) {
+    } else if (isNeetTest) {
+    if (playerQuestions.length >= 180 || testNameUpper.includes("2019") || testNameUpper.includes("CODE - B") || testNameUpper.includes("AAKASH")) {
+      playerDurationMins = 180;
+    } else if (playerQuestions.length <= 30 || testNameUpper.includes("SWT 08") || testNameUpper.includes("SPRINT")) {
       playerDurationMins = 20;
     } else if (playerQuestions.length === 45 || testNameUpper.includes("PART-4")) {
       playerDurationMins = 30;
@@ -1657,7 +1659,7 @@ async function startPlayer(testName, fetchedQuestions) {
       playerDurationMins = 60;
     }
     playerSections = null;
-  } else if (isFullTest || isMixedSubjectTest) {
+} else if (isFullTest || isMixedSubjectTest) {
     playerDurationMins = 180;
     playerSections = [
       { name: "Aptitude", start: 0, end: 9 },
