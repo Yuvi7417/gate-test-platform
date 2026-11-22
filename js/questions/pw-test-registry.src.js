@@ -32165,7 +32165,7 @@ if (typeof window !== "undefined") {
 
 registerTest({
   series: "pw-cs-gate-2026",
-  name: "GATE PYQ Test 3 - GATE 2024",
+  name: "GATE PYQ Test 3 - GATE 2024 (Set 01)",
   date: "01 November 2026",
   questions: [
     {
@@ -34135,7 +34135,9 @@ registerTest({
 // Extra alias registrations for robust matching
 if (typeof window !== "undefined") {
   window.testBackendIdMap = window.testBackendIdMap || {};
-  const _safeId3 = "pw_cs_gate_2026_gate_pyq_test_3___gate_2024";
+  const _safeId3 = "pw_cs_gate_2026_gate_pyq_test_3___gate_2024__set_01_";
+  window.testBackendIdMap["pw-cs-gate-2026|GATE PYQ Test 3 - GATE 2024 (Set 01)"] = _safeId3;
+  window.testBackendIdMap["GATE PYQ Test 3 - GATE 2024 (Set 01)"] = _safeId3;
   window.testBackendIdMap["pw-cs-gate-2026|GATE PYQ Test 3 - GATE 2024"] = _safeId3;
   window.testBackendIdMap["GATE PYQ Test 3 - GATE 2024"] = _safeId3;
   window.testBackendIdMap["GATE PYQ Test 3 :\tGATE 2024 (Set 01)"] = _safeId3;
@@ -34143,6 +34145,7 @@ if (typeof window !== "undefined") {
   window.testBackendIdMap["GATE PYQ Test 3 (GATE 2024)"] = _safeId3;
   window.testBackendIdMap["GATE 2024 (Set 01)"] = _safeId3;
   window.testBackendIdMap["GATE 2024"] = _safeId3;
+  window.testBackendIdMap["pw_cs_gate_2026_gate_pyq_test_3___gate_2024"] = _safeId3;
 }
 
 
