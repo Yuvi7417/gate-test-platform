@@ -32161,3 +32161,1986 @@ if (typeof window !== "undefined") {
   window.testBackendIdMap["GATE PYQ Test 2 (GATE 2023)"] = _safeId2;
   window.testBackendIdMap["GATE 2023"] = _safeId2;
 }
+
+
+registerTest({
+  series: "pw-cs-gate-2026",
+  name: "GATE PYQ Test 3 - GATE 2024",
+  date: "01 November 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>A rectangular paper of <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn><mo>&#160;</mo><mi>cm</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>8</mn><mo>&#160;</mo><mi>cm</mi></math> is folded 3 times. Each fold is made along the line of symmetry. Which is perpendicular to its long edge. The perimeter of the final folded sheet (in cm) is</p>`,
+      image: "",
+      options: [
+        `<p>24</p>`,
+        `<p>20</p>`,
+        `<p>18</p>`,
+        `<p>21</p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture1.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/268fcd8b-ffc9-44b1-8273-9421722d422f.png" alt="" width="281" height="160" /></p>
+<p>So, Required perimeter <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>(</mo><mn>5</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>4</mn><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>18</mn></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>The pie chart presents the percentage of contribution of different macronutrients to a typical 2,000 kcal diet of a person.</p>
+<p><img title="Picture2.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/8900f4ea-3ee3-4366-b31b-be450f997220.png" alt="" width="150" height="150" /></p>
+<p>The typical energy density (kcal/g) of these macronutrients is given in the table.</p>
+<table style="width: 523px;" width="271">
+<tbody>
+<tr>
+<td style="width: 236.25px;" width="112">
+<p>Macronutrient</p>
+</td>
+<td style="width: 258.75px;" width="159">
+<p>Energy density (kcal/g)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 236.25px;" width="112">
+<p>Carbohydrates</p>
+</td>
+<td style="width: 258.75px;" width="159">
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td style="width: 236.25px;" width="112">
+<p>Proteins</p>
+</td>
+<td style="width: 258.75px;" width="159">
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td style="width: 236.25px;" width="112">
+<p>Unsaturated fat</p>
+</td>
+<td style="width: 258.75px;" width="159">
+<p>9</p>
+</td>
+</tr>
+<tr>
+<td style="width: 236.25px;" width="112">
+<p>Saturated fat</p>
+</td>
+<td style="width: 258.75px;" width="159">
+<p>9</p>
+</td>
+</tr>
+<tr>
+<td style="width: 236.25px;" width="112">
+<p>Trans fat</p>
+</td>
+<td style="width: 258.75px;" width="159">
+<p>9</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The total fat (all three types), in grams, this person consumes is</p>`,
+      image: "",
+      options: [
+        `<p>100</p>`,
+        `<p>77.8</p>`,
+        `<p>44.4</p>`,
+        `<p>3600</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Total kcal from fat <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mo>(</mo><mn>5</mn><mo>%</mo><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>20</mn><mo>%</mo><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>20</mn><mo>%</mo><mo>)</mo><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mn>2000</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>45</mn><mo>%</mo><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mn>2000</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>900</mn><mo>&#160;</mo><mi>kcal</mi><mo>.</mo></math></p>
+<p>So that fat in gm consumes by person =&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>900</mn><mn>9</mn></mfrac><mo>=</mo><mn>100</mn></math></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>For positive non-zero real variables p and q. if <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>log</mi><mfenced><mrow><msup><mi mathvariant="normal">p</mi><mn>2</mn></msup><mo>+</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">q</mi><mn>2</mn></msup></mrow></mfenced><mtext>&#160;</mtext><mo>=</mo></math> log p + logq + 2 log3, then, the value&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mi mathvariant="normal">p</mi><mn>4</mn></msup><mo>+</mo><msup><mi mathvariant="normal">q</mi><mn>4</mn></msup></mrow><mrow><msup><mi mathvariant="normal">p</mi><mn>2</mn></msup><msup><mi mathvariant="normal">q</mi><mn>2</mn></msup></mrow></mfrac></math> of is-</p>`,
+      image: "",
+      options: [
+        `<p>81</p>`,
+        `<p>9</p>`,
+        `<p>83</p>`,
+        `<p>79</p>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>We have given, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>log</mi><mfenced><mrow><msup><mi mathvariant="normal">p</mi><mn>2</mn></msup><mo>+</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">q</mi><mn>2</mn></msup></mrow></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mi>log</mi><mfenced><mrow><mi mathvariant="normal">p</mi><mtext>&#160;</mtext><mi mathvariant="normal">q</mi></mrow></mfenced><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi>log</mi><mfenced><msup><mn>3</mn><mn>2</mn></msup></mfenced></math></p>
+<p>&nbsp; &nbsp; &nbsp; Or&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>log</mi><mfenced><mfrac><mrow><msup><mi mathvariant="normal">p</mi><mn>2</mn></msup><mo>+</mo><msup><mi mathvariant="normal">q</mi><mn>2</mn></msup></mrow><mi>pq</mi></mfrac></mfenced><mo>=</mo><mi>log</mi><mn>9</mn><mo>&#8658;</mo><mfrac><mi mathvariant="normal">p</mi><mi mathvariant="normal">q</mi></mfrac><mo>+</mo><mfrac><mi mathvariant="normal">q</mi><mi mathvariant="normal">p</mi></mfrac><mo>=</mo><mn>9</mn></math> <span style="text-decoration: underline;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>(1)</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mi mathvariant="normal">p</mi><mn>4</mn></msup><mo>+</mo><msup><mi mathvariant="normal">q</mi><mn>4</mn></msup></mrow><mrow><msup><mi mathvariant="normal">p</mi><mn>2</mn></msup><msup><mi mathvariant="normal">q</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><msup><mi mathvariant="normal">p</mi><mn>2</mn></msup><msup><mi mathvariant="normal">q</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi mathvariant="normal">q</mi><mn>2</mn></msup><msup><mi mathvariant="normal">p</mi><mn>2</mn></msup></mfrac><mo>=</mo><msup><mfenced><mfrac><mi mathvariant="normal">p</mi><mi mathvariant="normal">q</mi></mfrac></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mfrac><mi mathvariant="normal">q</mi><mi mathvariant="normal">p</mi></mfrac></mfenced><mn>2</mn></msup></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><msup><mfenced><mrow><mfrac><mi mathvariant="normal">p</mi><mi mathvariant="normal">q</mi></mfrac><mo>+</mo><mfrac><mi mathvariant="normal">p</mi><mi mathvariant="normal">q</mi></mfrac></mrow></mfenced><mn>2</mn></msup><mo>&#8722;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mtext>&#160;</mtext><msup><mfenced><mn>9</mn></mfenced><mn>2</mn></msup><mo>&#8211;</mo><mn>2</mn><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>81</mn><mo>&#8211;</mo><mn>2</mn><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>79</mn></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>The number of coins of <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>&#8377;</mo><mn>21</mn><mo>,</mo><mo>&#160;</mo><mo>&#8377;</mo><mn>25</mn><mo>,</mo><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mo>&#8377;</mo><mn>10</mn><mo>&#160;</mo></math>denominations that a person has are in the ratio 5 : 3 :13. Of the total amount, the percentage of money in <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8377;</mo><mn>25</mn></math> coins is</p>`,
+      image: "",
+      options: [
+        `<p>21%</p>`,
+        `<p>30%</p>`,
+        `<p>10%</p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn><mfrac><mn>2</mn><mn>7</mn></mfrac><mi>%</mi></math></p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Number of coins <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>5</mn><mo>&#160;</mo><mo>:</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>:</mo><mo>&#160;</mo><mn>13</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced><mrow><msub><mi mathvariant="normal">C</mi><mn>1</mn></msub><mo>:</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">C</mi><mn>5</mn></msub><mo>:</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">C</mi><mn>10</mn></msub></mrow></mfenced></math></p>
+<p>So, Money in the ratio <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mtext>&#160;</mtext><mn>5</mn><mtext>&#160;</mtext><mo>:</mo><mtext>&#160;</mtext><mn>15</mn><mtext>&#160;</mtext><mo>:</mo><mtext>&#160;</mtext><mn>130</mn><mtext>&#160;</mtext><mi mathvariant="normal">i</mi><mo>.</mo><mi mathvariant="normal">e</mi><mo>.</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">C</mi><mn>1</mn></msub><mo>=</mo><mtext>&#160;</mtext><mn>5</mn><mi>krs</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">C</mi><mn>5</mn><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>15</mn><mi>rs</mi><mo>,</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">C</mi><mn>10</mn></msub><mo>=</mo><mtext>&#160;</mtext><mn>130</mn><mi mathvariant="normal">k</mi></math></p>
+<p>Total money <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>5</mn><mi mathvariant="normal">k</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>15</mn><mi mathvariant="normal">k</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>130</mn><mi mathvariant="normal">k</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>150</mn><mi mathvariant="normal">k</mi></math></p>
+<p>Now, 15k rs is how much % of 150k?&nbsp;</p>
+<p>Let it is x then&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn><mi mathvariant="normal">k</mi><mo>=</mo><mfrac><mi mathvariant="normal">x</mi><mn>100</mn></mfrac><mo>&#215;</mo><mn>150</mn><mi mathvariant="normal">k</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo><mi mathvariant="normal">x</mi><mo>=</mo><mfrac><mn>1500</mn><mn>150</mn></mfrac><mo>=</mo><mn>10</mn><mi mathvariant="normal">%</mi></math></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>A rectangular paper sheet of dimensions 54 cm &times; 4 cm is taken. The two longer edges of the sheet are joined together to create a cylindrical tube. A cube whose surface area is equal to the area of the sheet is also taken.</p>
+<p>Then, the ratio of the volume of the cylindrical tube to the volume of the cube is_____.</p>`,
+      image: "",
+      options: [
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mi>&pi;</mi></mfrac></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mi>&pi;</mi></mfrac></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mi>&pi;</mi></mfrac></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mi>&pi;</mi></mfrac></math></p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>A cube</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>54</mn><mtext>&#160;</mtext><mo>&#215;</mo><mtext>&#160;</mtext><mn>4</mn><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>6</mn><msup><mi mathvariant="normal">a</mi><mn>2</mn></msup></math></p>
+<p><sup><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">a</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><msup><menclose notation="updiagonalstrike"><mn>54</mn></menclose><mn>15</mn></msup><mo>&#215;</mo><msup><menclose notation="updiagonalstrike"><mn>4</mn></menclose><mn>2</mn></msup></mrow><msub><menclose notation="updiagonalstrike"><mn>6</mn></menclose><menclose notation="updiagonalstrike"><mn>2</mn></menclose></msub></mfrac><mo>=</mo><mn>36</mn></math>,&nbsp; a = 6</sup></p>
+<p>Now,&nbsp;&nbsp;&nbsp; 2&pi;r = 4</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">r</mi><mo>=</mo><mfrac><mn>2</mn><mi mathvariant="normal">&#960;</mi></mfrac></math></p>
+<p>Height = 54</p>
+<p>Volume of cylinder = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>&#215;</mo><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><msup><mi mathvariant="normal">r</mi><mn>2</mn></msup><mo>&#215;</mo><mi mathvariant="normal">h</mi></math></p>
+<p>volume of cube = a<sup>3</sup></p>
+<p>Ratio of the volume of the cylindrical tube to the volume of the cube is=&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>&#215;</mo><mi mathvariant="normal">&#960;</mi><mo>&#215;</mo><msup><mi mathvariant="normal">r</mi><mn>2</mn></msup><mo>&#215;</mo><mi mathvariant="normal">h</mi><mo>&#215;</mo><mfrac><mn>1</mn><msup><mi mathvariant="normal">a</mi><mn>3</mn></msup></mfrac></math> =<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi mathvariant="normal">&#960;</mi><mtext>&#8196;</mtext><mo>&#215;</mo><mtext>&#8196;</mtext><mfrac><mn>4</mn><msup><mi mathvariant="normal">&#960;</mi><mn>2</mn></msup></mfrac><mo>&#215;</mo><mtext>&#8196;</mtext><mn>54</mn></mrow><mn>216</mn></mfrac><mtext>&#8196;</mtext><mo>=</mo><mtext>&#8196;</mtext><mfrac><mn>1</mn><mi mathvariant="normal">&#960;</mi></mfrac><mtext>&#8196;</mtext><mo>=</mo><mtext>&#8196;</mtext><mn>0</mn><mo>.</mo><mn>318</mn><mtext>&#8196;</mtext><mi>approx</mi><mo>.</mo></math></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>If two distinct non-zero real variables x and y are such that (x + y) is proportional to (x &ndash; y) then the value of&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi mathvariant="normal">x</mi><mi mathvariant="normal">y</mi></mfrac></math></p>`,
+      image: "",
+      options: [
+        `<p>is a constant</p>`,
+        `<p>depends only on y and not on x</p>`,
+        `<p>depends only on x and not on y</p>`,
+        `<p>depends on xy</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>x + y <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8733;</mo></math> x &ndash; y</p>
+<p>or x + y = k(x &ndash; y)</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>1</mn><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mi mathvariant="normal">k</mi><mo>)</mo><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>(</mo><mo>&#8211;</mo><mi mathvariant="normal">k</mi><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mn>1</mn><mo>)</mo></math>&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi mathvariant="normal">x</mi><mi mathvariant="normal">y</mi></mfrac><mo>=</mo><mn>1</mn><mo>&#8722;</mo><mfrac><mrow><mi mathvariant="normal">k</mi><mo>&#8722;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#8722;</mo><mi mathvariant="normal">k</mi></mrow></mfrac></math>=&nbsp;constant.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>If <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math>&rsquo; denotes increasing order of intensity, then the meaning of the words [dry <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> arid <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> parched] is analogous to [diet <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> fast <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math>&rsquo; ______].</p>
+<p>Which one of the given options is appropriate to fill the blank?</p>`,
+      image: "",
+      options: [
+        `<p>feast</p>`,
+        `<p>deny</p>`,
+        `<p>starve</p>`,
+        `<p>reject</p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Dry <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> Arid &reg; Parched?</p>
+<p>Dry <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> Very Dry <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math>Completely dry.</p>
+<p>Diet <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> Fast <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> ?</p>
+<p>diet - a well scheduled food time table</p>
+<p>fast - skipping meal for any cause</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>In the given text, the blanks are numbered (i)-(iv). Select the best match for all the blanks.</p>
+<p>Steve was advised to keep his head ___<u>(i)___</u> before heading <u>___</u>(ii)<u> ___</u> to bat; for, while he had a head <u>___</u>(iii)<u> ___</u> batting, he could only do so with a cool head <u>___</u>(iv)<u> ___</u> his shoulders.</p>`,
+      image: "",
+      options: [
+        `<p>(i) on&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (ii)&nbsp; down&nbsp; &nbsp; &nbsp; (iii) for&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (iv) on</p>`,
+        `<p>(i) down&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ii) down&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iii) on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iv) for</p>`,
+        `<p>(i) down&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ii) out&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iii) for&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iv) on</p>`,
+        `<p>(i) on&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (ii) out&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iii) on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iv) for</p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The correct idioms and prepositional phrases are:</p><ul><li><b>keep his head down:</b> to stay focused and avoid drawing attention or trouble before beginning an task.</li><li><b>heading out to bat:</b> to go out to the pitch/field to bat.</li><li><b>have a head for something:</b> to have a natural talent, aptitude, or mental capacity for an activity (e.g., batting).</li><li><b>cool head on his shoulders:</b> to be calm, sensible, and composed under pressure.</li></ul><p>Therefore, the appropriate sequence of words is <b>(i) down, (ii) out, (iii) for, (iv) on</b>. Correct Option is <b>(C)</b>.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>The least number of squares to be added in the figure to make AB a line of symmetry is</p>
+<p><img title="Picture3.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/32ea978d-4ab7-4e11-a2f1-bb2ebca65901.png" alt="" width="230" height="60" /></p>
+<p>&nbsp;</p>`,
+      image: "",
+      options: [
+        `<p>6</p>`,
+        `<p>5</p>`,
+        `<p>4</p>`,
+        `<p>7</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture4.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/bd04b7fb-ab80-4d8c-94c2-0c3afadb9325.png" alt="" width="519" height="286" /></p>
+<p>So least number os squares added = 6</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following sample of numbers: 9, 18, 11, 14, 15, 17, 10, 69, 11, 13</p>
+<p>The median of the sample is</p>`,
+      image: "",
+      options: [
+        `<p>14</p>`,
+        `<p>13.5</p>`,
+        `<p>11</p>`,
+        `<p>18.5</p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Given numbers are arranged in ascending order 9, 10, 11, 11, 13, 14, 15, 17, 18, 69</p>
+<p>Number of observations = 10 so, the middle numbers are 13 and 14.</p>
+<p>Thus, the median =&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>13</mn><mo>+</mo><mn>14</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>13.5</mn></math></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider the circuit shown below where the gates may have propagation delays. Assume that all signal transitions occur instantaneously and that wires have no delays. Which of the following statements about the circuit is/are CORRECT?</p>
+<p><img title="Picture1.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/0a0e409a-4444-4ec5-b9ee-640276c296da.png" alt="" width="289" height="79" /></p>`,
+      image: "",
+      options: [
+        `<p>With propagation delays, the output Y can have a transient logic Zero after X transitions from logic One to logic Zero</p>`,
+        `<p>With no propagation delays, the output Y is always logic One</p>`,
+        `<p>With no propagation delays, the output Y is always logic Zero</p>`,
+        `<p>With propagation delays, the output Y can have a transient logic One after X transitions from logic Zero to logic One</p>`,
+      ],
+      answer: ["C","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture2.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/0ab5b7df-7beb-4e0a-80a3-2db7e31806b5.png" alt="" width="309" height="77" /></p>
+<p><strong>Case-I</strong> : When delay is zero.</p>
+<p>Then Y will always be <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">X</mi><mo>&#183;</mo><mi mathvariant="normal">A</mi><mo>=</mo><mi mathvariant="normal">X</mi><mo>&#183;</mo><mover><mi mathvariant="normal">X</mi><mo>&#175;</mo></mover><mo>=</mo><mn>0</mn></math>&nbsp;for any value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">X</mi><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">i</mi><mo>.</mo><mi mathvariant="normal">e</mi><mo>.</mo><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant="normal">X</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>&#160;</mo><mi>or</mi><mo>&#160;</mo><mi mathvariant="normal">X</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>)</mo><mo>.</mo></math></p>
+<p><strong>Case-II :</strong> When delay is non-zero then : Let us assume that delay of Not gate is <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">t</mi><mn>1</mn></msub></math> and delay of AND gate is <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">t</mi><mn>2</mn></msub><mo>.</mo></math>.</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="[" close="]"><mrow><msub><mi mathvariant="normal">t</mi><mn>2</mn></msub><mo>&#62;</mo><msub><mi mathvariant="normal">t</mi><mn>1</mn></msub></mrow></mfenced></math></p>
+<p>Let us take the case when X = 0 for long time and taking transition from 0 to 1 <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math></p>
+<p><img title="Picture3.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/6227be80-9cfc-4580-8ccc-30ff7c339a4b.png" alt="" width="437" height="192" /></p>
+<p>So, if X is changing from 0 to 1 then there will be transient of &lsquo;1&rsquo; duration<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">t</mi><mn>1</mn></msub><mo>.</mo></math></p>
+<p>If we take the case when X = 1 for a long time and taking transition for 1 to 0 <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math></p>
+<p><img title="Picture4.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/ef28f33a-5c33-4c92-bbe7-8824cdf07487.png" alt="" width="487" height="110" /></p>
+<p>Now, Y = 0 always&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<ul>
+<li>With no propagation delays, the output Y is always logic Zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>With propagation delays, the output Y can have a transient logic One after X transitions from logic Zero to logic One.</li>
+</ul></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Which of the following statements about a relation R in first normal form (1NF) is/are TRUE?</p>`,
+      image: "",
+      options: [
+        `<p>R cannot have a foreign key</p>`,
+        `<p>R can have a multi-attribute key</p>`,
+        `<p>R cannot have more than one candidate key</p>`,
+        `<p>R cannot have a composite attribute</p>`,
+      ],
+      answer: ["B","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>A relation R in INF can have multi-attribute key. While it can have a foreign key, can have more than one candidate key and also composite key.</p>
+<p>Relation not in 1NF if it has composite or multivalued attributes.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Given an integer array of size N, we want to check if the array is sorted (in either ascending or descending order). An algorithm solves this problem by making a single pass through the array and comparing each element of the array only with its adjacent elements. The worst-case time complexity of this algorithm is-</p>`,
+      image: "",
+      options: [
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Neither</mi><mo>&#160;</mo><mi mathvariant="normal">O</mi><mo>(</mo><mi mathvariant="normal">N</mi><mo>)</mo><mo>&#160;</mo><mi>nor</mi><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi><mo>(</mo><mi mathvariant="normal">&#925;</mi><mo>)</mo></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Both</mi><mo>&#160;</mo><mi mathvariant="normal">O</mi><mo>(</mo><mi mathvariant="normal">N</mi><mo>)</mo><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi><mo>(</mo><mi mathvariant="normal">&#925;</mi><mo>)</mo></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#937;</mi><mo>(</mo><mi mathvariant="normal">N</mi><mo>)</mo><mo>&#160;</mo><mi>but</mi><mo>&#160;</mo><mi>not</mi><mo>&#160;</mo><mi mathvariant="normal">O</mi><mo>(</mo><mi mathvariant="normal">N</mi><mo>)</mo></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">O</mi><mo>(</mo><mi mathvariant="normal">N</mi><mo>)</mo><mo>&#160;</mo><mi>but</mi><mo>&#160;</mo><mi>not</mi><mo>&#160;</mo><mi mathvariant="normal">&#937;</mi><mo>(</mo><mi mathvariant="normal">&#925;</mi><mo>)</mo></math></p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The above array can be sorted using bubble sort, which will take one iteration is it will take O(n), <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#937;</mi></math>(n) which is <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#952;</mi></math>(n).</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Let f: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">R</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">R</mi></math> be a function such that f(x) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>max</mi><mfenced open="{" close="}"><mrow><mi mathvariant="normal">x</mi><mo>,</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mrow></mfenced><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">x</mi><mtext>&#160;</mtext><mo>&#8712;</mo></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">R</mi></math>, &nbsp;where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">R</mi></math> is the set of all real numbers. The set of all points where f(x) is NOT differentiable is</p>`,
+      image: "",
+      options: [
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mo>&#8211;</mo><mn>2</mn><mo>,</mo><mtext>&#160;</mtext><mo>&#8211;</mo><mn>1</mn><mo>,</mo><mtext>&#160;</mtext><mn>1</mn></mrow></mfenced></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mo>&#8211;</mo><mn>1</mn><mo>,</mo><mtext>&#160;</mtext><mn>0</mn><mo>,</mo><mtext>&#160;</mtext><mn>1</mn></mrow></mfenced></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mo>&#8211;</mo><mn>1</mn><mo>,</mo><mtext>&#160;</mtext><mn>1</mn><mo>,</mo><mtext>&#160;</mtext><mn>2</mn></mrow></mfenced></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mn>0</mn><mo>,</mo><mtext>&#160;</mtext><mn>1</mn></mrow></mfenced></math></p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture5.jpg" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/b59c42ef-6940-4012-bebd-53d442ca5225.jpg" alt="" width="217" height="192" /></p>
+<p>Putting <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup><mo>=</mo><mtext>&#160;</mtext><mi mathvariant="normal">x</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mtext>&#160;</mtext><mfenced><mrow><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>&#8211;</mo><mtext>&#160;</mtext><mn>1</mn></mrow></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>0</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>,</mo><mo>&#160;</mo><mo>&#8211;</mo><mn>1</mn><mo>,</mo><mo>&#160;</mo><mn>1</mn></math></p>
+<p><img title="Picture6.jpg" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/6cb28683-d9e6-4afb-a21f-c787ed9056eb.jpg" alt="" width="250" height="188" /></p>
+<p>So, we have three sharp points at x = &ndash;1, 0, 1. so, these are non-differentiable points.&nbsp;</p>
+<p>M-IF <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mfenced><mi mathvariant="normal">x</mi></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mi>max</mi><mfenced open="{" close="}"><mrow><mi mathvariant="normal">x</mi><mo>,</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mrow></mfenced></math>&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close=""><mtable equalrows="true" equalcolumns="true"><mtr><mtd><mi mathvariant="normal">x</mi></mtd><mtd><mo>;</mo><mi mathvariant="normal">n</mi><mo>&#60;</mo><mo>&#8211;</mo><mn>1</mn></mtd></mtr><mtr><mtd><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mtd><mtd><mo>&#8211;</mo><mn>1</mn><mo>&#60;</mo><mi mathvariant="normal">n</mi><mo>&#60;</mo><mn>0</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">x</mi></mtd><mtd><mo>;</mo><mn>0</mn><mo>&#60;</mo><mi mathvariant="normal">x</mi><mo>&#60;</mo><mn>1</mn></mtd></mtr><mtr><mtd><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mtd><mtd><mo>,</mo><mi mathvariant="normal">n</mi><mo>&#62;</mo><mn>1</mn></mtd></mtr></mtable></mfenced></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mo>'</mo><mfenced><mi mathvariant="normal">x</mi></mfenced><mfenced open="{" close=""><mtable equalrows="true" equalcolumns="true"><mtr><mtd><mn>1</mn></mtd><mtd><mo>;</mo><mi mathvariant="normal">n</mi><mo>&#60;</mo><mo>&#8211;</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mtd><mtd><mo>&#8211;</mo><mn>1</mn><mo>&#60;</mo><mi mathvariant="normal">n</mi><mo>&#60;</mo><mn>0</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">x</mi></mtd><mtd><mo>;</mo><mn>0</mn><mo>&#60;</mo><mi mathvariant="normal">x</mi><mo>&#60;</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn><msup><mi mathvariant="normal">x</mi><mn>3</mn></msup></mtd><mtd><mo>,</mo><mi mathvariant="normal">n</mi><mo>&#62;</mo><mn>1</mn></mtd></mtr></mtable></mfenced></math></p>
+<p>∵ at n = &ndash;1, 0 and 1, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>LHD</mi><mo>&#160;</mo><mo>&#8800;</mo><mo>&#160;</mo><mi>RHD</mi></math> so all three points are non-differentiable points.&nbsp;</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>The number of spanning trees in a complete graph of 4 vertices labelled A, B, C and D is ____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "16",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The number of spanning tree with n node of a complete graph <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">n</mi><mrow><mi mathvariant="normal">n</mi><mo>&#8211;</mo><mn>2</mn></mrow></msup><mo>.</mo></math></p>
+<p><img title="Picture6.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/48216a35-e3e3-429f-8951-650c66ca954e.png" alt="" width="169" height="120" /></p>
+<p>Here n = 4</p>
+<p>Number of spanning tree <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mtext>&#160;</mtext><msup><mn>4</mn><mrow><mn>4</mn><mo>&#8211;</mo><mn>2</mn></mrow></msup><mo>=</mo><mtext>&#160;</mtext><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mtext>&#160;</mtext><mn>16</mn></math></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Let A and B be two events in a probability space with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>3</mn><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>,</mo><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>&#8745;</mo><mo>&#160;</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>1</mn></math>. Which of the following statements is/are TRUE</p>`,
+      image: "",
+      options: [
+        `<p>The two events A and B are independent</p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>&#8746;</mo><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>7</mn></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mfenced><mrow><mi mathvariant="normal">A</mi><mtext>&#160;</mtext><mo>&#8745;</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">B</mi><mi mathvariant="normal">c</mi></msup></mrow></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>0</mn><mo>.</mo><mn>2</mn><mo>.</mo><mtext>&#160;</mtext><mi>where</mi><mtext>&#160;</mtext><msup><mi mathvariant="normal">B</mi><mi mathvariant="normal">c</mi></msup></math> is the complement of the event B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mfenced><mrow><mtext>&#160;</mtext><msup><mi mathvariant="normal">A</mi><mi mathvariant="normal">c</mi></msup><mo>&#8745;</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">B</mi><mi mathvariant="normal">c</mi></msup></mrow></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>0</mn><mo>.</mo><mn>4</mn><mo>,</mo><mtext>&#160;</mtext><mi>where</mi><mtext>&#160;</mtext><msup><mi mathvariant="normal">A</mi><mi mathvariant="normal">C</mi></msup><mi>and</mi><mtext>&#160;</mtext><msup><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi></msup></math> are the complements of the events A and B. respectively</p>`,
+      ],
+      answer: ["B","C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <ol>
+<li>&nbsp; A and B are true events <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>3</mn></math></li>
+</ol>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>3</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>5</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>&#8745;</mo><mo>&#160;</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>1</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>&#8745;</mo><mo>&#160;</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mo>&#8800;</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>3</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>15</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thus they are not independent.</p>
+<p><strong>Option b:&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="bold">P</mi><mo mathvariant="bold">(</mo><mi mathvariant="bold">A</mi></mrow><mo>&#8746;</mo><mrow><mi mathvariant="bold">B</mi><mo mathvariant="bold">)</mo><mo mathvariant="bold">=</mo><mn mathvariant="bold">0</mn></mrow><mo mathvariant="bold">.</mo><mn mathvariant="bold">7</mn></math></strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>P(A</mtext><mo>&#8746;</mo><mtext>B)&#160;=&#160;P(A)&#160;+&#8203;&#8201;P(B)&#160;&#8211;&#160;P(A</mtext><mo>&#8745;</mo><mtext>B)</mtext></math> </strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 0.3 + 0.5 &ndash; 0.1 = 0.7</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; So, option b is correct.</p>
+<p><strong>Option c:&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="bold">P</mi><mo mathvariant="bold">(</mo><mi mathvariant="bold">A</mi></mrow><mo>&#8745;</mo><msup><mi mathvariant="bold">B</mi><mstyle mathvariant="bold"><mi>c</mi></mstyle></msup><mrow><mo mathvariant="bold">)</mo><mo mathvariant="bold">=</mo><mn mathvariant="bold">0</mn></mrow><mo mathvariant="bold">.</mo><mn mathvariant="bold">2</mn></math></strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>P(A</mtext><mo>&#8745;</mo><msup><mtext>B</mtext><mi>c</mi></msup><mtext>)</mtext><mo mathvariant="bold">=</mo><mtext>P(A&#160;&#8211;&#160;B)&#160;=&#160;P(only&#160;A)&#160;=&#160;0.2&#160;</mtext></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; From Above venn diagram it is clear that this is True.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; So, option c is correct.</p>
+<p><strong>Option d:&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="bold">P</mi><mo mathvariant="bold">(</mo></mrow><msup><mi mathvariant="bold">A</mi><mi>c</mi></msup><mo>&#8745;</mo><msup><mi mathvariant="bold">B</mi><mi>c</mi></msup><mo>)</mo><mo mathvariant="bold">=</mo><mn mathvariant="bold">0</mn><mo mathvariant="bold">.</mo><mn mathvariant="bold">4</mn></math></strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mtext>P(A</mtext><mtext>c</mtext></msup><mo>&#8745;</mo><msup><mtext>B</mtext><mtext>c</mtext></msup><mtext>)&#160;=&#160;P</mtext><mfenced><msup><mrow><mo>(</mo><mtext>A</mtext><mo>&#8746;</mo><mtext>B)</mtext></mrow><mtext>c</mtext></msup></mfenced><mo>=</mo><mn>1</mn><mo>&#8722;</mo><mtext>P(A</mtext><mo>&#8746;</mo><mtext>B)</mtext></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; From venn diagram it is clear that this value is 0.3 not 0.4.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This statement is False.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; So, option d is incorrect.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Which of the following fields is/are modified in the IP header of a packet going out of a network address translation (NAT) device from an internal network to an extemal network?</p>`,
+      image: "",
+      options: [
+        `<p>Header Checksum</p>`,
+        `<p>Source IP</p>`,
+        `<p>Destination IP</p>`,
+        `<p>Total Length</p>`,
+      ],
+      answer: ["A","B"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>For outgoing packet at NAT device.</p>
+<p>1.&nbsp; ⁠New Header Checksum evaluated as modification in Source IP field.</p>
+<p>2.&nbsp; Private IP will be replaced by Public IP in the Source IP field.</p>
+<p>3.&nbsp; &nbsp;⁠Destination IP is not changed. (Decided by Source Host Only)</p>
+<p>4.&nbsp; ⁠Total Length field is remained same. (Decided by source only)</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider a 5-stage pipelined processor with Instruction Fetch (IF). Instruction Decode (ID), Execute (EX). Memory Access (MEM), and Register Writeback (WB) stages. Which of the following statements about forwarding is/are CORRECT?</p>`,
+      image: "",
+      options: [
+        `<p>In forwarding. data from the output of the MEM stage can be passed on to the input of the EX stage of the next instruction</p>`,
+        `<p>Forwarding cannot prevent all pipeline stalls</p>`,
+        `<p>In a pipelined execution, forwarding means the result from a source stage of an earlier instruction is passed on to the destination stage of a later instruction</p>`,
+        `<p>Forwarding does not require any extra hardware to retrieve the data from the pipeline stages</p>`,
+      ],
+      answer: ["A","B","C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>(a)&nbsp; &nbsp; &nbsp;MEM can load data from memory and can be forwarded directed to ALU in EX phase</p>
+<p>(b)&nbsp;&nbsp;&nbsp;&nbsp; Forwarding can only prevent only some type of dependencies of RAW pipeline hazards</p>
+<p>(c)&nbsp;&nbsp;&nbsp;&nbsp; It is the definition of forwarding</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider the operator precedence and associativity rules for the integer arithmetic operators given in the table below.</p>
+<table>
+<tbody>
+<tr>
+<td width="74">
+<p>Operator</p>
+</td>
+<td width="89">
+<p>Precedence</p>
+</td>
+<td width="99">
+<p>Associativity</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>+</p>
+</td>
+<td width="89">
+<p>Highest</p>
+</td>
+<td width="99">
+<p>Left</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>&ndash;</p>
+</td>
+<td width="89">
+<p>High</p>
+</td>
+<td width="99">
+<p>Right</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>&times;</p>
+</td>
+<td width="89">
+<p>Medium</p>
+</td>
+<td width="99">
+<p>Right</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>/</p>
+</td>
+<td width="89">
+<p>Low</p>
+</td>
+<td width="99">
+<p>Right</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The value of the expression <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>5</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>2</mn><mo>/</mo><mn>7</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mn>7</mn><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mn>6</mn><mo>/</mo><mn>2</mn><mo>&#160;</mo></math>as per the above rules is_____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "6",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>3 + 1 + 5 &times; <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>7</mn></mfrac></math>&nbsp;+ 2 &ndash; 4 &ndash; 7 &ndash;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>2</mn></mfrac></math></p>
+<p>4 + 5 &times; <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>7</mn></mfrac></math>&nbsp;+ 2 &ndash; 4 &ndash; 7 &ndash;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>2</mn></mfrac></math></p>
+<p>9 &times;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>7</mn></mfrac></math> &nbsp;+ 2 &ndash; 4 &ndash; 7 &ndash;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>2</mn></mfrac></math></p>
+<p>9 &times;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>9</mn></mfrac></math> &nbsp;&ndash; 4 &ndash; 7 &ndash;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>2</mn></mfrac></math></p>
+<p>9 &times; <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>9</mn></mfrac></math>&nbsp;&ndash; 4 &ndash;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></p>
+<p>9 &times; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>9</mn></mfrac></math>&ndash;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>2</mn></mfrac></math></p>
+<p>9 &times; 2 &times;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>2</mn></mfrac></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>18</mn><mo>&#215;</mo><mfrac><mn>6</mn><mn>2</mn></mfrac></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>3</mn></mfrac></math> = 6</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>The product of all eigenvalues of the matrix&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="[" close="]"><mtable equalrows="true" equalcolumns="true"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>6</mn></mtd></mtr><mtr><mtd><mn>7</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>9</mn></mtd></mtr></mtable></mfenced></math> is</p>`,
+      image: "",
+      options: [
+        `<p>1</p>`,
+        `<p>&ndash;1</p>`,
+        `<p>2</p>`,
+        `<p>0</p>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Product of eigen values = determinate of the matrix&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="[" close="]"><mtable equalrows="true" equalcolumns="true"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>6</mn></mtd></mtr><mtr><mtd><mn>7</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>9</mn></mtd></mtr></mtable></mfenced><mo>=</mo><mtext>A</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mtext>A</mtext><mo>|</mo><mo>=</mo><mfenced open="|" close="|"><mtable equalrows="true" equalcolumns="true"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>6</mn></mtd></mtr><mtr><mtd><mn>7</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>9</mn></mtd></mtr></mtable></mfenced></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">R</mi><mn>3</mn></msub><mo>&#8594;</mo><msub><mi mathvariant="normal">R</mi><mn>3</mn></msub><mo>&#8594;</mo><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub></math></p>
+<p><sub><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub><mo>&#8594;</mo><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub><mo>&#8594;</mo><msub><mi mathvariant="normal">R</mi><mn>1</mn></msub></math></sub></p>
+<p><sub><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mtable equalrows="true" equalcolumns="true"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable></mfenced></math></sub></p>
+<p>The determinant of A is 0, thus, the product of eigen values is 0.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider a system that uses 5 bits for representing signed integers in 2's complement format. In this system, two integers A and B are represented as A = 1010 and B = 11010 Which one of the following operations will result in either an arithmetic overflow or an arithmetic underflow?</p>`,
+      image: "",
+      options: [
+        `<p>A &ndash; B</p>`,
+        `<p>B &ndash; A</p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi mathvariant="normal">B</mi></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">B</mi></math></p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Since 2&rsquo;s complement is used</p>
+<p>A = 01010 <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo></math> 10</p>
+<p>B = 11010 <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo></math> &ndash;6</p>
+<p>Since 5 bits are used here</p>
+<p>So range is &ndash; 16 to 15</p>
+<p>So A &ndash; B i.e 16 is outside the range</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following C program:</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>#</mo><mi>include</mi><mo>&#160;</mo><mo>&#60;</mo><mi>stdio</mi><mo>.</mo><mi mathvariant="normal">h</mi><mo>&#62;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>voidfX</mi><mo>(</mo><mo>)</mo><mi mathvariant="normal">{</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>int</mi><mo>&#160;</mo><mi>main</mi><mo>(</mo><mo>)</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi>fx</mi><mo>&#160;</mo><mo>(</mo><mo>)</mo><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>return</mi><mn>0</mn><mo>;</mo><mi mathvariant="normal">}</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>void</mi><mo>&#160;</mo><mi>fX</mi><mo>(</mo><mo>)</mo><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>char</mi><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>if</mi><mo>(</mo><mo>(</mo><mi mathvariant="normal">a</mi><mo>-</mo><mi>getchar</mi><mo>(</mo><mo>)</mo><mo>)</mo><mo>!</mo><mo>=</mo><mo>'</mo><mo>\\</mo><mi mathvariant="normal">n</mi><mo>'</mo><mo>)</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>fX</mi><mo>(</mo><mo>)</mo><mo>;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>if</mi><mo>(</mo><mi mathvariant="normal">a</mi><mo>!</mo><mo>=</mo><mo>'</mo><mo>\\</mo><mi mathvariant="normal">n</mi><mo>'</mo><mo>)</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML" class="wrs_chemistry"><mi>putchar</mi><mo>(</mo><mi mathvariant="normal">a</mi><mo>)</mo><mo>;</mo><mi mathvariant="normal">}</mi></math></p>
+<p>Assume that the input to the program from the command line is 1234 followed by a newline character. Which one of the following statements is CORRECT</p>`,
+      image: "",
+      options: [
+        `<p>The program will terminate with no output</p>`,
+        `<p>The program will not terminate</p>`,
+        `<p>The program will terminate with 4321 as output</p>`,
+        `<p>The program will terminate with 1234 as output</p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Sting</p>
+<table>
+<tbody>
+<tr>
+<td width="29">
+<p>1</p>
+</td>
+<td width="29">
+<p>2</p>
+</td>
+<td width="29">
+<p>3</p>
+</td>
+<td width="29">
+<p>4</p>
+</td>
+<td width="33">
+<p>/0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The fx() function will check the string until it reaches the end or NULL character. Once, the function reaches end of the string it will start printing it in reverse order. So, we can say that fx() function simply prints the reverse of given string. Hence it will print 4, 3, 2, 1 as output and program will terminate.</p>
+<p>So, option (c) is the correct answer.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Let A and B be non-empty finite sets such that there exist one-to-one and onto functions (i) from A to B and (ii) from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mi>to</mi><mo>&#160;</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>&#8746;</mo><mo>&#160;</mo><mi mathvariant="normal">B</mi></math>. The number of possible values of <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>[</mo><mi mathvariant="normal">A</mi><mo>]</mo><mo>&#160;</mo></math>is____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "2",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The number of possible values of <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi mathvariant="normal">A</mi><mo>|</mo><mo>&#160;</mo><mi>is</mi><mo>&#160;</mo><mn>2</mn><mo>.</mo><mo>&#160;</mo><mo>&#160;</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Which of the following process state transition is/are NOT possible?</p>`,
+      image: "",
+      options: [
+        `<p>Ready to waiting</p>`,
+        `<p>Running to Ready</p>`,
+        `<p>Running to Terminated</p>`,
+        `<p>Waiting to Running</p>`,
+      ],
+      answer: ["A","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The process state diagram the following transitions take place.</p>
+<p><img title="Picture8.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/320f4b60-5f89-4710-8289-a31695c6c008.png" alt="" width="464" height="147" /></p>
+<p>Transition Ready to wait is not possible and wait to run is not possible.</p>
+<p>&nbsp;</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>In a <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">B</mi><mo>+</mo></msup></math>tree, the requirement of at least half-full (50%) node occupancy is relaxed for which one of the following cases?</p>`,
+      image: "",
+      options: [
+        `<p>All leaf nodes</p>`,
+        `<p>Only the root node</p>`,
+        `<p>All internal nodes</p>`,
+        `<p>Only the leftmost leaf node</p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>In a <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">B</mi><mo>+</mo></msup></math> tree at least half full (50%) node occupancy is relaxed for only the root node.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Which of the following is/are Bottom-Up Parser(s)?</p>`,
+      image: "",
+      options: [
+        `<p>LL(1) Parser</p>`,
+        `<p>Predictive Parser</p>`,
+        `<p>Shift-reduce Parser</p>`,
+        `<p>LR Parser</p>`,
+      ],
+      answer: ["C","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Top down = LR parser and SR Parser</p>
+<p>Bottom up = LL(1) and predictive.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following C program:</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>#</mo><mi>include</mi><mo>&#160;</mo><mo>&#60;</mo><mi>stdio</mi><mo>.</mo><mi mathvariant="normal">h</mi><mo>&#62;</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>intmain</mi><mo>(</mo><mo>)</mo><mi mathvariant="normal">{</mi></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a = 6;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int b = 0;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>while</mi><mo>(</mo><mi mathvariant="normal">a</mi><mo>&#60;</mo><mn>10</mn><mo>)</mo><mi mathvariant="normal">{</mi></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>/</mo><mo>&#160;</mo><mn>12</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>+</mo><mo>=</mo><mi mathvariant="normal">b</mi><mo>;</mo><mi mathvariant="normal">}</mi></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>printf</mi><mo>(</mo><mo>&#34;</mo><mo>%</mo><mi mathvariant="normal">d</mi><mo>&#34;</mo><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>)</mo><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>return</mi><mn>0</mn><mo>;</mo><mi mathvariant="normal">}</mi></math></p>
+<p>Which one of the following statements is CORRECT?</p>`,
+      image: "",
+      options: [
+        `<p>The program gets stuck in an infinite loop</p>`,
+        `<p>The program prints 9 as output</p>`,
+        `<p>The program prints 10 as output</p>`,
+        `<p>The program prints 6 as output</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign="left"><mtr><mtd><mi mathvariant="normal">a</mi><mo>=</mo><menclose notation="box"><menclose notation="updiagonalstrike"><mn>6</mn></menclose></menclose><mn>1</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">b</mi><mo>=</mo><menclose notation="box"><mn>0</mn></menclose></mtd></mtr><mtr><mtd><mn>6</mn><mo>&#60;</mo><mn>12</mn><mtext>&#8201;&#8201;&#8201;&#8201;</mtext><msup><mi mathvariant="normal">I</mi><mi>st</mi></msup><mtext>&#8201;&#8201;&#8201;&#8201;</mtext><mi>iteration</mi></mtd></mtr></mtable></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign="left"><mtr><mtd><mi mathvariant="normal">a</mi><mo>=</mo><mfrac><mn>6</mn><mn>12</mn></mfrac><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">a</mi><mo>=</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1</mn></mtd></mtr></mtable></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>=</mo><mi mathvariant="normal">a</mi><mo>+</mo><mi mathvariant="normal">b</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>1</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>II</mi><mi>nd</mi></msup><mi>iteration</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&#160;</mo><mo>&#60;</mo><mo>&#160;</mo><mn>10</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>0</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn></math></p>
+<p>Now In every iteration a value will come out to be 1____1</p>
+<p>Hence, program get stuck is an infinite loop.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider a permutation sampled uniformly at random from the set of all permutations of <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mn>1</mn><mo>,</mo><mtext>&#160;</mtext><mn>2</mn><mo>,</mo><mtext>&#160;</mtext><mn>3</mn><mo>,</mo><mo>.</mo><mo>..</mo><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">n</mi></mrow></mfenced></math> for some <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&#160;</mo><mo>&#8805;</mo><mo>&#160;</mo><mn>4</mn></math>. Let X be the event that 1 occurs before 2 in the permutation, and Y the event that 3 occurs before 4. Which one of the following statements is TRUE?</p>`,
+      image: "",
+      options: [
+        `<p>Event X is more likely than event Y</p>`,
+        `<p>The events X and Y are independent</p>`,
+        `<p>The events X and Y are mutually exclusive</p>`,
+        `<p>Either event X or Y must occur</p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>,</mo><mi mathvariant="normal">y</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo></math></p>
+<p>&nbsp;</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>.</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>=</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">x</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mn>1</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mfenced><mi mathvariant="normal">x</mi></mfenced><mo>=</mo><mfrac><mn>12</mn><mn>24</mn></mfrac><mo>,</mo><mi mathvariant="normal">P</mi><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>=</mo><mfrac><mn>12</mn><mn>24</mn></mfrac><mo>,</mo><mi mathvariant="normal">P</mi><mfenced><mrow><mi mathvariant="normal">x</mi><mo>&#8745;</mo><mi mathvariant="normal">y</mi></mrow></mfenced><mo>=</mo><mfrac><mn>6</mn><mn>24</mn></mfrac></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8757;</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>&#160;</mo><mo>(</mo><mo>&#8745;</mo><mi mathvariant="normal">y</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">y</mi><mo>)</mo><mo>&#160;</mo><mi>so</mi><mo>&#160;</mo><mi>Ind</mi><mo>.</mo></math></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>TCP client P successfully establishes a connection to TCP server Q. Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">p</mi></msub><mo>&#160;</mo></math>denote the sequence number in the SYN sent from P to Q. Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">Q</mi></msub></math> denote the acknowledgement number in the SYN ACK from Q to P. Which of the following statements is/are CORRECT?</p>`,
+      image: "",
+      options: [
+        `<p>The sequence number <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">p</mi></msub></math> is always 0 for a new connection</p>`,
+        `<p>The acknowledgement number <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">Q</mi></msub></math> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn></math></p>`,
+        `<p>The sequence number <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">p</mi></msub></math> is chosen randomly by P</p>`,
+        `<p>The acknowledgement number <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">Q</mi></msub></math> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">p</mi></msub></math></p>`,
+      ],
+      answer: ["B","C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">q</mi></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><msub><mi mathvariant="normal">N</mi><mi mathvariant="normal">p</mi></msub><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn></math></p>
+<p><strong>Np : </strong>chosen randomly to prevent some kind of attacks.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider the following two relations, R(A, B) and S(A, C):<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+<table>
+<tbody>
+<tr>
+<td width="36">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>R</p>
+</td>
+<td width="30">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>S</p>
+</td>
+<td width="36">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="36">
+<p>A</p>
+</td>
+<td width="36">
+<p>B</p>
+</td>
+<td width="30">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>A</p>
+</td>
+<td width="36">
+<p>C</p>
+</td>
+</tr>
+<tr>
+<td width="36">
+<p>10</p>
+</td>
+<td width="36">
+<p>20</p>
+</td>
+<td width="30">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>10</p>
+</td>
+<td width="36">
+<p>90</p>
+</td>
+</tr>
+<tr>
+<td width="36">
+<p>20</p>
+</td>
+<td width="36">
+<p>30</p>
+</td>
+<td width="30">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>30</p>
+</td>
+<td width="36">
+<p>45</p>
+</td>
+</tr>
+<tr>
+<td width="36">
+<p>30</p>
+</td>
+<td width="36">
+<p>40</p>
+</td>
+<td width="30">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>40</p>
+</td>
+<td width="36">
+<p>80</p>
+</td>
+</tr>
+<tr>
+<td width="36">
+<p>30</p>
+</td>
+<td width="36">
+<p>50</p>
+</td>
+<td width="30">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="36">
+<p>50</p>
+</td>
+<td width="36">
+<p>94</p>
+</td>
+<td width="30">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>&nbsp;</p>
+</td>
+<td width="36">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>The total number of tuples obtained by evaluating the following expression <br /><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#963;B</mi><mo>&#60;</mo><mi mathvariant="normal">C</mi><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">R</mi><mo>&#160;</mo><mo>&#10781;</mo><msub><mrow/><mrow><mi mathvariant="normal">R</mi><mo>.</mo><mi mathvariant="normal">A</mi><mo>=</mo><mi mathvariant="normal">S</mi><mo>.</mo><mi mathvariant="normal">A</mi></mrow></msub><mi mathvariant="normal">S</mi><mo>)</mo></math> is______.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "2",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#963;B</mi><mo>&#160;</mo><mo>&#60;</mo><mo>&#160;</mo><mi mathvariant="normal">C</mi><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">R</mi><mo>&#160;</mo><mo>&#10781;</mo><msub><mo>&#160;</mo><mrow><mi mathvariant="normal">R</mi><mo>.</mo><mi mathvariant="normal">A</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">S</mi><mo>.</mo><mi mathvariant="normal">A</mi></mrow></msub><mo>)</mo><mi mathvariant="normal">S</mi></math>&nbsp;&nbsp; is nateral join</p>
+<p>Hence, tuples selected will be</p>
+<p><img title="Picture10.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/1b5099df-97bc-4a04-ae40-03ad26e4bc72.png" alt="" width="153" height="112" /></p>
+<p>Now, from here select <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">B</mi><mo>&#160;</mo><mo>&#60;</mo><mo>&#160;</mo><mi mathvariant="normal">C</mi></math></p>
+<p>Hence, tuples selected will be</p>
+<p><img title="Picture11.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/0ec34399-d4a8-469e-a79c-e3a21413d01a.png" alt="" width="163" height="86" /></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>A user starts browsing a webpage hosted at a remote server. The browser opens a single TCP connection to fetch the entire webpage from the server. The webpage consists of a top-level index page with multiple embedded image objects. Assume that all caches (e.g., DNS cache, browser cache) are all initially empty. The following packets leave the user's computer in some order.</p>
+<p>(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTTP GET request for the index page</p>
+<p>(ii)&nbsp;&nbsp;&nbsp;&nbsp; DNS request to resolve the web server's name to its IP address</p>
+<p>(iii)&nbsp;&nbsp;&nbsp; HTTP GET request for an image object</p>
+<p>(iv)&nbsp;&nbsp;&nbsp; TCP SYN to open a connection to the web server</p>
+<p>Which one of the following is the CORRECT chronological order (earliest in time to latest) of the packets leaving the computer?</p>`,
+      image: "",
+      options: [
+        `<p>(iv), (ii), (iii), (i)</p>`,
+        `<p>(ii), (iv), (i), (iii)</p>`,
+        `<p>(iv), (ii), (i), (iii)</p>`,
+        `<p>(ii), (iv), (iii), (1)</p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DNS request to resolve the web server's name to its IP address</p>
+<p>(ii)&nbsp;&nbsp;&nbsp;&nbsp; TCP SYN to open a connection to the web server</p>
+<p>(iii)&nbsp;&nbsp;&nbsp; HTTP GET request for the index page</p>
+<p>(iv)&nbsp;&nbsp;&nbsp; HTTP GET request for an image object</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Which one of the following statements is FALSE?</p>`,
+      image: "",
+      options: [
+        `<p>In the cycle stealing mode of DMA, one word of data is transferred between an I/O device and main memory in a stolen cycle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>`,
+        `<p>The CPU can start executing an interrupt service routine faster with vectored interrupts than with non-vectored interrupts</p>`,
+        `<p>For bulk data transfer, the burst mode of DMA has a higher throughput than the cycle stealing mode</p>`,
+        `<p>Programmed I/O mechanism has a better CPU utilization than the interrupt driven I/O mechanism</p>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>(a)&nbsp; &nbsp; &nbsp;Cycle stealing mode of DMA, in one cycle one prepared word is transferred from IO to memory</p>
+<p>(b)&nbsp;&nbsp;&nbsp;&nbsp; When non-vectored interrupts are received then CPU take some extra time to explore the situation and then start service of interrupt</p>
+<p>(c)&nbsp;&nbsp;&nbsp;&nbsp; In burst mode bulk data is transferred together</p>
+<p>(d)&nbsp;&nbsp;&nbsp;&nbsp; To improve the performance of CPU programmed IO is replaced interrupt IO</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>,</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math>be two regular languages and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math> a language which is not regular. Which of the following statements is/are always TRUE?</p>`,
+      image: "",
+      options: [
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>&#175;</mo></mover><mo>&#8746;</mo><mover accent="true"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><mo>&#175;</mo></mover></math> is regular</p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>=</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math>if and only if L<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>&#8745;</mo></math> &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><mo>&#175;</mo></mover><mtext>&#160;</mtext></math>= &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#981;</mi></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>&#8746;</mo><mo>&#160;</mo><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math> is not regular</p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub><mo>&#175;</mo></mover></math>is not regular &nbsp;</p>`,
+      ],
+      answer: ["A","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>&#160;</mo></math>= Regular</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><mo>&#160;</mo></math> = Regular</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub><mo>&#160;</mo></math> = Non- Regular</p>
+<p>(a)&nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>&#175;</mo></mover><mo>&#8746;</mo><mover accent="true"><mrow><mo>&#160;</mo><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></mrow><mo>&#175;</mo></mover><mo>=</mo><mover accent="true"><mtext>Reg</mtext><mo>&#175;</mo></mover><mo>&#8746;</mo><mover accent="true"><mtext>Reg</mtext><mo>&#175;</mo></mover><mo>=</mo><mtext>Reg</mtext></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>(b)&nbsp;&nbsp;&nbsp;&nbsp; if and only if given so, false &nbsp;&nbsp; &nbsp;</p>
+<p>(c)&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>&#8746;</mo><mo>&#160;</mo><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math>Can be regular. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>(d)&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mover accent="true"><mtext>Non-reg</mtext><mo>&#175;</mo></mover></math>= Non -regular.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      video: "",
+      text: `<p>Which of the following statements about threads is/are TRUE?</p>`,
+      image: "",
+      options: [
+        `<p>Threads can only be implemented in kernel space</p>`,
+        `<p>All the threads belonging to a process share a common stack</p>`,
+        `<p>Threads belonging to a process are by default not protected from each other</p>`,
+        `<p>Each thread has its own file descriptor table for open files</p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Thread belonging to a process are by default not protected each other: <strong>True.</strong></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      video: "",
+      text: `<p>Let S be the specification: &ldquo;Instruction teach course. Students regions for courses, Courses are allocated classrooms. Instruction guide students.&rdquo; Which one of the following ER diagrams CORRECTLY represents S?</p>
+<p><img title="Picture1.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/1e1d05d7-a2d1-43fe-b385-532b96269770.png" alt="" width="617" height="500" /></p>
+<p>&nbsp;</p>`,
+      image: "",
+      options: [
+        `<p>(iv)</p>`,
+        `<p>(iii)</p>`,
+        `<p>(i)</p>`,
+        `<p>(ii)</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><strong>In option (i): </strong>Student should be an entity not a relation (&agrave;) so it is incorrect.</p>
+<p><strong>In option (ii): </strong>No student entity set exists in fact an entity named &ldquo;project&rdquo; exists which is not mentioned in the question specification.</p>
+<p><strong>In option (iii): </strong>There exists no relationship set between course and classroom, hence it is incorrect.</p>
+<p><strong>In option (iv): </strong>Depicts the correct representation of given specification in the question.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p style="text-align: justify;">Consider a network path P-Q-R between nodes P and R via router Q. Node P sends a file of size 10 bytes to R via this path by splitting the file into chunks of 103 bytes each. Node P sends these chunks one after the other without any wait time between the successive chunk transmissions. Assume that the size of extra headers added to these chunks is negligible, and that the chunk size is less than the MTU.</p>
+<p style="text-align: justify;">Each of the links P-Q and Q-R has a bandwidth of 10 bits/sec, and negligible propagation latency. Router Q immediately transmits every packet it receives from P to R. with negligible processing and queueing delays. Router Q can simultaneously receive on link P-Q and transmit on link Q-R.</p>
+<p style="text-align: justify;">Assume P starts transmitting the chunks at time t = 0. Which one of the following options gives the time (in seconds. rounded off to 3 decimal places) at which R receives all the chunks of the file?</p>`,
+      image: "",
+      options: [
+        `<p>15.992</p>`,
+        `<p>16.000</p>`,
+        `<p>8.008</p>`,
+        `<p>8.000</p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Given that, file size =<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mn>6</mn></msup><mo>&#160;</mo><mi>bytes</mi></math></p>
+<p>Packet size = <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mn>3</mn></msup><mo>&#160;</mo><mi>bytes</mi></math></p>
+<p>Number of packets =&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><msup><mn>10</mn><mn>6</mn></msup><msup><mn>10</mn><mn>3</mn></msup></mfrac><mo>=</mo><msup><mn>10</mn><mn>3</mn></msup></math> = 1000</p>
+<p>Band width = <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mn>6</mn></msup><mo>&#160;</mo><mi>bits</mi><mo>/</mo><mi>sec</mi></math></p>
+<p><img title="Picture2.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/87a35fbe-98d8-43eb-8fde-4543de827f34.png" alt="" width="255" height="52" /></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>TD</mi><mn>1</mn></msub></math>= Transition delay at sender, P</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>PD</mi><mn>1</mn></msub></math> = Propagation delay between P and Q</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mo>&#215;</mo><msub><mi mathvariant="normal">D</mi><mn>2</mn></msub></math>= Transition delay at router, Q</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>&#215;</mo><msub><mi mathvariant="normal">D</mi><mn>2</mn></msub></math> = Propagation delay from Q to R.</p>
+<p>Given, Propagation, processing, Queuing delays neglected for 1 packet. Total time to reach &lsquo;R&rsquo; is <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>TD</mi><mn>1</mn></msub><mo>+</mo><mtext>&#160;</mtext><msub><mi>TD</mi><mn>2</mn></msub><mo>=</mo><mtext>&#160;</mtext><mn>2</mn><mo>&#215;</mo><mi>TD</mi></math></p>
+<p>Transition delay of 1 packet =&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>Packet</mi><mtext>&#160;</mtext><mi>size</mi></mrow><mrow><mi>Band</mi><mtext>&#160;width</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1000</mn><mtext>&#160;</mtext><mi>bytes</mi></mrow><mrow><msup><mn>10</mn><mn>6</mn></msup><mi>bits</mi><mo>/</mo><mi>sec</mi></mrow></mfrac></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mfrac><mrow><mn>1000</mn><mo>&#215;</mo><mn>8</mn><mtext>&#160;</mtext><menclose notation="updiagonalstrike"><mi>bits</mi></menclose></mrow><mrow><msup><mn>10</mn><mn>6</mn></msup><menclose notation="updiagonalstrike"><mi>bits</mi></menclose><mo>/</mo><mi>sec</mi></mrow></mfrac><mo>=</mo><mn>8</mn><mi>msec</mi></math></p>
+<p>Packet total time = 8 + 8 = 16 msec</p>
+<p>Time for file <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>16</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mo>(</mo><mn>1000</mn><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mn>1</mn><mo>)</mo><mn>8</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>16</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>999</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>8</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>8008</mn><mi mathvariant="normal">m</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>8</mn><mo>.</mo><mn>008</mn><mi>sec</mi></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider the following read-write schedule S over three transactions <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mo>,</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mrow><mn>2</mn><mo>&#160;</mo></mrow></msub><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub></math> where the subscripts in the schedule indicate transaction IDs:</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">S</mi><mo>:</mo><msub><mi mathvariant="normal">r</mi><mn>1</mn></msub><mfenced><mi mathvariant="normal">z</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>1</mn></msub><mfenced><mi mathvariant="normal">z</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">r</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">x</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">r</mi><mn>3</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>3</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">r</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">x</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>;</mo></math></p>
+<p>Which of the following transaction schedules is/are conflict equivalent to S?</p>`,
+      image: "",
+      options: [
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math></p>`,
+      ],
+      answer: ["A","C","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Given schedule</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">S</mi><mo>:</mo><msub><mi mathvariant="normal">r</mi><mn>1</mn></msub><mfenced><mi mathvariant="normal">z</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>1</mn></msub><mfenced><mi mathvariant="normal">z</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">r</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">x</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">r</mi><mn>3</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>3</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">r</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">x</mi></mfenced><mo>;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">w</mi><mn>2</mn></msub><mfenced><mi mathvariant="normal">y</mi></mfenced></math></p>
+<table>
+<tbody>
+<tr>
+<td width="76">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math></p>
+</td>
+<td width="76">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math></p>
+</td>
+<td width="77">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub></math></p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>r(z)</p>
+</td>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="77">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="76">
+<p>r(x)</p>
+</td>
+<td width="77">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="77">
+<p>r(y)</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="77">
+<p>W(y)</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="76">
+<p>r(y)</p>
+</td>
+<td width="77">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="76">
+<p>w(x)</p>
+</td>
+<td width="77">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>&nbsp;</p>
+</td>
+<td width="76">
+<p>w(y)</p>
+</td>
+<td width="77">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><img title="Picture3.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/29ec45ae-f986-47f2-b9b7-3ce4acd773e8.png" alt="" width="126" height="113" /></p>
+<p>Order possible <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>3</mn></msub><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider two set-associative cache memory architectures: WBC, which uses the write back policy, and WTC. which uses the write through policy. Both of them use the LRU (Least Recently Used) block replacement policy. The cache memory is connected to the main memory. Which of the following statements is/are TRUE?</p>`,
+      image: "",
+      options: [
+        `<p>A write miss in WTC always writes the victim cache block to main memory before loading the missed block to the cache</p>`,
+        `<p>A write hit in WBC can modify the value of the dirty bit of a cache block</p>`,
+        `<p>A read miss in WBC never evicts a dirty block</p>`,
+        `<p>A read miss in WTC never triggers a write back operation of a cache block to main memory</p>`,
+      ],
+      answer: ["B","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>(a)<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>In write through cache the victim block is replaced directly from cache, write back is not needed. Because there is no any inconsistency of data between cache and main memory</p>
+<p>(b)&nbsp;&nbsp;&nbsp;&nbsp; Write back cache has dirty data hence writing in cache leads to dirty bit modification</p>
+<p>(c)&nbsp;&nbsp;&nbsp;&nbsp; Read or write miss can make write back cache having a block from main memory to cache and hence replacing a block from cache</p>
+<p>(d) &nbsp;&nbsp;&nbsp; Write through cache does not require write back</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider the 5-state DFA M accepting the language L(M)<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8834;</mo></math> subset (0 + 1) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8834;</mo></math> shown below. For any string w <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8712;</mo></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>(</mo><mn>0</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>)</mo><mo>*</mo><mo>&#160;</mo></math>let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">n</mi><mn>0</mn></msub></math> (w) be the number of 0's in w and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">n</mi><mn>1</mn></msub></math> (w) be the number of 1's in w.</p>
+<p><img title="Picture4.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/1b16490b-703a-47bb-acaf-7e2d801e15c9.png" alt="" width="244" height="219" /></p>
+<p>Which of the following statements is/are FALSE?</p>`,
+      image: "",
+      options: [
+        `<p>States 2 and 4 are distinguishable in M</p>`,
+        `<p>States 2 and 5 are distinguishable in M</p>`,
+        `<p>Any string W with n<sub>0</sub> (w) = n<sub>1</sub> (w) is in L(M)</p>`,
+        `<p>States 3 and 4 are distinguishable in M</p>`,
+      ],
+      answer: ["B","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>(a)&nbsp; &nbsp; &nbsp; States 2 and 4 are distinguishable in M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>True</strong></p>
+<p>(b)&nbsp;&nbsp;&nbsp;&nbsp; States 2 and 5 are distinguishable in M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>False</strong></p>
+<p>(c)&nbsp;&nbsp;&nbsp;&nbsp; Any string W with <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">n</mi><mn>0</mn></msub><mo>&nbsp;</mo><mo>(</mo><mi mathvariant="normal">w</mi><mo>)</mo><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><msub><mi mathvariant="normal">n</mi><mn>1</mn></msub><mo>&nbsp;</mo><mo>(</mo><mi mathvariant="normal">w</mi><mo>)</mo></math> is in L(M)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>False</strong></p>
+<p>(d)&nbsp;&nbsp;&nbsp;&nbsp; States 3 and 4 are distinguishable in M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>True</strong></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider the following code snippet using the fork() and wait() system calls. Assume that the code compiles and runs correctly, and that the system calls run successfully without any errors.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi>int</mi><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>3</mn><mo>&#160;</mo><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>while</mi><mo>(</mo><mi mathvariant="normal">x</mi><mo>&#62;</mo><mn>0</mn><mo>)</mo><mi mathvariant="normal">{</mi></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>fork</mi><mo>(</mo><mo>)</mo><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>printf</mi><mo>(</mo><mo>&#34;</mo><mi>hello</mi><mo>&#34;</mo><mo>)</mo><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wait (NULL);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mo>-</mo><mo>-</mo><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>}</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The total number of times the printf statement is executed is _______</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "14",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Let assume parent process is P, let C represent child process.</p>
+<p><img title="Picture5.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/df97fdad-dad0-4bd7-94df-6b198ef5f5bb.png" alt="" width="490" height="556" /></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>An array [82, 101, 90, 11, 111, 75, 33, 131, 44, 93] is heapified. Which one of the following options represents the first three elements in the heapified array?</p>`,
+      image: "",
+      options: [
+        `<p>131, 11, 93</p>`,
+        `<p>131, 111, 90</p>`,
+        `<p>82, 11, 93</p>`,
+        `<p>82, 90, 101</p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture6.jpg" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/fa35e417-74cc-44e3-a109-f525dd11cdc7.jpg" alt="" width="283" height="152" /></p>
+<p>Lets heapify above tree. As heapify start from non-leaf node (93).</p>
+<p><img title="Picture7.jpg" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/dba72b38-eea7-4398-b39f-c4311753869b.jpg" alt="" width="273" height="149" /></p>
+<p>After heapify tree will look like</p>
+<p><img title="Picture8.jpg" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/ed1a7ea2-b239-48d8-ba7c-2aa9f005a017.jpg" alt="" width="228" height="124" /></p>
+<p>&there4; Option (b) is correct.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following grammar G, with S as the start symbol. The grammar G has three incomplete productions denoted by (1), (2), and (3).</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">S</mi><mo>&#8594;</mo><mi>daT</mi><mo>|</mo><munder accentunder="true"><mfenced><mn>1</mn></mfenced><mo>&#175;</mo></munder></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mo>&#8594;</mo><mi>aS</mi><mfenced open="|" close="|"><mi>bT</mi></mfenced><munder accentunder="true"><mfenced><mn>2</mn></mfenced><mo>&#175;</mo></munder></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">R</mi><mo>&#8594;</mo><munder accentunder="true"><mrow><mfenced><mn>3</mn></mfenced><mo>|</mo><mo>&#8712;</mo></mrow><mo>&#175;</mo></munder></math></p>
+<p>The set of terminals is <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">a</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">b</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">c</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">d</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">f</mi></mrow></mfenced></math>. The FIRST and FOLLOW sets of the different non-terminals are as follows.</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>FIRST</mi><mfenced><mi mathvariant="normal">S</mi></mfenced><mo>=</mo><mtext>&#160;</mtext><mfenced open="{" close="}"><mrow><mi mathvariant="normal">c</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">d</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">f</mi></mrow></mfenced><mo>,</mo><mtext>&#160;</mtext><mi>FIRST</mi><mfenced><mi mathvariant="normal">T</mi></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mo>{</mo><mi mathvariant="normal">a</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">b</mi><mo>,</mo><mo>&#8712;</mo><mo>)</mo><mo>,</mo><mtext>&#160;</mtext><mi>FIRST</mi><mfenced><mi mathvariant="normal">R</mi></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mfenced open="{" close="}"><mrow><mi mathvariant="normal">C</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">E</mi></mrow></mfenced></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>FOLLOW</mi><mfenced><mi mathvariant="normal">S</mi></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mi>FOLLOW</mi><mfenced><mi mathvariant="normal">T</mi></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mfenced open="{" close="}"><mrow><mi mathvariant="normal">c</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">f</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">$</mi></mrow></mfenced><mo>,</mo><mtext>&#160;</mtext><mi>FOLLOW</mi><mfenced><mi mathvariant="normal">R</mi></mfenced><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mfenced open="{" close="}"><mi mathvariant="normal">f</mi></mfenced></math></p>
+<p>Which one of the following options CORRECTLY fills in the incomplete productions?</p>`,
+      image: "",
+      options: [
+        `<p>(1) S <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> Rf&nbsp;&nbsp; (2) T <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8712;</mo></math>&nbsp; (3) R <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> cTR</p>`,
+        `<p>(1) S <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> fR&nbsp;&nbsp; (2) T <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> cT&nbsp; (3) R <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> cR</p>`,
+        `<p>(1) S <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> fR&nbsp;&nbsp; (2) T <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8712;</mo></math>&nbsp; (3) R<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8712;</mo></math> cTR</p>`,
+        `<p>(1) S <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> Rf&nbsp;&nbsp; (2) T <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> cT&nbsp; (3) R <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math>cR</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Correct sequence is S <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> Rf, T <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8712;</mo></math>, R<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo></math> cTR</p>
+<p>all follow and first are satisfied.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p style="text-align: justify;">Consider sending an IP datagram of size 1420 bytes (including 20 bytes of IP header) from a sender to a receiver over a path of two links with a router between them. The first link (sender to router) has an MTU (Maximum Transmission Unit) size of 542 bytes, while the second link (router to receiver) has an MTU size of 360 bytes. The number of fragments that would be delivered at the receiver is _______</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "6",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Fragments = 6</p>
+<p><img title="Picture6.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/f1dacf53-4f2d-445f-965e-c2f030db6a7a.png" alt="" width="492" height="56" /></p>
+<p>IP Datagram size = 1420 bytes</p>
+<p>Header size = 20 bytes Payload size = 1400 bytes</p>
+<ul>
+<li>Due to 542 bytes MTU Maximum payload size can be 522 bytes</li>
+<li>IP Datagram is fragmented into 3 fragments</li>
+</ul>
+<p><img title="Picture10.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/cbc9a6f0-f255-4f00-9ae2-0c03df4ee5a0.png" alt="" width="398" height="65" /></p>
+<ul>
+<li>Due to 360 bytes MTU maximum payload size can be 340 bytes</li>
+<li>Each IP datagram is fragmented according.</li>
+</ul>
+<p><img title="Picture11.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/4a778a11-1223-4a7c-858e-65d7441f36be.png" alt="" width="308" height="224" /></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider a binary min-heap containing 105 distinct elements. Let k be the index (in the underlying array) of the maximum element stored in the heap. The number of possible values of k is</p>`,
+      image: "",
+      options: [
+        `<p>52</p>`,
+        `<p>27</p>`,
+        `<p>1</p>`,
+        `<p>53</p>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>There<strong> </strong>are 105 distinct elements<strong>,</strong></p>
+<p>MIN heap is given, there is K index which is of maximum element.</p>
+<p>Number of leafs =&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="&lceil;" close="&rceil;"><mfrac><mn>105</mn><mn>2</mn></mfrac></mfenced><mo>=</mo><mfenced open="&lceil;" close="&rceil;"><mn>52.2</mn></mfenced><mo>=</mo><mn>53</mn></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider a Boolean expression given by F(X, Y, Z) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#931;</mi></math>(3,5,6,7).</p>
+<p>Which of the following statements is/are CORRECT?</p>`,
+      image: "",
+      options: [
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi><mo>)</mo></math> is independent of input X</p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">F</mi><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>XY</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>YZ</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>XZ</mi></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">F</mi><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi><mo>)</mo></math> is independent of input Y</p>`,
+        `<p>F(X, Y, Z) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#960;</mi></math>(0, 1, 2, 4)</p>`,
+      ],
+      answer: ["B","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The k-map for given function F(X, Y, Z) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#931;</mi></math>(3,5,6,7) is as follows:</p>
+<p><img title="Picture12.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/bf58595d-3395-4cc7-a01d-e7523dd2ed44.png" alt="" width="256" height="109" /></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">F</mi><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi><mo>)</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi>xz</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>xy</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mi>yz</mi><mo>.</mo></math></p>
+<p>And POS form of F(X, Y, Z) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#960;</mi></math>(0, 1, 2, 4).</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider the entries shown below in the forwarding table of an IP router. Each entry consists of an IP prefix and the corresponding next hop router for packets whose destination IP address matches the prefix. The notation &ldquo;TN" in a prefix indicates a subnet mask with the most significant N bits set to 1.</p>
+<table style="width: 393px;" width="3">
+<tbody>
+<tr>
+<td style="width: 210.375px;" width="1">
+<p><strong>Prefix</strong></p>
+</td>
+<td style="width: 154.306px;" width="1">
+<p><strong>Next hop router</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 210.375px;" width="1">
+<p>10.1.1.0/24</p>
+</td>
+<td style="width: 154.306px;" width="1">
+<p>R1</p>
+</td>
+</tr>
+<tr>
+<td style="width: 210.375px;" width="1">
+<p>10.1.1.128/25</p>
+</td>
+<td style="width: 154.306px;" width="1">
+<p>R2</p>
+</td>
+</tr>
+<tr>
+<td style="width: 210.375px;" width="1">
+<p>10.1.1.64/26</p>
+</td>
+<td style="width: 154.306px;" width="1">
+<p>R3</p>
+</td>
+</tr>
+<tr>
+<td style="width: 210.375px;" width="1">
+<p>10.1.1.192/26</p>
+</td>
+<td style="width: 154.306px;" width="1">
+<p>R4</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Tins router forwards 20 packets each to 5 hosts. The IP addresses of the hosts are 10.1.1.16. 10.1.1.72. 10.1.1.132. 10.1.1.191. and 10.1.1.205 . The number of packets forwarded via the next hop router R2 is</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "40",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>&bull;&nbsp; &nbsp; Router forwarded 20 packets to each hosts</p>
+<p>&bull;&nbsp; &nbsp; Number of packets forwarded via the next hop router <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mo>?</mo></math></p>
+<p><strong>(i)&nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="bold">Host</mi><mstyle mathvariant="bold"><mn>1</mn></mstyle></msub></math>IP: 10.1.1.16 </strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Net ID when masked with 25 bit netmask = 10.1.1.0</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Packets to <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi>host</mi><mn>1</mn></msub><mo>&#160;</mo></math>is not forwarded via <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub><mo>.</mo></math></p>
+<p><strong>(ii)&nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="bold">Host</mi><mstyle mathvariant="bold"><mn>2</mn></mstyle></msub></math> IP: 10.1.1.72</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Net ID when masked with 25 bit netmask = 10.1.1.0</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Packets to<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi>host</mi><mn>2</mn></msub><mo>&#160;</mo></math><sub> </sub>is not forwarded via <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub></math></p>
+<p><strong>(iii)&nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="bold">Host</mi><mstyle mathvariant="bold"><mn>3</mn></mstyle></msub></math> IP : 10.1.1.132</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Net ID when masked with 25 bit netmask = 10.1.1.128</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Net ID when masked with 26 bit netmask = 10.1.1.128</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Packets to <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi>Host</mi><mn>3</mn></msub><mo>&#160;</mo></math>is forwarded via <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub></math></p>
+<p><strong>(iv)&nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="bold">Host</mi><mstyle mathvariant="bold"><mn>4</mn></mstyle></msub></math> IP: 10.1.1.191</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Net ID when masked with 25 bit netmask = 10.1.1.128</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Net ID when masked with 26 bit netmask = 10.1.1.128</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Packets to <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi>Host</mi><mn>4</mn></msub><mo>&#160;</mo></math>is forwarded via <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub><mo>.</mo></math></p>
+<p><strong>(iv)&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="bold">Host</mi><mstyle mathvariant="bold"><mn>5</mn></mstyle></msub></math><sub> </sub>IP: 10.1.1.128</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Net ID when masked with 25 bit netmask = 10.1.1.128</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Net ID when masked with 26 bit netmask = 10.1.1.192</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Packets to host<sub>5</sub> is forwarded via<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi mathvariant="normal">R</mi><mn>4</mn></msub></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Router will choose more specific option over generic.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="[" close="]"><mrow><mn>20</mn><mtext>&#160;</mtext><mi>packets</mi><mtext>&#160;</mtext><msub><mi>host</mi><mn>3</mn></msub><mo>+</mo><mtext>&#160;</mtext><mn>20</mn><mtext>&#160;</mtext><mi>packet</mi><mtext>&#160;</mtext><msub><mi>host</mi><mn>5</mn></msub></mrow></mfenced><mtext>&#160;</mtext><mo>&#160;</mo><mo>&#160;</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>:</mo><mtext>&#160;</mtext><mn>40</mn><mtext>&#160;</mtext><mi>packets</mi><mtext>&#160;</mtext><mi>via</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">R</mi><mn>2</mn></msub></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following recurrence relation:</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mo>(</mo><mi mathvariant="normal">n</mi><mo>)</mo><mo>=</mo><mfenced open="{" close=""><mtable columnalign="left"><mtr><mtd><msqrt><mi mathvariant="normal">n</mi></msqrt><mi mathvariant="normal">T</mi><mfenced><msqrt><mi mathvariant="normal">n</mi></msqrt></mfenced><mo>+</mo><mi mathvariant="normal">n</mi><mtext>&#8201;&#8201;</mtext><mi>for</mi><mtext>&#8201;&#8201;</mtext><mi mathvariant="normal">n</mi><mo>&#8805;</mo><mn>1</mn><mo>,</mo></mtd></mtr><mtr><mtd><mtext>&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;</mtext><mn>1</mn><mtext>&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;&#8201;</mtext><mi>for</mi><mtext>&#8201;&#8201;</mtext><mi mathvariant="normal">n</mi><mo>=</mo><mn>1</mn></mtd></mtr></mtable></mfenced></math></p>
+<p>Which of the following option is CORRECT?&nbsp;</p>`,
+      image: "",
+      options: [
+        `<p>T(n) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#920;</mi></math>(n log log n)</p>`,
+        `<p>T(n) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#920;</mi></math>(n log n)</p>`,
+        `<p>T(n) = <math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#920;</mi></math>(<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></math> log log n)</p>`,
+        `<p>T(n) = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#920;</mi></math>(<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></math> log n)</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mfenced><mi mathvariant="normal">n</mi></mfenced><mo>=</mo><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msqrt><mi mathvariant="normal">n</mi></msqrt></mfenced><mo>+</mo><mi mathvariant="normal">n</mi></math></p>
+<p>n = 1</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mfenced><mi mathvariant="normal">n</mi></mfenced><mo>=</mo><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msqrt><mi mathvariant="normal">n</mi></msqrt></mfenced><mo>+</mo><mi mathvariant="normal">n</mi><mtext>&#160;</mtext><mo>.</mo><mo>....</mo><mtext>(1)</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac></msup><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac></msup></mfenced><mo>+</mo><mi mathvariant="normal">n</mi><mtext>&#160;</mtext><mo>.</mo><mo>....</mo><mtext>(1)</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mfenced><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac></msup></mfenced><mo>=</mo><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>4</mn></mfrac></msup><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>4</mn></mfrac></msup></mfenced><mo>+</mo><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac><mtext>&#160;</mtext><mo>.</mo><mo>....</mo><mtext>(2)</mtext></math></p>
+<p>Sub (2) in (1)</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mfenced><mi mathvariant="normal">n</mi></mfenced><mo>=</mo><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac></msup><mfenced><mrow><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>4</mn></mfrac></msup><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><mrow><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>4</mn></mfrac></msup><mo>+</mo><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac></msup></mrow></mfenced></mrow></mfenced><mtext>&#160;+n</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>3</mn><mn>4</mn></mfrac></msup><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><mn>4</mn></mfrac></msup></mfenced><mtext>+2n</mtext><mo>.</mo><mo>...</mo><mtext>(3)</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">n</mi><mrow><mn>1</mn><mo>&#8211;</mo><mfrac bevelled="true"><mn>1</mn><msup><mn>2</mn><mn>2</mn></msup></mfrac></mrow></msup><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><msup><mn>2</mn><mn>2</mn></msup></mfrac></msup></mfenced><mtext>+2n</mtext><mo>.</mo><mo>...</mo><mtext>(4)</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">n</mi><mrow><mn>1</mn><mo>&#8211;</mo><mfrac bevelled="true"><mn>1</mn><msup><mn>2</mn><mi mathvariant="normal">k</mi></msup></mfrac></mrow></msup><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><msup><mn>2</mn><mi mathvariant="normal">k</mi></msup></mfrac></msup></mfenced><mtext>+k</mtext><mo>&#8901;</mo><mtext>n</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mfrac><mi mathvariant="normal">n</mi><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><msup><mn>2</mn><mi mathvariant="normal">k</mi></msup></mfrac></msup></mfrac><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><msup><mi mathvariant="normal">n</mi><mfrac bevelled="true"><mn>1</mn><msup><mn>2</mn><mi mathvariant="normal">k</mi></msup></mfrac></msup></mfenced><mtext>+k</mtext><mo>&#8901;</mo><mtext>n</mtext></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mfrac><mi mathvariant="normal">n</mi><mn>2</mn></mfrac><mo>&#8901;</mo><mi mathvariant="normal">T</mi><mfenced><mn>1</mn></mfenced><mo>+</mo><mi>nloglogn</mi></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">&#952;</mi><mo>(</mo><mi mathvariant="normal">n</mi><mo>&#160;</mo><mi>log</mi><mo>&#160;</mo><mi>logn</mi><mo>)</mo></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider a 512 GB hard disk with 32 storage surfaces. There are 4096 sectors per track and each sector holds 1024 bytes of data. The number of cylinders in the hard disk is</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "4096",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Disk size = number of surfaces &times; number of tracks per surface &times; number of sectors per track &times; sector</p>
+<p>512 GB = 32 &times; tracs &times; 4096 &times; 1024B</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>9</mn></msup><mo>&#215;</mo><mtext>&#160;</mtext><msup><mn>2</mn><mn>30</mn></msup><mi mathvariant="normal">B</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><msup><mn>2</mn><mn>5</mn></msup><mo>&#215;</mo><mtext>&#160;</mtext><mi>tracks</mi><mtext>&#160;</mtext><mo>&#215;</mo><mtext>&#160;</mtext><msup><mn>2</mn><mn>12</mn></msup><mo>&#215;</mo><mtext>&#160;</mtext><msup><mn>2</mn><mn>10</mn></msup><mi mathvariant="normal">B</mi></math></p>
+<p>Tracks <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mtext>&#160;</mtext><msup><mn>2</mn><mn>12</mn></msup></math></p>
+<p>Number of cylinders in disk = number of tracks per surface <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mtext>&#160;</mtext><msup><mn>2</mn><mn>12</mn></msup><mo>=</mo><mtext>&#160;</mtext><mn>4096</mn></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider the operators <span style="font-family: symbol;">&agrave;</span> and □ defined by a <span style="font-family: symbol;">&agrave;</span> b = a + 2b. a <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#9633;</mo></math> b = ab. for positive integers. Which of the following statements is/are TRUE?</p>`,
+      image: "",
+      options: [
+        `<p>Operator <span style="font-family: symbol;">&agrave;</span>&nbsp; obeys the associative law</p>`,
+        `<p>Operator □ over the operator <span style="font-family: symbol;">&agrave;</span> obeys the distributive law&nbsp;&nbsp;</p>`,
+        `<p>Operator <span style="font-family: symbol;">&agrave;</span> over the operator □ obeys the distributive law&nbsp;</p>`,
+        `<p>Operator □ obeys the associative law</p>`,
+      ],
+      answer: ["B","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><strong>Option (a)</strong></p>
+<p>(a <span style="font-family: symbol;">&agrave;</span> b) <span style="font-family: symbol;">&agrave;</span> c = a <span style="font-family: symbol;">&agrave;</span> (b <span style="font-family: symbol;">&agrave;</span> c)</p>
+<p>(a + 2b) <span style="font-family: symbol;">&agrave;</span> c</p>
+<p>a + 2b + 2(a +2b).c</p>
+<p>a <span style="font-family: symbol;">&agrave;</span> (b +2 c)</p>
+<p>a + 2a(b+ 2c)</p>
+<p>not equal</p>
+<p>option (b) is correct</p>
+<p>□ is distributive area &agrave; means</p>
+<p>a □ (b <span style="font-family: symbol;">&agrave;</span> c) = (a □ b) <span style="font-family: symbol;">&agrave;</span> (a □ c)</p>
+<p>Check</p>
+<p>a □ (b <span style="font-family: symbol;">&agrave;</span> c)</p>
+<p>= a □ (b + 2c)</p>
+<p>= (a □ b) + (a □ 2c)</p>
+<p>= ab + a.2c</p>
+<p>LHS</p>
+<p>(a □ b) <span style="font-family: symbol;">&agrave;</span> (a □ c)</p>
+<p>ab <span style="font-family: symbol;">&agrave;</span> ac</p>
+<p>= ab + 2 ac</p>
+<p>RHS</p>
+<p>Same for c not correct</p>
+<p><strong>Option (d)</strong></p>
+<p>Simple multiplication.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider the following two regular expressions over the alphabet <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></mfenced><mo>:</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">r</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>*</mo><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>*</mo></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">s</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>01</mn><mo>*</mo><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>10</mn><mo>*</mo></math></p>
+<p>The total number of strings of length less than or equal to 5. which are neither in r nor in s. is</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "44",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Total possible string up to 5 length <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mtext>&#160;</mtext><msup><mn>2</mn><mrow><mn>5</mn><mo>+</mo><mn>1</mn></mrow></msup><mo>&#8722;</mo><mn>1</mn><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>63</mn></math></p>
+<p>0 length strings = 1 = <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8712;</mo></math></p>
+<p>1 length strings <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn><mo>,</mo><mn>1</mn></math></p>
+<p>2 length strings <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>4</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>00</mn><mo>,</mo><mo>&#160;</mo><mn>01</mn><mo>,</mo><mo>&#160;</mo><mn>10</mn><mo>,</mo><mo>&#160;</mo><mn>11</mn></math></p>
+<p>3 length strings <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>000</mn><mo>,</mo><mn>100</mn><mo>,</mo><mn>011</mn><mo>,</mo><mn>111</mn></math></p>
+<p>4 length strings <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0000</mn><mo>,</mo><mo>&#160;</mo><mn>0111</mn><mo>,</mo><mo>&#160;</mo><mn>1000</mn><mo>,</mo><mn>1111</mn></math></p>
+<p>5 length strings <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>00000</mn><mo>,</mo><mn>01111</mn><mo>,</mo><mn>10000</mn><mo>,</mo><mn>11111</mn></math></p>
+<p>Strings which are not present in both expression<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>63</mn><mo>&#160;</mo><mo>-</mo><mo>&#160;</mo><mn>19</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>44</mn><mo>.</mo></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Let A be any <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mi>matrix</mi><mo>,</mo><mo>&#160;</mo><mi>where</mi><mo>&#160;</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mo>&#62;</mo><mo>&#160;</mo><mi mathvariant="normal">n</mi><mo>.</mo></math> Which of the following statements is/are TRUE about the system of linear equations Ax = 0?</p>`,
+      image: "",
+      options: [
+        `<p>There exists a non-zero solution in which at least m &mdash; n variables are 0</p>`,
+        `<p>There exist m &mdash; n linearly independent vectors such that every solution is a linear combination of these vectors</p>`,
+        `<p>There exists a solution in which at least n variables are non-zero</p>`,
+        `<p>There exist at least m &mdash; n linearly independent solutions to this system</p>`,
+      ],
+      answer: ["D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Rank</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>)</mo><mo>&#160;</mo><mo>&#8804;</mo><mo>&#160;</mo><mi mathvariant="normal">n</mi></math></p>
+<p>So, number of free columns <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8805;</mo><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">m</mi><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mi mathvariant="normal">n</mi><mo>)</mo></math> and number of LI solutions = number of free columns</p>
+<p>So, this is True.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>The baseline execution time of a program on a 2 GHz single core machine is 100 nanoseconds (ns). The code corresponding to 90% of the execution time can be fully parallelized. The overhead for using an additional core is 10 ns when running on a multicore system. Assume that all cores in the multicore system run their share of the parallelized code for an equal amount of time.</p>
+<p>The number of cores that minimize the execution time of the program is _____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "3",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture13.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/f099c810-6db2-47b8-8f90-603754147aef.png" alt="" width="263" height="347" /></p>
+<p><img title="Picture14.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/84128d92-8a85-4456-ae6d-480308b7c5ab.png" alt="" width="315" height="157" /></p>
+<p>Minimization&nbsp;</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mfenced open="[" close="]"><mtext>ET</mtext></mfenced><mo>=</mo><mn>0</mn><mo>&rArr;</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mfenced open="[" close="]"><mrow><mfrac><mn>90</mn><mi>x</mi></mfrac><mo>+</mo><mn>10</mn><mfenced><mrow><mi>x</mi><mo>&minus;</mo><mn>1</mn></mrow></mfenced><mo>+</mo><mn>1</mn></mrow></mfenced></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&rArr;</mo><mfrac><mrow><mo>&minus;</mo><mn>90</mn></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>+</mo><mn>10</mn><mo>=</mo><mn>0</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&rArr;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>9</mn><mo>&rArr;</mo><menclose notation="box"><mi>x</mi><mo>=</mo><mn>3</mn></menclose></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>The symbol <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> indicates functional dependency in the context of a relational database. Which of the following options is/are TRUE?</p>`,
+      image: "",
+      options: [
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi mathvariant="normal">X</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi><mo>)</mo><mo>&#160;</mo><mi>implies</mi><mo>&#160;</mo><mi mathvariant="normal">X</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>)</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>)</mo><mo>&#160;</mo><mi>implies</mi><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>)</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>)</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">Z</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>)</mo><mo>&#160;</mo><mi>implies</mi><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>)</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">Z</mi></math></p>`,
+        `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi mathvariant="normal">X</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">Y</mi><mo>)</mo><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">Z</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>)</mo><mo>&#160;</mo><mi>implies</mi><mo>&#160;</mo><mi mathvariant="normal">X</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mo>(</mo><mi mathvariant="normal">Z</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant="normal">W</mi><mo>)</mo></math></p>`,
+      ],
+      answer: ["A","B","C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The symbol <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math> implies following functional dependencies:</p>
+<ol>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">z</mi><mo>&#160;</mo><mi>implies</mi><mo>&#160;</mo><mi mathvariant="normal">x</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">z</mi></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>xy</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi>zw</mi><mo>&#160;</mo><mi>implies</mi><mo>&#160;</mo><mi>xy</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">z</mi></math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>xz</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">z</mi><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mi mathvariant="normal">w</mi><mo>&#160;</mo><mo>&#8594;</mo><mi mathvariant="normal">y</mi><mo>&#160;</mo><mi>implies</mi><mo>&#160;</mo><mi>xw</mi><mo>&#160;</mo><mo>&#8594;</mo><mo>&#160;</mo><mi mathvariant="normal">z</mi></math></li>
+</ol></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">G</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mfenced><mrow><mi mathvariant="normal">V</mi><mo>,</mo><mi mathvariant="normal">&#931;</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">S</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">P</mi></mrow></mfenced><mtext>&#160;</mtext></math>be a context-free grammar in Chomsky Normal Form with<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#931;</mi><mo>=</mo><mtext>&#160;</mtext><mfenced open="{" close="}"><mrow><mi mathvariant="normal">a</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">b</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">c</mi></mrow></mfenced></math> and V containing 10 variable symbols including the start symbol S. The string <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">W</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">a</mi><mn>30</mn></msup><msup><mi mathvariant="normal">b</mi><mn>30</mn></msup><msup><mi mathvariant="normal">c</mi><mn>30</mn></msup></math>is derivable from S. The number of steps (application of rules) in the derivation S <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math>* W is</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "179",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">w</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><msup><mi mathvariant="normal">a</mi><mn>30</mn></msup><msup><mi mathvariant="normal">b</mi><mn>30</mn></msup><msup><mi mathvariant="normal">c</mi><mn>30</mn></msup></math></p>
+<p>Length of string = 90</p>
+<p>Number of steps in CNF <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>2</mn><mi mathvariant="normal">n</mi><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mn>1</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>90</mn><mo>&#160;</mo><mo>&#8211;</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>179</mn></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Let G be a directed graph and T a depth first search (DFS) spanning tree in G that is rooted at a vertex v. Suppose T is also a breadth first search (BFS) tree in G, rooted at r. Which of the following statements is/are TRUE for every such graph G and tree T ?</p>`,
+      image: "",
+      options: [
+        `<p>There are no cross-edges in G with respect to the tree T</p>`,
+        `<p>There are no back-edges in G with respect to the tree T</p>`,
+        `<p>There are no forward-edges in G with respect to the tree T</p>`,
+        `<p>The only edges in G are the edges in T</p>`,
+      ],
+      answer: ["C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture15.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/8970b0a5-117e-40fb-be84-022505e8402a.png" alt="" width="162" height="152" /></p>
+<p><strong>BFS &rarr;</strong></p>
+<p><strong><img title="Picture16.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/ba8fdfad-16c7-4949-9580-3448ea436f21.png" alt="" width="146" height="245" /></strong></p>
+<p>Back edge</p>
+<p>Cross edge</p>
+<p>Edge not in T</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider a memory management system that uses a page size of 2 KB. Assume that both the physical and virtual addresses start from 0. Assume that the pages 0, 1,2 and 3 are stored in the page frames 1, 3, 2 and 0. respectively. The physical address (in decimal format) corresponding to the virtual address 2500 (in decimal format) is_____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "6596",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Page Number =&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="&lfloor;" close="&rfloor;"><mfrac><mn>2500</mn><mn>2048</mn></mfrac></mfenced><mo>=</mo><mn>1</mn></math></p>
+<p>Offset(d) = 2500% 2048 = 452</p>
+<p>Page 1 is present on frame 3.</p>
+<p>Hence physical address is = (3 &times; 2048) + 452</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 6596</p>
+<p>&nbsp;</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>A given program has 25% load/store instructions. Suppose the ideal CPI (cycles per instruction) without any memory stalls is 2. The program exhibits 2% miss rate on instruction cache and 8% miss rate on data cache. The miss penalty is 100 cycles. The speedup (rounded off to two decimal places) achieved with a perfect cache (i.e., with NO data or instruction cache misses) is_____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "3",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>CPI with a Perfect Cache: 2</p>
+<p>CPI with the Actual <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Cache</mi><mo>:</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>(</mo><mi>ideally</mi><mo>)</mo><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>02</mn><mo>*</mo><mn>100</mn></math>( stall cycles for instruction cache miss) + 0.25*0.08*100(stall cycles for data cache miss) =&nbsp; 6</p>
+<p>Speedup with a perfect cache = 6/2 = 3.00</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>Consider a digital logic circuit consisting of three 2-to-l multiplexers <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">M</mi><mn>1</mn></msub><mo>.</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">M</mi><mn>2</mn></msub><mo>,</mo><mtext>&#160;</mtext><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">M</mi><mn>3</mn></msub></math> as shown below. <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">X</mi><mn>1</mn></msub><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">X</mi><mn>2</mn></msub></math> are inputs of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">M</mi><mn>1</mn></msub><mo>.</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">X</mi><mn>3</mn></msub><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">X</mi><mn>4</mn></msub></math> are inputs of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">M</mi><mn>2</mn></msub><mo>.</mo><mtext>&#160;</mtext><mi mathvariant="normal">A</mi><mo>,</mo><mtext>&#160;</mtext><mi mathvariant="normal">B</mi><mo>,</mo></math> and C are select lines of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">M</mi><mn>1</mn></msub><mo>,</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">M</mi><mn>2</mn></msub><mo>,</mo><mtext>&#160;</mtext><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">M</mi><mn>3</mn></msub><mo>,</mo></math> respectively.</p>
+<p><img title="Picture17.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/4da3ce2e-953a-46a3-917d-afbc740a9a45.png" alt="" width="334" height="291" /></p>
+<p>For an instance of inputs <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">X</mi><mn>1</mn></msub><mo>=</mo><mtext>&#160;</mtext><mi mathvariant="normal">l</mi><mo>,</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">X</mi><mn>2</mn></msub><mo>=</mo><mtext>&#160;</mtext><mi mathvariant="normal">l</mi><mo>,</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">X</mi><mn>3</mn></msub><mo>=</mo><mtext>&#160;</mtext><mn>0</mn><mo>.</mo><mtext>&#160;</mtext><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">X</mi><mn>4</mn></msub><mo>=</mo><mtext>&#160;</mtext><mn>0</mn><mo>,</mo></math> the number of combinations of A. B. C that give the output Y=1 is</p>
+<p>&nbsp;</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "4",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture18.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/b55dd4aa-2cd7-4ff9-a2d3-3e074ba7a1e2.png" alt="" width="308" height="246" /></p>
+<p><strong>Here,</strong>&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">X</mi><mn>1</mn></msub><mo>=</mo><mtext>&#160;</mtext><mn>1</mn></math></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi mathvariant="normal">X</mi><mn>2</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>1</mn></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">X</mi><mn>3</mn></msub><mo>=</mo><mtext>&#160;</mtext><mn>0</mn></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><msub><mi mathvariant="normal">X</mi><mn>4</mn></msub><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>0</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>=</mo><mover><mi mathvariant="normal">A</mi><mo>&#175;</mo></mover><msub><mi mathvariant="normal">x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>Ax</mi><mn>2</mn></msub><mo>=</mo><mover><mi mathvariant="normal">A</mi><mo>&#175;</mo></mover><mo>+</mo><mi mathvariant="normal">A</mi><mo>=</mo><mn>1</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">Q</mi><mo>=</mo><mover><mi mathvariant="normal">B</mi><mo>&#175;</mo></mover><msub><mi mathvariant="normal">x</mi><mn>3</mn></msub><mo>+</mo><msub><mi>Bx</mi><mn>4</mn></msub><mo>=</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8756;</mo><mo>&#8202;</mo><mo>&#8202;</mo><mo>&#8202;</mo><mo>&#8202;</mo><mi mathvariant="normal">Y</mi><mo>=</mo><mo>&#8202;</mo><mo>&#8202;</mo><mo>&#8202;</mo><mover><mi mathvariant="normal">C</mi><mo>&#175;</mo></mover><mi mathvariant="normal">P</mi><mo>+</mo><mi>CQ</mi><mo>=</mo><mover><mi mathvariant="normal">C</mi><mo>&#175;</mo></mover></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8756;</mo><mo>&#8202;</mo><mo>&#8202;</mo><mo>&#8202;</mo><mo>&#8202;</mo><mi mathvariant="normal">Y</mi><mo>=</mo><mfenced><mrow><mi mathvariant="normal">A</mi><mo>+</mo><mover><mi mathvariant="normal">A</mi><mo>&#175;</mo></mover></mrow></mfenced><mo>&#8202;</mo><mfenced><mrow><mi mathvariant="normal">B</mi><mo>+</mo><mover><mi mathvariant="normal">B</mi><mo>&#175;</mo></mover></mrow></mfenced><mover><mi mathvariant="normal">C</mi><mo>&#175;</mo></mover></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mo>&#8202;</mo><mi>AB</mi><mover><mi mathvariant="normal">C</mi><mo>&#175;</mo></mover><mo>+</mo><mi mathvariant="normal">A</mi><mover><mi mathvariant="normal">B</mi><mo>&#175;</mo></mover><mover><mi mathvariant="normal">C</mi><mo>&#175;</mo></mover><mo>&#8202;</mo><mo>&#8202;</mo><mo>+</mo><mover><mi mathvariant="normal">A</mi><mo>&#175;</mo></mover><mi mathvariant="normal">B</mi><mover><mi mathvariant="normal">C</mi><mo>&#175;</mo></mover><mo>&#8202;</mo><mo>&#8202;</mo><mo>+</mo><mo>&#8202;</mo><mover><mi mathvariant="normal">A</mi><mo>&#175;</mo></mover><mover><mi mathvariant="normal">B</mi><mo>&#175;</mo></mover><mover><mi mathvariant="normal">C</mi><mo>&#175;</mo></mover></math></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8756;</mo></math>4 combination of (A, B, C)</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following syntax-directed definition (SDD).</p>
+<table style="width: 619px; height: 447.945px;" width="415">
+<tbody>
+<tr style="height: 55.2778px;">
+<td style="width: 237.472px; height: 55.2778px;" width="144">
+<p>S <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8594;</mo></math>DHTU</p>
+</td>
+<td style="width: 353.306px; height: 55.2778px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">S</mi><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mi mathvariant="normal">D</mi><mo>.</mo><mi>val</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">H</mi><mo>.</mo><mi>val</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">T</mi><mo>.</mo><mi>val</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">U</mi><mo>.</mo><mi>val</mi><mo>;</mo><mtext>&#160;</mtext></mrow></mfenced></math></p>
+</td>
+</tr>
+<tr style="height: 57.4167px;">
+<td style="width: 237.472px; height: 57.4167px;" width="144">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">D</mi><mo>&#8594;</mo><mo>&#8220;</mo><mi mathvariant="normal">M</mi><mo>&#8221;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">D</mi><mn>1</mn></msub></math></p>
+</td>
+<td style="width: 353.306px; height: 57.4167px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">D</mi><mo>.</mo><mtext>&#160;</mtext><mi>Val</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>5</mn><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">D</mi><mn>1</mn></msub><mi>Val</mi><mo>;</mo></mrow></mfenced></math></p>
+</td>
+</tr>
+<tr style="height: 55.2778px;">
+<td style="width: 237.472px; height: 55.2778px;" width="144">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">D</mi><mo>&#8594;</mo><mi mathvariant="normal">&#949;</mi></math></p>
+</td>
+<td style="width: 353.306px; height: 55.2778px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">D</mi><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mtext>&#160;</mtext><mo>=</mo><mo>&#160;</mo><mtext>&#160;</mtext><mo>&#8211;</mo><mn>5</mn><mo>;</mo></mrow></mfenced></math></p>
+</td>
+</tr>
+<tr style="height: 57.4167px;">
+<td style="width: 237.472px; height: 57.4167px;" width="144">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">H</mi><mo>&#8594;</mo><mo>&#8220;</mo><mi mathvariant="normal">L</mi><mo>&#8221;</mo><mtext>&#160;</mtext><mi mathvariant="normal">H</mi><msub><mn>1</mn><mn>1</mn></msub></math></p>
+</td>
+<td style="width: 353.306px; height: 57.4167px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">H</mi><mo>.</mo><mtext>&#160;</mtext><mi>Val</mi><mtext>&#160;</mtext><mo>=</mo><mo>&#160;</mo><mtext>&#160;</mtext><mn>5</mn><mtext>&#160;</mtext><mo>*</mo><mtext>&#160;</mtext><mn>10</mn><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">H</mi><mn>1</mn></msub><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mo>;</mo></mrow></mfenced></math></p>
+</td>
+</tr>
+<tr style="height: 55.2778px;">
+<td style="width: 237.472px; height: 55.2778px;" width="144">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">H</mi><mo>&#8594;</mo><mi mathvariant="normal">&#949;</mi></math></p>
+</td>
+<td style="width: 353.306px; height: 55.2778px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">H</mi><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mo>&#8211;</mo><mtext>&#160;</mtext><mn>10</mn><mo>;</mo></mrow></mfenced></math></p>
+</td>
+</tr>
+<tr style="height: 57px;">
+<td style="width: 237.472px; height: 57px;" width="144">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mo>&#8594;</mo><mo>&#8220;</mo><mi mathvariant="normal">C</mi><mo>&#8221;</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math></p>
+</td>
+<td style="width: 353.306px; height: 57px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">T</mi><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>5</mn><mtext>&#160;</mtext><mo>*</mo><mtext>&#160;</mtext><mn>100</mn><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mo>;</mo></mrow></mfenced></math></p>
+</td>
+</tr>
+<tr style="height: 55.2778px;">
+<td style="width: 237.472px; height: 55.2778px;" width="144">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">T</mi><mo>&#8594;</mo><mi mathvariant="normal">&#949;</mi></math></p>
+</td>
+<td style="width: 353.306px; height: 55.2778px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">T</mi><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mo>&#8211;</mo><mtext>&#160;</mtext><mn>5</mn><mo>;</mo></mrow></mfenced></math></p>
+</td>
+</tr>
+<tr style="height: 55px;">
+<td style="width: 237.472px; height: 55px;" width="144">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">U</mi><mo>&#8594;</mo><mo>&#8220;</mo><mi mathvariant="normal">K</mi><mo>&#8221;</mo></math></p>
+</td>
+<td style="width: 353.306px; height: 55px;" width="271">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="{" close="}"><mrow><mi mathvariant="normal">U</mi><mo>.</mo><mtext>&#160;</mtext><mi>val</mi><mo>&#160;</mo><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><mn>5</mn><mo>;</mo></mrow></mfenced></math></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Given &ldquo;MMLK" as the input which one of the following options is the CORRECT value computed by the SDD (in the attribute S. val)?</p>`,
+      image: "",
+      options: [
+        `<p>65</p>`,
+        `<p>45</p>`,
+        `<p>55</p>`,
+        `<p>50</p>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture19.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/0e89f419-37d1-47bf-b10f-bcb93c40dcd5.png" alt="" width="226" height="278" /></p>
+<p>S. Val = 5 + 40 &ndash; 5 + 5&nbsp; = 45</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following pseudo-code.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1 = &ndash;1&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t2 = 0&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t3 = 0&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>4</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t4 = 4 * r3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>5</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t5 = 4 * t2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>6</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t6 = t5 * M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>7</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t7 = t4 4 t6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>8</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t8 = a[t7]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>9</mn></msub></math>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; it t 8 &lArr; max goto L11&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>10</mn></msub></math>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1 = t8&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>11</mn></msub></math>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t3 = t3+ 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>12</mn></msub></math>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if t3 &lt; M goto&nbsp; L4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>13</mn></msub></math>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t2 = t2 + 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>14</mn></msub></math>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if t2 &lt; N goto L3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>15</mn></msub></math>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max = t1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>Which one of the following options CORRECTLY specifies the number of basic blocks and the number of instructions in the largest basic block, respectively?</p>`,
+      image: "",
+      options: [
+        `<p>7 and 7</p>`,
+        `<p>6 and 6</p>`,
+        `<p>7 and 6</p>`,
+        `<p>6 and 7</p>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p><img title="Picture20.png" src="https://static.pw.live/5eb393ee95fab7468a79d189/QBG/8dbf9fa7-bd82-42d7-96eb-6efd6b83e976.png" alt="" width="305" height="485" /></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      video: "",
+      text: `<p>Consider the following two threads <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mtext>&#160;</mtext><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math>that update two shared variables a and b. Assume that initially a = b = 1. Though context switching between threads can happen at any time, each statement of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mi>or</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math> is executed atomically without interruption.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = a + 1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = 2 * b;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = b + 1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = 2 * a;</p>
+<p>Which one of the following options lists all the possible combinations of values of a and b after both <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mo>&#160;</mo><mi>and</mi><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo></math> finish execution?</p>`,
+      image: "",
+      options: [
+        `<p>(a = 4, b = 4): (a = 3, b = 3):(a = 4, b = 3)</p>`,
+        `<p>(a = 2, b = 2): (a = 2, b = 3):(a = 3, b = 4)</p>`,
+        `<p>(a = 3, b = 4); (a = 4, b = 3):(a = 3, b = 3)</p>`,
+        `<p>(a = 4, b = 4); (a = 4, b = 3): (a = 3, b = 4)</p>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>Initially a = b = 1</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>*</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>;</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>*</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>;</mo></math></p>
+<ul>
+<li>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>1</mn><mi>st</mi></msup></math>&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math> runs completely followed by <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math>.</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>4</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>4</mn></math></p>
+<ul>
+<li>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>1</mn><mi>st</mi></msup></math> &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math> runs completely followed by <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math>.</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>3</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>3</mn></math></p>
+<ul>
+<li>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>1</mn><mi>st</mi></msup></math> statement of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math> runs and gets pre-empted to <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math> and after that <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math> runs its <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mi>nd</mi></msup></math> statement.</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>4</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>3</mn></math></p>
+<ul>
+<li>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>1</mn><mi>st</mi></msup></math> statement of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math> run and then gets pre-empted to <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub><mo>,</mo><mtext>&#160;</mtext><msub><mi mathvariant="normal">T</mi><mn>1</mn></msub></math>runs completely and after that lastly <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">T</mi><mn>2</mn></msub></math> execute <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mi>nd</mi></msup></math>statement.</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>+</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mi mathvariant="normal">b</mi><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>3</mn></math></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><mi mathvariant="normal">a</mi><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mn>4</mn></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>The number of edges present in the forest generated by the DFS traversal of an undirected graph G with 100 vertices is 40. The number of connected components in G is____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "60",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The number of connected components,</p>
+<p>n - k</p>
+<p>= 100 - 40 = 60.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>Consider the following C function definition.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>intf</mi><mo>(</mo><mi>intx</mi><mo>,</mo><mi>inty</mi><mo>)</mo><mi mathvariant="normal">{</mi></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>for</mi><mo>(</mo><mi>inti</mi><mo>=</mo><mn>0</mn><mo>;</mo><mi mathvariant="normal">i</mi><mo>&#60;</mo><mi mathvariant="normal">y</mi><mo>;</mo><mi mathvariant="normal">i</mi><mo>+</mo><mo>+</mo><mo>)</mo><mi mathvariant="normal">{</mi></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; x = x + x + y;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>}</mo></math></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#160;</mo><mo>}</mo></math></p>
+<p>Which of the following statements is/are TRUE about the above function?</p>`,
+      image: "",
+      options: [
+        `<p>If the inputs are x = 20, y = 10, then the return value is less than 2<sup>10</sup></p>`,
+        `<p>If the inputs are x = 20, y = 20, then the return value is greater than 2<sup>20</sup></p>`,
+        `<p>If the inputs are x = 20, y = 10, then the return value is greater than 2<sup>20</sup></p>`,
+        `<p>If the inputs are x = 10, y = 20. then the return value is greater than 2<sup>20</sup></p>`,
+      ],
+      answer: ["B","D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>The loop runs total y times in the loop&nbsp;</p>
+<table style="width: 64.5197%;">
+<tbody>
+<tr>
+<td style="width: 28.3169%;" width="75">
+<p>Iteration</p>
+</td>
+<td style="width: 71.6452%;" width="191">
+<p>Value</p>
+</td>
+</tr>
+<tr>
+<td style="width: 28.3169%;" width="75">
+<p>1</p>
+</td>
+<td style="width: 71.6452%;" width="191">
+<p>2x + y</p>
+</td>
+</tr>
+<tr>
+<td style="width: 28.3169%;" width="75">
+<p>2</p>
+</td>
+<td style="width: 71.6452%;" width="191">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mfenced><mrow><mn>2</mn><mi mathvariant="normal">x</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">y</mi><mtext>&#160;</mtext></mrow></mfenced><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">y</mi><mtext>&#160;</mtext><mo>=</mo><mtext>&#160;</mtext><msup><mn>2</mn><mn>2</mn></msup><mi mathvariant="normal">x</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mn>2</mn><mi mathvariant="normal">y</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">y</mi></math></p>
+</td>
+</tr>
+<tr>
+<td style="width: 28.3169%;" width="75">
+<p>3</p>
+</td>
+<td style="width: 71.6452%;" width="191">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>3</mn></msup><mi mathvariant="normal">x</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mn>4</mn><mi mathvariant="normal">y</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mn>2</mn><mi mathvariant="normal">y</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">y</mi></math></p>
+</td>
+</tr>
+<tr>
+<td style="width: 28.3169%;" width="75">
+<p>4</p>
+</td>
+<td style="width: 71.6452%;" width="191">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>4</mn></msup><mi mathvariant="normal">x</mi><mo>+</mo><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mn>8</mn><mi mathvariant="normal">y</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mn>4</mn><mi mathvariant="normal">y</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mn>2</mn><mi mathvariant="normal">y</mi><mtext>&#160;</mtext><mo>+</mo><mtext>&#160;</mtext><mi mathvariant="normal">y</mi></math></p>
+</td>
+</tr>
+<tr>
+<td style="width: 28.3169%;" width="75">
+<p>&hellip;.</p>
+</td>
+<td style="width: 71.6452%;" width="191">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="width: 28.3169%;" width="75">
+<p>Y</p>
+</td>
+<td style="width: 71.6452%;" width="191">
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mi mathvariant="normal">y</mi></msup><mi mathvariant="normal">x</mi><mo>+</mo><msup><mn>2</mn><mrow><mi mathvariant="normal">y</mi><mo>&#8722;</mo><mn>1</mn></mrow></msup><msub><mi mathvariant="normal">y</mi><mrow><mo>+</mo><mo>&#8230;</mo><mo>.</mo></mrow></msub><mn>2</mn><mi mathvariant="normal">y</mi><mo>+</mo><mi mathvariant="normal">y</mi></math></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Hence the value</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign="left"><mtr><mtd><msup><mn>2</mn><mi mathvariant="normal">y</mi></msup><mi mathvariant="normal">x</mi><mo>+</mo><mi mathvariant="normal">y</mi><mfenced><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mo>&#8230;</mo><msup><mrow><mo>.</mo><mn>2</mn></mrow><mrow><mi mathvariant="normal">y</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></mtd></mtr><mtr><mtd><mo>=</mo><msup><mn>2</mn><mi mathvariant="normal">y</mi></msup><mi mathvariant="normal">x</mi><mo>+</mo><mi mathvariant="normal">y</mi><mfenced><mfrac><mrow><mn>1</mn><mo>(</mo><msup><mn>2</mn><mi mathvariant="normal">y</mi></msup><mo>-</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>-</mo><mn>1</mn></mrow></mfrac></mfenced></mtd></mtr><mtr><mtd><mo>=</mo><msup><mn>2</mn><mi mathvariant="normal">y</mi></msup><mi mathvariant="normal">x</mi><mo>+</mo><mi mathvariant="normal">y</mi><msup><mn>2</mn><mi mathvariant="normal">y</mi></msup><mo>-</mo><mi mathvariant="normal">y</mi></mtd></mtr><mtr><mtd><mo>=</mo><mo>(</mo><mi mathvariant="normal">x</mi><mo>+</mo><mi mathvariant="normal">y</mi><mo>)</mo><msup><mn>2</mn><mi mathvariant="normal">y</mi></msup><mo>-</mo><mi mathvariant="normal">y</mi></mtd></mtr></mtable></math></p>
+<p>Option A false , x = 20, y = 10 value is&nbsp; will be greater than <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>10</mn></msup></math></p>
+<p>Option B TRUE , x = 20, y = 20 value is&nbsp; will be greater than <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>20</mn></msup></math></p>
+<p>Option C false , x = 20, y = 10 value is&nbsp; will not be greater than <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>20</mn></msup></math></p>
+<p>Option D TRUE , x = 10, y = 20 value is&nbsp; will be greater than <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>20</mn></msup></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      video: "",
+      text: `<p>A bag contains 10 red balls and 15 blue balls. Two balls are drawn randomly without replacement. Given that the first ball drawn is red. The probability (rounded off to 3 decimal places) that both balls drawn are red is_____.</p>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "0.375",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>There is 10 red balls &amp; 15 blue balls.</p>
+<p>Given that 1<sup>st</sup> ball drawn is red.</p>
+<p>So, it becomes 9 red balls &amp; 15 blue balls.</p>
+<p>Now, &nbsp;&nbsp; Required probability = P(red ball in 2<sup>nd</sup> draw)</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&rArr;</mo><mfrac><mn>9</mn><mrow><mn>15</mn><mo>+</mo><mn>9</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>375</mn></math></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      video: "",
+      text: `<p>The chromatic number of a graph is the minimum number of colorus used in a proper colouring of the graph. Let G be any graph with n vertices and chromatic number k. Which of the following statements is are always TRUE?</p>`,
+      image: "",
+      options: [
+        `<p>G contains a complete subgraph with k vertices</p>`,
+        `<p>G contains at least k(k &mdash; 1)/2 edges</p>`,
+        `<p>G contains an independent set of size at least n/k</p>`,
+        `<p>G contains a vertex of degree at least k</p>`,
+      ],
+      answer: ["B","C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <p>G contains at least k (k &ndash; 1)/2 edges:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>True</strong></p>
+<p>G contains an independent set of size at least n/k:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>True</strong></p>
+<p>&nbsp;</p></div>`
+    }
+  ]
+});
+
+// Extra alias registrations for robust matching
+if (typeof window !== "undefined") {
+  window.testBackendIdMap = window.testBackendIdMap || {};
+  const _safeId3 = "pw_cs_gate_2026_gate_pyq_test_3___gate_2024";
+  window.testBackendIdMap["pw-cs-gate-2026|GATE PYQ Test 3 - GATE 2024"] = _safeId3;
+  window.testBackendIdMap["GATE PYQ Test 3 - GATE 2024"] = _safeId3;
+  window.testBackendIdMap["GATE PYQ Test 3 :\tGATE 2024 (Set 01)"] = _safeId3;
+  window.testBackendIdMap["GATE PYQ Test 3 : GATE 2024 (Set 01)"] = _safeId3;
+  window.testBackendIdMap["GATE PYQ Test 3 (GATE 2024)"] = _safeId3;
+  window.testBackendIdMap["GATE 2024 (Set 01)"] = _safeId3;
+  window.testBackendIdMap["GATE 2024"] = _safeId3;
+}
