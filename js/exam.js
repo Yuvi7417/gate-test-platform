@@ -2645,7 +2645,7 @@ function confirmSubmit() {
     } else if (q.type === "MSQ") {
       const correctVal = q.correct !== undefined ? q.correct : q.answer;
       let correctArr = [...(correctVal || [])].sort();
-      if (typeof correctArr[0] === "string" && /^[A-D]$/i.test(correctArr[0])) {
+      if (typeof correctArr[0] === "string" && /^[A-Z]$/i.test(correctArr[0])) {
         correctArr = correctArr.map(c => c.toUpperCase().charCodeAt(0) - 65).sort();
       }
       const givenArr = [...given].sort();
@@ -2682,7 +2682,7 @@ function confirmSubmit() {
       const isMTA = q.isMTA || q.answer === "N/A" || q.correct === "N/A";
       const correctVal = q.correct !== undefined ? q.correct : q.answer;
       let cIdx = correctVal;
-      if (typeof correctVal === "string" && /^[A-D]$/i.test(correctVal)) {
+      if (typeof correctVal === "string" && /^[A-Z]$/i.test(correctVal)) {
         cIdx = correctVal.toUpperCase().charCodeAt(0) - 65;
       }
       if (isMTA || (Array.isArray(cIdx) ? cIdx.includes(given) : given === cIdx)) {
@@ -3833,8 +3833,8 @@ window.openQuestionPreview = function(idx) {
     const correctVal = q.correct !== undefined ? q.correct : q.answer;
     let correctIndices = [];
     if (Array.isArray(correctVal)) {
-      correctIndices = correctVal.map(c => typeof c === 'string' && /^[A-D]$/i.test(c) ? c.toUpperCase().charCodeAt(0) - 65 : Number(c));
-    } else if (typeof correctVal === 'string' && /^[A-D]$/i.test(correctVal)) {
+      correctIndices = correctVal.map(c => typeof c === 'string' && /^[A-Z]$/i.test(c) ? c.toUpperCase().charCodeAt(0) - 65 : Number(c));
+    } else if (typeof correctVal === 'string' && /^[A-Z]$/i.test(correctVal)) {
       correctIndices = [correctVal.toUpperCase().charCodeAt(0) - 65];
     } else if (correctVal != null) {
       correctIndices = [Number(correctVal)];
@@ -3842,8 +3842,8 @@ window.openQuestionPreview = function(idx) {
 
     let userIndices = [];
     if (Array.isArray(st.answer)) {
-      userIndices = st.answer.map(c => typeof c === 'string' && /^[A-D]$/i.test(c) ? c.toUpperCase().charCodeAt(0) - 65 : Number(c));
-    } else if (typeof st.answer === 'string' && /^[A-D]$/i.test(st.answer)) {
+      userIndices = st.answer.map(c => typeof c === 'string' && /^[A-Z]$/i.test(c) ? c.toUpperCase().charCodeAt(0) - 65 : Number(c));
+    } else if (typeof st.answer === 'string' && /^[A-Z]$/i.test(st.answer)) {
       userIndices = [st.answer.toUpperCase().charCodeAt(0) - 65];
     } else if (st.answer != null && st.answer !== "") {
       userIndices = [Number(st.answer)];
