@@ -548,7 +548,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 59,
+    tests: 60,
     startDate: "2026-05-17",
     endDate: "2027-02-15",
     session: "2026-2027",
@@ -3900,6 +3900,19 @@ window.PYQ_PW_DEFAULT_TESTS = [
   {
     series: "pw-cs-gate-2026",
     order: 59,
+    name: "GATE PYQ Test 4 - GATE 2025 (Set 02)",
+    testLabel: "GATE PYQ 4 (Set 2)",
+    testType: "PYQ",
+    bracket: "GATE 2025 (Set 02) Official Paper",
+    subject: "pw_gate_pyq",
+    date: "20 November 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "GATE 2025 Computer Science Official Paper (Set 02)"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 60,
     name: "GATE PYQ Test 5 - GATE 2026",
     testLabel: "GATE PYQ 5",
     testType: "PYQ",
