@@ -3887,15 +3887,15 @@ window.PYQ_PW_DEFAULT_TESTS = [
   {
     series: "pw-cs-gate-2026",
     order: 58,
-    name: "GATE PYQ Test 4 - GATE 2025",
-    testLabel: "GATE PYQ 4",
+    name: "GATE PYQ Test 4 - GATE 2025 (Set 01)",
+    testLabel: "GATE PYQ 4 (Set 1)",
     testType: "PYQ",
-    bracket: "GATE 2025 Official Paper",
+    bracket: "GATE 2025 (Set 01) Official Paper",
     subject: "pw_gate_pyq",
     date: "20 November 2026",
     duration: "180 Min",
     totalMarks: 100,
-    topicsCovered: "GATE 2025 Computer Science Official Paper"
+    topicsCovered: "GATE 2025 Computer Science Official Paper (Set 01)"
   },
   {
     series: "pw-cs-gate-2026",
