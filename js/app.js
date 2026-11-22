@@ -3913,15 +3913,15 @@ window.PYQ_PW_DEFAULT_TESTS = [
   {
     series: "pw-cs-gate-2026",
     order: 60,
-    name: "GATE PYQ Test 5 - GATE 2026",
-    testLabel: "GATE PYQ 5",
+    name: "GATE PYQ Test 5 - GATE 2026 (Set 01)",
+    testLabel: "GATE PYQ 5 (Set 1)",
     testType: "PYQ",
-    bracket: "GATE 2026 Official Paper",
+    bracket: "GATE 2026 (Set 01) Official Paper",
     subject: "pw_gate_pyq",
     date: "20 November 2026",
     duration: "180 Min",
     totalMarks: 100,
-    topicsCovered: "GATE 2026 Computer Science Official Paper"
+    topicsCovered: "GATE 2026 Computer Science Official Paper (Set 01)"
   }
 ];
 
