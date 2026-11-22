@@ -2965,7 +2965,7 @@ window.PYQ_PW_LEVEL_DEFAULT_TESTS = [
     "subject": "mst",
     "date": "October 31, 2026",
     "duration": "180 Min",
-    "totalMarks": 60,
+    "totalMarks": 45,
     "topicsCovered": "Digital Electronics + Data Structures + General Aptitude"
   },
   {
