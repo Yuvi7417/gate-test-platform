@@ -283,7 +283,7 @@ window.testSeries = [
     f: "neet",
     lang: "English",
     objective: "Objective (NEET Pattern)",
-    tests: 13,
+    tests: 14,
     startDate: "2026-05-01",
     endDate: "2027-05-31",
     session: "2026-2027",
@@ -306,6 +306,7 @@ window.testSeries = [
       },
     ],
     schedule: [
+      ["Test Series for NEET - 2019 (Test - 1, Code - B)", "Mar 23, 2019", 180],
       ["SWT 01 - Biotechnology: Principles & Processes (NCERT Core - Part 1)", "May 10, 2026"],
       ["SWT 02 - Biotechnology: Principles & Processes (NCERT Core - Part 2)", "May 12, 2026"],
       ["SWT 03 - Biotechnology: Principles & Processes (NCERT Core - Part 3)", "May 15, 2026"],
@@ -2239,6 +2240,15 @@ window.PYQ_EE_TOPIC_MAP = {
 
 window.NEET_SUBJECTS = [
   {
+    id: "neet_aakash_mock",
+    name: "Aakash NEET Practice Mock Tests (Physics + Chemistry + Biology)",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h6"/></svg>`,
+    iconBg: "#fee2e2",
+    iconColor: "#dc2626",
+    regex: /(test series for neet|aakash)/i
+  },
+  {
     id: "neet_bio_principles",
     name: "Biotechnology: Principles and Processes (Chapter Drill & PYQs)",
     iconType: "svg",
@@ -2318,6 +2328,7 @@ window.NEET_SUBJECTS = [
 ];
 
 window.NEET_TOPIC_MAP = {
+  "Test Series for NEET - 2019 (Test - 1, Code - B)": "Physics: Physical World, Units & Measurements, Motion in a Straight Line, Motion in a Plane | Chemistry: Some Basic Concepts of Chemistry, Structure of Atom | Botany: The Living World, Biological Classification, Plant Kingdom | Zoology: Animal Kingdom",
   "SWT 01 - Biotechnology: Principles & Processes (NCERT Core - Part 1)": "Principles of Biotechnology, History, Tools of rDNA, Restriction Endonucleases, Agarose Gel Electrophoresis",
   "SWT 02 - Biotechnology: Principles & Processes (NCERT Core - Part 2)": "Cloning Vectors, pBR322 Features, Selectable Markers, Competent Host, Transformation & Biolistics",
   "SWT 03 - Biotechnology: Principles & Processes (NCERT Core - Part 3)": "Polymerase Chain Reaction (PCR), Bioreactors (Sparged & Stirred Tank), Downstream Processing",
