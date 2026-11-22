@@ -2978,7 +2978,7 @@ window.PYQ_PW_LEVEL_DEFAULT_TESTS = [
     "subject": "mst",
     "date": "November 7, 2026",
     "duration": "180 Min",
-    "totalMarks": 60,
+    "totalMarks": 50,
     "topicsCovered": "Computer Network + C Programming + Compiler Design + Database Management System"
   },
   {
