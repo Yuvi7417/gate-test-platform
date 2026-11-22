@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apex Core | GATE, PSU & ESE Coaching</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"
+    rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="css/style.css?v=25">
+  <link rel="stylesheet" href="css/style.css?v=24">
   <style>
     /* Security Styles */
     body {
@@ -21,29 +22,45 @@
       -ms-user-select: none;
       -moz-user-select: none;
     }
-    input, textarea {
+
+    input,
+    textarea {
       user-select: auto;
       -webkit-user-select: auto;
       -ms-user-select: auto;
       -moz-user-select: auto;
     }
+
     img {
       -webkit-user-drag: none;
-      pointer-events: none; /* Prevents dragging and right-clicking images */
+      pointer-events: none;
+      /* Prevents dragging and right-clicking images */
     }
+
     /* Exclude specific UI elements from pointer-events none if they need to be clickable */
     .answer-content img {
       max-width: 100%;
       height: auto;
-      pointer-events: auto; /* Let users click if needed inside editor */
+      pointer-events: auto;
+      /* Let users click if needed inside editor */
       -webkit-user-drag: none;
     }
+
     /* Level 1 Print Protection: Block screen-to-PDF / printing of tests */
     @media print {
-      html, body, #playerOverlay, #qpaperOverlay, #examOverlay, #mainApp, .view, .pyq-table-responsive {
+
+      html,
+      body,
+      #playerOverlay,
+      #qpaperOverlay,
+      #examOverlay,
+      #mainApp,
+      .view,
+      .pyq-table-responsive {
         display: none !important;
         visibility: hidden !important;
       }
+
       body::after {
         content: "Printing and PDF export of tests are prohibited by ApexCore Content Security Policy.";
         display: block !important;
@@ -59,7 +76,7 @@
     // Security Scripts to prevent inspect and copying
     document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right-click
 
-    document.addEventListener('keydown', function(event) {
+    document.addEventListener('keydown', function (event) {
       // Prevent F12
       if (event.key === 'F12') {
         event.preventDefault();
@@ -113,7 +130,7 @@
     });
 
     // Wipe clipboard on PrintScreen keyup attempt
-    window.addEventListener('keyup', function(e) {
+    window.addEventListener('keyup', function (e) {
       if (e.key === 'PrintScreen' || e.keyCode === 44) {
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText('');
@@ -122,7 +139,7 @@
     });
 
     // Prevent dragging questions / elements
-    document.addEventListener('dragstart', function(e) {
+    document.addEventListener('dragstart', function (e) {
       if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
         e.preventDefault();
         return false;
@@ -130,15 +147,15 @@
     });
 
     // Advanced DevTools blocker (debugger loop + dimension check)
-    setInterval(function() {
+    setInterval(function () {
       var before = new Date().getTime();
       debugger;
       var after = new Date().getTime();
-      
+
       const threshold = 160;
       const widthDiff = window.outerWidth - window.innerWidth > threshold;
       const heightDiff = window.outerHeight - window.innerHeight > threshold;
-      
+
       if ((after - before > 100) || widthDiff || heightDiff) {
         document.body.style.display = 'none';
       } else {
@@ -147,31 +164,32 @@
     }, 1000);
   </script>
   <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    },
-    svg: {
-      fontCache: 'global'
-    },
-    startup: {
-      ready: () => {
-        MathJax.startup.defaultReady();
-        MathJax.startup.promise.then(() => {
-          const qText = document.getElementById('playerQText');
-          const qOpts = document.getElementById('playerOptions');
-          const qSol = document.getElementById('playerSolutionBox');
-          const targets = [qText, qOpts, qSol].filter(Boolean);
-          if (targets.length > 0) {
-            MathJax.typesetPromise(targets).catch(() => {});
-          }
-        });
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          MathJax.startup.promise.then(() => {
+            const qText = document.getElementById('playerQText');
+            const qOpts = document.getElementById('playerOptions');
+            const qSol = document.getElementById('playerSolutionBox');
+            const targets = [qText, qOpts, qSol].filter(Boolean);
+            if (targets.length > 0) {
+              MathJax.typesetPromise(targets).catch(() => { });
+            }
+          });
+        }
       }
-    }
-  };
+    };
   </script>
-  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
   <script src="https://cdn.ckeditor.com/4.22.1/standard-all/ckeditor.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
@@ -246,7 +264,9 @@
       </div>
       <div class="nav-item" data-nav="contact" onclick="showView('contact')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
         </svg>
         Contact
       </div>
@@ -349,7 +369,8 @@
           <div>
             <div class="enroll-price-lab" id="dBatchLabel">Batch 1</div>
             <div style="display: flex; align-items: baseline; gap: 8px;">
-              <div class="enroll-price" id="dOldPrice" style="text-decoration: line-through; color: #94a3b8; font-size: 14px; display: none;"></div>
+              <div class="enroll-price" id="dOldPrice"
+                style="text-decoration: line-through; color: #94a3b8; font-size: 14px; display: none;"></div>
               <div class="enroll-price" id="dPrice">₹500</div>
             </div>
           </div>
@@ -371,8 +392,8 @@
                 <rect x="3" y="14" width="7" height="7" />
                 <rect x="14" y="14" width="7" height="7" />
               </svg>View Dashboard</button>
-            <button class="btn-outline-pill" onclick="showView('contact');"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
+            <button class="btn-outline-pill" onclick="showView('contact');"><svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="9" />
                 <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2 2-2 3.5M12 17h.01" />
               </svg>Ask a Doubt</button>
@@ -385,12 +406,14 @@
 
       <!-- ===================== BOOKMARKS VIEW ===================== -->
       <section class="view" id="view-bookmarks">
-        <div class="crumb"><a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span><span class="current">Bookmarks</span></div>
+        <div class="crumb"><a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span><span
+            class="current">Bookmarks</span></div>
         <div class="page-title">My Bookmarks</div>
         <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
             <h3 style="margin: 0; color: #334155;">Saved Questions</h3>
-            <select id="bookmarkSubjectFilter" onchange="renderBookmarks()" style="padding: 8px; border-radius: 4px; border: 1px solid #cbd5e1; background: #fff; font-size: 14px;">
+            <select id="bookmarkSubjectFilter" onchange="renderBookmarks()"
+              style="padding: 8px; border-radius: 4px; border: 1px solid #cbd5e1; background: #fff; font-size: 14px;">
               <option value="All">All Subjects</option>
               <option value="Civil Engineering">Civil Engineering</option>
               <option value="Computer Science">Computer Science</option>
@@ -410,17 +433,24 @@
         <div class="crumb"><a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span><span
             class="current">Contact Us</span></div>
         <div class="page-title">Contact Us</div>
-        
-        <div style="text-align: center; margin-top: 50px; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 500px; margin-left: auto; margin-right: auto;">
+
+        <div
+          style="text-align: center; margin-top: 50px; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 500px; margin-left: auto; margin-right: auto;">
           <h2 style="margin-bottom: 10px; color: #14619C;">Join Our Telegram Group</h2>
-          <p style="color: #64748b; margin-bottom: 30px;">Scan the QR code or click the button below to join our official GATE 2027 test series channel.</p>
-          
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https%3A%2F%2Ft.me%2F%2BcYjWoG7x0TVjMGE9" alt="Telegram QR Code" style="max-width: 250px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 30px;">
-          
+          <p style="color: #64748b; margin-bottom: 30px;">Scan the QR code or click the button below to join our
+            official GATE 2027 test series channel.</p>
+
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https%3A%2F%2Ft.me%2F%2BcYjWoG7x0TVjMGE9"
+            alt="Telegram QR Code"
+            style="max-width: 250px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 30px;">
+
           <div>
-            <a href="https://t.me/+cYjWoG7x0TVjMGE9" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #0088cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; transition: background 0.3s;">
+            <a href="https://t.me/+cYjWoG7x0TVjMGE9" target="_blank"
+              style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #0088cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; transition: background 0.3s;">
               <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
               </svg>
               Join Telegram Group
             </a>
@@ -446,7 +476,8 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3Z" />
           </svg>
-          <select id="typeSelect" onchange="window.filterByType()" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; margin-left: 8px;">
+          <select id="typeSelect" onchange="window.filterByType()"
+            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; margin-left: 8px;">
             <option value="All">All Tests</option>
             <option value="Topicwise">Topicwise Tests</option>
             <option value="Subjectwise">Subjectwise Tests</option>
@@ -598,7 +629,8 @@
           </svg>
           Question Paper
         </span>
-        <span class="pt-icon" onclick="if (typeof openTestPauseModal === 'function') openTestPauseModal();" title="Pause & Save Progress" style="color: #f59e0b;">
+        <span class="pt-icon" onclick="if (typeof openTestPauseModal === 'function') openTestPauseModal();"
+          title="Pause & Save Progress" style="color: #f59e0b;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:15px;height:15px;">
             <rect x="6" y="4" width="4" height="16" rx="1"></rect>
             <rect x="14" y="4" width="4" height="16" rx="1"></rect>
@@ -606,11 +638,13 @@
           Pause & Save
         </span>
         <span class="pt-icon" id="fullscreenToggleBtn" onclick="toggleExamFullScreen()" title="Toggle Full Screen">
-          <svg id="fsIconExpand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
-            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          <svg id="fsIconExpand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            style="width:16px;height:16px;">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
           </svg>
-          <svg id="fsIconCompress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;display:none;">
-            <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/>
+          <svg id="fsIconCompress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            style="width:16px;height:16px;display:none;">
+            <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
           </svg>
           <span id="fsBtnLabel">Full Screen</span>
         </span>
@@ -656,8 +690,13 @@
             <div class="player-qnum" id="playerQNum" style="margin-bottom: 0;">Question No. 1</div>
             <div style="display: flex; gap: 10px;">
 
-              <button id="playerBookmarkBtn" onclick="togglePlayerBookmark()" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer; color: #475569; font-weight: 500; transition: all 0.2s;">
-                <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;" id="playerBookmarkSvg"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <button id="playerBookmarkBtn" onclick="togglePlayerBookmark()"
+                style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer; color: #475569; font-weight: 500; transition: all 0.2s;">
+                <svg viewBox="0 0 24 24"
+                  style="width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;"
+                  id="playerBookmarkSvg">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
                 <span id="playerBookmarkText">Bookmark</span>
               </button>
             </div>
@@ -697,8 +736,11 @@
           <div class="pf-right" id="playerSolutionFooter" style="display:none; gap: 10px; flex: 1;">
             <button class="pf-btn ghost" onclick="closePlayerAndShowResult()">Back to Results</button>
             <button class="pf-btn primary" onclick="playerSaveNext()">Next</button>
-            <button class="pf-btn" style="border: 1px solid #0056b3; color: #0056b3; font-weight: 500; background: #fff; margin-left: auto;" onclick="toggleEditor()">Add answer</button>
-            <button class="pf-btn ghost" style="border: 1px solid #cbd5e1; color: #475569;" onclick="toggleDiscuss()">Discuss</button>
+            <button class="pf-btn"
+              style="border: 1px solid #0056b3; color: #0056b3; font-weight: 500; background: #fff; margin-left: auto;"
+              onclick="toggleEditor()">Add answer</button>
+            <button class="pf-btn ghost" style="border: 1px solid #cbd5e1; color: #475569;"
+              onclick="toggleDiscuss()">Discuss</button>
           </div>
         </div>
       </div>
@@ -722,9 +764,12 @@
         <!-- Solution Smart Filters -->
         <div class="solution-filter-bar" id="solutionFilterBar" style="display: none;">
           <button class="sol-filter-btn active" data-filter="all" onclick="filterSolutionQuestions('all')">All</button>
-          <button class="sol-filter-btn incorrect-btn" data-filter="incorrect" onclick="filterSolutionQuestions('incorrect')">🔴 Incorrect</button>
-          <button class="sol-filter-btn unattempted-btn" data-filter="unattempted" onclick="filterSolutionQuestions('unattempted')">🟡 Unattempted</button>
-          <button class="sol-filter-btn correct-btn" data-filter="correct" onclick="filterSolutionQuestions('correct')">🟢 Correct</button>
+          <button class="sol-filter-btn incorrect-btn" data-filter="incorrect"
+            onclick="filterSolutionQuestions('incorrect')">🔴 Incorrect</button>
+          <button class="sol-filter-btn unattempted-btn" data-filter="unattempted"
+            onclick="filterSolutionQuestions('unattempted')">🟡 Unattempted</button>
+          <button class="sol-filter-btn correct-btn" data-filter="correct"
+            onclick="filterSolutionQuestions('correct')">🟢 Correct</button>
         </div>
         <div class="player-qgrid" id="playerQGrid"></div>
         <div class="pf-submit-wrap">
@@ -736,11 +781,15 @@
 
   <!-- ===================== QUESTION PAPER (read-only full view) ===================== -->
   <!-- Answer Editor Modal Overlay -->
-  <div id="editorOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 10000; justify-content: center; align-items: center;">
-    <div style="background: #fff; width: 90%; max-width: 1000px; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      <div style="font-size: 18px; font-weight: bold; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+  <div id="editorOverlay"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 10000; justify-content: center; align-items: center;">
+    <div
+      style="background: #fff; width: 90%; max-width: 1000px; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <div
+        style="font-size: 18px; font-weight: bold; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
         <span>Your answer</span>
-        <button onclick="toggleEditor()" style="background: transparent; border: none; cursor: pointer; font-size: 32px; color: #666; line-height: 1;">&times;</button>
+        <button onclick="toggleEditor()"
+          style="background: transparent; border: none; cursor: pointer; font-size: 32px; color: #666; line-height: 1;">&times;</button>
       </div>
       <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
       <div style="margin-top: 20px; display: flex; justify-content: flex-end; gap: 10px;">
@@ -751,13 +800,18 @@
   </div>
 
   <!-- Discuss Modal Overlay -->
-  <div id="discussOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 10000; justify-content: center; align-items: center;">
-    <div style="background: #fff; width: 90%; max-width: 1000px; max-height: 90vh; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; flex-direction: column;">
-      <div style="font-size: 18px; font-weight: bold; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
+  <div id="discussOverlay"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 10000; justify-content: center; align-items: center;">
+    <div
+      style="background: #fff; width: 90%; max-width: 1000px; max-height: 90vh; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; flex-direction: column;">
+      <div
+        style="font-size: 18px; font-weight: bold; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
         <span>Discussion / Answers</span>
-        <button onclick="toggleDiscuss()" style="background: transparent; border: none; cursor: pointer; font-size: 32px; color: #666; line-height: 1;">&times;</button>
+        <button onclick="toggleDiscuss()"
+          style="background: transparent; border: none; cursor: pointer; font-size: 32px; color: #666; line-height: 1;">&times;</button>
       </div>
-      <div id="answersList" style="display: flex; flex-direction: column; gap: 15px; overflow-y: auto; padding-right: 10px;">
+      <div id="answersList"
+        style="display: flex; flex-direction: column; gap: 15px; overflow-y: auto; padding-right: 10px;">
         <!-- Answers load here -->
       </div>
     </div>
@@ -864,14 +918,14 @@
     <div class="pause-card">
       <div class="pause-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <circle cx="12" cy="12" r="10" stroke-width="2"/>
-          <line x1="10" y1="9" x2="10" y2="15" stroke-linecap="round"/>
-          <line x1="14" y1="9" x2="14" y2="15" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="10" stroke-width="2" />
+          <line x1="10" y1="9" x2="10" y2="15" stroke-linecap="round" />
+          <line x1="14" y1="9" x2="14" y2="15" stroke-linecap="round" />
         </svg>
       </div>
       <div class="pause-title">Test Paused & Progress Saved</div>
       <div class="pause-test-name" id="pauseModalTestName">Active Test</div>
-      
+
       <div class="pause-stats-row">
         <div class="pause-stat-item">
           <div class="pause-stat-val" id="pauseModalTimeLeft">--:--</div>
@@ -885,12 +939,15 @@
       </div>
 
       <p class="pause-desc">
-        Aapka test progress safe save ho chuka hai. Agli baar jab bhi aap ye test open karenge, test theek <b>isi time aur answers</b> ke sath wahi se shuru hoga!
+        Aapka test progress safe save ho chuka hai. Agli baar jab bhi aap ye test open karenge, test theek <b>isi time
+          aur answers</b> ke sath wahi se shuru hoga!
       </p>
 
       <div class="pause-actions">
         <button class="pause-btn-resume" onclick="resumeActiveTest()">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
           Resume Test
         </button>
         <button class="pause-btn-exit" onclick="saveAndExitTest()">
@@ -997,12 +1054,14 @@
         <!-- JS will populate topic cards here -->
       </div>
 
-      <div class="result-subject-title" id="subjectChartTitle" style="margin-top: 40px;">Number of Questions By Subject</div>
+      <div class="result-subject-title" id="subjectChartTitle" style="margin-top: 40px;">Number of Questions By Subject
+      </div>
       <div class="chart-card" id="subjectChartCard">
         <canvas id="subjectChart"></canvas>
       </div>
 
-      <div class="result-subject-title" id="topicChartTitle" style="margin-top: 40px;">Number of Questions By Topics</div>
+      <div class="result-subject-title" id="topicChartTitle" style="margin-top: 40px;">Number of Questions By Topics
+      </div>
       <div class="chart-card" id="topicChartCard">
         <canvas id="topicChart"></canvas>
       </div>
@@ -1066,7 +1125,7 @@
        Prevents automated console dumping (JSON.stringify, Object.keys, copy)
        ========================================================================== -->
   <script>
-    (function() {
+    (function () {
       const _store = {
         testMap: {},
         backendIdMap: {},
@@ -1075,23 +1134,23 @@
 
       // 1. Secured window.testMap
       Object.defineProperty(window, 'testMap', {
-        get: function() {
+        get: function () {
           return new Proxy(_store.testMap, {
-            get: function(target, prop) {
-              if (prop === 'toJSON') return function() { return {}; };
+            get: function (target, prop) {
+              if (prop === 'toJSON') return function () { return {}; };
               return target[prop];
             },
-            set: function(target, prop, value) {
+            set: function (target, prop, value) {
               target[prop] = value;
               return true;
             },
-            ownKeys: function() { return []; },
-            getOwnPropertyDescriptor: function() {
+            ownKeys: function () { return []; },
+            getOwnPropertyDescriptor: function () {
               return { enumerable: false, configurable: true };
             }
           });
         },
-        set: function(v) {
+        set: function (v) {
           if (typeof v === 'object' && v !== null) {
             Object.assign(_store.testMap, v);
           }
@@ -1102,23 +1161,23 @@
 
       // 2. Secured window.testBackendIdMap
       Object.defineProperty(window, 'testBackendIdMap', {
-        get: function() {
+        get: function () {
           return new Proxy(_store.backendIdMap, {
-            get: function(target, prop) {
-              if (prop === 'toJSON') return function() { return {}; };
+            get: function (target, prop) {
+              if (prop === 'toJSON') return function () { return {}; };
               return target[prop];
             },
-            set: function(target, prop, value) {
+            set: function (target, prop, value) {
               target[prop] = value;
               return true;
             },
-            ownKeys: function() { return []; },
-            getOwnPropertyDescriptor: function() {
+            ownKeys: function () { return []; },
+            getOwnPropertyDescriptor: function () {
               return { enumerable: false, configurable: true };
             }
           });
         },
-        set: function(v) {
+        set: function (v) {
           if (typeof v === 'object' && v !== null) {
             Object.assign(_store.backendIdMap, v);
           }
@@ -1129,25 +1188,25 @@
 
       // 3. Secured window.apexTestRegistry
       Object.defineProperty(window, 'apexTestRegistry', {
-        get: function() {
+        get: function () {
           return new Proxy(_store.apexTestRegistry, {
-            get: function(target, prop) {
-              if (prop === 'toJSON') return function() { return []; };
+            get: function (target, prop) {
+              if (prop === 'toJSON') return function () { return []; };
               const val = target[prop];
               if (typeof val === 'function') return val.bind(target);
               return val;
             },
-            set: function(target, prop, value) {
+            set: function (target, prop, value) {
               target[prop] = value;
               return true;
             },
-            ownKeys: function() { return ['length']; },
-            getOwnPropertyDescriptor: function() {
+            ownKeys: function () { return ['length']; },
+            getOwnPropertyDescriptor: function () {
               return { enumerable: false, configurable: true };
             }
           });
         },
-        set: function(v) {
+        set: function (v) {
           if (Array.isArray(v)) {
             _store.apexTestRegistry.length = 0;
             _store.apexTestRegistry.push(...v);
@@ -1158,7 +1217,7 @@
       });
     })();
   </script>
-  <script src="js/app.js?v=88"></script>
+  <script src="js/app.js?v=87"></script>
   <script src="js/test-registry.js?v=27"></script>
   <script src="js/neet-registry.js?v=5"></script>
   <script src="js/full-test-registry.js?v=25"></script>
@@ -1169,7 +1228,7 @@
   <script src="js/ee-test-registry.js?v=5"></script>
   <script src="js/ee-ace-2026-test-registry.js?v=5"></script>
   <script src="js/go-test-registry.js?v=16"></script>
-    <script src="js/goclasses.cn.registry.js?v=4"></script>
+  <script src="js/goclasses.cn.registry.js?v=4"></script>
   <script src="js/goclasses.algo.registry.js?v=4"></script>
   <script src="js/goclasses.c_programming.registry.js?v=4"></script>
   <script src="js/goclasses.calculus.registry.js?v=7"></script>
@@ -1203,26 +1262,34 @@
   </div>
 
   <!-- BOOKMARK DETAIL MODAL -->
-  <div class="modal-overlay" id="bookmarkDetailModal" style="display: none; align-items: center; justify-content: center;">
+  <div class="modal-overlay" id="bookmarkDetailModal"
+    style="display: none; align-items: center; justify-content: center;">
     <div class="modal-box" style="max-width: 800px; width: 95%; max-height: 90vh; overflow-y: auto; padding: 30px;">
       <button class="modal-close" onclick="document.getElementById('bookmarkDetailModal').style.display='none'">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M18 6 6 18M6 6l12 12" />
         </svg>
       </button>
-      
+
       <div style="margin-bottom: 20px;">
-        <h2 style="font-size: 20px; color: #1e293b; margin: 0 0 8px 0; font-family: 'Poppins', sans-serif;">Question Details</h2>
+        <h2 style="font-size: 20px; color: #1e293b; margin: 0 0 8px 0; font-family: 'Poppins', sans-serif;">Question
+          Details</h2>
         <div id="bookmarkModalMeta" style="font-size: 13px; color: #64748b; font-weight: 500;"></div>
       </div>
-      
-      <div id="bookmarkModalQText" style="font-size: 16px; color: #334155; line-height: 1.6; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0;"></div>
-      
-      <div id="bookmarkModalOptions" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;"></div>
-      
-      <div id="bookmarkModalCorrect" style="background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; padding: 16px; border-radius: 6px; margin-bottom: 20px; display: none;"></div>
-      
-      <div id="bookmarkModalSolution" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 20px; color: #334155; display: none;">
+
+      <div id="bookmarkModalQText"
+        style="font-size: 16px; color: #334155; line-height: 1.6; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0;">
+      </div>
+
+      <div id="bookmarkModalOptions" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+      </div>
+
+      <div id="bookmarkModalCorrect"
+        style="background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; padding: 16px; border-radius: 6px; margin-bottom: 20px; display: none;">
+      </div>
+
+      <div id="bookmarkModalSolution"
+        style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 20px; color: #334155; display: none;">
         <h4 style="margin: 0 0 12px 0; color: #0f172a; font-size: 15px;">Detailed Solution</h4>
         <div id="bookmarkModalSolutionContent"></div>
       </div>
@@ -1318,7 +1385,7 @@
   <!-- Razorpay Checkout SDK -->
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-  <script src="js/exam.js?v=99"></script>
+  <script src="js/exam.js?v=100"></script>
   <script src="js/questions/pw-test-registry.js?v=5"></script>
   <script src="js/pw-level-registry.js?v=3"></script>
   <script src="js/demo.registry.js?v=31"></script>
@@ -1327,7 +1394,8 @@
   <!-- PrismJS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 </body>
 
 </html>

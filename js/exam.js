@@ -1638,7 +1638,25 @@ async function startPlayer(testName, fetchedQuestions) {
     }
   }
 
-  if (customPlayerDur) {
+  if (isNeetTest) {
+    if (playerQuestions.length >= 180 || testNameUpper.includes("2019") || testNameUpper.includes("CODE - B") || testNameUpper.includes("AAKASH")) {
+      playerDurationMins = customPlayerDur || 180;
+      playerSections = [
+        { name: "Physics", start: 0, end: 44 },
+        { name: "Chemistry", start: 45, end: 89 },
+        { name: "Biology", start: 90, end: Math.max(90, playerQuestions.length - 1) }
+      ];
+    } else if (playerQuestions.length <= 30 || testNameUpper.includes("SWT 08") || testNameUpper.includes("SPRINT")) {
+      playerDurationMins = customPlayerDur || 20;
+      playerSections = null;
+    } else if (playerQuestions.length === 45 || testNameUpper.includes("PART-4")) {
+      playerDurationMins = customPlayerDur || 30;
+      playerSections = null;
+    } else {
+      playerDurationMins = customPlayerDur || 60;
+      playerSections = null;
+    }
+  } else if (customPlayerDur) {
     playerDurationMins = customPlayerDur;
     if (playerDurationMins === 180 && playerQuestions.length >= 65) {
       playerSections = [
@@ -1648,18 +1666,7 @@ async function startPlayer(testName, fetchedQuestions) {
     } else {
       playerSections = null;
     }
-    } else if (isNeetTest) {
-    if (playerQuestions.length >= 180 || testNameUpper.includes("2019") || testNameUpper.includes("CODE - B") || testNameUpper.includes("AAKASH")) {
-      playerDurationMins = 180;
-    } else if (playerQuestions.length <= 30 || testNameUpper.includes("SWT 08") || testNameUpper.includes("SPRINT")) {
-      playerDurationMins = 20;
-    } else if (playerQuestions.length === 45 || testNameUpper.includes("PART-4")) {
-      playerDurationMins = 30;
-    } else {
-      playerDurationMins = 60;
-    }
-    playerSections = null;
-} else if (isFullTest || isMixedSubjectTest) {
+  } else if (isFullTest || isMixedSubjectTest) {
     playerDurationMins = 180;
     playerSections = [
       { name: "Aptitude", start: 0, end: 9 },
@@ -1980,6 +1987,18 @@ function renderPlayerQuestion(i) {
     if (!el) throw new Error("Element not found: " + id);
     return el;
   };
+
+  if (playerSections && playerSections.length > 0) {
+    const matchingSecIdx = playerSections.findIndex(sec => i >= sec.start && i <= sec.end);
+    if (matchingSecIdx !== -1 && matchingSecIdx !== currentSectionIndex) {
+      currentSectionIndex = matchingSecIdx;
+      document.querySelectorAll(".player-sectiontab").forEach((tab, idx) => {
+        if (idx === currentSectionIndex) tab.classList.add("active");
+        else tab.classList.remove("active");
+      });
+      renderPlayerQGrid();
+    }
+  }
 
   let displayNum = i + 1;
   if (playerSections && playerSections[currentSectionIndex]) {
@@ -3146,7 +3165,22 @@ function getTestBreakdown(testName, questions, userAnswers) {
   }
 
   // 1. SUBJECT BREAKDOWN
-  if (isFLT) {
+  if (isNeet && totalQ >= 180) {
+    const neetSubjs = [
+      { name: "Physics", color: "#3B82F6", indices: Array.from({ length: 45 }, (_, i) => i) },
+      { name: "Chemistry", color: "#10B981", indices: Array.from({ length: 45 }, (_, i) => i + 45) },
+      { name: "Biology", color: "#8B5CF6", indices: Array.from({ length: totalQ - 90 }, (_, i) => i + 90) }
+    ];
+    neetSubjs.forEach(s => {
+      subjectGroups.push({
+        name: s.name,
+        color: s.color,
+        indices: s.indices,
+        stats: computeStats(s.indices)
+      });
+    });
+    topicGroups = subjectGroups;
+  } else if (isFLT) {
     const subjectDefs = [
       { name: "General Aptitude", color: "#14619C" },
       { name: "Operating Systems", color: "#0284C7" },
