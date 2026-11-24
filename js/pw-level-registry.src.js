@@ -27207,3 +27207,521 @@ registerTest({
         },
     ]
 });
+
+registerTest({
+    series: "pw-cs-gate",
+    name: "MST 5 - Computer Organization & Architecture + Theory of Computation + Engineering Mathematics",
+    date: "November 14, 2026",
+    questions: [
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A processor generates 48-bit byte addresses. Its L1 data cache has a capacity of 64 KiB, is 8-way set-associative, and stores 64 bytes per line. Each line has a tag, one valid bit, one dirty bit, and the full data block. Replacement uses true LRU, represented by the minimum fixed number of bits sufficient to encode every possible recency ordering of the eight ways in a set. Assume no ECC, parity, coherence state, or other metadata is stored.</p>
+<p>A design review asks for the metadata-store cost only, excluding the data-array bits. Count every tag bit, valid bit, dirty bit, and per-set LRU bit. Do not count data bits or replacement information duplicated per line. How many metadata bits are required in total?</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 39936,
+            solution: `<p>Each cache line holds 64 bytes, so the block offset requires <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">log</mi><mn>2</mn></msub><mn>64</mn><mo>=</mo><mn>6</mn></math> bits. The number of lines is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>64</mn><mo>&nbsp;</mo><mi mathvariant="normal">KiB</mi><mo>/</mo><mn>64</mn><mo>&nbsp;</mo><mi mathvariant="normal">B</mi><mo>=</mo><mn>1024</mn></math>. With 8-way associativity, the number of sets is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1024</mn><mo>/</mo><mn>8</mn><mo>=</mo><mn>128</mn></math>, requiring <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">log</mi><mn>2</mn></msub><mn>128</mn><mo>=</mo><mn>7</mn></math> index bits.</p>
+<p>The tag therefore occupies <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>48</mn><mo>&minus;</mo><mn>6</mn><mo>&minus;</mo><mn>7</mn><mo>=</mo><mn>35</mn></math> bits. Each line requires 35 tag bits, 1 valid bit, and 1 dirty bit, giving 37 metadata bits per line. Across 1024 lines, this is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1024</mn><mo>&times;</mo><mn>37</mn><mo>=</mo><mn>37888</mn></math> bits.</p>
+<p>True LRU must distinguish <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>!</mo><mo>=</mo><mn>40320</mn></math> possible recency orders. The minimum fixed-width encoding requires <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">ceil</mi><mo>(</mo><msub><mi mathvariant="normal">log</mi><mn>2</mn></msub><mn>40320</mn><mo>)</mo><mo>=</mo><mn>16</mn></math> bits per set. Across 128 sets, this is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>128</mn><mo>&times;</mo><mn>16</mn><mo>=</mo><mn>2048</mn></math> bits.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<p>A five-stage in-order pipeline (IF, ID, EX, MEM, WB) executes a long instruction stream. Its ideal CPI is 1.0, and full forwarding is available; however, a load-use dependency still causes a one-cycle bubble. Loads account for 30% of executed instructions, and 35% of loads are immediately followed by an instruction that consumes the loaded value. Branches account for 15% of instructions. The predictor is not-taken; 70% of branches are taken, and every mispredicted taken branch discards exactly three cycles of work. Assume these penalties are additive, all other instructions complete without stalls, and the given percentages refer to dynamic instruction counts rather than clock cycles. What is the steady-state CPI?</p>`,
+            image: "",
+            options: [
+                `<p>1.315</p>`,
+                `<p>1.420</p>`,
+                `<p>1.525</p>`,
+                `<p>1.735</p>`,
+            ],
+            answer: "B",
+            solution: `<p>Load-use contribution = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0.30</mn><mo>&times;</mo><mn>0.35</mn><mo>&times;</mo><mn>1</mn><mo>=</mo><mn>0.105</mn></math> extra cycles per instruction.</p>
+<p>Branch contribution = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0.15</mn><mo>&times;</mo><mn>0.70</mn><mo>&times;</mo><mn>3</mn><mo>=</mo><mn>0.315</mn></math> extra cycles per instruction. The non-taken branches and correctly predicted cases do not incur the stated penalty.</p>
+<p>CPI = ideal CPI + load penalty + branch penalty = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>0.105</mn><mo>+</mo><mn>0.315</mn><mo>=</mo><mn>1.420</mn></math>. The main trap is applying the branch penalty to every branch or using the load percentage without multiplying by the dependent fraction.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A program stores a positive real number in IEEE-754 single-precision format. Ignore NaNs, infinities, signed zero, subnormal numbers, and negative values; only positive, finite, normalised representable numbers are eligible. The program then enumerates every distinct representable value f satisfying&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&nbsp;</mo><mo>&le;</mo><mo>&nbsp;</mo><mi mathvariant="normal">f</mi><mo>&nbsp;</mo><mo>&le;</mo><mo>&nbsp;</mo><mn>16</mn><mo>,</mo></math> including both endpoints. How many values are enumerated?</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 41943041,
+            solution: `<p>A normalised single-precision number has 23 fraction bits, so each fixed exponent binade <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><msup><mn>2</mn><mi mathvariant="normal">e</mi></msup><mo>,</mo><mo>&nbsp;</mo><msup><mn>2</mn><mrow><mi mathvariant="normal">e</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>)</mo></math> contains <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>23</mn></msup></math> distinct positive values.</p>
+<p>The interval <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><mn>0.5</mn><mo>,</mo><mo>&nbsp;</mo><mn>16</mn><mo>)</mo></math> comprises five such binades: <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><msup><mn>2</mn><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup><mo>,</mo><mo>&nbsp;</mo><msup><mn>2</mn><mn>0</mn></msup><mo>)</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><msup><mn>2</mn><mn>0</mn></msup><mo>,</mo><mo>&nbsp;</mo><msup><mn>2</mn><mn>1</mn></msup><mo>)</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><msup><mn>2</mn><mn>1</mn></msup><mo>,</mo><mo>&nbsp;</mo><msup><mn>2</mn><mn>2</mn></msup><mo>)</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><msup><mn>2</mn><mn>2</mn></msup><mo>,</mo><mo>&nbsp;</mo><msup><mn>2</mn><mn>3</mn></msup><mo>)</mo></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><msup><mn>2</mn><mn>3</mn></msup><mo>,</mo><mo>&nbsp;</mo><msup><mn>2</mn><mn>4</mn></msup><mo>)</mo></math>. That contributes <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mo>&times;</mo><msup><mn>2</mn><mn>23</mn></msup><mo>=</mo><mn>41</mn><mo>,</mo><mn>943</mn><mo>,</mo><mn>040</mn></math> values.</p>
+<p>The upper endpoint <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup></math> is not in the last half-open bin, so it must be added once. Total = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>41</mn><mo>,</mo><mn>943</mn><mo>,</mo><mn>040</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>41</mn><mo>,</mo><mn>943</mn><mo>,</mo><mn>041</mn></math>.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A DMA engine transfers data from an I/O device to main memory at a sustained payload rate of 80 MB/s, where MB means&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn><mo>⁶</mo></math> bytes. Transfers occur in bursts of 128 bytes. Each burst requires three bus cycles for arbitration and setup, followed by one bus cycle for each 8-byte data word transferred. The shared bus runs at 400 MHz and performs no other transfers during the cycles charged to DMA. Ignore idle gaps between bursts and assume the payload rate is exactly sustained.</p>
+<p>What percentage of all bus cycles is consumed by the DMA engine, including its setup overhead? Give the numerical percentage, rounded to two decimal places.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 2.97,
+            solution: `<p>Each 128-byte burst contains <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>128</mn><mo>/</mo><mn>8</mn><mo>=</mo><mn>16</mn></math> data words. Including three setup cycles, each burst consumes <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>19</mn></math> bus cycles.</p>
+<p>The number of bursts per second is: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>80</mn><mo>&times;</mo><msup><mn>10</mn><mn>6</mn></msup><mo>/</mo><mn>128</mn><mo>=</mo><mn>625000</mn></math> bursts/s.</p>
+<p>The DMA engine therefore consumes: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>625000</mn><mo>&times;</mo><mn>19</mn><mo>=</mo><mn>11.875</mn><mo>&times;</mo><msup><mn>10</mn><mn>6</mn></msup></math> bus cycles/s.</p>
+<p>The bus provides <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>400</mn><mo>&times;</mo><msup><mn>10</mn><mn>6</mn></msup></math> cycles/s. Utilisation = <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>11.875</mn><mo>&times;</mo><msup><mn>10</mn><mn>6</mn></msup><mo>/</mo><mn>400</mn><mo>&times;</mo><msup><mn>10</mn><mn>6</mn></msup><mo>)</mo><mo>&times;</mo><mn>100</mn><mo>=</mo><mn>2.96875</mn><mo>%</mo></math>.</p>
+<p>Rounded to two decimal places, the required percentage is 2.97%.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>Consider the standard five-stage, single-issue, in-order pipeline IF&ndash;ID&ndash;EX&ndash;MEM&ndash;WB. Register operands are read in ID, results are written in WB, and a register write in the first half of a cycle is visible to a read in the second half of the same cycle. Every instruction traverses all five stages in order; there is no register renaming, and &ldquo;full forwarding&rdquo; means ordinary datapath forwarding but does not make a load result available before the MEM stage. Which statements must be true under these assumptions? Select all that apply.</p>`,
+            image: "",
+            options: [
+                `<p>A WAR hazard cannot arise between two instructions in this pipeline.</p>`,
+                `<p>A WAW hazard cannot arise between two instructions in this pipeline.</p>`,
+                `<p>A load immediately followed by an instruction using its result never needs a stall when full forwarding is present.</p>`,
+                `<p>Without forwarding, a back-to-back dependent ALU instruction pair needs two stall cycles under the stated register-file timing.</p>`,
+            ],
+            answer: ["A","B","D"],
+            solution: `<p>(A) True. In an in-order pipeline, an older instruction reads its source operands in ID before any younger instruction reaches WB. Therefore, a younger instruction cannot write a register before the older instruction has read it, so a WAR hazard cannot arise.</p>
+<p>(B) True. All writes occur in WB, and instructions reach WB in program order, so two writes to the same architectural register cannot complete in a reversed order.</p>
+<p>(C) False. A load value is not available until after MEM. The immediately following dependent instruction would reach EX too early, so one load-use bubble remains necessary in the classic pipeline.</p>
+<p>(D) True. Without forwarding, the consumer&rsquo;s ID stage must be delayed from its normal cycle 3 until cycle 5, when the producer writes during the first half and the consumer reads during the second half. That requires two stall cycles.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p>A processor uses a TLB followed by a physically addressed, two-level cache hierarchy. Every reference first pays 2 ns for the TLB lookup. The TLB miss rate is 4%, and each TLB miss triggers three serial page-table memory accesses of 80 ns each; there are no page faults and no overlap between translation and data access. After translation, L1 takes 1.5 ns and has a 92% hit rate. An L1 miss accesses L2, whose access time is 8 ns and whose local hit rate is 75%; an L2 miss then costs 90 ns for main memory. All stated miss penalties are additive, and all rates are local to their respective level. What is the average time from the start of a reference until the requested data is available?</p>`,
+            image: "",
+            options: [
+                `<p>13.04 ns</p>`,
+                `<p>15.54 ns</p>`,
+                `<p>14.04 ns</p>`,
+                `<p>17.20 ns</p>`,
+            ],
+            answer: "B",
+            solution: `<p>Average translation time = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>+</mo><mn>0.04</mn><mo>&times;</mo><mo>(</mo><mn>3</mn><mo>&times;</mo><mn>80</mn><mo>)</mo><mo>=</mo><mn>11.6</mn></math> ns. The 2 ns lookup is paid for every reference; the page-walk cost is weighted only by the TLB miss rate.</p>
+<p>Average cache data-access time = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1.5</mn><mo>+</mo><mn>0.08</mn><mo>&times;</mo><mo>(</mo><mn>8</mn><mo>+</mo><mn>0.25</mn><mo>&times;</mo><mn>90</mn><mo>)</mo><mo>=</mo><mn>1.5</mn><mo>+</mo><mn>0.08</mn><mo>&times;</mo><mn>30.5</mn><mo>=</mo><mn>3.94</mn></math> ns.</p>
+<p>Translation cannot overlap the physically addressed cache access under the stated assumptions, so total AMAT = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11.6</mn><mo>+</mo><mn>3.94</mn><mo>=</mo><mn>15.54</mn></math> ns. A common trap is to treat 75% as a global rather than local L2 hit rate, or omit one of the three page-table accesses.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>An instruction set uses a 20-bit fixed-length instruction word. Every address field is exactly five bits long. Opcode expansion is permitted: a three-address instruction uses an initial 5-bit opcode, and an unused opcode prefix may be extended by another five bits to create longer opcodes for instructions with fewer address fields.</p>
+<p>There are 25 distinct three-address instructions, 120 distinct two-address instructions, and 300 distinct one-address instructions. Each instruction must have a unique codeword, and no codeword may collide with another instruction's encoding. Maximise the number of zero-address instructions without changing the field width. How many zero-address opcodes can be supported?</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 96896,
+            solution: `<p>The initial opcode has 5 bits, so there are <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>32</mn></math> possible prefixes. The 25 three-address instructions consume 25 prefixes, leaving 7 available prefixes.</p>
+<p>Each unused prefix can be extended by five bits, creating <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mo>&times;</mo><mn>32</mn><mo>=</mo><mn>224</mn></math> possible two-address opcode patterns. Allocating 120 instructions leaves <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>224</mn><mo>&minus;</mo><mn>120</mn><mo>=</mo><mn>104</mn></math> unused prefixes available for further expansion.</p>
+<p>These 104 prefixes can each be extended by another five bits, producing <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>104</mn><mo>&times;</mo><mn>32</mn><mo>=</mo><mn>3328</mn></math> one-address opcode patterns. Allocating 300 instructions leaves <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3328</mn><mo>&minus;</mo><mn>300</mn><mo>=</mo><mn>3028</mn></math> unused prefixes.</p>
+<p>Each remaining prefix can be extended by five bits to produce 32 zero-address opcodes. Therefore, the maximum number is: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3028</mn><mo>&times;</mo><mn>32</mn><mo>=</mo><mn>96896</mn></math>.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>A machine has 4 KiB pages and a 64 KiB virtually indexed, physically tagged (VIPT) L1 cache. Virtual addresses select the cache set before translation, while the stored tag is physical. The cache uses 64-byte blocks and 8-way associativity. Assume no page-colouring restriction. Treat the condition that all set-index bits lie within the page offset as the usual sufficient condition for avoiding virtual synonym placement in different cache sets.</p>
+<p>Which statements are correct? Consider each design change independently from the original configuration.</p>`,
+            image: "",
+            options: [
+                `<p>The original cache has 128 sets.</p>`,
+                `<p>In the original design, every set-index bit necessarily comes from the page offset.</p>`,
+                `<p>Changing only associativity to 16-way makes the total number of index-plus-block-offset bits equal to the 12-bit page offset.</p>`,
+                `<p>Keeping 8-way associativity but changing the block size to 128 bytes makes all index-plus-block-offset bits fit within the 12-bit page offset.</p>`,
+            ],
+            answer: ["A","C"],
+            solution: `<p>(A) True. The number of sets is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>65536</mn><mo>/</mo><mo>(</mo><mn>64</mn><mo>&times;</mo><mn>8</mn><mo>)</mo><mo>=</mo><mn>128</mn></math>. Thus, the set index requires 7 bits.</p>
+<p>(B) False. The block offset requires 6 bits, and the set index requires 7 bits. Their total is 13 bits, exceeding the 12-bit page offset. Therefore, not all index bits lie within the page offset.</p>
+<p>(C) True. With 16-way associativity, the number of sets becomes <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>65536</mn><mo>/</mo><mo>(</mo><mn>64</mn><mo>&times;</mo><mn>16</mn><mo>)</mo><mo>=</mo><mn>64</mn></math>, requiring 6 index bits. Adding the 6 block-offset bits gives 12 bits, equal to the page-offset width.</p>
+<p>(D) False. With 128-byte blocks and 8-way associativity, the number of sets is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>65536</mn><mo>/</mo><mo>(</mo><mn>128</mn><mo>&times;</mo><mn>8</mn><mo>)</mo><mo>=</mo><mn>64</mn></math>, requiring 6 index bits. The block offset requires 7 bits. Their total is 13 bits, which still exceeds the 12-bit page offset.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>An unpipelined processor executes each instruction through six functional stages with delays of 180 ps, 240 ps, 130 ps, 300 ps, 220 ps, and 160 ps. Each instruction completes all six stages before the next instruction begins.</p>
+<p>A redesigned processor uses a conventional six-stage pipeline with the same functional stages. The pipeline clock period is determined by the slowest functional stage plus a pipeline-register overhead of 25 ps. Assume there are no data hazards, control hazards, stalls, or clock-skew effects. The first instruction completes at the end of the sixth pipeline cycle, and one additional instruction completes in each subsequent cycle.</p>
+<p>For a batch of 2500 independent instructions, calculate the speedup of the pipelined processor over the unpipelined processor. Define speedup as the total unpipelined execution time divided by the total pipelined execution time. Round your answer to two decimal places.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 3.78,
+            solution: `<p>The unpipelined execution time per instruction is the sum of all six stage delays: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>180</mn><mo>+</mo><mn>240</mn><mo>+</mo><mn>130</mn><mo>+</mo><mn>300</mn><mo>+</mo><mn>220</mn><mo>+</mo><mn>160</mn><mo>=</mo><mn>1230</mn><mtext>&nbsp;ps</mtext></math>.</p>
+<p>For 2500 instructions, the total unpipelined execution time is: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2500</mn><mo>&times;</mo><mn>1230</mn><mo>=</mo><mn>3075000</mn><mtext>&nbsp;ps</mtext></math>. The pipeline clock period is the slowest functional stage plus register overhead: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>300</mn><mo>+</mo><mn>25</mn><mo>=</mo><mn>325</mn><mtext>&nbsp;ps</mtext></math>. The first instruction completes after six cycles. Each of the remaining 2499 instructions completes one cycle later. Thus, the total number of cycles is: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mo>+</mo><mn>2499</mn><mo>=</mo><mn>2505</mn><mtext>&nbsp;cycles</mtext></math>. The total pipelined execution time is: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2505</mn><mo>&times;</mo><mn>325</mn><mo>=</mo><mn>814125</mn><mtext>&nbsp;ps</mtext></math>.</p>
+<p>Therefore, Speedup = <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3075000</mn><mo>/</mo><mn>814125</mn><mo>&asymp;</mo><mn>3.7771</mn></math>.</p>
+<p>Rounded to two decimal places, the speedup is 3.78.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A cache can hold four 32-byte blocks. The same ten byte addresses are replayed in the listed order, starting with an empty cache: 96, 32, 160, 0, 224, 32, 224, 160, 224, 128. For the two-way set-associative design, there are two sets; the set number is (block number mod 2), and LRU is applied independently within each set. Compare it with a fully associative four-line cache that also uses LRU. Assume each address names one byte, the block number is floor(address/32), and there are no compulsory prefetches. Enter the sum of number of misses for the two-way cache first and the fully associative cache second.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 14,
+            solution: `<p>Dividing each address by the 32-byte block size gives the block stream 3, 1, 5, 0, 7, 1, 7, 5, 7, 4.</p>
+<p>In the two-way design, odd block numbers compete for one set and even block numbers for the other. The odd-set stream 3, 1, 5, 7, 1, 7, 5, 7 incurs six misses; the even-set stream 0, 4 incurs two misses. Total = 8.</p>
+<p>In the fully associative cache, the first four distinct blocks miss; block 7 then replaces the least-recently-used block 3. The later references to 1, 7, 5 and 7 hit, while the final block 4 misses. Total = 6. This illustrates conflict misses: a set-associative cache can evict a useful block from a set even while another set has unused capacity.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A complete DFA reads binary strings from most-significant bit to least-significant bit. Interpret a string as a non-negative binary integer, allow any number of leading zeroes, and require that the represented integer be divisible by 7 and that the input contain at least one symbol 1. Thus &epsilon; and strings made only of zeroes are rejected, while the representation &ldquo;111&rdquo; is accepted. The machine must accept exactly this language, not merely numbers divisible by 7 when leading zeroes are ignored. What is the number of states in a minimal complete DFA?</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 8,
+            solution: `<p>Divisibility by 7 can be tracked with seven remainder states <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">r</mi><mo>&isin;</mo><mo>{</mo><mn>0</mn><mo>,</mo><mo>&hellip;</mo><mo>,</mo><mn>6</mn><mo>}</mo></math>; after reading bit <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi></math>, update <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">r</mi></math> to <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>2</mn><mi mathvariant="normal">r</mi><mo>+</mo><mi mathvariant="normal">b</mi><mo>)</mo><mtext>&nbsp;mod&nbsp;</mtext><mn>7</mn></math>. For a nonzero binary string, these remainder states are pairwise distinguishable because the modulus 7 is coprime to base 2, so suitable suffixes separate distinct remainders.</p>
+<p>The remainder-0 state must accept strings such as &ldquo;111&rdquo; or &ldquo;1110&rdquo;, but the all-zero prefix must remain rejecting because no 1 has appeared. Therefore, the start behaviour cannot simply be merged with the accepting remainder-0 state.</p>
+<p>An extra state represents &ldquo;no 1 has appeared yet&rdquo; (the current value is still zero and acceptance is forbidden). Once a 1 appears, the usual remainder machine is sufficient. Hence 7 remainder states plus one distinct all-zero-prefix state = 8 states.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>Let CFL denote the class of context-free languages and DCFL the class of deterministic context-free languages. Treat each statement as a claim about the entire class, not merely about a particular language or grammar. In particular, &ldquo;closed under&rdquo; means that applying the operation to every allowed input from the class always produces a language in that same class. Which statements are correct?</p>`,
+            image: "",
+            options: [
+                `<p>If C is context-free and R is regular, then&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">C</mi><mo>&nbsp;</mo><mo>&cap;</mo><mo>&nbsp;</mo><mi mathvariant="normal">R</mi></math> is context-free.</p>`,
+                `<p>The intersection of any two context-free languages is always context-free.</p>`,
+                `<p>Deterministic context-free languages are closed under complement.</p>`,
+                `<p>The language of all even-length palindromes over&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mn>0</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>}</mo></math> is accepted by some DPDA.</p>`,
+            ],
+            answer: ["A","C"],
+            solution: `<p>(A) True. A PDA for C can be combined with a DFA for R by tracking the DFA state alongside the PDA&rsquo;s stack behaviour; CFLs are closed under intersection with regular languages.</p>
+<p>(B) False. CFLs are not closed under arbitrary intersection. A standard counterexample intersects languages that separately match a&rsquo;s with b&rsquo;s and b&rsquo;s with c&rsquo;s, yielding <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi mathvariant="normal">a</mi><mo>ⁿ</mo><mi mathvariant="normal">b</mi><mo>ⁿ</mo><mi mathvariant="normal">c</mi><mo>ⁿ</mo><mo>}</mo></math>, which is not context-free.</p>
+<p>(C) True. A deterministic PDA can be arranged to recognise the complement by managing acceptance and rejecting configurations appropriately, so DCFLs are closed under complement.</p>
+<p>(D) False. An even-length palindrome requires identifying the midpoint before comparing the second half against the first in reverse. A DPDA has no nondeterministic midpoint guess, and this language is not deterministic context-free.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A finite automaton over the ternary alphabet <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>}</mo></math> accepts every string in which no symbol appears three times consecutively. For example, 001122 and 2020 are accepted, whereas 00012 and 21112 are rejected. Let <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub></math> denote the number of distinct accepted strings of length <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi></math>. Compute <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mn>12</mn></msub></math>.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: [204575,204576],
+            solution: `<p>For length 1, there are three valid strings, so <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></math>. For length 2, all <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>9</mn></math> strings are valid, so <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn></math>.</p>
+<p>For <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&ge;</mo><mn>3</mn></math>, classify valid strings according to the length of their final run.</p>
+<p><strong>Case 1: The final run has length 1.</strong></p>
+<p>Take any valid string of length <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>1</mn></math> and append a symbol different from its last symbol. There are two choices for the appended symbol. This contributes <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>1</mn></mrow></msub></math> strings.</p>
+<p><strong>Case 2: The final run has length 2.</strong></p>
+<p>Take any valid string of length <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>2</mn></math> and append two copies of a symbol different from its last symbol. There are two choices for this repeated symbol. This contributes <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>2</mn></mrow></msub></math> strings.</p>
+<p>These cases are disjoint and cover every valid string of length <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi></math>. Therefore, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><mn>2</mn><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>2</mn></mrow></msub></math>, for <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&ge;</mo><mn>3</mn></math>.</p>
+<p>Using <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn></math>, the recurrence gives: <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">a</mi><mn>3</mn></msub><mo>=</mo><mn>24</mn></math>, null"</p>
+<p>Hence, the required number of distinct accepted strings is 204576.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p>Which one of the following languages over the indicated alphabet is not context-free?</p>`,
+            image: "",
+            options: [
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">n</mi></msup><mo>|</mo><mi mathvariant="normal">n</mi><mo>&ge;</mo><mn>0</mn><mo>}</mo></math></p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">j</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">k</mi></msup><mo>|</mo><mi mathvariant="normal">i</mi><mo>=</mo><mi mathvariant="normal">j</mi><mo>,</mo><mtext>&nbsp;</mtext><mi mathvariant="normal">i</mi><mo>,</mo><mi mathvariant="normal">j</mi><mo>,</mo><mi mathvariant="normal">k</mi><mo>&ge;</mo><mn>0</mn><mo>}</mo></math></p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi mathvariant="normal">w</mi><mo>&isin;</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><msup><mo>}</mo><mo>*</mo></msup><mo>|</mo></math> w contains equally many 0s and 1s <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>}</mo></math></p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi mathvariant="normal">w</mi><msup><mi mathvariant="normal">w</mi><mi mathvariant="normal">R</mi></msup><mo>|</mo><mi mathvariant="normal">w</mi><mo>&isin;</mo><mo>{</mo><mi mathvariant="normal">a</mi><mo>,</mo><mi mathvariant="normal">b</mi><msup><mo>}</mo><mo>*</mo></msup><mo>}</mo></math></p>`,
+            ],
+            answer: "A",
+            solution: `<p>(A) is not context-free. A single stack cannot, in general, compare the equal-length a-block, b-block, and c-block in the required order; the standard pumping lemma for CFLs or Ogden&rsquo;s lemma proves non-context-freeness.</p>
+<p>(B) is context-free: a PDA matches the a&rsquo;s against the b&rsquo;s and then reads any number of c&rsquo;s. (C) is context-free because a grammar can recursively pair a 0 with a 1 in either order and concatenate balanced pieces; the order of the symbols need not be fixed.</p>
+<p>(D) is the set of even-length palindromes, generated by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">S</mi><mo>&rarr;</mo><mi mathvariant="normal">a</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">a</mi><mo>|</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">b</mi><mo>|</mo><mi mathvariant="normal">&epsilon;</mi></math>. The key distinction is that one stack can verify one mirrored relationship, but <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">n</mi></msup></math> requires synchronising three ordered blocks.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>Consider the following decision problems. Which problems are decidable?</p>`,
+            image: "",
+            options: [
+                `<p>Given DFAs <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">D</mi><mn>1</mn></msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">D</mi><mn>2</mn></msub></math>, determine whether <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi><mo>(</mo><msub><mi mathvariant="normal">D</mi><mn>1</mn></msub><mo>)</mo><mo>&cap;</mo><mi mathvariant="normal">L</mi><mo>(</mo><msub><mi mathvariant="normal">D</mi><mn>2</mn></msub><mo>)</mo><mo>=</mo><mo>&empty;</mo></math>.</p>`,
+                `<p>Given a CFG <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">G</mi></math> and a DFA <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">D</mi></math>, determine whether <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">G</mi><mo>)</mo><mo>&sube;</mo><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">D</mi><mo>)</mo></math>.</p>`,
+                `<p>Given a CFG <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">G</mi></math> over <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&Sigma;</mi></math>, determine whether <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">G</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant="normal">&Sigma;</mi><mo>*</mo></msup></math>.</p>`,
+                `<p>Given a Turing machine <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">M</mi></math>, determine whether <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo></math> is context-free.</p>`,
+            ],
+            answer: ["A","B"],
+            solution: `<p>(A) Decidable. Construct the product DFA for the intersection and test whether any accepting state is reachable from the start state.</p>
+<p>(B) Decidable. Inclusion fails exactly when&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">G</mi><mo>)</mo><mo>&nbsp;</mo><mo>&cap;</mo></math> complement(L(D)) is nonempty. The complement of a DFA language is regular; its intersection with a context-free language is context-free, and emptiness of a CFG is decidable.</p>
+<p>(C) Undecidable. Universality for context-free grammars is undecidable. The decidability of CFG emptiness does not extend to universality.</p>
+<p>(D) Undecidable by Rice's theorem. Being context-free is a nontrivial semantic property of the recursively enumerable language recognised by Turing machine M. Rice's theorem applies to such properties of machine-recognised languages, rather than to properties based only on the syntactic form of a machine description.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A grammar has the productions&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">S</mi><mo>&nbsp;</mo><mo>&rarr;</mo><mo>&nbsp;</mo><mi>aSb</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi>bSa</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi>SS</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi mathvariant="normal">&epsilon;</mi><mo>.</mo></math> Assume the language is treated as a set of terminal strings, so two distinct derivations of the same string count only once. How many distinct strings of length 12 belong to the language?</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 924,
+            solution: `<p>Every generated string has equally many a&rsquo;s and b&rsquo;s, since every production preserves equality of the two counts. Conversely, any string with equal numbers of a&rsquo;s and b&rsquo;s can be generated: if it has a proper prefix with equal counts, split at that point using SS; otherwise the first symbol and last symbol must be opposite, and removing them leaves a shorter equal-count string generated by aSb or bSa.</p>
+<p>Thus the language is exactly the set of all strings with equal numbers of a and b, not just a parenthesis language with a prefix-balance constraint.</p>
+<p>A length-12 string must contain exactly six a&rsquo;s and six b&rsquo;s. Choose the six positions occupied by a: C(12,6) = 924. Counting derivations or using the Catalan number 132 would impose a restriction not present in the grammar.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<p>For a Turing machine <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">M</mi></math>, let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo></math> be the set of strings it accepts. Define <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub><mo>=</mo><mo>{</mo><mo>⟨</mo><mi mathvariant="normal">M</mi><mo>⟩</mo><mo>:</mo><mo>|</mo><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo><mo>|</mo><mo>&ge;</mo><mn>3</mn><mo>}</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub><mo>=</mo><mo>{</mo><mo>⟨</mo><mi mathvariant="normal">M</mi><mo>⟩</mo><mo>:</mo><mo>|</mo><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo><mo>|</mo><mo>&le;</mo><mn>3</mn><mo>}</mo></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub><mo>=</mo><mo>{</mo><mo>⟨</mo><mi mathvariant="normal">M</mi><mo>⟩</mo><mo>:</mo></math> M halts on every input <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>}</mo></math>. For this question, recursively enumerable (RE) means recognisable by a Turing machine, while co-RE means that the complement is RE.</p>
+<p>Which classification is correct?</p>`,
+            image: "",
+            options: [
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></math> is recursive; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math> are RE.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></math> is RE but not recursive; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math> is co-RE but not RE; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math> is neither RE nor co-RE.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math> are both RE but not recursive; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math> is co-RE.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></math> is co-RE; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math> is RE; <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math> is neither RE nor co-RE.</p>`,
+            ],
+            answer: "B",
+            solution: `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>1</mn></msub></math> is RE: dovetail <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">M</mi></math> on all possible inputs and accept the description once three distinct strings have been observed to be accepted. It is not recursive because whether a machine&rsquo;s language has at least three elements is a nontrivial semantic property and cannot be decided for every <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">M</mi></math>.</p>
+<p>The complement of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math> is the property <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi mathvariant="normal">L</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo><mo>|</mo><mo>&ge;</mo><mn>4</mn></math>, which is RE by the same dovetailing argument. Therefore <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>2</mn></msub></math> is co-RE. It is not RE: determining that no fourth distinct string will ever be accepted cannot be completed by finite observation; this also follows from the characterisation of RE index sets of language properties (Rice&ndash;Shapiro).</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">L</mi><mn>3</mn></msub></math> is the totality problem. It is neither RE nor co-RE: a machine may fail to halt on some input, and neither existence nor universal absence of such an input is recognisable in the required generality.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A grammar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">G</mi></math> is in strict Chomsky Normal Form (CNF), and a grammar <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">G</mi><mo>&prime;</mo></msup></math> is in Greibach Normal Form (GNF). Neither grammar generates the empty string <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&epsilon;</mi></math>, and each grammar generates the same fixed string <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">w</mi></math> of length 11.</p>
+<p>In <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">G</mi></math>, every production used in a derivation of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">w</mi></math> has one of the forms <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&rarr;</mo><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&rarr;</mo><mi mathvariant="normal">a</mi></math>, with no unit productions. In <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">G</mi><mo>&prime;</mo></msup></math>, every production has the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&rarr;</mo><mi mathvariant="normal">a</mi><msub><mi mathvariant="normal">A</mi><mn>1</mn></msub><msub><mi mathvariant="normal">A</mi><mn>2</mn></msub><mo>&hellip;</mo><msub><mi mathvariant="normal">A</mi><mi mathvariant="normal">k</mi></msub></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">k</mi><mo>&ge;</mo><mn>0</mn></math> and each <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">A</mi><mi mathvariant="normal">i</mi></msub></math> is a nonterminal.</p>
+<p>Count one application of a production as one derivation step. What is the sum of the numbers of derivation steps required to generate <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">w</mi></math> in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">G</mi></math> and in <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">G</mi><mo>&prime;</mo></msup></math>?</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 32,
+            solution: `<p>In a CNF parse tree for a nonempty string of length <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi></math>, there are <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi></math> leaves produced by terminal productions <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&rarr;</mo><mi mathvariant="normal">a</mi></math>. A full binary tree with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi></math> leaves has exactly <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>1</mn></math> internal nodes, each corresponding to a binary production <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&rarr;</mo><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi></math>.</p>
+<p>Thus, the CNF derivation uses <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>+</mo><mo>(</mo><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>1</mn><mo>)</mo><mo>=</mo><mn>2</mn><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>1</mn></math> steps. For <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>=</mo><mn>11</mn></math>, this is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&times;</mo><mn>11</mn><mo>&minus;</mo><mn>1</mn><mo>=</mo><mn>21</mn></math> steps.</p>
+<p>In Greibach Normal Form, each production application contributes exactly one terminal symbol. Therefore, a derivation producing a string of length 11 requires 11 steps.</p>
+<p>The required sum is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn><mo>+</mo><mn>11</mn><mo>=</mo><mn>32</mn></math>.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>Let L be an arbitrary regular language over a finite alphabet <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&Sigma;</mi></math>, and let the constructions below be formed from that L. Which resulting languages are guaranteed to be regular?</p>`,
+            image: "",
+            options: [
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi mathvariant="normal">x</mi><mo>&isin;</mo><msup><mi mathvariant="normal">&Sigma;</mi><mo>*</mo></msup><mo>|</mo></math> there exists <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">y</mi><mo>&isin;</mo><msup><mi mathvariant="normal">&Sigma;</mi><mo>*</mo></msup></math> with <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi mathvariant="normal">y</mi><mo>|</mo><mo>=</mo><mo>|</mo><mi mathvariant="normal">x</mi><mo>|</mo></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mi mathvariant="normal">y</mi><mo>&isin;</mo><mi mathvariant="normal">L</mi><mo>}</mo></math>.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi mathvariant="normal">x</mi><mo>&isin;</mo><msup><mi mathvariant="normal">&Sigma;</mi><mo>*</mo></msup><mo>|</mo><mi mathvariant="normal">x</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">x</mi><mo>&isin;</mo><mi mathvariant="normal">L</mi><mo>}</mo></math>.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><mo>|</mo><mi mathvariant="normal">n</mi></math> is composite <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>}</mo></math>, considered as a subset of the regular language <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">a</mi><mo>*</mo></msup></math>.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><mi mathvariant="normal">w</mi><mo>&isin;</mo><mi mathvariant="normal">L</mi><mo>|</mo><mi mathvariant="normal">w</mi><mo>=</mo><msup><mi mathvariant="normal">w</mi><mi mathvariant="normal">R</mi></msup><mo>}</mo></math>, for every regular <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi></math>.</p>`,
+            ],
+            answer: ["A","B"],
+            solution: `<p>(A) Regular. For a DFA for <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi></math>, the relevant information after reading <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi></math> includes its current state and the length of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi></math>. The possible suffix lengths that can lead from any state to acceptance form unary regular sets, which are ultimately periodic; a finite automaton can track the required state and length information.</p>
+<p>(B) Regular. Each string <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi></math> induces a transformation <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">f</mi><mi mathvariant="normal">x</mi></msub></math> on the finite DFA state set. There are only finitely many such transformations, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">x</mi></math> is accepted exactly when <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">f</mi><mi mathvariant="normal">x</mi></msub></math> applied three times to the start state lands in an accepting state. A DFA can track <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">f</mi><mi mathvariant="normal">x</mi></msub></math> while reading <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi></math>.</p>
+<p>(C) Not regular. If <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><mo>:</mo><mi mathvariant="normal">n</mi><mtext>&nbsp;composite</mtext><mo>}</mo></math> were regular, the set of accepted lengths would be ultimately periodic, but the composite numbers do not form an ultimately periodic set.</p>
+<p>(D) Not regular in general. Taking <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">L</mi><mo>=</mo><msup><mi mathvariant="normal">a</mi><mo>*</mo></msup><mi mathvariant="normal">b</mi><msup><mi mathvariant="normal">a</mi><mo>*</mo></msup></math> gives palindromes exactly of the form <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><mi mathvariant="normal">b</mi><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup></math>, which is not regular.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<p>Consider the context-sensitive grammar with productions <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">S</mi><mo>&rarr;</mo><mi mathvariant="normal">a</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi><mo>|</mo><mi mathvariant="normal">a</mi><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">C</mi><mi mathvariant="normal">B</mi><mo>&rarr;</mo><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mi mathvariant="normal">B</mi><mo>&rarr;</mo><mi mathvariant="normal">a</mi><mi mathvariant="normal">b</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi><mi mathvariant="normal">B</mi><mo>&rarr;</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">b</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">b</mi><mi mathvariant="normal">C</mi><mo>&rarr;</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">c</mi></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">c</mi><mi mathvariant="normal">C</mi><mo>&rarr;</mo><mi mathvariant="normal">c</mi><mi mathvariant="normal">c</mi></math>. The start symbol is <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">S</mi></math>, and there are no other productions. The first production either introduces another matched triple of symbols or terminates recursive growth; the remaining rules reorder and terminalise the markers, but do not freely create or delete symbols. Which language is generated?</p>`,
+            image: "",
+            options: [
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">m</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">k</mi></msup><mo>|</mo><mi mathvariant="normal">n</mi><mo>,</mo><mi mathvariant="normal">m</mi><mo>,</mo><mi mathvariant="normal">k</mi><mo>&ge;</mo><mn>1</mn><mo>}</mo></math>, a regular language.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">m</mi></msup><mo>|</mo><mi mathvariant="normal">n</mi><mo>,</mo><mi mathvariant="normal">m</mi><mo>&ge;</mo><mn>1</mn><mo>}</mo></math>, a context-free but non-regular language.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup><mo>|</mo><mi mathvariant="normal">n</mi><mo>&ge;</mo><mn>1</mn><mo>}</mo></math>, a context-free language.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">n</mi></msup><mo>|</mo><mi mathvariant="normal">n</mi><mo>&ge;</mo><mn>1</mn><mo>}</mo></math>, a context-sensitive but non-context-free language.</p>`,
+            ],
+            answer: "D",
+            solution: `<p>After <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi></math> uses of the recursive production followed by the terminating production, the sentential form has the shape <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><mo>(</mo><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi><msup><mo>)</mo><mi mathvariant="normal">n</mi></msup></math>, with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&ge;</mo><mn>1</mn></math>. The rule <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">C</mi><mi mathvariant="normal">B</mi><mo>&rarr;</mo><mi mathvariant="normal">B</mi><mi mathvariant="normal">C</mi></math> repeatedly moves every <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">B</mi></math> left of every <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">C</mi></math>.</p>
+<p>The terminalisation rules then convert the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">B</mi></math> markers into b&rsquo;s and the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">C</mi></math> markers into c&rsquo;s while preserving the count of each block, yielding <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">n</mi></msup></math>.</p>
+<p>The language <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>{</mo><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup><msup><mi mathvariant="normal">c</mi><mi mathvariant="normal">n</mi></msup><mo>:</mo><mi mathvariant="normal">n</mi><mo>&ge;</mo><mn>1</mn><mo>}</mo></math> is context-sensitive but not context-free. The grammar&rsquo;s local rewriting rules are essential: this construction is not equivalent to a regular expression that independently chooses <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>,</mo><mi mathvariant="normal">m</mi></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">k</mi></math>.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi></math> be a real <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>&times;</mo><mn>3</mn></math> matrix whose characteristic polynomial is <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">p</mi><mo>(</mo><mi mathvariant="normal">&lambda;</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant="normal">&lambda;</mi><mn>3</mn></msup><mo>&minus;</mo><mn>9</mn><msup><mi mathvariant="normal">&lambda;</mi><mn>2</mn></msup><mo>+</mo><mn>23</mn><mi mathvariant="normal">&lambda;</mi><mo>&minus;</mo><mn>15</mn></math>.</p>
+<p>Define <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">M</mi><mo>=</mo><msup><mi mathvariant="normal">A</mi><mn>2</mn></msup><mo>&minus;</mo><mn>3</mn><mi mathvariant="normal">A</mi><mo>+</mo><mi mathvariant="normal">I</mi></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">I</mi></math> is the <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>&times;</mo><mn>3</mn></math> identity matrix. What is <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>det</mo><mo>(</mo><mi mathvariant="normal">adj</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo><mo>)</mo></math>?</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 121,
+            solution: `<p>The characteristic polynomial factors as <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi mathvariant="normal">&lambda;</mi><mo>&minus;</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi mathvariant="normal">&lambda;</mi><mo>&minus;</mo><mn>3</mn><mo>)</mo><mo>(</mo><mi mathvariant="normal">&lambda;</mi><mo>&minus;</mo><mn>5</mn><mo>)</mo></math>, so the eigenvalues of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi></math> are 1, 3, and 5[cite: 19]. A polynomial in <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi></math> has eigenvalues obtained by applying that polynomial to each eigenvalue of .</p>
+<p>For <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">q</mi><mo>(</mo><mi mathvariant="normal">&lambda;</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant="normal">&lambda;</mi><mn>2</mn></msup><mo>&minus;</mo><mn>3</mn><mi mathvariant="normal">&lambda;</mi><mo>+</mo><mn>1</mn></math>, the transformed eigenvalues are <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">q</mi><mo>(</mo><mn>1</mn><mo>)</mo><mo>=</mo><mo>&minus;</mo><mn>1</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">q</mi><mo>(</mo><mn>3</mn><mo>)</mo><mo>=</mo><mn>1</mn></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">q</mi><mo>(</mo><mn>5</mn><mo>)</mo><mo>=</mo><mn>11</mn></math>[cite: 19]. Hence <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>det</mo><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo><mo>=</mo><mo>(</mo><mo>&minus;</mo><mn>1</mn><mo>)</mo><mo>(</mo><mn>1</mn><mo>)</mo><mo>(</mo><mn>11</mn><mo>)</mo><mo>=</mo><mo>&minus;</mo><mn>11</mn></math>.</p>
+<p>For any <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>&times;</mo><mi mathvariant="normal">n</mi></math> matrix, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>det</mo><mo>(</mo><mi mathvariant="normal">adj</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo><mo>)</mo><mo>=</mo><mo>det</mo><mo>(</mo><mi mathvariant="normal">M</mi><msup><mo>)</mo><mrow><mi mathvariant="normal">n</mi><mo>&minus;</mo><mn>1</mn></mrow></msup></math>. Here <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">n</mi><mo>=</mo><mn>3</mn></math>, so <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>det</mo><mo>(</mo><mi mathvariant="normal">adj</mi><mo>(</mo><mi mathvariant="normal">M</mi><mo>)</mo><mo>)</mo><mo>=</mo><mo>(</mo><mo>&minus;</mo><mn>11</mn><msup><mo>)</mo><mn>2</mn></msup><mo>=</mo><mn>121</mn></math>.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>Consider the matrix A and two right-hand-side vectors below. The same matrix is used in each system; in particular, consistency must be determined from the column space, while the number of solutions in a consistent system depends on the nullity.</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mo>[</mo><mo>[</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>0</mn><mo>,</mo><mo>&nbsp;</mo><mo>&minus;</mo><mn>1</mn><mo>]</mo><mo>,</mo><mo>&nbsp;</mo><mo>[</mo><mn>0</mn><mo>,</mo><mo>&nbsp;</mo><mn>0</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>]</mo><mo>,</mo><mo>&nbsp;</mo><mo>[</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>0</mn><mo>]</mo><mo>,</mo><mo>&nbsp;</mo><mo>[</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>4</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mo>&minus;</mo><mn>1</mn><mo>]</mo><mo>]</mo><mo>.</mo></math></p>
+<p>Which statements are correct?</p>`,
+            image: "",
+            options: [
+                `<p>rank(A) = 2.</p>`,
+                `<p>The homogeneous system Ax = 0 has a two-dimensional solution space.</p>`,
+                `<p>The system&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ax</mi><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>3</mn><mo>)</mo><mi mathvariant="normal">ᵀ</mi></math> has exactly one solution.</p>`,
+                `<p>The system&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Ax</mi><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>4</mn><mo>)</mo><mi mathvariant="normal">ᵀ</mi></math> is inconsistent.</p>`,
+            ],
+            answer: ["A","B","D"],
+            solution: `<p>The third row is the sum of rows 1 and 2, and the fourth row is twice row 1 plus row 2. Rows 1 and 2 are independent, so <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>rank</mtext><mo stretchy="false">(</mo><mi mathvariant="normal">A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow></math>. By the rank-nullity theorem for a 4-column matrix, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mtext>nullity</mtext><mo>=</mo><mn>4</mn><mo>&minus;</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></math>.</p>
+<p>The first two independent equations are <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi mathvariant="normal">x</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant="normal">x</mi><mn>2</mn></msub><mo>&minus;</mo><msub><mi mathvariant="normal">x</mi><mn>4</mn></msub><mo>=</mo><msub><mi mathvariant="normal">b</mi><mn>1</mn></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi mathvariant="normal">x</mi><mn>3</mn></msub><mo>+</mo><msub><mi mathvariant="normal">x</mi><mn>4</mn></msub><mo>=</mo><msub><mi mathvariant="normal">b</mi><mn>2</mn></msub></mrow></math>. With <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">b</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mi mathvariant="normal">T</mi></msup></mrow></math>, the third and fourth equations agree with the row dependencies, so the system is consistent. Since the nullity is 2, a consistent system has infinitely many solutions, not exactly one; (C) is false.</p>
+<p>For <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="normal">b</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mi mathvariant="normal">T</mi></msup></mrow></math>, the fourth right-hand-side entry should equal <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>2</mn><msub><mi mathvariant="normal">b</mi><mn>1</mn></msub><mo>+</mo><msub><mi mathvariant="normal">b</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn></mrow></math>, because row <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>4</mn><mo>=</mo><mn>2</mn><mtext>&nbsp;row&nbsp;</mtext><mn>1</mn><mo>+</mo><mtext>row&nbsp;</mtext><mn>2</mn></mrow></math>. It is 4 instead, so the equations contradict each other and (D) is true.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi></math> be the <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>&times;</mo><mn>4</mn></math> symmetric tridiagonal matrix with 2 on every diagonal entry, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&minus;</mo><mn>1</mn></math> immediately above and below the diagonal, and zero everywhere else. The matrix is positive definite, so <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup></math> exists. Determine <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tr</mi><mo>(</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>2</mn></mrow></msup><mo>)</mo></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tr</mi></math> denotes the trace of a matrix.</p>
+<p>Give your answer as an exact fraction or a terminating decimal.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 7.6,
+            solution: `<p>The inverse of this <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>&times;</mo><mn>4</mn></math> tridiagonal matrix is:</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup><mo>=</mo><mo>(</mo><mn>1</mn><mo>/</mo><mn>5</mn><mo>)</mo><mo>&times;</mo><mo>[</mo><mo>[</mo><mn>4</mn><mo>,</mo><mo>&nbsp;</mo><mn>3</mn><mo>,</mo><mo>&nbsp;</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>]</mo><mo>,</mo><mo>&nbsp;</mo><mo>[</mo><mn>3</mn><mo>,</mo><mo>&nbsp;</mo><mn>6</mn><mo>,</mo><mo>&nbsp;</mo><mn>4</mn><mo>,</mo><mo>&nbsp;</mo><mn>2</mn><mo>]</mo><mo>,</mo><mo>&nbsp;</mo><mo>[</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>4</mn><mo>,</mo><mo>&nbsp;</mo><mn>6</mn><mo>,</mo><mo>&nbsp;</mo><mn>3</mn><mo>]</mo><mo>,</mo><mo>&nbsp;</mo><mo>[</mo><mn>1</mn><mo>,</mo><mo>&nbsp;</mo><mn>2</mn><mo>,</mo><mo>&nbsp;</mo><mn>3</mn><mo>,</mo><mo>&nbsp;</mo><mn>4</mn><mo>]</mo><mo>]</mo></math>.</p>
+<p>This can be verified by multiplying <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup></math> by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi></math>.</p>
+<p>Because <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup></math> is symmetric,</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tr</mi><mo>(</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>2</mn></mrow></msup><mo>)</mo><mo>=</mo><mi>tr</mi><mo>(</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup><mo>)</mo><mo>=</mo></math> sum of the squares of all entries of <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>1</mn></mrow></msup></math>.</p>
+<p>The sums of squares of the entries in the four rows of the numerator matrix are:</p>
+<p>Row 1: <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>4</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>1</mn><mn>2</mn></msup><mo>=</mo><mn>30</mn></math>.</p>
+<p>Row 2: <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>65</mn></math>.</p>
+<p>Row 3: <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup><mo>+</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mn>65</mn></math>.</p>
+<p>Row 4: <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>30</mn></math>.</p>
+<p>The total is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn><mo>+</mo><mn>65</mn><mo>+</mo><mn>65</mn><mo>+</mo><mn>30</mn><mo>=</mo><mn>190</mn></math>.</p>
+<p>Therefore, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tr</mi><mo>(</mo><msup><mi mathvariant="normal">A</mi><mrow><mo>&minus;</mo><mn>2</mn></mrow></msup><mo>)</mo><mo>=</mo><mn>190</mn><mo>/</mo><mn>25</mn><mo>=</mo><mn>38</mn><mo>/</mo><mn>5</mn><mo>=</mo></math> 7.6.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<p>A limit expression contains two terms that both diverge as x approaches zero. Evaluate&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>lim</mi><mo>ₓ</mo><mo>&rarr;</mo><mo>₀</mo><mo>&nbsp;</mo><mo>[</mo><mn>1</mn><mo>/</mo><mo>(</mo><mn>1</mn><mo>&nbsp;</mo><mo>&minus;</mo><mo>&nbsp;</mo><mi>cos</mi><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>&nbsp;</mo><mo>&minus;</mo><mo>&nbsp;</mo><mn>2</mn><mo>/</mo><mi mathvariant="normal">x</mi><mo>&sup2;</mo><mo>]</mo><mo>.</mo></math></p>`,
+            image: "",
+            options: [
+                `<p>1/12</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&minus;</mo><mn>1</mn><mo>/</mo><mn>6</mn></math></p>`,
+                `<p>1/6</p>`,
+                `<p>0</p>`,
+            ],
+            answer: "C",
+            solution: `<p>Use <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>=</mo><mn>1</mn><mo>&minus;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn><mo>+</mo><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup><mo>/</mo><mn>24</mn><mo>+</mo><mi mathvariant="normal">O</mi><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>6</mn></msup><mo>)</mo></math>, so <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&minus;</mo><mi>cos</mi><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>=</mo><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn><mo>)</mo><mo>(</mo><mn>1</mn><mo>&minus;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>/</mo><mn>12</mn><mo>+</mo><mi mathvariant="normal">O</mi><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup><mo>)</mo><mo>)</mo></math>.</p>
+<p>Inverting gives <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>/</mo><mo>(</mo><mn>1</mn><mo>&minus;</mo><mi>cos</mi><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mn>2</mn><mo>/</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>)</mo><mo>(</mo><mn>1</mn><mo>+</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>/</mo><mn>12</mn><mo>+</mo><mi mathvariant="normal">O</mi><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>4</mn></msup><mo>)</mo><mo>)</mo><mo>=</mo><mn>2</mn><mo>/</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>/</mo><mn>6</mn><mo>+</mo><mi mathvariant="normal">O</mi><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>)</mo></math>.</p>
+<p>After subtracting <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>/</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></math>, the singular terms cancel, and the remaining limit is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>/</mo><mn>6</mn></math>. Keeping only the lowest-order approximation <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>&minus;</mo><mi>cos</mi><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>&asymp;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></math> would incorrectly erase the constant term.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Evaluate the double integral <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">I</mi><mo>=</mo><mo>&int;</mo></math> from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">y</mi><mo>=</mo><mn>0</mn></math> to <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>[</mo><mo>&int;</mo></math> from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mo>=</mo><mi mathvariant="normal">y</mi><mo>/</mo><mn>3</mn></math> to <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math> of <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">e</mi><mrow><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>)</mo></mrow></msup><mo>&nbsp;</mo><mi>dx</mi><mo>]</mo><mo>&nbsp;</mo><mi>dy</mi></math>. Give <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">I</mi></math> rounded to three decimal places.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 2.577,
+            solution: `<p>The original region is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>&le;</mo><mi mathvariant="normal">y</mi><mo>&le;</mo><mn>3</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">y</mi><mo>/</mo><mn>3</mn><mo>&le;</mo><mi mathvariant="normal">x</mi><mo>&le;</mo><mn>1</mn></math>. Rewriting <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">y</mi><mo>/</mo><mn>3</mn><mo>&le;</mo><mi mathvariant="normal">x</mi></math> gives <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">y</mi><mo>&le;</mo><mn>3</mn><mi mathvariant="normal">x</mi></math>. Thus, when <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi></math> is used as the outer variable, <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>&le;</mo><mi mathvariant="normal">x</mi><mo>&le;</mo><mn>1</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>&le;</mo><mi mathvariant="normal">y</mi><mo>&le;</mo><mn>3</mn><mi mathvariant="normal">x</mi></math>.</p>
+<p>Reversing the order gives <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">I</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msubsup><mo>&int;</mo><mn>0</mn><mrow><mn>3</mn><mi mathvariant="normal">x</mi></mrow></msubsup><msup><mi mathvariant="normal">e</mi><mrow><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>)</mo></mrow></msup><mo>&nbsp;</mo><mi>dy</mi><mo>&nbsp;</mo><mi>dx</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mn>3</mn><msup><mi>xe</mi><mrow><mo>(</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>)</mo></mrow></msup><mo>&nbsp;</mo><mi>dx</mi></math>.</p>
+<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">u</mi><mo>=</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>du</mi><mo>=</mo><mn>2</mn><mi mathvariant="normal">x</mi><mo>&nbsp;</mo><mi>dx</mi></math>. Then <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">I</mi><mo>=</mo><mo>(</mo><mn>3</mn><mo>/</mo><mn>2</mn><mo>)</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">u</mi></msup><mo>&nbsp;</mo><mi>du</mi><mo>=</mo><mo>(</mo><mn>3</mn><mo>/</mo><mn>2</mn><mo>)</mo><mo>(</mo><mi mathvariant="normal">e</mi><mo>&minus;</mo><mn>1</mn><mo>)</mo><mo>&asymp;</mo><mn>2</mn><mo>.</mo><mn>577</mn></math>. Reversing the region is the conceptual step; the exponential integral becomes elementary only after the y-width contributes the factor <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mi mathvariant="normal">x</mi></math>.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>Define&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mo>(</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>&sup3;</mo><mo>&nbsp;</mo><mi>sin</mi><mo>(</mo><mn>1</mn><mo>/</mo><mi mathvariant="normal">x</mi><mo>&sup2;</mo><mo>)</mo><mo>&nbsp;</mo><mi>for</mi><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>&nbsp;</mo><mo>&ne;</mo><mo>&nbsp;</mo><mn>0</mn><mo>&nbsp;</mo><mi>and</mi><mo>&nbsp;</mo><mi mathvariant="normal">f</mi><mo>(</mo><mn>0</mn><mo>)</mo><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mn>0</mn><mo>.</mo></math></p>
+<p>Which statements are correct?</p>`,
+            image: "",
+            options: [
+                `<p>f is differentiable at 0 and f&prime;(0) = 0.</p>`,
+                `<p>f&prime; is continuous at 0.</p>`,
+                `<p>f&prime; is unbounded in every neighbourhood of 0.</p>`,
+                `<p>There exists&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">c</mi><mo>&nbsp;</mo><mo>&isin;</mo><mo>&nbsp;</mo><mo>(</mo><mn>0</mn><mo>,</mo><mo>&nbsp;</mo><mn>1</mn><mo>/</mo><mo>&radic;</mo><mi mathvariant="normal">&pi;</mi><mo>)</mo></math> such that f&prime;(c) = 0.</p>`,
+            ],
+            answer: ["A","D"],
+            solution: `<p>(A) True. The difference quotient at zero is <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mo>(</mo><mi mathvariant="normal">h</mi><mo>)</mo><mo>/</mo><mi mathvariant="normal">h</mi><mo>=</mo><msup><mi mathvariant="normal">h</mi><mn>2</mn></msup><mo>&nbsp;</mo><mi>sin</mi><mo>(</mo><mn>1</mn><mo>/</mo><msup><mi mathvariant="normal">h</mi><mn>2</mn></msup><mo>)</mo></math>, whose absolute value is at most <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">h</mi><mn>2</mn></msup></math> and therefore tends to zero.</p>
+<p>For <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mo>&ne;</mo><mn>0</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mo>'</mo><mo>(</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>&nbsp;</mo><mi>sin</mi><mo>(</mo><mn>1</mn><mo>/</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>)</mo><mo>&minus;</mo><mn>2</mn><mo>&nbsp;</mo><mi>cos</mi><mo>(</mo><mn>1</mn><mo>/</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>)</mo></math>. The cosine term oscillates without a limit as <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi><mo>&rarr;</mo><mn>0</mn></math>, so <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mo>'</mo></math> is not continuous at 0; (B) is false.</p>
+<p>(C) False. The derivative is bounded near zero because <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi mathvariant="normal">f</mi><mo>'</mo><mo>(</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>|</mo><mo>&le;</mo><mn>3</mn><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></math>, which is bounded for sufficiently small <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">x</mi></math>. Finally, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mo>(</mo><mn>0</mn><mo>)</mo><mo>=</mo><mi mathvariant="normal">f</mi><mo>(</mo><mn>1</mn><mo>/</mo><msqrt><mi mathvariant="normal">&pi;</mi></msqrt><mo>)</mo><mo>=</mo><mn>0</mn></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi></math> is continuous on the closed interval and differentiable inside it, so Rolle's theorem guarantees a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">c</mi></math> strictly between the endpoints with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">f</mi><mo>'</mo><mo>(</mo><mi mathvariant="normal">c</mi><mo>)</mo><mo>=</mo><mn>0</mn></math>. Thus (D) is true.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>A fair four-sided die labelled 1, 2, 3, and 4 is rolled repeatedly until the first 4 appears. Let K be the number of rolls up to and including that first 4. Define event E as the event that every roll before this first 4 is even. If K = 1, E holds vacuously. Thus, every nonterminal roll must be a 2 for E to occur.</p>
+<p>Under this conditioning, calculate&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><mi mathvariant="normal">K</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi mathvariant="normal">E</mi><mo>]</mo><mo>.</mo></math> Give your answer rounded to two decimal places.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 1.33,
+            solution: `<p>For <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">K</mi><mo>=</mo><mi mathvariant="normal">k</mi></math> and event <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi></math> to occur, the first <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">k</mi><mo>&minus;</mo><mn>1</mn></math> rolls must all be 2, and the kth roll must be 4. Since each die outcome has probability <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>/</mo><mn>4</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">K</mi><mo>=</mo><mi mathvariant="normal">k</mi><mo>&nbsp;</mo><mi>and</mi><mo>&nbsp;</mo><mi mathvariant="normal">E</mi><mo>)</mo><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>)</mo></mrow><mi mathvariant="normal">k</mi></msup></math>.</p>
+<p>Therefore, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">E</mi><mo>)</mo><mo>=</mo></math> sum from <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">k</mi><mo>=</mo><mn>1</mn></math> to infinity of <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mo>(</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>)</mo></mrow><mi mathvariant="normal">k</mi></msup><mo>=</mo><mo>(</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>)</mo><mo>/</mo><mo>(</mo><mn>1</mn><mo>&minus;</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>)</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>3</mn></math>.</p>
+<p>The conditional probability distribution is: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">K</mi><mo>=</mo><mi mathvariant="normal">k</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi mathvariant="normal">E</mi><mo>)</mo><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>)</mo></mrow><mi mathvariant="normal">k</mi></msup><mo>/</mo><mo>(</mo><mn>1</mn><mo>/</mo><mn>3</mn><mo>)</mo><mo>=</mo><mo>(</mo><mn>3</mn><mo>/</mo><mn>4</mn><mo>)</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>)</mo></mrow><mrow><mo>(</mo><mi mathvariant="normal">k</mi><mo>&minus;</mo><mn>1</mn><mo>)</mo></mrow></msup></math>, for <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">k</mi><mo>&ge;</mo><mn>1</mn></math>.</p>
+<p>This is a geometric distribution with success probability <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>/</mo><mn>4</mn></math>. Hence, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><mi mathvariant="normal">K</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi mathvariant="normal">E</mi><mo>]</mo><mo>=</mo><mn>1</mn><mo>/</mo><mo>(</mo><mn>3</mn><mo>/</mo><mn>4</mn><mo>)</mo><mo>=</mo><mn>4</mn><mo>/</mo><mn>3</mn><mo>&asymp;</mo><mn>1</mn><mo>.</mo><mn>33</mn></math>.</p>
+<p>Rounded to two decimal places, the required answer is 1.33.</p>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p>Let X and Y be independent Uniform(0,1) random variables and set&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">Z</mi><mo>=</mo><mo>|</mo><mi mathvariant="normal">X</mi><mo>&minus;</mo><mi mathvariant="normal">Y</mi><mo>|</mo><mo>.</mo></math> Determine Var(Z).</p>`,
+            image: "",
+            options: [
+                `<p>1/12</p>`,
+                `<p>1/18</p>`,
+                `<p>1/9</p>`,
+                `<p>1/6</p>`,
+            ],
+            answer: "B",
+            solution: `<p>By symmetry of the unit square, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><mo>|</mo><mi mathvariant="normal">X</mi><mo>&minus;</mo><mi mathvariant="normal">Y</mi><mo>|</mo><mo>]</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>3</mn></math>. Also <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi mathvariant="normal">X</mi><mo>&minus;</mo><mi mathvariant="normal">Y</mi><msup><mo>|</mo><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mi mathvariant="normal">X</mi><mo>&minus;</mo><mi mathvariant="normal">Y</mi><mo>)</mo></mrow><mn>2</mn></msup></math>, so <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">Z</mi><mn>2</mn></msup><mo>]</mo><mo>=</mo><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">X</mi><mn>2</mn></msup><mo>]</mo><mo>+</mo><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">Y</mi><mn>2</mn></msup><mo>]</mo><mo>&minus;</mo><mn>2</mn><mi mathvariant="normal">E</mi><mo>[</mo><mi>XY</mi><mo>]</mo></math>.</p>
+<p>For independent <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Uniform</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> variables, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">X</mi><mn>2</mn></msup><mo>]</mo><mo>=</mo><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">Y</mi><mn>2</mn></msup><mo>]</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>3</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><mi>XY</mi><mo>]</mo><mo>=</mo><mi mathvariant="normal">E</mi><mo>[</mo><mi mathvariant="normal">X</mi><mo>]</mo><mi mathvariant="normal">E</mi><mo>[</mo><mi mathvariant="normal">Y</mi><mo>]</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>4</mn></math>. Hence <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">Z</mi><mn>2</mn></msup><mo>]</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>3</mn><mo>+</mo><mn>1</mn><mo>/</mo><mn>3</mn><mo>&minus;</mo><mn>1</mn><mo>/</mo><mn>2</mn><mo>=</mo><mn>1</mn><mo>/</mo><mn>6</mn></math>.</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Var</mi><mo>(</mo><mi mathvariant="normal">Z</mi><mo>)</mo><mo>=</mo><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">Z</mi><mn>2</mn></msup><mo>]</mo><mo>&minus;</mo><msup><mrow><mo>(</mo><mi mathvariant="normal">E</mi><mo>[</mo><mi mathvariant="normal">Z</mi><mo>]</mo><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>/</mo><mn>6</mn><mo>&minus;</mo><mn>1</mn><mo>/</mo><mn>9</mn><mo>=</mo><mn>1</mn><mo>/</mo><mn>18</mn></math>. The common error is to confuse <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><mo>|</mo><mi mathvariant="normal">X</mi><mo>&minus;</mo><mi mathvariant="normal">Y</mi><mo>|</mo><mo>]</mo></math> with the variance or to square the difference before accounting for the cross term.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>The lifetime X of a component follows an exponential distribution with mean 3 hours. Calculate the conditional second moment&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">X</mi><mn>2</mn></msup><mo>|</mo><mi mathvariant="normal">X</mi><mo>&#62;</mo><mn>2</mn><mo>]</mo><mo>,</mo></math> given that the component has survived beyond two hours. Give the numerical value in hours squared.</p>`,
+            image: "",
+            options: [
+            ],
+            answer: 34,
+            solution: `<p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">Y</mi><mo>=</mo><mi mathvariant="normal">X</mi><mo>&minus;</mo><mn>2</mn></math>, conditioned on <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">X</mi><mo>&gt;</mo><mn>2</mn></math>. By the memoryless property of the exponential distribution, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">Y</mi></math> has the same exponential distribution as the original lifetime, with mean 3 hours.</p>
+<p>Thus, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><mi mathvariant="normal">Y</mi><mo>]</mo><mo>=</mo><mn>3</mn></math> hours, and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">Y</mi><mn>2</mn></msup><mo>]</mo><mo>=</mo><mn>2</mn><mo>(</mo><msup><mn>3</mn><mn>2</mn></msup><mo>)</mo><mo>=</mo><mn>18</mn><mo>&nbsp;</mo><msup><mi>hours</mi><mn>2</mn></msup></math>.</p>
+<p>Conditionally, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">X</mi></math> has the same distribution as <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>+</mo><mi mathvariant="normal">Y</mi></math>. Therefore,</p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">X</mi><mn>2</mn></msup><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi mathvariant="normal">X</mi><mo>&gt;</mo><mn>2</mn><mo>]</mo><mo>=</mo><mi mathvariant="normal">E</mi><mo>[</mo><msup><mrow><mo>(</mo><mn>2</mn><mo>+</mo><mi mathvariant="normal">Y</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>]</mo></math><br /><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mi mathvariant="normal">E</mi><mo>[</mo><mi mathvariant="normal">Y</mi><mo>]</mo><mo>+</mo><mi mathvariant="normal">E</mi><mo>[</mo><msup><mi mathvariant="normal">Y</mi><mn>2</mn></msup><mo>]</mo></math><br /><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>(</mo><mn>3</mn><mo>)</mo><mo>+</mo><mn>18</mn></math><br /><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mn>34</mn><mo>&nbsp;</mo><msup><mi>hours</mi><mn>2</mn></msup></math>.</p>
+<p>Hence, the required numerical answer is 34. The unit of the conditional second moment is hours squared.</p>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p>Two fair six-sided dice are rolled independently. Define A as &ldquo;the first die shows a prime number,&rdquo; B as &ldquo;the second die shows a number greater than 3,&rdquo; and C as &ldquo;the sum of the two scores is even.&rdquo; Which statements are correct?</p>`,
+            image: "",
+            options: [
+                `<p>A, B and C are pairwise independent.</p>`,
+                `<p>A, B and C are mutually independent.</p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">C</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi mathvariant="normal">A</mi><mo>&nbsp;</mo><mo>&cap;</mo><mo>&nbsp;</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mn>4</mn><mo>/</mo><mn>9</mn><mo>.</mo></math></p>`,
+                `<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&nbsp;</mo><mo>|</mo><mo>&nbsp;</mo><mi mathvariant="normal">B</mi><mo>&nbsp;</mo><mo>&cup;</mo><mo>&nbsp;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mn>14</mn><mo>/</mo><mn>27</mn><mo>.</mo></math></p>`,
+            ],
+            answer: ["A","C","D"],
+            solution: `<p>(A) True. Each event has probability <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>/</mo><mn>2</mn></math>, and direct counting gives <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&cap;</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>=</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&cap;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>=</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">B</mi><mo>&cap;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>4</mn></math>. Thus, every pair is independent.</p>
+<p>(B) False. <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&cap;</mo><mi mathvariant="normal">B</mi><mo>&cap;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>=</mo><mn>4</mn><mo>/</mo><mn>36</mn><mo>=</mo><mn>1</mn><mo>/</mo><mn>9</mn></math>, whereas mutual independence would require <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>)</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">B</mi><mo>)</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>8</mn></math>.</p>
+<p>(C) True. <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">A</mi><mo>&cap;</mo><mi mathvariant="normal">B</mi></math> has <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>&times;</mo><mn>3</mn><mo>=</mo><mn>9</mn></math> equally likely ordered outcomes. The sum is even when the dice have the same parity: <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>)</mo></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>2</mn><mo>,</mo><mn>6</mn><mo>)</mo></math> contribute two outcomes, while <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>)</mo></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo>)</mo></math> contribute two more. Therefore, the conditional probability is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mo>/</mo><mn>9</mn></math>.</p>
+<p>(D) True. <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">B</mi><mo>&cup;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>/</mo><mn>2</mn><mo>&minus;</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>=</mo><mn>3</mn><mo>/</mo><mn>4</mn></math>. Also <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&cap;</mo><mo>(</mo><mi mathvariant="normal">B</mi><mo>&cup;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>)</mo><mo>=</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&cap;</mo><mi mathvariant="normal">B</mi><mo>)</mo><mo>+</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&cap;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>&minus;</mo><mi mathvariant="normal">P</mi><mo>(</mo><mi mathvariant="normal">A</mi><mo>&cap;</mo><mi mathvariant="normal">B</mi><mo>&cap;</mo><mi mathvariant="normal">C</mi><mo>)</mo><mo>=</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>+</mo><mn>1</mn><mo>/</mo><mn>4</mn><mo>&minus;</mo><mn>1</mn><mo>/</mo><mn>9</mn><mo>=</mo><mn>7</mn><mo>/</mo><mn>18</mn></math>. Their ratio is <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>7</mn><mo>/</mo><mn>18</mn><mo>)</mo><mo>/</mo><mo>(</mo><mn>3</mn><mo>/</mo><mn>4</mn><mo>)</mo><mo>=</mo><mn>14</mn><mo>/</mo><mn>27</mn></math>.</p>`
+        }
+    ]
+});
+
+// Extra alias registrations for robust matching
+if (typeof window !== "undefined") {
+    window.testBackendIdMap = window.testBackendIdMap || {};
+    const _safeIdMst05 = "pw_cs_gate_mst_5___computer_organization___architecture___theory_of_computation___engineering_mathematics";
+    window.testBackendIdMap["pw-cs-gate|MST 5 - Computer Organization & Architecture + Theory of Computation + Engineering Mathematics"] = _safeIdMst05;
+    window.testBackendIdMap["MST 5 - Computer Organization & Architecture + Theory of Computation + Engineering Mathematics"] = _safeIdMst05;
+    window.testBackendIdMap["pw-cs-gate|MST 05 : Computer Organization & Architecture + Theory of Computation + Engineering Mathematics"] = _safeIdMst05;
+    window.testBackendIdMap["MST 05 : Computer Organization & Architecture + Theory of Computation + Engineering Mathematics"] = _safeIdMst05;
+    window.testBackendIdMap["MST 5 (COA + TOC + Engg Maths)"] = _safeIdMst05;
+    window.testBackendIdMap["MST 05 (COA + TOC + Engg Maths)"] = _safeIdMst05;
+    window.testBackendIdMap["MST 5"] = _safeIdMst05;
+    window.testBackendIdMap["MST 05"] = _safeIdMst05;
+    window.testBackendIdMap["COA + TOC + Engg Maths"] = _safeIdMst05;
+}
