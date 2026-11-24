@@ -1375,11 +1375,12 @@ window.testBackendIdMap = Object.assign(window.testBackendIdMap || {}, {
   // "Digital Logic-2": "gate_topicwise_test_2"
 });
 
-function findMatchingTest(testName) {
+function findMatchingTest(testName, seriesId) {
   if (!testName) return null;
+  const sId = seriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof pendingTestSeriesId !== "undefined" ? pendingTestSeriesId : "");
   // 1. Check with series prefix first to prevent cross-series collisions
-  if (typeof currentTestListId !== "undefined" && currentTestListId) {
-    const seriesComposite = currentTestListId + "|" + testName;
+  if (sId) {
+    const seriesComposite = sId + "|" + testName;
     if (window.testBackendIdMap && window.testBackendIdMap[seriesComposite]) return seriesComposite;
   }
   // 2. Exact testName in testBackendIdMap or testMap
@@ -1389,21 +1390,151 @@ function findMatchingTest(testName) {
   const bracketMatch = testName.match(/\(([^)]+)\)/);
   if (bracketMatch) {
     const bracketText = bracketMatch[1];
-    if (typeof currentTestListId !== "undefined" && currentTestListId) {
-      const compositeKey = currentTestListId + "|" + bracketText;
-      if (window.testBackendIdMap[compositeKey]) return compositeKey;
+    if (sId) {
+      const compositeKey = sId + "|" + bracketText;
+      if (window.testBackendIdMap && window.testBackendIdMap[compositeKey]) return compositeKey;
     }
-    if (window.testBackendIdMap[bracketText]) return bracketText;
+    if (window.testBackendIdMap && window.testBackendIdMap[bracketText]) return bracketText;
   }
 
-  if (typeof currentTestListId !== "undefined" && currentTestListId) {
+  const matchName = testName.replace(/^[A-Za-z\s]+-\s*/, "").trim();
+  if (matchName && matchName !== testName) {
+    if (sId) {
+      const compMatch = sId + "|" + matchName;
+      if (window.testBackendIdMap && window.testBackendIdMap[compMatch]) return compMatch;
+    }
+    if (window.testBackendIdMap && window.testBackendIdMap[matchName]) return matchName;
+  }
+
+  if (sId && window.testBackendIdMap) {
     let compKey = Object.keys(window.testBackendIdMap).find((key) => {
-      return key.startsWith(currentTestListId + "|") && testName.includes(key.split("|")[1]);
+      return key.startsWith(sId + "|") && testName.includes(key.split("|")[1]);
     });
     if (compKey) return compKey;
   }
 
-  return Object.keys(window.testBackendIdMap).find((key) => !key.includes("|") && testName.includes(key));
+  if (window.testBackendIdMap) {
+    return Object.keys(window.testBackendIdMap).find((key) => !key.includes("|") && testName.includes(key));
+  }
+  return null;
+}
+
+function findTestDefinition(testName, seriesId, maxScore, questionCount) {
+  if (!testName) return null;
+  const cleanName = String(testName).replace(/^Solutions:\s*/i, "").trim();
+  const cleanLower = cleanName.toLowerCase();
+  const matchName = cleanName.replace(/^[A-Za-z\s]+-\s*/, "").trim();
+  const matchLower = matchName.toLowerCase();
+  const bracketMatch = cleanName.match(/\(([^)]+)\)/);
+  const bracketText = bracketMatch ? bracketMatch[1].trim() : "";
+  const bracketLower = bracketText.toLowerCase();
+
+  const candidates = [];
+  const allRegistries = (window.apexTestRegistry || []).concat(
+    window.PYQ_PW_LEVEL_DEFAULT_TESTS || [],
+    window.PYQ_PW_DEFAULT_TESTS || [],
+    window.PYQ_DPP_DEFAULT_TESTS || [],
+    window.NEET_DEFAULT_TESTS || []
+  );
+
+  allRegistries.forEach((t) => {
+    if (!t || !t.name) return;
+    const tLower = t.name.trim().toLowerCase();
+    const tMatch = t.name.replace(/^[A-Za-z\s]+-\s*/, "").trim().toLowerCase();
+    const tBracketMatch = t.name.match(/\(([^)]+)\)/);
+    const tBracketLower = tBracketMatch ? tBracketMatch[1].trim().toLowerCase() : "";
+
+    let matched = false;
+    if (tLower === cleanLower || tLower === matchLower) matched = true;
+    else if (tMatch === cleanLower || tMatch === matchLower) matched = true;
+    else if (bracketLower && (tLower === bracketLower || tBracketLower === bracketLower || tLower.includes(bracketLower))) matched = true;
+    else if (tBracketLower && (cleanLower === tBracketLower || matchLower === tBracketLower)) matched = true;
+    else if (cleanLower.includes(tLower) || tLower.includes(cleanLower)) matched = true;
+
+    if (matched) candidates.push(t);
+  });
+
+  if (candidates.length > 0) {
+    let best = null;
+    let bestScore = -999999;
+    const targetSeries = (seriesId || "").trim().toLowerCase();
+
+    candidates.forEach((t) => {
+      let score = 0;
+      const tLower = t.name.trim().toLowerCase();
+      const tSeries = (t.series || "").trim().toLowerCase();
+
+      // 1. Series match (massive weight to prevent cross-series collision)
+      if (targetSeries && tSeries) {
+        if (tSeries === targetSeries) score += 1000;
+        else if (tSeries.includes(targetSeries) || targetSeries.includes(tSeries)) score += 500;
+        else score -= 300; // Penalize mismatching series
+      }
+
+      // 2. Exact test name match
+      if (tLower === cleanLower) score += 300;
+      else if (tLower === matchLower) score += 200;
+      else if (bracketLower && tLower === bracketLower) score += 200;
+
+      // 3. Total marks / maxScore match (critical to disambiguate identical test names across different series)
+      let tMarks = t.totalMarks;
+      if (!tMarks && Array.isArray(t.questions)) {
+        tMarks = t.questions.reduce((sum, q) => sum + (typeof q.marks === "number" ? q.marks : 1), 0);
+      }
+      if (maxScore !== undefined && maxScore !== null && Number(maxScore) > 0) {
+        const numMax = Number(maxScore);
+        if (tMarks && Math.abs(tMarks - numMax) < 0.5) {
+          score += 800;
+        } else if (tMarks) {
+          score -= Math.abs(tMarks - numMax) * 15;
+        }
+      }
+
+      // 4. Question count match
+      if (questionCount !== undefined && questionCount !== null && Number(questionCount) > 0 && Array.isArray(t.questions)) {
+        const numQ = Number(questionCount);
+        if (t.questions.length === numQ) score += 400;
+        else score -= Math.abs(t.questions.length - numQ) * 20;
+      }
+
+      if (score > bestScore) {
+        bestScore = score;
+        best = t;
+      }
+    });
+
+    if (best && Array.isArray(best.questions) && best.questions.length > 0) {
+      return best;
+    }
+  }
+
+  // Fallback: check window.testMap directly using synthesized safeIds
+  if (window.testMap) {
+    const sId = (seriesId || "").toLowerCase().replace(/[^a-z0-9]/g, "_");
+    const safeClean = cleanLower.replace(/[^a-z0-9]/g, "_");
+    const safeMatch = matchLower.replace(/[^a-z0-9]/g, "_");
+    const safeBracket = bracketLower.replace(/[^a-z0-9]/g, "_");
+
+    const tryKeys = [
+      sId ? `${sId}_${safeClean}` : null,
+      sId ? `${sId}_${safeMatch}` : null,
+      sId ? `${sId}_${safeBracket}` : null,
+      safeClean,
+      safeMatch,
+      safeBracket,
+      cleanName,
+      matchName,
+      bracketText
+    ].filter(Boolean);
+
+    for (const k of tryKeys) {
+      if (window.testMap[k] && Array.isArray(window.testMap[k]) && window.testMap[k].length > 0) {
+        return { name: cleanName, series: seriesId, questions: window.testMap[k] };
+      }
+    }
+  }
+
+  return null;
 }
 
 /* ==========================================================================
@@ -1592,8 +1723,9 @@ async function fetchCloudBookmarks() {
   } catch (err) { console.error(err); }
 }
 
-async function startPlayer(testName, fetchedQuestions) {
-  solutionMode = false;
+async function startPlayer(testName, fetchedQuestions, isSolution) {
+  solutionMode = !!isSolution;
+  examTabSwitchCount = 0;
   playerQuestions = fetchedQuestions;
   playerSections = null;
   currentSectionIndex = 0;
@@ -1706,7 +1838,9 @@ async function startPlayer(testName, fetchedQuestions) {
   closeInstructions();
   document.getElementById("playerOverlay").classList.add("show");
   document.body.style.overflow = "hidden";
-  enterExamFullScreen();
+  if (!solutionMode) {
+    enterExamFullScreen();
+  }
   updateFullscreenUI();
   renderPlayerWatermark();
 }
@@ -1907,6 +2041,7 @@ window.saveAndExitTest = function () {
 
 function exitPlayer() {
   examTabSwitchCount = 0;
+  solutionMode = false;
   clearInterval(playerTimerInterval);
   document.getElementById("playerOverlay").classList.remove("show");
   document.body.style.overflow = "";
@@ -2725,7 +2860,17 @@ function confirmSubmit() {
   const tMin = Math.floor(timeTakenSecs / 60),
     tSec = timeTakenSecs % 60;
 
+  // Submit to DB
+  let testSeriesId = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
+  const currentTitle = (document.getElementById("playerTopTitle").textContent || "").trim();
+  if (!testSeriesId && window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
+    const reg = window.apexTestRegistry.find(tr => tr.name === currentTitle || currentTitle.includes(tr.name));
+    if (reg && reg.series) testSeriesId = reg.series;
+  }
+
   lastResult = {
+    testName: currentTitle,
+    seriesId: testSeriesId,
     score,
     maxScore,
     correctCount,
@@ -2739,14 +2884,6 @@ function confirmSubmit() {
 
   document.getElementById("playerOverlay").classList.remove("show");
   document.getElementById("successOverlay").classList.add("show");
-
-  // Submit to DB
-  let testSeriesId = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
-  const currentTitle = (document.getElementById("playerTopTitle").textContent || "").trim();
-  if (!testSeriesId && window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
-    const reg = window.apexTestRegistry.find(tr => tr.name === currentTitle || currentTitle.includes(tr.name));
-    if (reg && reg.series) testSeriesId = reg.series;
-  }
   const payload = {
     seriesId: testSeriesId,
     testName: document.getElementById("playerTopTitle").textContent,
@@ -2887,12 +3024,25 @@ function openPastResult(testName, seriesId) {
     return false;
   });
 
+  if (!result) {
+    result = allRev.find(r => {
+      if (!r || !r.testName) return false;
+      const rLower = r.testName.trim().toLowerCase();
+      if (r.testName === testName || rLower === testLower) return true;
+      if (bracketLower && rLower === bracketLower) return true;
+      return false;
+    });
+  }
+
   if (result) {
-    // Reconstruct lastResult format with fallbacks
     const timeSecs = result.timeTakenSecs || 0;
     const tMin = Math.floor(timeSecs / 60);
     const tSec = timeSecs % 60;
+    const effectiveSeriesId = (result.seriesId && result.seriesId !== 'undefined' && result.seriesId !== 'null') ? result.seriesId : (seriesId || pendingTestSeriesId || (typeof currentTestListId !== 'undefined' ? currentTestListId : ''));
+
     lastResult = {
+      testName: result.testName || testName,
+      seriesId: effectiveSeriesId,
       score: Number(result.score) || 0,
       maxScore: Number(result.maxScore) || 100,
       correctCount: parseInt(result.correctCount, 10) || 0,
@@ -2905,18 +3055,24 @@ function openPastResult(testName, seriesId) {
     };
     playerState = result.answers || {};
 
-    const testKey = (typeof findMatchingTest === 'function' ? (findMatchingTest(testName) || (result && findMatchingTest(result.testName))) : null);
-    const backendId = (testKey && window.testBackendIdMap) ? window.testBackendIdMap[testKey] : null;
-    if (backendId && window.testMap && window.testMap[backendId]) {
-      playerQuestions = window.testMap[backendId];
+    if (effectiveSeriesId) {
+      pendingTestSeriesId = effectiveSeriesId;
+      currentTestListId = effectiveSeriesId;
+      currentDetailId = effectiveSeriesId;
     }
 
-    const rValidSeriesId = (result.seriesId && result.seriesId !== 'undefined' && result.seriesId !== 'null') ? result.seriesId : seriesId;
-    if (rValidSeriesId) {
-      pendingTestSeriesId = rValidSeriesId;
-      currentTestListId = rValidSeriesId;
-      currentDetailId = rValidSeriesId;
+    const qCount = result.answers ? Object.keys(result.answers).length : 0;
+    const testDef = findTestDefinition(testName, effectiveSeriesId, result.maxScore, qCount);
+    if (testDef && testDef.questions) {
+      playerQuestions = testDef.questions;
+    } else {
+      const testKey = (typeof findMatchingTest === 'function' ? (findMatchingTest(testName, effectiveSeriesId) || (result && findMatchingTest(result.testName, effectiveSeriesId))) : null);
+      const backendId = (testKey && window.testBackendIdMap) ? window.testBackendIdMap[testKey] : null;
+      if (backendId && window.testMap && window.testMap[backendId]) {
+        playerQuestions = window.testMap[backendId];
+      }
     }
+
     document.getElementById("resultCrumbName").textContent = testName;
     showResultPage(testName);
   }
@@ -2925,10 +3081,11 @@ function openPastResult(testName, seriesId) {
 function openSolutionMode(testName, seriesId) {
   const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
   const allRev = allResults.slice().reverse();
-  const bracketMatch = testName.match(/\(([^)]+)\)/);
+  const cleanName = (testName || "").replace(/^Solutions:\s*/i, "").trim();
+  const bracketMatch = cleanName.match(/\(([^)]+)\)/);
   const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
-  const targetLower = testName.trim().toLowerCase();
-  const targetSeriesId = seriesId || pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
+  const targetLower = cleanName.toLowerCase();
+  const targetSeriesId = seriesId || (lastResult && lastResult.seriesId) || pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
 
   let result = allRev.find(r => {
     if (!r || !r.testName) return false;
@@ -2947,36 +3104,63 @@ function openSolutionMode(testName, seriesId) {
     return false;
   });
 
+  if (!result) {
+    result = allRev.find(r => {
+      if (!r || !r.testName) return false;
+      const rLower = r.testName.trim().toLowerCase();
+      if (rLower === targetLower) return true;
+      if (bracketLower && rLower === bracketLower) return true;
+      return false;
+    });
+  }
+
   if (!result || !result.answers) {
-    alert("Answers not found for this test. Past tests before this update do not have answers saved.");
-    return;
+    if (lastResult && lastResult.answers && Object.keys(lastResult.answers).length > 0) {
+      result = lastResult;
+    } else {
+      alert("Answers not found for this test. Past tests before this update do not have answers saved.");
+      return;
+    }
   }
 
-  if (result.seriesId) {
-    pendingTestSeriesId = result.seriesId;
-    currentTestListId = result.seriesId;
-    currentDetailId = result.seriesId;
+  const effectiveSeriesId = (result && result.seriesId && result.seriesId !== 'undefined') ? result.seriesId : targetSeriesId;
+  if (effectiveSeriesId) {
+    pendingTestSeriesId = effectiveSeriesId;
+    currentTestListId = effectiveSeriesId;
+    currentDetailId = effectiveSeriesId;
   }
 
-  const testKey = findMatchingTest(testName) || (result && findMatchingTest(result.testName));
-  if (!testKey) {
-    alert("Test data not found.");
-    return;
-  }
+  const qCount = result.answers ? Object.keys(result.answers).length : 0;
+  const testDef = findTestDefinition(cleanName, effectiveSeriesId, result.maxScore, qCount);
 
-  const backendTestId = (window.testBackendIdMap || {})[testKey];
-  const courseId = currentTestListId;
-  const token = localStorage.getItem('apexcore_token');
-
-  // Local registry fallback for past results
-  if (window.testMap && window.testMap[backendTestId]) {
+  if (testDef && testDef.questions && testDef.questions.length > 0) {
     closeResult();
-    startPlayer(testName, window.testMap[backendTestId]);
+    startPlayer(cleanName, testDef.questions, true);
     solutionMode = true;
     playerState = result.answers;
     renderPlayer();
     return;
   }
+
+  const testKey = (typeof findMatchingTest === 'function' ? (findMatchingTest(cleanName, effectiveSeriesId) || (result.testName && findMatchingTest(result.testName, effectiveSeriesId))) : null);
+  const backendTestId = (testKey && window.testBackendIdMap) ? window.testBackendIdMap[testKey] : null;
+
+  if (backendTestId && window.testMap && window.testMap[backendTestId]) {
+    closeResult();
+    startPlayer(cleanName, window.testMap[backendTestId], true);
+    solutionMode = true;
+    playerState = result.answers;
+    renderPlayer();
+    return;
+  }
+
+  if (!backendTestId) {
+    alert("Test data not found.");
+    return;
+  }
+
+  const courseId = currentTestListId;
+  const token = localStorage.getItem('apexcore_token');
 
   fetch(`/api/test/${courseId}/${backendTestId}`, {
     headers: { 'Authorization': 'Bearer ' + token }
@@ -2985,10 +3169,8 @@ function openSolutionMode(testName, seriesId) {
     .then(async data => {
       if (data.success) {
         closeResult();
-
-        // Fetch advanced stats for solution mode
         try {
-          const statsRes = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
+          const statsRes = await fetch('/api/test-advanced-stats/' + encodeURIComponent(cleanName));
           const statsData = await statsRes.json();
           if (statsData.success) {
             window.__advancedStats = statsData.advancedStats;
@@ -2997,10 +3179,8 @@ function openSolutionMode(testName, seriesId) {
           console.error("Failed to load advanced stats", e);
         }
 
-        startPlayer(testName, data.questions);
-        solutionMode = true; // Set this AFTER startPlayer resets it
-
-        // restore the player state
+        startPlayer(cleanName, data.questions, true);
+        solutionMode = true;
         playerState = result.answers;
         renderPlayer();
       } else {
@@ -3964,7 +4144,7 @@ window.openQuestionPreview = function(idx) {
 
       <div style="display: flex; gap: 8px;">
         <button class="ra-btn" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-size: 12px; padding: 7px 14px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal()">Close</button>
-        <button class="ra-btn" style="background: #14619c; color: #ffffff; border: none; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal(); openSolutionMode('${testName.replace(/'/g, "\\'")}')">Open in Full Solution Player &rarr;</button>
+        <button class="ra-btn" style="background: #14619c; color: #ffffff; border: none; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal(); openSolutionMode('${testName.replace(/'/g, "\\'")}', (lastResult && lastResult.seriesId) || '')">Open in Full Solution Player &rarr;</button>
       </div>
     </div>
   `;
@@ -5094,8 +5274,9 @@ let examTabSwitchCount = 0;
 const MAX_EXAM_TAB_SWITCH = 3;
 
 function isExamActive() {
+  if (typeof solutionMode !== "undefined" && solutionMode) return false;
   const overlay = document.getElementById("playerOverlay");
-  return overlay && overlay.classList.contains("show") && (typeof solutionMode !== "undefined" ? !solutionMode : true);
+  return !!(overlay && overlay.classList.contains("show"));
 }
 
 function handleExamTabSwitch() {
@@ -5118,12 +5299,6 @@ function handleExamTabSwitch() {
 
 document.addEventListener("visibilitychange", () => {
   if (document.hidden && isExamActive()) {
-    handleExamTabSwitch();
-  }
-});
-
-window.addEventListener("blur", () => {
-  if (isExamActive()) {
     handleExamTabSwitch();
   }
 });
