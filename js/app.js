@@ -411,8 +411,8 @@ window.testSeries = [
       // ["FST - 2", "Nov 21, 2025"],
     ],
     oldPrice: "₹1416",
-    price: "₹130",
-    basePrice: 130,
+    price: "₹159",
+    basePrice: 159,
     brandLabel: "APEX EASY"
   },
   {
@@ -458,8 +458,8 @@ window.testSeries = [
       // ["FST - 2", "Nov 21, 2025"],
     ],
     oldPrice: "₹2600",
-    price: "₹259",
-    basePrice: 259,
+    price: "₹299",
+    basePrice: 299,
     brandLabel: "APEX CLASSES",
     // comingSoon: true
   },
@@ -496,8 +496,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹1180",
-    price: "₹139",
-    basePrice: 139,
+    price: "₹149",
+    basePrice: 149,
     brandLabel: "Weekly Classes"
     // comingSoon: true
   },
@@ -534,8 +534,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹499",
-    price: "₹29",
-    basePrice: 29,
+    price: "₹49",
+    basePrice: 49,
     brandLabel: "Apex CLASSES DPP"
   },
   {
@@ -571,8 +571,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹500",
-    price: "₹99",
-    basePrice: 99,
+    price: "₹129",
+    basePrice: 129,
     brandLabel: "APEX WALLAH"
   },
   {
@@ -608,8 +608,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹500",
-    price: "₹99",
-    basePrice: 99,
+    price: "₹129",
+    basePrice: 129,
     brandLabel: "APEX WALLAH"
   },
   {
@@ -681,8 +681,8 @@ window.testSeries = [
     ],
     schedule: [],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
   },
   {
@@ -717,8 +717,8 @@ window.testSeries = [
     ],
     schedule: [],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
   },
   {
@@ -790,8 +790,8 @@ window.testSeries = [
     ],
     schedule: [],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -827,8 +827,8 @@ window.testSeries = [
     ],
     schedule: [],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX ACE"
     // comingSoon: true
   },
@@ -864,8 +864,8 @@ window.testSeries = [
     ],
     schedule: [],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -908,8 +908,8 @@ window.testSeries = [
       // ["FST - 1", "Nov 21, 2025"],
     ],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -951,8 +951,8 @@ window.testSeries = [
       // ["FST - 1", "Nov 21, 2025"],
     ],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -993,8 +993,8 @@ window.testSeries = [
       // ["FST - 1", "Nov 22, 2025"],
     ],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -1035,8 +1035,8 @@ window.testSeries = [
       // ["FST - 1", "Nov 22, 2025"],
     ],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -1077,8 +1077,8 @@ window.testSeries = [
       // ["Mock - 3", "Jan 12, 2026"],
     ],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -1119,8 +1119,8 @@ window.testSeries = [
       // ["Mock - 3", "Jan 12, 2026"],
     ],
     oldPrice: "₹500",
-    price: "₹94",
-    basePrice: 94,
+    price: "₹124",
+    basePrice: 124,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -8645,17 +8645,17 @@ function formatTopicsHtml(topics, testName) {
   if (!topics) return '';
   if (typeof topics !== 'string') return topics;
   if (topics.startsWith('<div')) return topics;
-  
+
   // Split comma-separated topics into stylish chips
   const parts = topics.split(',').map(s => s.trim()).filter(Boolean);
   if (parts.length <= 1) return topics;
-  
+
   let chipClass = 'pyq-topic-chip';
   const tn = (testName || '').toLowerCase();
   if (tn.includes('principles')) chipClass += ' bio-principles';
   else if (tn.includes('applications')) chipClass += ' bio-apps';
   else if (tn.includes('organisms') || tn.includes('populations')) chipClass += ' bio-ecology';
-  
+
   const chips = parts.map(p => '<span class="' + chipClass + '">' + p + '</span>').join('');
   return '<div class="pyq-topic-chips-wrap">' + chips + '</div>';
 }
