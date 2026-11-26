@@ -283,7 +283,7 @@ window.testSeries = [
     f: "neet",
     lang: "English",
     objective: "Objective (NEET Pattern)",
-    tests: 14,
+    tests: 15,
     startDate: "2026-05-01",
     endDate: "2027-05-31",
     session: "2026-2027",
@@ -306,6 +306,7 @@ window.testSeries = [
       },
     ],
     schedule: [
+      ["NEET Minor-5 Computer Based Test (18-10-2026, Phase MAZC)", "Oct 18, 2026", 180],
       ["Test Series for NEET - 2019 (Test - 1, Code - B)", "Mar 23, 2019", 180],
       ["SWT 01 - Biotechnology: Principles & Processes (NCERT Core - Part 1)", "May 10, 2026"],
       ["SWT 02 - Biotechnology: Principles & Processes (NCERT Core - Part 2)", "May 12, 2026"],
@@ -2240,6 +2241,15 @@ window.PYQ_EE_TOPIC_MAP = {
 
 window.NEET_SUBJECTS = [
   {
+    id: "neet_allen_mock",
+    name: "ALLEN NEET Achiever Minor Tests (Physics + Chemistry + Biology)",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h6"/></svg>`,
+    iconBg: "#e0e7ff",
+    iconColor: "#4338ca",
+    regex: /(allen|minor-5|minor 5|mazc)/i
+  },
+  {
     id: "neet_aakash_mock",
     name: "Aakash NEET Practice Mock Tests (Physics + Chemistry + Biology)",
     iconType: "svg",
@@ -2328,6 +2338,7 @@ window.NEET_SUBJECTS = [
 ];
 
 window.NEET_TOPIC_MAP = {
+  "NEET Minor-5 Computer Based Test (18-10-2026, Phase MAZC)": "<div class=\"pyq-neet-topics-grid\" style=\"display:flex;flex-direction:column;gap:5px;padding:2px 0;\"><div style=\"display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;\"><span style=\"display:inline-flex;align-items:center;gap:2px;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;font-weight:700;padding:1px 6px;border-radius:4px;font-size:10.5px;flex-shrink:0;\">⚡ Physics</span><span style=\"color:#334155;font-weight:500;\">Electric Charge, Methods of Charging, Coulomb's Law, Electric Field, Electric Flux, Gauss Theorem, Center of Mass &amp; Collision (Back Unit: Kinematics and WPE)</span></div><div style=\"display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;\"><span style=\"display:inline-flex;align-items:center;gap:2px;background:#fffbeb;color:#b45309;border:1px solid #fde68a;font-weight:700;padding:1px 6px;border-radius:4px;font-size:10.5px;flex-shrink:0;\">🧪 Chemistry</span><span style=\"color:#334155;font-weight:500;\">Alkene, Alkine, Alkane, Benzene, Aniline, Phenol, Aldehyde, Ketone, Chemical Bonding (Introduction, Ionic Bond, Covalent Bond upto Bond Angle) (Back Unit: Chemical Equilibrium)</span></div><div style=\"display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;\"><span style=\"display:inline-flex;align-items:center;gap:2px;background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;font-weight:700;padding:1px 6px;border-radius:4px;font-size:10.5px;flex-shrink:0;\">🌿 Biology</span><span style=\"color:#334155;font-weight:500;\">Biotech and Microbes in Human Welfare, Organisms &amp; Population, Ecosystem, Respiratory System (Back Unit: Origin &amp; Evolution)</span></div></div>",
   "Test Series for NEET - 2019 (Test - 1, Code - B)": '<div class="pyq-neet-topics-grid" style="display:flex;flex-direction:column;gap:5px;padding:2px 0;"><div style="display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;"><span style="display:inline-flex;align-items:center;gap:2px;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;font-weight:700;padding:1px 6px;border-radius:4px;font-size:10.5px;flex-shrink:0;">⚡ Physics</span><span style="color:#334155;font-weight:500;">Physical World, Units & Measurements, Motion in a Straight Line, Motion in a Plane</span></div><div style="display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;"><span style="display:inline-flex;align-items:center;gap:2px;background:#fffbeb;color:#b45309;border:1px solid #fde68a;font-weight:700;padding:1px 6px;border-radius:4px;font-size:10.5px;flex-shrink:0;">🧪 Chemistry</span><span style="color:#334155;font-weight:500;">Some Basic Concepts of Chemistry, Structure of Atom</span></div><div style="display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;"><span style="display:inline-flex;align-items:center;gap:2px;background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;font-weight:700;padding:1px 6px;border-radius:4px;font-size:10.5px;flex-shrink:0;">🌿 Botany</span><span style="color:#334155;font-weight:500;">The Living World, Biological Classification, Plant Kingdom</span></div><div style="display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.4;"><span style="display:inline-flex;align-items:center;gap:2px;background:#fdf2f8;color:#be185d;border:1px solid #fbcfe8;font-weight:700;padding:1px 6px;border-radius:4px;font-size:10.5px;flex-shrink:0;">🦁 Zoology</span><span style="color:#334155;font-weight:500;">Animal Kingdom</span></div></div>',
   "SWT 01 - Biotechnology: Principles & Processes (NCERT Core - Part 1)": "Principles of Biotechnology, History, Tools of rDNA, Restriction Endonucleases, Agarose Gel Electrophoresis",
   "SWT 02 - Biotechnology: Principles & Processes (NCERT Core - Part 2)": "Cloning Vectors, pBR322 Features, Selectable Markers, Competent Host, Transformation & Biolistics",

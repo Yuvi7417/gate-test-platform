@@ -1299,7 +1299,7 @@ function openInstructions(testName, seriesId) {
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
     if (customDur) instrDurationElement.textContent = customDur + " minutes";
-    else if (isNeet) instrDurationElement.textContent = ((testName || "").includes("2019") || (testName || "").includes("Code - B") || (testName || "").includes("AAKASH")) ? "180 minutes" : ((testName || "").includes("Part-4") ? "30 minutes" : ((testName || "").includes("Sprint") || (testName || "").includes("SWT 08") ? "20 minutes" : "60 minutes"));
+    else if (isNeet) instrDurationElement.textContent = ((testName || "").includes("2019") || (testName || "").includes("Code - B") || (testName || "").includes("AAKASH") || (testName || "").includes("Minor-5") || (testName || "").includes("ALLEN")) ? "180 minutes" : ((testName || "").includes("Part-4") ? "30 minutes" : ((testName || "").includes("Sprint") || (testName || "").includes("SWT 08") ? "20 minutes" : "60 minutes"));
     else if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
     else if (isFullTest || isMixedSubject) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
@@ -1771,7 +1771,7 @@ async function startPlayer(testName, fetchedQuestions, isSolution) {
   }
 
   if (isNeetTest) {
-    if (playerQuestions.length >= 180 || testNameUpper.includes("2019") || testNameUpper.includes("CODE - B") || testNameUpper.includes("AAKASH")) {
+    if (playerQuestions.length >= 180 || testNameUpper.includes("2019") || testNameUpper.includes("CODE - B") || testNameUpper.includes("AAKASH") || testNameUpper.includes("ALLEN") || testNameUpper.includes("MINOR")) {
       playerDurationMins = customPlayerDur || 180;
       playerSections = [
         { name: "Physics", start: 0, end: 44 },
